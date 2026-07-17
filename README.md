@@ -12,6 +12,11 @@ design), named nearby facilities, mitigation options with real-world
 precedents, and a client-grade HTML memo whose every value carries a source,
 vintage, and retrieval date.
 
+**▶ Live tool:** https://cpchoudhary2024.github.io/wattershed/ — search any U.S.
+county (or use your location) for an instant three-pillar siting-pressure
+snapshot, explore ten real sites, and browse the national atlas. Self-updating
+weekly; no sign-in.
+
 ![Wattershed dashboard](docs/img/dashboard.png)
 
 ## Why this exists (and why now)
