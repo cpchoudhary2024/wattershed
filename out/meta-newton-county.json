@@ -28,9 +28,15 @@
         "source": "Fortune",
         "date": "2026-05-13",
         "url": "https://fortune.com/2026/05/13/data-center-georgia-arizona-water-wars/"
+      },
+      {
+        "title": "AOC presses EPA over Morgan County drinking water concerns as Meta defends Georgia data center operations",
+        "source": "CBS News Atlanta",
+        "date": "2026",
+        "url": "https://www.cbsnews.com/atlanta/news/aoc-presses-epa-over-morgan-county-drinking-water-concerns-tied-to-georgia-data-center-development/"
       }
     ],
-    "notes": "Operating campus whose construction coincided with residential well failures and sediment complaints in adjacent Mansfield-area homes (Newton County); reported ~500,000 gal/day usage ≈10% of county water use, with the county projecting supply deficits by 2030. Meta- commissioned study disputed the well linkage; EPA opened inquiries in 2026 after congressional pressure. Capacity not publicly disclosed (investment figures only), so announced_mw is null. Cooling family set to Meta's standard outside-air + evaporative-assist design.\n"
+    "notes": "Operating campus whose construction coincided with residential well failures and sediment complaints in adjacent Mansfield-area homes (Newton County); reported ~500,000 gal/day usage ≈10% of county water use, with the county projecting supply deficits by 2030. A Meta- commissioned study disputed the well linkage; EPA said it would investigate after congressional pressure over drinking-water concerns in adjacent Morgan County (2026). Capacity not publicly disclosed (investment figures only), so announced_mw is null. Cooling family set to Meta's standard outside-air + evaporative-assist design.\n"
   },
   "geo": {
     "tract_geoid": "13217100202",
@@ -72,7 +78,7 @@
         "unit": "DSCI (0–500)",
         "percentile": null,
         "source_id": "usdm_county_history",
-        "vintage": "2021-07-16 → 2026-07-16",
+        "vintage": "2021-07-17 → 2026-07-17",
         "retrieved": "",
         "confidence": "high",
         "note": "",
@@ -490,7 +496,7 @@
       "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/",
       "vintage": "pooled 2019–2023",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": "Tables C17002, B23025, C16002, B15003, B03002, B01003."
     },
     {
@@ -500,7 +506,7 @@
       "url": "https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip",
       "vintage": "baseline period 1979–2019 (published 2023)",
       "license": "CC BY 4.0 — attribution: 'Kuzma et al. (2023). Aqueduct 4.0, World Resources Institute.'",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": ""
     },
     {
@@ -510,7 +516,7 @@
       "url": "https://data.cdc.gov/resource/cwsq-ngmh.json",
       "vintage": "model year 2022 (BRFSS 2022, released 2024)",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": "Measures: CASTHMA (adult asthma), GHLTH (fair/poor self-rated health)."
     },
     {
@@ -520,7 +526,7 @@
       "url": "https://geocoding.geo.census.gov/geocoder/",
       "vintage": "current TIGER benchmark",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:16Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": ""
     },
     {
@@ -530,7 +536,7 @@
       "url": "data/curated/sites.yaml",
       "vintage": "per-site citation dates in the registry",
       "license": "MIT (compilation); each fact cites its public source.",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": "NOT exhaustive and NOT authoritative — see per-site provenance blocks."
     },
     {
@@ -540,7 +546,7 @@
       "url": "https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx",
       "vintage": "calendar 2023 operations",
       "license": "Public domain (U.S. federal work).",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": ""
     },
     {
@@ -550,7 +556,7 @@
       "url": "https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip",
       "vintage": "eGRID2023 topology",
       "license": "Public domain (U.S. federal work).",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": ""
     },
     {
@@ -560,7 +566,7 @@
       "url": "https://screening-tools.com/epa-ejscreen",
       "vintage": "EJScreen 2.32 (2024 release; ACS 2018–2022 inputs; AirToxScreen 2020)",
       "license": "Public domain (U.S. federal work product, community-rehosted).",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": "EPA removed EJScreen from public access in February 2025. Five pollution-burden fields (PM2.5, ozone, diesel PM, air-toxics cancer risk, traffic proximity) are taken from the restored final release because their upstream models (AirToxScreen, FHWA AADT fusion) are impractical to rebuild live. Vintage is frozen and flagged."
     },
     {
@@ -570,7 +576,7 @@
       "url": "https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip",
       "vintage": "rolling (snapshot at retrieval date)",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": "Used for TRI / Superfund (SEMS) / RCRA facility proximity."
     },
     {
@@ -580,7 +586,7 @@
       "url": "https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_LTRA_2025.pdf",
       "vintage": "assessment horizon 2026–2035 (published Dec 2025)",
       "license": "Publicly released assessment; categorical risk designations transcribed to data/reference/nerc_ltra.csv.",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": ""
     },
     {
@@ -590,7 +596,7 @@
       "url": "https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent",
       "vintage": "weekly series, 2000–present",
       "license": "Public (same courtesy line as USDM).",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": ""
     },
     {
@@ -610,7 +616,7 @@
       "url": "https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8",
       "vintage": "calendar 2015 (most recent complete county compilation)",
       "license": "Public domain (USGS). doi:10.5066/F7TB15V5",
-      "retrieved": "2026-07-17T03:21:17Z",
+      "retrieved": "2026-07-17T18:01:33Z",
       "notes": "2015 remains the latest full county water-use census; flagged LOW-confidence for change-sensitive counties."
     }
   ],
@@ -623,6 +629,6 @@
     "All demand figures are modeled from published engineering factors, not measured facility data.",
     "The neighborhood summary assigns tracts by population-weighted centroid distance, an approximation of true buffer intersection."
   ],
-  "generated_at": "2026-07-17T03:21:17Z",
+  "generated_at": "2026-07-17T18:01:33Z",
   "tool_version": "0.1.0"
 }

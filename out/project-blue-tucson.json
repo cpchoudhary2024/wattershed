@@ -28,6 +28,12 @@
         "source": "AZPM",
         "date": "2026-05-28",
         "url": "https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/"
+      },
+      {
+        "title": "Project Blue developers close on purchase of Pima County land (county board approved sale 3-2)",
+        "source": "Tucson Sentinel",
+        "date": "2025-12",
+        "url": "https://www.tucsonsentinel.com/local/report/122425_project_blue_close/"
       }
     ],
     "notes": "The defining water-politics siting fight of 2025–26: Pima County approved land sale 3–2 (June 2025); Tucson City Council unanimously rejected annexation/water service (Aug 2025) after community opposition; Amazon withdrew (Dec 2025); developer continues with a revised \"low-water air-cooling\" design on groundwater permits (~31 Mgal/yr requested; ADWR approved wells May 2026). Reported load figures conflict across sources, so announced_mw is left null and excluded from demand modeling.\n"
@@ -72,7 +78,7 @@
         "unit": "DSCI (0–500)",
         "percentile": null,
         "source_id": "usdm_county_history",
-        "vintage": "2021-07-16 → 2026-07-16",
+        "vintage": "2021-07-17 → 2026-07-17",
         "retrieved": "",
         "confidence": "high",
         "note": "",
@@ -442,7 +448,7 @@
       "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/",
       "vintage": "pooled 2019–2023",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": "Tables C17002, B23025, C16002, B15003, B03002, B01003."
     },
     {
@@ -452,7 +458,7 @@
       "url": "https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip",
       "vintage": "baseline period 1979–2019 (published 2023)",
       "license": "CC BY 4.0 — attribution: 'Kuzma et al. (2023). Aqueduct 4.0, World Resources Institute.'",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": ""
     },
     {
@@ -462,7 +468,7 @@
       "url": "https://data.cdc.gov/resource/cwsq-ngmh.json",
       "vintage": "model year 2022 (BRFSS 2022, released 2024)",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": "Measures: CASTHMA (adult asthma), GHLTH (fair/poor self-rated health)."
     },
     {
@@ -472,7 +478,7 @@
       "url": "https://geocoding.geo.census.gov/geocoder/",
       "vintage": "current TIGER benchmark",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:14Z",
+      "retrieved": "2026-07-17T18:01:30Z",
       "notes": ""
     },
     {
@@ -482,7 +488,7 @@
       "url": "data/curated/sites.yaml",
       "vintage": "per-site citation dates in the registry",
       "license": "MIT (compilation); each fact cites its public source.",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": "NOT exhaustive and NOT authoritative — see per-site provenance blocks."
     },
     {
@@ -492,7 +498,7 @@
       "url": "https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx",
       "vintage": "calendar 2023 operations",
       "license": "Public domain (U.S. federal work).",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": ""
     },
     {
@@ -502,7 +508,7 @@
       "url": "https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip",
       "vintage": "eGRID2023 topology",
       "license": "Public domain (U.S. federal work).",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": ""
     },
     {
@@ -512,7 +518,7 @@
       "url": "https://screening-tools.com/epa-ejscreen",
       "vintage": "EJScreen 2.32 (2024 release; ACS 2018–2022 inputs; AirToxScreen 2020)",
       "license": "Public domain (U.S. federal work product, community-rehosted).",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": "EPA removed EJScreen from public access in February 2025. Five pollution-burden fields (PM2.5, ozone, diesel PM, air-toxics cancer risk, traffic proximity) are taken from the restored final release because their upstream models (AirToxScreen, FHWA AADT fusion) are impractical to rebuild live. Vintage is frozen and flagged."
     },
     {
@@ -522,7 +528,7 @@
       "url": "https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip",
       "vintage": "rolling (snapshot at retrieval date)",
       "license": "Public domain.",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": "Used for TRI / Superfund (SEMS) / RCRA facility proximity."
     },
     {
@@ -532,7 +538,7 @@
       "url": "https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_LTRA_2025.pdf",
       "vintage": "assessment horizon 2026–2035 (published Dec 2025)",
       "license": "Publicly released assessment; categorical risk designations transcribed to data/reference/nerc_ltra.csv.",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": ""
     },
     {
@@ -542,7 +548,7 @@
       "url": "https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent",
       "vintage": "weekly series, 2000–present",
       "license": "Public (same courtesy line as USDM).",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": ""
     },
     {
@@ -562,7 +568,7 @@
       "url": "https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8",
       "vintage": "calendar 2015 (most recent complete county compilation)",
       "license": "Public domain (USGS). doi:10.5066/F7TB15V5",
-      "retrieved": "2026-07-17T03:21:15Z",
+      "retrieved": "2026-07-17T18:01:31Z",
       "notes": "2015 remains the latest full county water-use census; flagged LOW-confidence for change-sensitive counties."
     }
   ],
@@ -575,6 +581,6 @@
     "All demand figures are modeled from published engineering factors, not measured facility data.",
     "The neighborhood summary assigns tracts by population-weighted centroid distance, an approximation of true buffer intersection."
   ],
-  "generated_at": "2026-07-17T03:21:15Z",
+  "generated_at": "2026-07-17T18:01:31Z",
   "tool_version": "0.1.0"
 }
