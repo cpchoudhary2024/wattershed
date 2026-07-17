@@ -174,6 +174,9 @@ def _county_payload() -> list[dict]:
                 "g": num(s["grid"]),
                 "b": num(s["burden"]),
                 "p": int(s["population"]),
+                "y": round(float(s["lat"]), 3),
+                "x": round(float(s["lon"]), 3),
+                "sr": (None if pd.isna(s["subrgn"]) else str(s["subrgn"])),
             }
         )
     return out

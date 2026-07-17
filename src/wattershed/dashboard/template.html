@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Hardened CSP: the page is fully self-contained (all CSS/JS/data inline),
+     makes zero network requests, and holds no secrets. This locks it down so
+     even an injected string cannot load external code or exfiltrate data. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
 <title>Wattershed — U.S. data center environmental screening</title>
 <style>
   .wroot{
@@ -43,6 +48,40 @@
   .tile{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px}
   .tile .v{font-size:28px; font-weight:700}
   .tile .l{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink2)}
+  /* Screen-your-area search widget */
+  .finder{background:var(--surface); border:1px solid var(--border); border-radius:12px;
+          padding:18px 20px; margin:16px 0}
+  .finder h2{font-size:18px; margin:0 0 2px}
+  .finder .hint{font-size:13px; color:var(--ink2); margin:0 0 12px}
+  .finder-row{display:flex; gap:10px; flex-wrap:wrap; align-items:stretch; position:relative}
+  .finder input{flex:1; min-width:220px; font:15px system-ui; padding:10px 14px;
+                border:1px solid var(--baseline); border-radius:8px; background:var(--page); color:var(--ink)}
+  .finder input:focus{outline:2px solid var(--seq); outline-offset:1px; border-color:var(--seq)}
+  .finder button{font:600 14px system-ui; padding:10px 16px; border-radius:8px; cursor:pointer;
+                 border:1px solid var(--border); background:var(--page); color:var(--ink)}
+  .finder button.primary{background:var(--seq); color:#fff; border-color:var(--seq)}
+  .finder button:focus-visible{outline:2px solid var(--seq); outline-offset:2px}
+  .ac{position:absolute; top:calc(100% + 4px); left:0; right:0; z-index:20; background:var(--surface);
+      border:1px solid var(--border); border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,.12);
+      max-height:260px; overflow-y:auto; display:none}
+  .ac.on{display:block}
+  .ac div{padding:8px 14px; cursor:pointer; font-size:14px; display:flex; justify-content:space-between; gap:10px}
+  .ac div:hover, .ac div[aria-selected="true"]{background:color-mix(in srgb, var(--seq) 10%, transparent)}
+  .ac .sc{color:var(--ink2); font-variant-numeric:tabular-nums; font-size:12.5px}
+  .result{margin-top:14px; display:none; border-top:1px solid var(--grid); padding-top:14px}
+  .result.on{display:block}
+  .result h3{font-size:19px; margin:0}
+  .result .loc{font-size:13px; color:var(--ink2); margin:2px 0 12px}
+  .rscores{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+  @media (max-width:560px){ .rscores{grid-template-columns:1fr} }
+  .rs{border:1px solid var(--border); border-radius:8px; padding:10px 12px}
+  .rs .lbl{font-size:11.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink2)}
+  .rs .v{font-size:26px; font-weight:700; line-height:1.1; margin:2px 0}
+  .rs .bd{font-size:12px; font-weight:600}
+  .rs .meter{height:5px; background:var(--grid); border-radius:3px; margin-top:6px; overflow:hidden}
+  .rs .meter i{display:block; height:100%; border-radius:3px}
+  .result .foot{font-size:12px; color:var(--ink2); margin-top:10px}
+  .result .foot code{background:var(--page); border:1px solid var(--grid); border-radius:4px; padding:1px 6px}
   .grid2{display:grid; grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr); gap:16px; align-items:start}
   @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
   .card{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px}
@@ -117,6 +156,20 @@
   </header>
 
   <div class="tiles" id="statTiles"></div>
+
+  <div class="finder">
+    <h2>Screen your area</h2>
+    <p class="hint">Type a U.S. county, or use your location, for an instant three-pillar siting-pressure
+      snapshot — computed from the national reference build, no sign-in, nothing sent anywhere.</p>
+    <div class="finder-row">
+      <input id="finderInput" type="text" autocomplete="off" spellcheck="false"
+             placeholder="County name, e.g. Maricopa, Loudoun, Shelby…"
+             aria-label="Search for a U.S. county" aria-expanded="false" aria-controls="finderAc">
+      <button id="finderGeo" type="button" title="Use my current location">📍 My location</button>
+      <div class="ac" id="finderAc" role="listbox" aria-label="County suggestions"></div>
+    </div>
+    <div class="result" id="finderResult" aria-live="polite"></div>
+  </div>
 
   <div class="grid2">
     <div class="card">
@@ -371,6 +424,124 @@ document.querySelectorAll(".metric").forEach(b=> b.addEventListener("click", ()=
   document.querySelectorAll(".metric").forEach(x=>x.setAttribute("aria-selected", String(x===b)));
   paintCounties(); rampLegend();
 }));
+
+// ---- "Screen your area" finder (fully client-side, no network) ----
+const BAND = [
+  {min:75, label:"high pressure",     hex:"#d03b3b"},
+  {min:55, label:"elevated pressure", hex:"#ec835a"},
+  {min:35, label:"moderate pressure", hex:"#c98500"},
+  {min:0,  label:"low pressure",      hex:"#0ca30c"},
+];
+const bandOf = v => v==null ? {label:"no data", hex:"var(--muted)"} : BAND.find(b=>v>=b.min);
+// national percentile context — mid-rank (ties split) so the top value never
+// reads as "higher than 100%" and heavily-tied categories aren't overstated
+function pctile(metric, v){
+  if(v==null) return null;
+  let n=0, below=0, equal=0;
+  for(const c of COUNTIES){ const x=c[metric]; if(x!=null){ n++; if(x<v) below++; else if(x===v) equal++; } }
+  return n ? Math.round(100*(below + 0.5*equal)/n) : null;
+}
+const fIn = document.getElementById("finderInput");
+const fAc = document.getElementById("finderAc");
+const fRes = document.getElementById("finderResult");
+let acItems = [], acIdx = -1;
+
+function renderResult(c){
+  const cell = (label, metric) => {
+    const v = c[metric], b = bandOf(v), p = pctile(metric, v);
+    return `<div class="rs"><div class="lbl">${label}</div>
+      <div class="v">${v==null?"—":Math.round(v)}<span style="font-size:13px;color:var(--muted)">/100</span></div>
+      <div class="bd" style="color:${b.hex}">${b.label}</div>
+      <div class="meter"><i style="width:${v==null?0:v}%;background:${b.hex}"></i></div>
+      <div class="lbl" style="margin-top:6px">${p==null?"":"higher than "+p+"% of U.S. counties"}</div></div>`;
+  };
+  fRes.innerHTML =
+    `<h3></h3><div class="loc"></div>
+     <div class="rscores">
+       ${cell("Water stress","w")}${cell("Grid strain & carbon","g")}${cell("Community burden","b")}
+     </div>
+     <div class="foot">County-level snapshot (structural water only; no project load assumed).
+       For the full tract-level screening of a specific parcel — with drought, demand modeling,
+       nearby facilities and the provenance ledger — run
+       <code>wattershed screen --lat &lt;lat&gt; --lon &lt;lon&gt;</code>.</div>`;
+  // set text via textContent so a county name can never inject markup
+  fRes.querySelector("h3").textContent = c.n;
+  fRes.querySelector(".loc").textContent =
+    `FIPS ${c.f} · population ${fmt(c.p)}` + (c.sr ? ` · eGRID subregion ${c.sr}` : "");
+  fRes.classList.add("on");
+}
+
+function selectCounty(fips){
+  const c = COUNTIES.find(x=>x.f===fips);
+  if(!c) return;
+  fAc.classList.remove("on"); fIn.setAttribute("aria-expanded","false");
+  fIn.value = c.n;
+  renderResult(c);
+}
+
+function renderAc(matches){
+  fAc.textContent = "";
+  acItems = matches;
+  matches.forEach((c, i)=>{
+    const row = document.createElement("div");
+    row.setAttribute("role","option"); row.dataset.f = c.f;
+    const name = document.createElement("span"); name.textContent = c.n;
+    const sc = document.createElement("span"); sc.className = "sc";
+    sc.textContent = `W ${c.w??"–"} · G ${c.g??"–"} · B ${c.b??"–"}`;
+    row.append(name, sc);
+    row.addEventListener("mousedown", e=>{ e.preventDefault(); selectCounty(c.f); });
+    fAc.appendChild(row);
+  });
+  acIdx = -1;
+  fAc.classList.toggle("on", matches.length>0);
+  fIn.setAttribute("aria-expanded", String(matches.length>0));
+}
+
+fIn.addEventListener("input", ()=>{
+  const q = fIn.value.trim().toLowerCase();
+  if(q.length < 2){ fAc.classList.remove("on"); return; }
+  const starts = [], has = [];
+  for(const c of COUNTIES){
+    const nl = c.n.toLowerCase();
+    if(nl.startsWith(q)) starts.push(c);
+    else if(nl.includes(q)) has.push(c);
+    if(starts.length >= 8) break;
+  }
+  renderAc(starts.concat(has).slice(0, 8));
+});
+fIn.addEventListener("keydown", e=>{
+  if(!fAc.classList.contains("on")) return;
+  const rows = [...fAc.children];
+  if(e.key==="ArrowDown"){ e.preventDefault(); acIdx = Math.min(acIdx+1, rows.length-1); }
+  else if(e.key==="ArrowUp"){ e.preventDefault(); acIdx = Math.max(acIdx-1, 0); }
+  else if(e.key==="Enter" && acIdx>=0){ e.preventDefault(); selectCounty(acItems[acIdx].f); return; }
+  else if(e.key==="Escape"){ fAc.classList.remove("on"); return; }
+  rows.forEach((r,i)=> r.setAttribute("aria-selected", String(i===acIdx)));
+  if(acIdx>=0) rows[acIdx].scrollIntoView({block:"nearest"});
+});
+document.addEventListener("click", e=>{ if(!e.target.closest(".finder-row")) fAc.classList.remove("on"); });
+
+document.getElementById("finderGeo").addEventListener("click", ()=>{
+  if(!navigator.geolocation){ fRes.classList.add("on"); fRes.textContent = "Geolocation is not available in this browser."; return; }
+  const btn = document.getElementById("finderGeo");
+  btn.textContent = "📍 Locating…"; btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(
+    pos=>{
+      const {latitude:la, longitude:lo} = pos.coords;
+      let best=null, bd=Infinity;
+      for(const c of COUNTIES){
+        const dy=(c.y-la), dx=(c.x-lo)*Math.cos(la*Math.PI/180);
+        const d=dy*dy+dx*dx;
+        if(d<bd){ bd=d; best=c; }
+      }
+      btn.textContent = "📍 My location"; btn.disabled = false;
+      if(best){ fIn.value = best.n; selectCounty(best.f); }
+    },
+    ()=>{ btn.textContent="📍 My location"; btn.disabled=false;
+          fRes.classList.add("on"); fRes.innerHTML='<div class="foot">Couldn’t get your location — search by county name instead.</div>'; },
+    {timeout:8000, maximumAge:600000}
+  );
+});
 
 statTiles(); legend(); dots(); table();
 document.getElementById("counties").style.display = "none";
