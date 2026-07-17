@@ -54,8 +54,8 @@ dev = ["pytest>=8.0", "ruff>=0.4"]
 wattershed = "wattershed.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/YOURUSER/wattershed"
-Documentation = "https://github.com/YOURUSER/wattershed/tree/main/docs"
+Homepage = "https://github.com/cpchoudhary2024/wattershed"
+Documentation = "https://github.com/cpchoudhary2024/wattershed/tree/main/docs"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/wattershed"]

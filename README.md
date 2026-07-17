@@ -34,7 +34,7 @@ that tool.
 ## Quick start
 
 ```bash
-git clone <this-repo> && cd wattershed
+git clone https://github.com/cpchoudhary2024/wattershed && cd wattershed
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 

@@ -4,6 +4,8 @@
 name: weekly-refresh
 
 on:
+  push:
+    branches: [main]         # deploy the dashboard on every push
   schedule:
     - cron: "0 13 * * FRI"   # Fridays 13:00 UTC, after Thursday's USDM release
   workflow_dispatch:
