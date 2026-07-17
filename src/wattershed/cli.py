@@ -246,6 +246,74 @@ def build_dashboard(
     console.print(f"Dashboard → {out_file}")
 
 
+@app.command()
+def doctor():
+    """Data-freshness health check: what's current, what's aging, what to do."""
+    import json
+    from datetime import date, datetime
+
+    from . import provenance
+
+    today = date.today()
+
+    def age_days(iso: str | None) -> int | None:
+        if not iso:
+            return None
+        return (today - datetime.fromisoformat(iso.replace("Z", "")).date()).days
+
+    rows: list[tuple[str, str, str, str]] = []  # layer, vintage/state, status, action
+
+    usdm_age = age_days(provenance.retrieved_at(config.CACHE_DIR / "usdm_current.zip"))
+    if usdm_age is None:
+        rows.append(("Drought (USDM weekly)", "not yet fetched", "—", "fetches automatically on first screen"))
+    elif usdm_age <= 7:
+        rows.append(("Drought (USDM weekly)", f"cache {usdm_age}d old", "FRESH", "auto-refreshes (≤3-day cache)"))
+    else:
+        rows.append(("Drought (USDM weekly)", f"cache {usdm_age}d old", "AGING", "will refresh on next screen"))
+
+    manifest = config.PROCESSED_DIR / "reference_manifest.json"
+    if manifest.exists():
+        built = json.loads(manifest.read_text()).get("build_date", "")
+        b_age = age_days(built + "T00:00:00") or 0
+        status = "FRESH" if b_age < 200 else "AGING"
+        action = "OK" if b_age < 200 else "consider `wattershed build-reference` (ACS/PLACES update annually)"
+        rows.append(("Tract reference table", f"built {built}", status, action))
+    else:
+        rows.append(("Tract reference table", "MISSING", "ACTION", "run `wattershed build-reference` or restore committed artifact"))
+
+    rows.append(
+        ("Grid rates (eGRID2023 rev.2)", "calendar 2023, pub. 2025-06", "CURRENT EDITION",
+         "check epa.gov/egrid ~early 2027 for eGRID2024; update URL in sources/egrid.py")
+    )
+    rows.append(
+        ("Grid strain (NERC 2025 LTRA)", "pub. 2026-01, window 2026–2030", "CURRENT EDITION",
+         "next LTRA ~Dec 2026; refresh data/reference/nerc_ltra.csv from its Table 1")
+    )
+    rows.append(
+        ("EJScreen 2.32 pollution fields", "frozen (EPA withdrew tool 2025-02)", "FROZEN",
+         "no successor exists; vintage is flagged on every output")
+    )
+    rows.append(
+        ("County water denominators", "USGS 2015 (latest county census)", "FROZEN",
+         "no newer county compilation; flagged MEDIUM confidence in output")
+    )
+    rows.append(
+        ("Curated site registry", "facts cited as of 2026-07-16", "AGES FAST",
+         "re-verify citations before public use; this industry changes monthly")
+    )
+
+    t = Table(show_header=True, header_style="bold")
+    for col in ("Data layer", "Vintage / state", "Status", "What to do"):
+        t.add_column(col, overflow="fold")
+    for r in rows:
+        t.add_row(*r)
+    console.print(t)
+    console.print(
+        "[dim]Design intent: live layers refresh themselves; annual layers are one-line updates; "
+        "frozen layers are disclosed on every output rather than silently served.[/dim]"
+    )
+
+
 @app.command("provenance")
 def provenance_cmd():
     """Print the full registered source ledger."""
