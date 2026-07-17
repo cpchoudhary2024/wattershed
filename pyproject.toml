@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wattershed"
+version = "0.1.0"
+description = "Open environmental screening for U.S. data center siting: water stress, grid strain & carbon, and cumulative community burden — from public data, with full provenance."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Wattershed contributors" }]
+keywords = [
+  "environmental-screening",
+  "data-centers",
+  "siting",
+  "water-stress",
+  "environmental-justice",
+  "grid-carbon",
+  "geospatial",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.26",
+  "geopandas>=1.0",
+  "shapely>=2.0",
+  "pyproj>=3.6",
+  "pyogrio>=0.8",
+  "requests>=2.31",
+  "pydantic>=2.5",
+  "typer>=0.12",
+  "rich>=13.0",
+  "jinja2>=3.1",
+  "pyyaml>=6.0",
+  "openpyxl>=3.1",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+wattershed = "wattershed.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/YOURUSER/wattershed"
+Documentation = "https://github.com/YOURUSER/wattershed/tree/main/docs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wattershed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wattershed — U.S. data center environmental screening</title>
+<style>
+  .wroot{
+    color-scheme: light;
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --seq:#2a78d6; --seq-deep:#1c5cab; --accent:#1c5cab;
+    --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --critical:#d03b3b;
+    --state-fill:#f0efec; --state-stroke:#c3c2b7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])) .wroot{
+      color-scheme: dark;
+      --page:#0d0d0d; --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+      --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+      --seq:#3987e5; --seq-deep:#86b6ef; --accent:#86b6ef;
+      --state-fill:#242423; --state-stroke:#383835;
+    }
+  }
+  :root[data-theme="dark"] .wroot{
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+    --seq:#3987e5; --seq-deep:#86b6ef; --accent:#86b6ef;
+    --state-fill:#242423; --state-stroke:#383835;
+  }
+  *{box-sizing:border-box; margin:0}
+  body{margin:0}
+  .wroot{background:var(--page); color:var(--ink); min-height:100vh;
+    font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; padding:0 0 40px}
+  .shell{max-width:1180px; margin:0 auto; padding:0 20px}
+  header.hero{padding:34px 0 10px}
+  .logo{font-weight:800; font-size:22px; letter-spacing:0.01em}
+  .logo span{color:var(--seq-deep)}
+  .tagline{font-size:16px; color:var(--ink2); margin-top:4px; max-width:760px}
+  .datestamp{font-size:12.5px; color:var(--muted); margin-top:8px}
+  .tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:20px 0}
+  .tile{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px}
+  .tile .v{font-size:28px; font-weight:700}
+  .tile .l{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink2)}
+  .grid2{display:grid; grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr); gap:16px; align-items:start}
+  @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px}
+  .card h2{font-size:13px; text-transform:uppercase; letter-spacing:0.07em; color:var(--ink2); margin-bottom:8px}
+  svg.map{width:100%; height:auto; display:block; overflow-x:auto}
+  .state{fill:var(--state-fill); stroke:var(--state-stroke); stroke-width:0.7}
+  .dot{stroke:var(--surface); stroke-width:2; cursor:pointer; transition:r .12s}
+  .dot:hover, .dot:focus{stroke:var(--ink)}
+  .dot.selected{stroke:var(--ink); stroke-width:2.5}
+  .legend{display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; color:var(--ink2); margin-top:8px}
+  .legend i{display:inline-block; width:11px; height:11px; border-radius:999px; margin-right:6px; vertical-align:-1px; border:1px solid var(--border)}
+  .tip{position:fixed; pointer-events:none; background:var(--ink); color:var(--page);
+       font-size:12.5px; padding:5px 10px; border-radius:6px; opacity:0; transform:translate(-50%,-130%); white-space:nowrap; z-index:10}
+  .badge{display:inline-block; padding:3px 12px; border-radius:999px; font-weight:700; font-size:13px; border:1.5px solid currentColor}
+  .panel h3{font-size:19px; margin:2px 0 2px}
+  .panel .sub{font-size:13px; color:var(--ink2)}
+  .pill{font-size:11px; border:1px solid var(--border); border-radius:999px; padding:1px 8px; color:var(--ink2); margin-left:6px; vertical-align:middle}
+  .score{margin:10px 0 0}
+  .score .row{display:grid; grid-template-columns:112px 1fr 34px; gap:10px; align-items:center; margin:7px 0; font-size:13px}
+  .score .track{height:7px; background:var(--grid); border-radius:4px; overflow:hidden}
+  .score .track i{display:block; height:100%; background:var(--seq); border-radius:4px}
+  .score .n{text-align:right; font-variant-numeric:tabular-nums; color:var(--ink2)}
+  .panel ul{padding-left:18px; margin:8px 0; font-size:13.5px}
+  .panel li{margin:5px 0}
+  .panel .sec{font-size:11.5px; text-transform:uppercase; letter-spacing:0.07em; color:var(--muted); margin-top:14px}
+  .cite{font-size:12.5px; margin:4px 0}
+  .cite a{color:var(--accent); text-decoration:none}
+  .cite a:hover{text-decoration:underline}
+  table.sites{width:100%; border-collapse:collapse; font-size:13.5px; margin-top:6px}
+  table.sites th{font-size:11.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink2);
+      text-align:left; padding:8px 10px 6px; border-bottom:1px solid var(--baseline)}
+  table.sites td{padding:8px 10px; border-bottom:1px solid var(--grid)}
+  table.sites tr{cursor:pointer}
+  table.sites tr:hover td{background:color-mix(in srgb, var(--seq) 7%, transparent)}
+  table.sites tr.selected td{background:color-mix(in srgb, var(--seq) 13%, transparent)}
+  .mini{display:inline-block; width:66px; height:6px; background:var(--grid); border-radius:3px; overflow:hidden; vertical-align:middle; margin-right:6px}
+  .mini i{display:block; height:100%; background:var(--seq)}
+  .num{font-variant-numeric:tabular-nums; text-align:right}
+  footer{margin-top:28px; font-size:12.5px; color:var(--ink2); line-height:1.65}
+  footer h2{font-size:13px; text-transform:uppercase; letter-spacing:0.07em; color:var(--ink2); margin:18px 0 6px}
+  footer a{color:var(--accent); text-decoration:none}
+  .disc{border:1px solid var(--border); border-left:3px solid var(--warn); border-radius:8px;
+        padding:10px 14px; margin-top:14px; background:var(--surface); font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wroot">
+<div class="shell">
+
+  <header class="hero">
+    <div class="logo">WATTER<span>SHED</span></div>
+    <p class="tagline">Open environmental screening for U.S. data center siting — water stress, grid
+      strain &amp; carbon, and cumulative community burden, from public data with a full provenance
+      ledger on every number.</p>
+    <p class="datestamp">Flagship screening generated __GEN_DATE__ · national reference table built __BUILD_DATE__ ·
+      drought layer updates weekly · <strong>screening-level, not due diligence</strong></p>
+  </header>
+
+  <div class="tiles" id="statTiles"></div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>Screened sites — overall tier</h2>
+      <svg class="map" viewBox="0 0 975 610" role="img" aria-label="Map of screened U.S. data center sites, colored by screening tier">
+        <!--__MAP_PATHS__-->
+        <g id="dots"></g>
+      </svg>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="card panel" id="panel" aria-live="polite"></div>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h2>All screened sites</h2>
+    <div style="overflow-x:auto">
+    <table class="sites" id="siteTable">
+      <thead><tr>
+        <th>Site</th><th>State</th><th>Status</th><th>Tier</th>
+        <th>Water</th><th>Grid</th><th>Burden</th><th class="num">Announced MW</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </div>
+
+  <footer>
+    <h2>Method in one paragraph</h2>
+    <p>Each site is screened on three pillars scored 0–100 (higher = more concern): <strong>water stress</strong>
+    (WRI Aqueduct 4.0 baseline water stress 50% + five-year county drought climatology 30% + current
+    U.S. Drought Monitor category 20%), <strong>grid strain &amp; carbon</strong> (eGRID2023 subregion CO₂e-rate
+    percentile 60% + NERC 2025 LTRA resource-adequacy category 40%), and <strong>cumulative community burden</strong>
+    (a CalEnviroScreen-style pollution × vulnerability index over 16 tract indicators, ranked against all
+    85,396 U.S. census tracts). Pillars are deliberately <em>not</em> averaged into one number; transparent
+    trigger rules assign the tier, and modeled demand can escalate it. Full methodology, sensitivity
+    analysis, and limitations are in the repository.</p>
+    <h2>Data sources</h2>
+    <p id="sourceList">
+      U.S. Drought Monitor (NDMC/USDA/NOAA, weekly) · WRI Aqueduct 4.0 (2023, CC BY 4.0) · EPA eGRID2023
+      rev.2 (June 2025) · NERC 2025 Long-Term Reliability Assessment (Jan 2026) · U.S. Census ACS 2019–2023
+      &amp; geocoder · CDC PLACES 2024 · EPA Facility Registry Service &amp; TRI · EPA EJScreen 2.32
+      (community-restored replica; EPA withdrew the tool Feb 2025) · USGS county water use 2015 ·
+      LBNL 2024 U.S. Data Center Energy Usage Report · Macknick et al. (2012).
+      Site facts are hand-curated from cited public reporting (registry access date 2026-07-16).</p>
+    <p>The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center at the
+    University of Nebraska-Lincoln, the United States Department of Agriculture, and the National
+    Oceanic and Atmospheric Administration.</p>
+    <div class="disc"><strong>Honest limits:</strong> tract statistics describe areas, not parcels; eGRID rates are
+    annual averages, not marginal emissions; county water denominators are 2015 vintage; five pollution
+    indicators are frozen at EJScreen 2.32; demand figures are engineering estimates, not measurements.
+    Every site detail view links its citations.</div>
+  </footer>
+</div>
+<div class="tip" id="tip"></div>
+</div>
+
+<script>
+/*__SITE_DATA__*/
+
+const TIER = {
+  "Low":      {c:"var(--good)",     hex:"#0ca30c"},
+  "Moderate": {c:"var(--warn)",     hex:"#fab219"},
+  "Elevated": {c:"var(--serious)",  hex:"#ec835a"},
+  "High":     {c:"var(--critical)", hex:"#d03b3b"},
+};
+const ORDER = ["High","Elevated","Moderate","Low"];
+const fmt = n => n==null ? "—" : n.toLocaleString("en-US");
+
+function statTiles(){
+  const high = SITES.filter(s=>s.tier==="High").length;
+  const elev = SITES.filter(s=>s.tier==="Elevated").length;
+  const mw = SITES.reduce((a,s)=>a+(s.mw||0),0);
+  const el = document.getElementById("statTiles");
+  el.innerHTML = [
+    [SITES.length, "sites screened"],
+    [high, "high tier"],
+    [elev, "elevated tier"],
+    [fmt(mw)+" MW", "announced capacity screened"],
+    ["16", "tract indicators · 85,396 tracts"],
+  ].map(([v,l])=>`<div class="tile"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+}
+
+function legend(){
+  document.getElementById("legend").innerHTML =
+    ORDER.map(t=>`<span><i style="background:${TIER[t].c}"></i>${t}</span>`).join("") +
+    `<span style="margin-left:auto">CONUS shown (AK/HI screenable via CLI) · click a dot or row for detail</span>`;
+}
+
+function dots(){
+  const g = document.getElementById("dots");
+  g.innerHTML = SITES.map(s=>
+    `<circle class="dot" tabindex="0" role="button" aria-label="${s.name}, tier ${s.tier}"
+      data-slug="${s.slug}" cx="${s.x}" cy="${s.y}" r="8" fill="${TIER[s.tier].c}"></circle>`).join("");
+  const tip = document.getElementById("tip");
+  g.querySelectorAll(".dot").forEach(d=>{
+    const s = SITES.find(x=>x.slug===d.dataset.slug);
+    d.addEventListener("mousemove", e=>{
+      tip.textContent = `${s.name} — ${s.tier}`;
+      tip.style.left = e.clientX+"px"; tip.style.top = e.clientY+"px"; tip.style.opacity = 1;
+    });
+    d.addEventListener("mouseleave", ()=> tip.style.opacity = 0);
+    d.addEventListener("click", ()=> select(s.slug));
+    d.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){e.preventDefault(); select(s.slug);} });
+  });
+}
+
+function scoreRow(label, v){
+  return `<div class="row"><span>${label}</span>
+    <span class="track"><i style="width:${v==null?0:v}%"></i></span>
+    <span class="n">${v==null?"—":Math.round(v)}</span></div>`;
+}
+
+function select(slug){
+  const s = SITES.find(x=>x.slug===slug);
+  document.querySelectorAll(".dot").forEach(d=>d.classList.toggle("selected", d.dataset.slug===slug));
+  document.querySelectorAll("#siteTable tbody tr").forEach(r=>r.classList.toggle("selected", r.dataset.slug===slug));
+  const t = TIER[s.tier];
+  const p = document.getElementById("panel");
+  p.innerHTML = `
+    <h2>Site detail</h2>
+    <h3>${s.name}</h3>
+    <div class="sub">${s.operator||""} · ${s.county} County, ${s.state} · status: ${s.status}
+      ${s.mw?` · ${fmt(s.mw)} MW announced`:""}</div>
+    <div style="margin:10px 0 2px"><span class="badge" style="color:${t.c}">${s.tier} tier</span>
+      <span class="pill">USDM ${s.usdm_date.replace("map of ","")}</span></div>
+    <div class="score">
+      ${scoreRow("Water stress", s.scores.water)}
+      ${scoreRow("Grid & carbon", s.scores.grid)}
+      ${scoreRow("Community burden", s.scores.burden)}
+    </div>
+    <div class="sec">Why this tier</div>
+    <ul>${s.reasons.map(r=>`<li>${r}</li>`).join("")}</ul>
+    ${s.drivers.length?`<div class="sec">Key findings</div><ul>${s.drivers.map(d=>`<li>${d}</li>`).join("")}</ul>`:""}
+    ${s.demand?`<div class="sec">Modeled demand (site cooling scenario: ${s.demand.cooling})</div>
+      <ul><li>${s.demand.twh} TWh/yr facility energy · ${s.demand.mgd} MGD cooling water · ${fmt(s.demand.co2e)} t CO₂e/yr</li></ul>`:""}
+    ${s.mitigations.length?`<div class="sec">Top mitigations</div><ul>${s.mitigations.map(m=>`<li>${m}</li>`).join("")}</ul>`:""}
+    <div class="sec">Citations (site facts)</div>
+    ${s.citations.map(c=>`<div class="cite"><a href="${c.url}" target="_blank" rel="noopener">${c.title}</a> — ${c.source}, ${c.date}</div>`).join("")}
+    <div class="sec">Full report</div>
+    <div class="cite">out/reports/${s.slug}.html in the repository (per-site memo with the complete provenance ledger).</div>`;
+}
+
+function table(){
+  const tb = document.querySelector("#siteTable tbody");
+  const rows = [...SITES].sort((a,b)=> ORDER.indexOf(a.tier)-ORDER.indexOf(b.tier) || a.name.localeCompare(b.name));
+  tb.innerHTML = rows.map(s=>{
+    const cell = v => `<td><span class="mini"><i style="width:${v==null?0:v}%"></i></span><span style="font-variant-numeric:tabular-nums">${v==null?"—":Math.round(v)}</span></td>`;
+    return `<tr data-slug="${s.slug}" tabindex="0">
+      <td><strong>${s.name}</strong><div style="font-size:11.5px;color:var(--muted)">${s.operator||""}</div></td>
+      <td>${s.state}</td><td>${s.status}</td>
+      <td><span class="badge" style="color:${TIER[s.tier].c}; font-size:11.5px; padding:2px 9px">${s.tier}</span></td>
+      ${cell(s.scores.water)}${cell(s.scores.grid)}${cell(s.scores.burden)}
+      <td class="num">${fmt(s.mw)}</td></tr>`;
+  }).join("");
+  tb.querySelectorAll("tr").forEach(r=>{
+    r.addEventListener("click", ()=> select(r.dataset.slug));
+    r.addEventListener("keydown", e=>{ if(e.key==="Enter"){select(r.dataset.slug);} });
+  });
+}
+
+statTiles(); legend(); dots(); table();
+select(SITES.slice().sort((a,b)=>ORDER.indexOf(a.tier)-ORDER.indexOf(b.tier))[0].slug);
+</script>
+</body>
+</html>

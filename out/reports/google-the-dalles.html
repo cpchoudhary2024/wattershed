@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wattershed screening — Google The Dalles</title>
+<style>
+  :root{
+    --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --seq:#2a78d6; --seq-deep:#1c5cab;
+  }
+  *{box-sizing:border-box; margin:0}
+  html{color-scheme:light}
+  body{background:var(--page); color:var(--ink);
+       font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; padding:32px 16px}
+  .doc{max-width:880px; margin:0 auto; background:var(--surface);
+       border:1px solid var(--border); border-radius:10px; padding:44px 48px}
+  h1{font-size:26px; line-height:1.2; letter-spacing:-0.01em}
+  h2{font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-2);
+     margin:36px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--grid)}
+  h3{font-size:15px; margin:14px 0 6px}
+  p{margin:6px 0}
+  .brand{display:flex; justify-content:space-between; align-items:baseline;
+         border-bottom:2px solid var(--ink); padding-bottom:10px; margin-bottom:20px}
+  .brand .logo{font-weight:700; font-size:15px; letter-spacing:0.02em}
+  .brand .logo span{color:var(--seq-deep)}
+  .brand .kind{color:var(--muted); font-size:12.5px}
+  .meta{color:var(--ink-2); font-size:13.5px; margin-top:6px}
+  .tierline{display:flex; gap:12px; align-items:center; margin:18px 0 4px; flex-wrap:wrap}
+  .badge{display:inline-block; padding:5px 14px; border-radius:999px; font-weight:700;
+         font-size:14px; border:1.5px solid currentColor}
+  .statusnote{font-size:12.5px; color:var(--muted)}
+  .tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0 4px}
+  .tile{border:1px solid var(--border); border-radius:8px; padding:12px 14px}
+  .tile .lbl{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-2)}
+  .tile .val{font-size:30px; font-weight:700; margin:2px 0}
+  .tile .band{font-size:12.5px; font-weight:600}
+  .meter{height:6px; background:var(--grid); border-radius:4px; margin-top:8px; overflow:hidden}
+  .meter i{display:block; height:100%; border-radius:4px}
+  table{width:100%; border-collapse:collapse; font-size:13.5px; margin:8px 0}
+  th{color:var(--ink-2); font-weight:600; text-align:left; padding:7px 10px 5px;
+     border-bottom:1px solid var(--baseline); font-size:12px; text-transform:uppercase; letter-spacing:0.05em}
+  td{padding:7px 10px; border-bottom:1px solid var(--grid); vertical-align:top}
+  td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .pbar{display:flex; align-items:center; gap:8px; min-width:130px}
+  .pbar .track{flex:1; height:6px; background:var(--grid); border-radius:4px; overflow:hidden}
+  .pbar .track i{display:block; height:100%; background:var(--seq); border-radius:4px}
+  .pbar .v{font-variant-numeric:tabular-nums; font-size:12.5px; color:var(--ink-2); width:34px; text-align:right}
+  .conf{font-size:11px; padding:1.5px 7px; border-radius:999px; border:1px solid var(--border); color:var(--ink-2); white-space:nowrap}
+  .missing{color:var(--muted); font-style:italic}
+  ul{padding-left:20px; margin:6px 0}
+  li{margin:4px 0}
+  .drivers li{font-weight:500}
+  .note{font-size:12.5px; color:var(--ink-2); background:var(--page);
+        border:1px solid var(--grid); border-radius:6px; padding:8px 12px; margin:8px 0}
+  .mixbar{display:flex; height:26px; border-radius:6px; overflow:hidden; margin:10px 0 6px; background:var(--grid)}
+  .mixbar div{display:flex; align-items:center; justify-content:center; font-size:11px;
+              font-weight:600; color:#fff; margin-right:2px}
+  .mixbar div:last-child{margin-right:0}
+  .legend{display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--ink-2); margin-bottom:6px}
+  .legend i{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:5px; vertical-align:-1px}
+  .mit{border-left:3px solid var(--seq); padding:2px 0 2px 12px; margin:12px 0}
+  .mit .prec{font-size:12.5px; color:var(--ink-2); margin-top:3px}
+  .prov{font-size:12px}
+  .prov td{padding:5px 8px}
+  .foot{margin-top:34px; padding-top:14px; border-top:1px solid var(--baseline);
+        font-size:11.5px; color:var(--muted)}
+  .foot p{margin:4px 0}
+  a{color:var(--seq-deep); text-decoration:none}
+  @media print{
+    body{background:#fff; padding:0}
+    .doc{border:none; border-radius:0; padding:24px; max-width:none}
+    .tile .val{font-size:24px}
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <div class="brand">
+    <div class="logo">WATTER<span>SHED</span></div>
+    <div class="kind">Environmental siting screen · v0.1.0 · generated 2026-07-17</div>
+  </div>
+
+  <h1>Google The Dalles</h1>
+  <p class="meta">
+    Google · Wasco County, OR
+    · census tract 41065970400 · 45.6092, -121.1959
+    (address precision)
+     · status: <strong>operating</strong>
+    
+  </p>
+
+  <div class="tierline">
+    <span class="badge" style="color:#a34f13; background:#fde8dc">Screening tier: ELEVATED</span>
+    <span class="statusnote">Rule-based tier — the three pillars are deliberately not averaged (see methodology).</span>
+  </div>
+  <ul>
+    <li>Pillar scores: burden 73, grid 52, water 26.</li>
+  </ul>
+
+  <div class="tiles">
+    
+    <div class="tile">
+      <div class="lbl">Water stress</div>
+      <div class="val">26<span style="font-size:14px; color:var(--muted)">/100</span></div>
+      <div class="band" style="color:#0ca30c">low</div>
+      <div class="meter"><i style="width:25.7%; background:#0ca30c"></i></div>
+    </div>
+    
+    <div class="tile">
+      <div class="lbl">Grid strain & carbon</div>
+      <div class="val">52<span style="font-size:14px; color:var(--muted)">/100</span></div>
+      <div class="band" style="color:#8a6d00">moderate</div>
+      <div class="meter"><i style="width:51.6%; background:#8a6d00"></i></div>
+    </div>
+    
+    <div class="tile">
+      <div class="lbl">Community burden</div>
+      <div class="val">73<span style="font-size:14px; color:var(--muted)">/100</span></div>
+      <div class="band" style="color:#8a6d00">moderate</div>
+      <div class="meter"><i style="width:73.4%; background:#8a6d00"></i></div>
+    </div>
+    
+  </div>
+
+  <div class="note"><strong>Site context (curated, cited):</strong> Google's original self-built campus (2006) and the canonical water-transparency case: The Oregonian's public-records suit (settled 2023) forced disclosure; usage has since been published annually, reaching ≈550 Mgal in 2025 — roughly 40% of the city's total water consumption — supplied under a city deal that contemplates developing additional groundwater rights. Capacity not publicly disclosed.
+</div>
+
+  
+  <h2>Water stress — 26/100 (low)</h2>
+  
+  <ul class="drivers"><li>County spent 49% of the past five years with severe-or-worse (D2+) drought covering ≥10% of its area.</li></ul>
+  
+  
+  <table>
+    <thead><tr><th style="width:34%">Indicator</th><th>Value</th><th style="width:22%">National percentile</th><th>Vintage</th><th>Conf.</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td>Baseline water stress (WRI Aqueduct 4.0, sub-basin)</td>
+        <td class="num">Low (<10%)</td>
+        <td><span style="color:var(--muted)">—</span></td>
+        <td style="font-size:12px; color:var(--ink-2)">1979–2019 baseline (pub. 2023)</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>5-year mean drought severity (county DSCI)</td>
+        <td class="num">387 / 500 · D2+ in 49% of weeks</td>
+        <td><span style="color:var(--muted)">—</span></td>
+        <td style="font-size:12px; color:var(--ink-2)">2021-07-16 → 2026-07-16</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Current drought status (USDM weekly map)<div style="font-size:11.5px;color:var(--muted)">Transient signal — a single wet or dry week should not drive siting; weighted 20%.</div></td>
+        <td class="num">None</td>
+        <td><span style="color:var(--muted)">—</span></td>
+        <td style="font-size:12px; color:var(--ink-2)">map of 2026-07-14</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+  
+  <h2>Grid strain & carbon — 52/100 (moderate)</h2>
+  
+  <ul class="drivers"><li>NERC classifies WECC-Northwest as HIGH resource-adequacy risk (first High year: 2029) — new large loads directly deepen the projected shortfall.</li></ul>
+  
+  
+    <div class="mixbar">
+      <div style="width:41.7%; background:#2a78d6">Fossil 41.7%</div><div style="width:3.1%; background:#008300"></div><div style="width:38.7%; background:#e87ba4">Hydro 38.7%</div><div style="width:14.7%; background:#eda100">Wind + Solar 14.7%</div><div style="width:1.8%; background:#1baf7a"></div>
+    </div>
+    <div class="legend"><span><i style="background:#2a78d6"></i>Fossil 41.7%</span><span><i style="background:#008300"></i>Nuclear 3.1%</span><span><i style="background:#e87ba4"></i>Hydro 38.7%</span><span><i style="background:#eda100"></i>Wind + Solar 14.7%</span><span><i style="background:#1baf7a"></i>Other 1.8%</span></div>
+  
+  <table>
+    <thead><tr><th style="width:34%">Indicator</th><th>Value</th><th style="width:22%">National percentile</th><th>Vintage</th><th>Conf.</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td>Grid carbon intensity — WECC Northwest (NWPP)<div style="font-size:11.5px;color:var(--muted)">Annual average rate — not marginal emissions; see limitations.</div></td>
+        <td class="num">635 lb CO₂e/MWh (P26 of U.S. subregions)</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:25.9%"></i></div><span class="v">P26</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">calendar 2023 (eGRID2023 rev.2, pub. June 2025)</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Generation mix (subregion)</td>
+        <td class="num">42% fossil · 57% carbon-free</td>
+        <td><span style="color:var(--muted)">—</span></td>
+        <td style="font-size:12px; color:var(--ink-2)">calendar 2023</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Resource-adequacy risk — WECC-Northwest<div style="font-size:11.5px;color:var(--muted)">NWPP spans WECC-Northwest and WECC-Basin; both are High-risk from 2029.</div></td>
+        <td class="num">HIGH (first High year: 2029)</td>
+        <td><span style="color:var(--muted)">—</span></td>
+        <td style="font-size:12px; color:var(--ink-2)">2025 LTRA (pub. Jan 2026), 2026–2030 window</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+  
+  <h2>Cumulative community burden — 73/100 (moderate)</h2>
+  
+  <ul class="drivers"><li>PM2.5 concentration: 13.5 — P96 nationally.</li></ul>
+  
+  
+  <table>
+    <thead><tr><th style="width:34%">Indicator</th><th>Value</th><th style="width:22%">National percentile</th><th>Vintage</th><th>Conf.</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td>PM2.5 concentration</td>
+        <td class="num">13.5</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:96.1%"></i></div><span class="v">P96</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Ozone concentration</td>
+        <td class="num">52.8</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:12.8%"></i></div><span class="v">P13</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>NO₂ concentration</td>
+        <td class="num">5.75</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:32.2%"></i></div><span class="v">P32</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Diesel particulate matter</td>
+        <td class="num">0.165</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:53.6%"></i></div><span class="v">P54</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">AirToxScreen 2020</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Toxic releases to air (RSEI-modeled)</td>
+        <td class="num">8.9</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:8.7%"></i></div><span class="v">P9</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Traffic proximity & volume</td>
+        <td class="num">4.55e+05</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:38.1%"></i></div><span class="v">P38</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Superfund (NPL) site proximity</td>
+        <td class="num">0.341</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:78.6%"></i></div><span class="v">P79</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>RMP (chemical-accident) facility proximity</td>
+        <td class="num">0.705</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:72.3%"></i></div><span class="v">P72</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Hazardous-waste TSDF proximity</td>
+        <td class="num">0.474</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:33.0%"></i></div><span class="v">P33</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">EJScreen 2.32 (2024)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>TRI facilities within 5 km (live rebuild)</td>
+        <td class="num">5 facilities</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:48.6%"></i></div><span class="v">P49</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">FRS snapshot at build date</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Low-income share (<2× poverty)</td>
+        <td class="num">33.3%</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:61.4%"></i></div><span class="v">P61</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">ACS 2019–2023</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Unemployment rate</td>
+        <td class="num">9.5%</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:85.3%"></i></div><span class="v">P85</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">ACS 2019–2023</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Limited-English households</td>
+        <td class="num">3.2%</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:64.8%"></i></div><span class="v">P65</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">ACS 2019–2023</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Adults without HS diploma</td>
+        <td class="num">12.0%</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:65.5%"></i></div><span class="v">P66</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">ACS 2019–2023</td>
+        <td><span class="conf">high</span></td>
+      </tr>
+    
+      <tr>
+        <td>Adult asthma prevalence</td>
+        <td class="num">12.0%</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:87.2%"></i></div><span class="v">P87</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">CDC PLACES 2024 (BRFSS 2022)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>Fair/poor self-rated health</td>
+        <td class="num">22.6%</td>
+        <td>
+          <div class="pbar"><div class="track"><i style="width:66.1%"></i></div><span class="v">P66</span></div>
+        </td>
+        <td style="font-size:12px; color:var(--ink-2)">CDC PLACES 2024 (BRFSS 2022)</td>
+        <td><span class="conf">medium</span></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+  
+
+  
+
+  <h2>Neighborhood context (5 km, population-weighted)</h2>
+  
+  
+  <p>5 populated tract(s), ≈16,853 residents within 5 km.
+     Combined burden index P73 ·
+     low-income 37% ·
+     people of color 29% (reported for transparency; not a scoring input) ·
+     adult asthma 12.4%.</p>
+  
+  
+  <h3>TRI-reporting facilities within 5 km (live EPA FRS query)</h3>
+  <table><thead><tr><th>Facility</th><th>City</th><th>Distance</th></tr></thead><tbody>
+    
+    <tr><td>Sapa Extrusions The Dalles Cast House</td><td>The Dalles, OR</td><td class="num">1.52 km</td></tr>
+    
+    <tr><td>Oregon Cherry Growers</td><td>The Dalles, OR</td><td class="num">1.73 km</td></tr>
+    
+    <tr><td>Northwest Aluminum Co Site</td><td>The Dalles, OR</td><td class="num">1.85 km</td></tr>
+    
+    <tr><td>Hood River Sand, Gravel & Ready Mix - The Dalles</td><td>The Dalles, OR</td><td class="num">2.29 km</td></tr>
+    
+    <tr><td>Amerities</td><td>The Dalles, OR</td><td class="num">3.73 km</td></tr>
+    
+  </tbody></table>
+  
+
+  <h2>What would reduce this site's risk</h2>
+  
+  <div class="mit">
+    <strong>Maintain the screening margin</strong> <span class="conf">general</span>
+    <p>No pillar triggered mitigation thresholds. Preserve that position: publish water/energy metrics annually and re-screen at design changes.</p>
+    
+  </div>
+  
+
+  
+  <h2>Curated-site citations</h2>
+  <table class="prov"><thead><tr><th>Claim source</th><th>Publisher</th><th>Date</th></tr></thead><tbody>
+    
+    <tr><td><a href="https://www.datacenterdynamics.com/en/news/we-now-know-how-much-water-googles-oregon-data-centers-use-after-city-drops-lawsuit-against-journalists/">We now know how much water Google's Oregon data centers use</a></td><td>Data Center Dynamics</td><td>2023</td></tr>
+    
+    <tr><td><a href="https://www.latitudemedia.com/news/data-center-water-use-black-box-google-trying-to-change/">Data center water use can be a 'black box.' Google aims to change that</a></td><td>Latitude Media</td><td>2026</td></tr>
+    
+    <tr><td><a href="https://waterwatch.org/the-dalles-drops-fight-to-keep-google-water-use-private/">The Dalles drops fight to keep Google water use private</a></td><td>KGW / WaterWatch</td><td>2023</td></tr>
+    
+  </tbody></table>
+  <p class="statusnote">Site facts hand-compiled from the reporting above; registry access date 2026-07-16. Not exhaustive, not authoritative.</p>
+  
+
+  <h2>Data provenance ledger</h2>
+  <table class="prov">
+    <thead><tr><th>Source</th><th>Provider</th><th>Data vintage</th><th>Retrieved</th></tr></thead>
+    <tbody>
+    
+      <tr><td><a href="https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/">American Community Survey 2019–2023 5-year, tract tables (bulk summary file)</a></td><td>U.S. Census Bureau</td>
+          <td>pooled 2019–2023</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip">WRI Aqueduct 4.0 — baseline water stress (bws), annual, sub-basin</a></td><td>World Resources Institute</td>
+          <td>baseline period 1979–2019 (published 2023)</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://data.cdc.gov/resource/cwsq-ngmh.json">CDC PLACES 2024 release — census-tract health outcomes</a></td><td>CDC (data.cdc.gov, Socrata)</td>
+          <td>model year 2022 (BRFSS 2022, released 2024)</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://geocoding.geo.census.gov/geocoder/">U.S. Census Bureau geocoder (address & coordinate → tract/county)</a></td><td>U.S. Census Bureau</td>
+          <td>current TIGER benchmark</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="data/curated/sites.yaml">Wattershed hand-curated data-center site registry</a></td><td>this repository (manually compiled from cited public reporting)</td>
+          <td>per-site citation dates in the registry</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx">EPA eGRID2023 (rev. 2, June 2025) — subregion emission rates, fuel mix, net generation</a></td><td>U.S. EPA</td>
+          <td>calendar 2023 operations</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip">EPA eGRID2023 subregion boundaries (shapefile)</a></td><td>U.S. EPA</td>
+          <td>eGRID2023 topology</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://screening-tools.com/epa-ejscreen">EPA EJScreen 2.32 tract data (community-restored replica)</a></td><td>Public Environmental Data Partners (original: U.S. EPA)</td>
+          <td>EJScreen 2.32 (2024 release; ACS 2018–2022 inputs; AirToxScreen 2020)</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip">EPA Facility Registry Service — national geocoded facility file</a></td><td>U.S. EPA</td>
+          <td>rolling (snapshot at retrieval date)</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_LTRA_2025.pdf">NERC 2025 Long-Term Reliability Assessment — resource-adequacy risk categories</a></td><td>North American Electric Reliability Corporation</td>
+          <td>assessment horizon 2026–2035 (published Dec 2025)</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent">U.S. Drought Monitor — county drought-severity time series</a></td><td>NDMC data services (usdmdataservices.unl.edu)</td>
+          <td>weekly series, 2000–present</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://droughtmonitor.unl.edu/data/shapefiles_m/USDM_current_M.zip">U.S. Drought Monitor — current weekly map</a></td><td>NDMC / USDA / NOAA (Univ. of Nebraska–Lincoln)</td>
+          <td>updated weekly (Thursday release)</td><td>2026-07-17</td></tr>
+    
+      <tr><td><a href="https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8">USGS Estimated Use of Water in the U.S. — county-level, 2015</a></td><td>U.S. Geological Survey (ScienceBase)</td>
+          <td>calendar 2015 (most recent complete county compilation)</td><td>2026-07-17</td></tr>
+    
+    </tbody>
+  </table>
+
+  <h2>Limitations</h2>
+  <ul>
+    <li>Tract-level indicators describe the area around a point, not the parcel itself; a site on a tract boundary inherits its containing tract's profile.</li><li>eGRID rates are annual average (location-based) intensities, not marginal emissions; actual incremental emissions depend on dispatch and contracted supply.</li><li>County public-supply denominators are from the 2015 USGS compilation — the latest complete county water-use census; fast-growing counties will have shifted.</li><li>Five pollution indicators are frozen at EPA EJScreen 2.32 vintage (2024 release) because EPA withdrew the tool in Feb 2025; they no longer update.</li><li>All demand figures are modeled from published engineering factors, not measured facility data.</li><li>The neighborhood summary assigns tracts by population-weighted centroid distance, an approximation of true buffer intersection.</li>
+  </ul>
+
+  <div class="foot">
+    <p><strong>Screening-level analysis only.</strong> This document supports early-stage siting review and public discussion. It is not an environmental impact assessment, NEPA document, or engineering due diligence, and must not be represented as one.</p>
+    <p>The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration.</p>
+    <p>Water-risk data: Kuzma et al. (2023), Aqueduct 4.0, World Resources Institute (CC BY 4.0).</p>
+    <p>Generated by Wattershed v0.1.0 — open-source environmental screening for U.S. data center siting.</p>
+  </div>
+</div>
+</body>
+</html>

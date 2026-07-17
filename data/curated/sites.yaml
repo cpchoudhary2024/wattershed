@@ -1,0 +1,347 @@
+# Wattershed hand-curated data-center site registry
+# ---------------------------------------------------
+# HONESTY CONTRACT for this file:
+#   * Manually compiled from cited public reporting, permits, and operator
+#     statements. NOT exhaustive, NOT authoritative, NOT scraped.
+#   * Every load-bearing fact carries a citation (source, date, url).
+#     Access date for all citations: 2026-07-16.
+#   * announced_mw is recorded ONLY where a specific figure is publicly
+#     reported; conflicting or unofficial figures are left null and noted.
+#   * coord_precision ∈ {address, parcel-adjacent, locality}: how well the
+#     point is known. Locality-precision sites inherit extra caveats in
+#     screening output.
+#   * cooling is the best-documented cooling family; 'unknown' where operators
+#     have not disclosed. Screening always shows all cooling scenarios.
+#   * rto overrides the eGRID-subregion→NERC-area crosswalk where the site's
+#     actual RTO membership is publicly documented.
+
+sites:
+  - slug: xai-colossus-memphis
+    name: xAI Colossus 1
+    operator: xAI
+    state: TN
+    status: operating
+    lat: 35.06008
+    lon: -90.15219
+    address: 3231 Paul R Lowry Rd, Memphis, TN 38109
+    coord_precision: address
+    announced_mw: 300
+    cooling: unknown
+    notes: >
+      Retrofit of a former Electrolux plant in South Memphis (Boxtown area);
+      became the most prominent data-center EJ controversy in the U.S. after
+      unpermitted gas turbines operated on-site through 2024–25. NAACP/SELC/
+      Earthjustice litigation over the related Southaven (MS) "Colossus 2"
+      turbine plant was active as of mid-2026. TVA approved 300 MW grid
+      service for this site in late 2024.
+    citations:
+      - title: "xAI built an illegal power plant to power its data center"
+        source: Southern Environmental Law Center
+        date: "2025"
+        url: https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/
+      - title: "Colossus (data center)"
+        source: Wikipedia (background/timeline)
+        date: "2026"
+        url: https://en.wikipedia.org/wiki/Colossus_(data_center)
+      - title: "NAACP suit over Colossus gas plant; DOJ intervention"
+        source: Silicon Report / press coverage
+        date: "2026-06"
+        url: https://www.siliconreport.com/xai-colossus-memphis-supercomputer-profile-26bcb312
+
+  - slug: stargate-abilene
+    name: Stargate Site 1 (Crusoe / Lancium Clean Campus)
+    operator: Crusoe / Oracle for OpenAI
+    state: TX
+    status: operating
+    lat: 32.38300
+    lon: -99.66200
+    address: 5502 Spinks Rd, Abilene, TX (road too new for Census geocoder)
+    coord_precision: locality
+    announced_mw: 1200
+    cooling: air
+    notes: >
+      Flagship Stargate campus; ~1,100 acres, 1.2 GW secured; first buildings
+      live on Oracle Cloud Infrastructure in 2025, remaining buildings topped
+      out by 2026. Operator describes closed-loop liquid cooling with
+      air-cooled heat rejection ("designed to minimize water usage") — treated
+      here as the air-cooled scenario. A planned expansion to 2.1 GW was
+      redirected to other sites in 2026.
+    citations:
+      - title: "Crusoe announces flagship Abilene data center is live"
+        source: Crusoe (operator)
+        date: "2025"
+        url: https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live
+      - title: "Crusoe Abilene Stargate Campus (5502 Spinks Rd, 1.2 GW secured)"
+        source: DataCenterMap
+        date: "2026"
+        url: https://www.datacentermap.com/usa/texas/abilene/abilene-clean-campus/
+      - title: "OpenAI Stargate: where the US sites stand"
+        source: Epoch AI
+        date: "2026"
+        url: https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand
+
+  - slug: meta-hyperion-richland
+    name: Meta Hyperion
+    operator: Meta
+    state: LA
+    status: construction
+    lat: 32.46650
+    lon: -91.65370
+    address: Holly Ridge vicinity, Richland Parish, LA
+    coord_precision: locality
+    announced_mw: 5000
+    cooling: unknown
+    rto: MISO
+    notes: >
+      Meta's largest campus: ~2,250 acres, expanded July 2026 to a confirmed
+      5 GW / $50B+ build-out; ~2 GW expected online by 2030. Entergy is
+      building ten Meta-funded gas plants (≈5.2 GW added March 2026) plus
+      Meta-funded renewables, storage, and 240 mi of transmission — the
+      clearest case of a single data-center campus reshaping a state's
+      generation fleet. One of the poorest parishes in Louisiana.
+    citations:
+      - title: "Meta expands Richland Parish campus to 5 GW & $50bn"
+        source: Data Center Dynamics
+        date: "2026-07"
+        url: https://www.datacenterdynamics.com/en/news/meta-expands-data-center-campus-in-richland-parish-louisiana-to-5gw-will-invest-50bn/
+      - title: "Meta is more than doubling its Louisiana AI data center"
+        source: Quartz
+        date: "2026-07-13"
+        url: https://qz.com/meta-louisiana-hyperion-data-center-expansion-5-gigawatts-071326
+      - title: "$27B Meta Data Center Pushes Louisiana Toward Massive Power Expansion"
+        source: Engineering News-Record
+        date: "2026"
+        url: https://www.enr.com/articles/62766-27b-meta-data-center-pushes-louisiana-toward-massive-power-expansion
+
+  - slug: project-blue-tucson
+    name: Project Blue (Beale Infrastructure)
+    operator: Beale Infrastructure (Amazon exited 2025-12)
+    state: AZ
+    status: contested
+    lat: 32.04857
+    lon: -110.77386
+    address: Pima County Fairgrounds vicinity, SE Tucson, AZ
+    coord_precision: locality
+    announced_mw: null
+    cooling: air
+    notes: >
+      The defining water-politics siting fight of 2025–26: Pima County
+      approved land sale 3–2 (June 2025); Tucson City Council unanimously
+      rejected annexation/water service (Aug 2025) after community opposition;
+      Amazon withdrew (Dec 2025); developer continues with a revised
+      "low-water air-cooling" design on groundwater permits (~31 Mgal/yr
+      requested; ADWR approved wells May 2026). Reported load figures conflict
+      across sources, so announced_mw is left null and excluded from demand
+      modeling.
+    citations:
+      - title: "Pima County NDA confirms Amazon is behind Project Blue"
+        source: AZ Luminaria
+        date: "2025-10-01"
+        url: https://azluminaria.org/2025/10/01/pima-county-nda-confirms-amazon-is-behind-project-blue-data-center/
+      - title: "Rejected by Tucson and abandoned by Amazon, Project Blue moves forward"
+        source: KJZZ
+        date: "2025-12-09"
+        url: https://www.kjzz.org/the-show/2025-12-09/rejected-by-tucson-and-abandoned-by-amazon-project-blue-data-center-moves-forward
+      - title: "Arizona water officials approve wells tied to Project Blue"
+        source: AZPM
+        date: "2026-05-28"
+        url: https://news.azpm.org/p/azpmnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/
+
+  - slug: pw-digital-gateway
+    name: Prince William Digital Gateway (terminated)
+    operator: QTS / Compass (withdrawn)
+    state: VA
+    status: rejected
+    lat: 38.83050
+    lon: -77.55950
+    address: Pageland Lane corridor, Gainesville, VA
+    coord_precision: locality
+    announced_mw: null
+    cooling: unknown
+    rto: PJM
+    notes: >
+      Would have been the world's largest data-center campus (~2,000 acres,
+      37 buildings, up to 23M sq ft, press-reported potential of up to ~9 GW —
+      never a formal figure, so left null). Rezoning approved Dec 2023 after a
+      27-hour hearing; voided by Prince William Circuit Court (Aug 2025) for
+      defective public notice; affirmed on appeal (Mar 2026); QTS withdrew its
+      Virginia Supreme Court appeal on 2026-07-02, ending the project.
+      Included as a terminated-project case study adjacent to Manassas
+      National Battlefield Park.
+    citations:
+      - title: "Digital Gateway data center project dies after final developer withdraws appeal"
+        source: WTOP
+        date: "2026-07"
+        url: https://wtop.com/prince-william-county/2026/07/digital-gateway-data-center-project-dies-after-final-developer-withdraws-appeal/
+      - title: "Judge overturns Prince William Digital Gateway"
+        source: Prince William Times
+        date: "2025-08"
+        url: https://www.princewilliamtimes.com/news/breaking-judge-overturns-prince-william-digital-gateway/article_951d6362-1bbd-416f-89c5-ff322bf49fa8.html
+      - title: "Data center fight heads to Virginia Supreme Court"
+        source: The Washington Post
+        date: "2026-05-01"
+        url: https://www.washingtonpost.com/dc-md-va/2026/05/01/data-center-virginia-lawsuit-manassas/
+
+  - slug: meta-newton-county
+    name: Meta Newton Data Center (Stanton Springs)
+    operator: Meta
+    state: GA
+    status: operating
+    lat: 33.59850
+    lon: -83.80750
+    address: Stanton Springs, Social Circle, GA (Newton County)
+    coord_precision: locality
+    announced_mw: null
+    cooling: hybrid
+    notes: >
+      Operating campus whose construction coincided with residential well
+      failures and sediment complaints in adjacent Mansfield-area homes
+      (Newton County); reported ~500,000 gal/day usage ≈10% of county water
+      use, with the county projecting supply deficits by 2030. Meta-
+      commissioned study disputed the well linkage; EPA opened inquiries in
+      2026 after congressional pressure. Capacity not publicly disclosed
+      (investment figures only), so announced_mw is null. Cooling family set
+      to Meta's standard outside-air + evaporative-assist design.
+    citations:
+      - title: "Their water taps ran dry when Meta built next door"
+        source: New York Times (syndicated)
+        date: "2025"
+        url: https://www.sanjuandailystar.com/post/their-water-taps-ran-dry-when-meta-built-next-door
+      - title: "Meta data center impacts local water supply in Newton County"
+        source: PPC Land
+        date: "2025"
+        url: https://ppc.land/meta-data-center-impacts-local-water-supply-in-newton-county/
+      - title: "America's data centers are thirsty. Rural towns are paying the price"
+        source: Fortune
+        date: "2026-05-13"
+        url: https://fortune.com/2026/05/13/data-center-georgia-arizona-water-wars/
+
+  - slug: google-the-dalles
+    name: Google The Dalles
+    operator: Google
+    state: OR
+    status: operating
+    lat: 45.60923
+    lon: -121.19590
+    address: 1215 W 1st St, The Dalles, OR 97058
+    coord_precision: address
+    announced_mw: null
+    cooling: evaporative
+    notes: >
+      Google's original self-built campus (2006) and the canonical
+      water-transparency case: The Oregonian's public-records suit (settled
+      2023) forced disclosure; usage has since been published annually,
+      reaching ≈550 Mgal in 2025 — roughly 40% of the city's total water
+      consumption — supplied under a city deal that contemplates developing
+      additional groundwater rights. Capacity not publicly disclosed.
+    citations:
+      - title: "We now know how much water Google's Oregon data centers use"
+        source: Data Center Dynamics
+        date: "2023"
+        url: https://www.datacenterdynamics.com/en/news/we-now-know-how-much-water-googles-oregon-data-centers-use-after-city-drops-lawsuit-against-journalists/
+      - title: "Data center water use can be a 'black box.' Google aims to change that"
+        source: Latitude Media
+        date: "2026"
+        url: https://www.latitudemedia.com/news/data-center-water-use-black-box-google-trying-to-change/
+      - title: "The Dalles drops fight to keep Google water use private"
+        source: KGW / WaterWatch
+        date: "2023"
+        url: https://waterwatch.org/the-dalles-drops-fight-to-keep-google-water-use-private/
+
+  - slug: aws-rainier-new-carlisle
+    name: AWS Project Rainier
+    operator: "Amazon Web Services (workloads: Anthropic)"
+    state: IN
+    status: operating
+    lat: 41.68600
+    lon: -86.47500
+    address: New Carlisle, St. Joseph County, IN
+    coord_precision: locality
+    announced_mw: 2200
+    cooling: air
+    notes: >
+      $11B+, ~1,200-acre campus, fully operational Oct 2025; planned draw
+      2.2 GW. Documented seasonal free-air cooling (no cooling water
+      Oct–Mar; hours-per-day water use Apr–Sep) — treated as the air-cooled
+      scenario. IDEM issued a temporary halt order in 2025 over unauthorized
+      wetlands impacts; revised applications in progress as of Jan 2026. A
+      further $15B NW-Indiana expansion was announced Nov 2025.
+    citations:
+      - title: "Amazon opens $11 billion AI data center Project Rainier in Indiana"
+        source: CNBC
+        date: "2025-10-29"
+        url: https://www.cnbc.com/2025/10/29/amazon-opens-11-billion-ai-data-center-project-rainier-in-indiana.html
+      - title: "AWS Project Rainier, New Carlisle — project profile"
+        source: Blackridge Research
+        date: "2026"
+        url: https://www.blackridgeresearch.com/project-profiles/aws-project-rainier-new-carlisle-indiana-usa-data-center-supercluster-cost-contractors-timeline-latest-updates
+      - title: "Anthropic-Amazon New Carlisle"
+        source: Epoch AI data-center directory
+        date: "2026"
+        url: https://epoch.ai/data/ai-data-centers/directory/anthropic-amazon-new-carlisle
+
+  - slug: aws-susquehanna
+    name: AWS Susquehanna Campus (nuclear co-located)
+    operator: Amazon Web Services / Talen Energy PPA
+    state: PA
+    status: operating
+    lat: 41.08900
+    lon: -76.14800
+    address: Salem Township (Berwick), Luzerne County, PA
+    coord_precision: parcel-adjacent
+    announced_mw: 960
+    cooling: unknown
+    rto: PJM
+    notes: >
+      The flagship U.S. nuclear-colocation precedent: 1,200-acre campus
+      adjacent to the 2.5 GW Susquehanna Steam Electric Station, acquired
+      from Talen for $650M (2024); planned build-out to 960 MW. FERC rejected
+      the original behind-the-meter ISA (Nov 2024); restructured in 2025 as a
+      front-of-meter, 17-year PPA for up to 1.92 GW ramping to 2032. Included
+      as a low-carbon contrast case — screening still surfaces PJM adequacy
+      strain and local-burden context.
+    citations:
+      - title: "AWS acquires data center campus connected to Susquehanna nuclear station"
+        source: Power Engineering
+        date: "2024-03"
+        url: https://www.power-eng.com/nuclear/aws-acquires-data-center-campus-connected-to-susquehanna-nuclear-station/
+      - title: "Talen to sell Amazon 1.9 GW from Susquehanna nuclear plant"
+        source: Utility Dive
+        date: "2025-06"
+        url: https://www.utilitydive.com/news/talen-amazon-aws-susquehanna-nuclear-data-centert/750440/
+      - title: "Talen Energy expands nuclear energy relationship with Amazon"
+        source: Talen Energy (investor release)
+        date: "2025-06-11"
+        url: https://ir.talenenergy.com/news-releases/news-release-details/talen-energy-expands-nuclear-energy-relationship-amazon
+
+  - slug: google-council-bluffs
+    name: Google Council Bluffs
+    operator: Google
+    state: IA
+    status: operating
+    lat: 41.21956
+    lon: -95.86058
+    address: 1099 Veterans Memorial Hwy, Council Bluffs, IA 51501
+    coord_precision: address
+    announced_mw: null
+    cooling: evaporative
+    notes: >
+      Google's largest U.S. campus (operating since 2009; $20B+ invested in
+      Iowa), long presented as the favorable-siting benchmark: MidAmerican's
+      wind-heavy grid, cool climate, ample Missouri River water. Capacity not
+      publicly disclosed. Included as the low-controversy baseline — screening
+      shows what "good" looks like on these axes, and what it still doesn't
+      capture.
+    citations:
+      - title: "Google's Iowa data center buys 407 MW of wind RECs (MidAmerican)"
+        source: Environment+Energy Leader
+        date: "2015 (context)"
+        url: https://www.environmentenergyleader.com/stories/googles-iowa-data-center-buys-407-mw-of-recs,28158
+      - title: "Iowa — Google data center location"
+        source: Google (operator)
+        date: "2026"
+        url: https://datacenters.google/locations/iowa/
+      - title: "Cloud Central: Iowa's data center cluster keeps growing"
+        source: Data Center Frontier
+        date: "2023"
+        url: https://www.datacenterfrontier.com/cloud/article/11431149/cloud-central-iowa8217s-data-center-cluster-keeps-growing

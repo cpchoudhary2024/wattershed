@@ -1,0 +1,634 @@
+{
+  "site": {
+    "name": "Google Council Bluffs",
+    "lat": 41.21956,
+    "lon": -95.86058,
+    "slug": "google-council-bluffs",
+    "address": "1099 Veterans Memorial Hwy, Council Bluffs, IA 51501",
+    "operator": "Google",
+    "status": "operating",
+    "it_mw": null,
+    "cooling": "evaporative",
+    "coord_precision": "address",
+    "provenance": [
+      {
+        "title": "Google's Iowa data center buys 407 MW of wind RECs (MidAmerican)",
+        "source": "Environment+Energy Leader",
+        "date": "2015 (context)",
+        "url": "https://www.environmentenergyleader.com/stories/googles-iowa-data-center-buys-407-mw-of-recs,28158"
+      },
+      {
+        "title": "Iowa — Google data center location",
+        "source": "Google (operator)",
+        "date": "2026",
+        "url": "https://datacenters.google/locations/iowa/"
+      },
+      {
+        "title": "Cloud Central: Iowa's data center cluster keeps growing",
+        "source": "Data Center Frontier",
+        "date": "2023",
+        "url": "https://www.datacenterfrontier.com/cloud/article/11431149/cloud-central-iowa8217s-data-center-cluster-keeps-growing"
+      }
+    ],
+    "notes": "Google's largest U.S. campus (operating since 2009; $20B+ invested in Iowa), long presented as the favorable-siting benchmark: MidAmerican's wind-heavy grid, cool climate, ample Missouri River water. Capacity not publicly disclosed. Included as the low-controversy baseline — screening shows what \"good\" looks like on these axes, and what it still doesn't capture.\n"
+  },
+  "geo": {
+    "tract_geoid": "19155031900",
+    "county_fips": "19155",
+    "county_name": "Pottawattamie",
+    "state_abbr": "IA",
+    "state_name": "Iowa",
+    "tract_population": 3602.0,
+    "matched_address": ""
+  },
+  "tier": "Elevated",
+  "tier_reasons": [
+    "Pillar scores: grid 78, burden 42, water 14."
+  ],
+  "water": {
+    "pillar": "water",
+    "score": 14.5,
+    "band": "low",
+    "indicators": [
+      {
+        "id": "aqueduct_bws",
+        "label": "Baseline water stress (WRI Aqueduct 4.0, sub-basin)",
+        "value": 0.0546350818687251,
+        "display": "Low (<10%)",
+        "unit": "withdrawals ÷ renewable supply",
+        "percentile": null,
+        "source_id": "aqueduct40",
+        "vintage": "1979–2019 baseline (pub. 2023)",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "usdm_5yr_dsci",
+        "label": "5-year mean drought severity (county DSCI)",
+        "value": 199.8,
+        "display": "200 / 500 · D2+ in 24% of weeks",
+        "unit": "DSCI (0–500)",
+        "percentile": null,
+        "source_id": "usdm_county_history",
+        "vintage": "2021-07-16 → 2026-07-16",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "usdm_current",
+        "label": "Current drought status (USDM weekly map)",
+        "value": null,
+        "display": "None",
+        "unit": "",
+        "percentile": null,
+        "source_id": "usdm_current",
+        "vintage": "map of 2026-07-14",
+        "retrieved": "2026-07-17T02:43:27Z",
+        "confidence": "high",
+        "note": "Transient signal — a single wet or dry week should not drive siting; weighted 20%.",
+        "missing": false
+      }
+    ],
+    "drivers": [],
+    "data_gaps": [],
+    "components": {
+      "structural": 5.0,
+      "chronic": 40.0,
+      "current": 0.0
+    }
+  },
+  "grid": {
+    "pillar": "grid",
+    "score": 78.2,
+    "band": "severe",
+    "indicators": [
+      {
+        "id": "egrid_co2e_rate",
+        "label": "Grid carbon intensity — MRO West (MROW)",
+        "value": 927.0,
+        "display": "927 lb CO₂e/MWh (P70 of U.S. subregions)",
+        "unit": "lb CO₂e/MWh (annual output rate)",
+        "percentile": 70.4,
+        "source_id": "egrid2023",
+        "vintage": "calendar 2023 (eGRID2023 rev.2, pub. June 2025)",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "Annual average rate — not marginal emissions; see limitations.",
+        "missing": false
+      },
+      {
+        "id": "egrid_mix",
+        "label": "Generation mix (subregion)",
+        "value": null,
+        "display": "49% fossil · 51% carbon-free",
+        "unit": "",
+        "percentile": null,
+        "source_id": "egrid2023",
+        "vintage": "calendar 2023",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "nerc_ltra_risk",
+        "label": "Resource-adequacy risk — MISO",
+        "value": null,
+        "display": "HIGH (first High year: 2028)",
+        "unit": "",
+        "percentile": null,
+        "source_id": "nerc_ltra_2025",
+        "vintage": "2025 LTRA (pub. Jan 2026), 2026–2030 window",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "MROW spans MISO-West and part of SPP; mapped to MISO (larger share). Both are elevated-or-high areas.",
+        "missing": false
+      }
+    ],
+    "drivers": [
+      "Subregion emission rate (927 lb CO₂e/MWh) is in the top 30% nationally.",
+      "NERC classifies MISO as HIGH resource-adequacy risk (first High year: 2028) — new large loads directly deepen the projected shortfall."
+    ],
+    "data_gaps": [],
+    "components": {
+      "carbon": 70.4,
+      "strain": 90.0
+    }
+  },
+  "burden": {
+    "pillar": "burden",
+    "score": 41.5,
+    "band": "low",
+    "indicators": [
+      {
+        "id": "pm25",
+        "label": "PM2.5 concentration",
+        "value": 7.497,
+        "display": "7.5",
+        "unit": "",
+        "percentile": 30.8,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "ozone",
+        "label": "Ozone concentration",
+        "value": 54.982,
+        "display": "55",
+        "unit": "",
+        "percentile": 23.8,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "no2",
+        "label": "NO₂ concentration",
+        "value": 5.65,
+        "display": "5.65",
+        "unit": "",
+        "percentile": 31.1,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "diesel_pm",
+        "label": "Diesel particulate matter",
+        "value": 0.121,
+        "display": "0.121",
+        "unit": "",
+        "percentile": 36.8,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "AirToxScreen 2020",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "rsei_air_toxics",
+        "label": "Toxic releases to air (RSEI-modeled)",
+        "value": 1057.738,
+        "display": "1.06e+03",
+        "unit": "",
+        "percentile": 60.8,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "traffic_proximity",
+        "label": "Traffic proximity & volume",
+        "value": 1453750.272,
+        "display": "1.45e+06",
+        "unit": "",
+        "percentile": 64.4,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "npl_proximity",
+        "label": "Superfund (NPL) site proximity",
+        "value": 0.186,
+        "display": "0.186",
+        "unit": "",
+        "percentile": 69.9,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "rmp_proximity",
+        "label": "RMP (chemical-accident) facility proximity",
+        "value": 1.527,
+        "display": "1.53",
+        "unit": "",
+        "percentile": 90.0,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "tsdf_proximity",
+        "label": "Hazardous-waste TSDF proximity",
+        "value": 1.002,
+        "display": "1",
+        "unit": "",
+        "percentile": 45.6,
+        "source_id": "ejscreen_v232_replica",
+        "vintage": "EJScreen 2.32 (2024)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "tri_count_5km",
+        "label": "TRI facilities within 5 km (live rebuild)",
+        "value": 5.0,
+        "display": "5 facilities",
+        "unit": "",
+        "percentile": 48.6,
+        "source_id": "frs_national",
+        "vintage": "FRS snapshot at build date",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "pct_low_income",
+        "label": "Low-income share (<2× poverty)",
+        "value": 18.013,
+        "display": "18.0%",
+        "unit": "",
+        "percentile": 28.2,
+        "source_id": "acs_2023_5yr",
+        "vintage": "ACS 2019–2023",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "pct_unemployed",
+        "label": "Unemployment rate",
+        "value": 4.92,
+        "display": "4.9%",
+        "unit": "",
+        "percentile": 55.2,
+        "source_id": "acs_2023_5yr",
+        "vintage": "ACS 2019–2023",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "pct_limited_english_hh",
+        "label": "Limited-English households",
+        "value": 1.686,
+        "display": "1.7%",
+        "unit": "",
+        "percentile": 52.4,
+        "source_id": "acs_2023_5yr",
+        "vintage": "ACS 2019–2023",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "pct_no_hs_diploma",
+        "label": "Adults without HS diploma",
+        "value": 3.076,
+        "display": "3.1%",
+        "unit": "",
+        "percentile": 17.2,
+        "source_id": "acs_2023_5yr",
+        "vintage": "ACS 2019–2023",
+        "retrieved": "",
+        "confidence": "high",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "pct_adult_asthma",
+        "label": "Adult asthma prevalence",
+        "value": 9.9,
+        "display": "9.9%",
+        "unit": "",
+        "percentile": 34.2,
+        "source_id": "cdc_places_2024",
+        "vintage": "CDC PLACES 2024 (BRFSS 2022)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      },
+      {
+        "id": "pct_fair_poor_health",
+        "label": "Fair/poor self-rated health",
+        "value": 15.0,
+        "display": "15.0%",
+        "unit": "",
+        "percentile": 23.4,
+        "source_id": "cdc_places_2024",
+        "vintage": "CDC PLACES 2024 (BRFSS 2022)",
+        "retrieved": "",
+        "confidence": "medium",
+        "note": "",
+        "missing": false
+      }
+    ],
+    "drivers": [],
+    "data_gaps": [],
+    "components": {
+      "pollution_domain": 50.2,
+      "vulnerability_domain": 35.1
+    }
+  },
+  "demand": null,
+  "mitigations": [
+    {
+      "pillar": "grid",
+      "title": "Pair the load with new clean firm capacity or storage-backed PPAs",
+      "detail": "In NERC elevated/high-risk areas, additionality matters more than RECs: bring new dispatchable-clean or storage-firmed generation to the same grid, sized to the campus.",
+      "precedent": "AWS–Talen Susquehanna nuclear colocation (PA); Google–NV Energy 115 MW geothermal Clean Transition Tariff (2024)."
+    },
+    {
+      "pillar": "grid",
+      "title": "Design for curtailable / flexible operation",
+      "detail": "Registering training-class load as curtailable during grid emergencies converts the facility from a reliability liability into a demand-response asset.",
+      "precedent": "ERCOT's 2025 large-load curtailment framework (SB6, Texas); Google's demand-response commitments with Indiana Michigan Power (2025)."
+    }
+  ],
+  "neighborhood": {
+    "radius_km": 5.0,
+    "tracts": 9,
+    "population": 24476,
+    "cbi_percentile": 77.700241089898,
+    "pct_low_income": 39.01497268863013,
+    "pct_people_of_color": 21.31884294819415,
+    "pct_adult_asthma": 10.879498284033337,
+    "pm25": 7.606546080357152,
+    "tract_pollution_domain": 50.2,
+    "tract_vulnerability_domain": 35.1,
+    "tract_cbi_raw": 17.6,
+    "tract_pct_people_of_color": 8.4,
+    "tract_tract_population": 3602,
+    "_grid_mix": {
+      "coal": 0.352,
+      "oil": 0.001,
+      "gas": 0.131,
+      "other_fossil": 0.002,
+      "nuclear": 0.078,
+      "hydro": 0.041,
+      "biomass": 0.007,
+      "wind": 0.376,
+      "solar": 0.012,
+      "geothermal": 0.0,
+      "other": 0.001
+    }
+  },
+  "nearby_facilities": [
+    {
+      "name": "Omaha Standard Llc",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 0.24
+    },
+    {
+      "name": "Baltzell Agri-Products Inc",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 0.5
+    },
+    {
+      "name": "Plumrose Dba Swift Prepared Foods - Plant #2 (Cb2)",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 1.49
+    },
+    {
+      "name": "West Iowa Tool & Die Inc",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 1.99
+    },
+    {
+      "name": "Buckeye Terminal Llc - Council Bluffs",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 2.72
+    },
+    {
+      "name": "Growmark Lubricants",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 2.73
+    },
+    {
+      "name": "Red Giant Oil Company",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 3.02
+    },
+    {
+      "name": "Plumrose Dba Jbs Prepared Foods - Council Bluffs 1",
+      "city": "Council Bluffs",
+      "state": "IA",
+      "dist_km": 3.16
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "acs_2023_5yr",
+      "name": "American Community Survey 2019–2023 5-year, tract tables (bulk summary file)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/",
+      "vintage": "pooled 2019–2023",
+      "license": "Public domain.",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": "Tables C17002, B23025, C16002, B15003, B03002, B01003."
+    },
+    {
+      "source_id": "aqueduct40",
+      "name": "WRI Aqueduct 4.0 — baseline water stress (bws), annual, sub-basin",
+      "provider": "World Resources Institute",
+      "url": "https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip",
+      "vintage": "baseline period 1979–2019 (published 2023)",
+      "license": "CC BY 4.0 — attribution: 'Kuzma et al. (2023). Aqueduct 4.0, World Resources Institute.'",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": ""
+    },
+    {
+      "source_id": "cdc_places_2024",
+      "name": "CDC PLACES 2024 release — census-tract health outcomes",
+      "provider": "CDC (data.cdc.gov, Socrata)",
+      "url": "https://data.cdc.gov/resource/cwsq-ngmh.json",
+      "vintage": "model year 2022 (BRFSS 2022, released 2024)",
+      "license": "Public domain.",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": "Measures: CASTHMA (adult asthma), GHLTH (fair/poor self-rated health)."
+    },
+    {
+      "source_id": "census_geocoder",
+      "name": "U.S. Census Bureau geocoder (address & coordinate → tract/county)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://geocoding.geo.census.gov/geocoder/",
+      "vintage": "current TIGER benchmark",
+      "license": "Public domain.",
+      "retrieved": "2026-07-17T03:21:20Z",
+      "notes": ""
+    },
+    {
+      "source_id": "curated_sites",
+      "name": "Wattershed hand-curated data-center site registry",
+      "provider": "this repository (manually compiled from cited public reporting)",
+      "url": "data/curated/sites.yaml",
+      "vintage": "per-site citation dates in the registry",
+      "license": "MIT (compilation); each fact cites its public source.",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": "NOT exhaustive and NOT authoritative — see per-site provenance blocks."
+    },
+    {
+      "source_id": "egrid2023",
+      "name": "EPA eGRID2023 (rev. 2, June 2025) — subregion emission rates, fuel mix, net generation",
+      "provider": "U.S. EPA",
+      "url": "https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx",
+      "vintage": "calendar 2023 operations",
+      "license": "Public domain (U.S. federal work).",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": ""
+    },
+    {
+      "source_id": "egrid_subregions_gis",
+      "name": "EPA eGRID2023 subregion boundaries (shapefile)",
+      "provider": "U.S. EPA",
+      "url": "https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip",
+      "vintage": "eGRID2023 topology",
+      "license": "Public domain (U.S. federal work).",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": ""
+    },
+    {
+      "source_id": "ejscreen_v232_replica",
+      "name": "EPA EJScreen 2.32 tract data (community-restored replica)",
+      "provider": "Public Environmental Data Partners (original: U.S. EPA)",
+      "url": "https://screening-tools.com/epa-ejscreen",
+      "vintage": "EJScreen 2.32 (2024 release; ACS 2018–2022 inputs; AirToxScreen 2020)",
+      "license": "Public domain (U.S. federal work product, community-rehosted).",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": "EPA removed EJScreen from public access in February 2025. Five pollution-burden fields (PM2.5, ozone, diesel PM, air-toxics cancer risk, traffic proximity) are taken from the restored final release because their upstream models (AirToxScreen, FHWA AADT fusion) are impractical to rebuild live. Vintage is frozen and flagged."
+    },
+    {
+      "source_id": "frs_national",
+      "name": "EPA Facility Registry Service — national geocoded facility file",
+      "provider": "U.S. EPA",
+      "url": "https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip",
+      "vintage": "rolling (snapshot at retrieval date)",
+      "license": "Public domain.",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": "Used for TRI / Superfund (SEMS) / RCRA facility proximity."
+    },
+    {
+      "source_id": "nerc_ltra_2025",
+      "name": "NERC 2025 Long-Term Reliability Assessment — resource-adequacy risk categories",
+      "provider": "North American Electric Reliability Corporation",
+      "url": "https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_LTRA_2025.pdf",
+      "vintage": "assessment horizon 2026–2035 (published Dec 2025)",
+      "license": "Publicly released assessment; categorical risk designations transcribed to data/reference/nerc_ltra.csv.",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": ""
+    },
+    {
+      "source_id": "usdm_county_history",
+      "name": "U.S. Drought Monitor — county drought-severity time series",
+      "provider": "NDMC data services (usdmdataservices.unl.edu)",
+      "url": "https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent",
+      "vintage": "weekly series, 2000–present",
+      "license": "Public (same courtesy line as USDM).",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": ""
+    },
+    {
+      "source_id": "usdm_current",
+      "name": "U.S. Drought Monitor — current weekly map",
+      "provider": "NDMC / USDA / NOAA (Univ. of Nebraska–Lincoln)",
+      "url": "https://droughtmonitor.unl.edu/data/shapefiles_m/USDM_current_M.zip",
+      "vintage": "updated weekly (Thursday release)",
+      "license": "Public. Courtesy line: 'The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration.'",
+      "retrieved": "2026-07-17T02:43:27Z",
+      "notes": ""
+    },
+    {
+      "source_id": "usgs_wateruse_2015",
+      "name": "USGS Estimated Use of Water in the U.S. — county-level, 2015",
+      "provider": "U.S. Geological Survey (ScienceBase)",
+      "url": "https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8",
+      "vintage": "calendar 2015 (most recent complete county compilation)",
+      "license": "Public domain (USGS). doi:10.5066/F7TB15V5",
+      "retrieved": "2026-07-17T03:21:21Z",
+      "notes": "2015 remains the latest full county water-use census; flagged LOW-confidence for change-sensitive counties."
+    }
+  ],
+  "limitations": [
+    "Tract-level indicators describe the area around a point, not the parcel itself; a site on a tract boundary inherits its containing tract's profile.",
+    "eGRID rates are annual average (location-based) intensities, not marginal emissions; actual incremental emissions depend on dispatch and contracted supply.",
+    "County public-supply denominators are from the 2015 USGS compilation — the latest complete county water-use census; fast-growing counties will have shifted.",
+    "Five pollution indicators are frozen at EPA EJScreen 2.32 vintage (2024 release) because EPA withdrew the tool in Feb 2025; they no longer update.",
+    "All demand figures are modeled from published engineering factors, not measured facility data.",
+    "The neighborhood summary assigns tracts by population-weighted centroid distance, an approximation of true buffer intersection."
+  ],
+  "generated_at": "2026-07-17T03:21:21Z",
+  "tool_version": "0.1.0"
+}

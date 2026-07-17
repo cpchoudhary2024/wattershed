@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wattershed screening — {{ s.site.name }}</title>
+<style>
+  :root{
+    --surface:#fcfcfb; --page:#f9f9f7; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --seq:#2a78d6; --seq-deep:#1c5cab;
+  }
+  *{box-sizing:border-box; margin:0}
+  html{color-scheme:light}
+  body{background:var(--page); color:var(--ink);
+       font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; padding:32px 16px}
+  .doc{max-width:880px; margin:0 auto; background:var(--surface);
+       border:1px solid var(--border); border-radius:10px; padding:44px 48px}
+  h1{font-size:26px; line-height:1.2; letter-spacing:-0.01em}
+  h2{font-size:15px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-2);
+     margin:36px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--grid)}
+  h3{font-size:15px; margin:14px 0 6px}
+  p{margin:6px 0}
+  .brand{display:flex; justify-content:space-between; align-items:baseline;
+         border-bottom:2px solid var(--ink); padding-bottom:10px; margin-bottom:20px}
+  .brand .logo{font-weight:700; font-size:15px; letter-spacing:0.02em}
+  .brand .logo span{color:var(--seq-deep)}
+  .brand .kind{color:var(--muted); font-size:12.5px}
+  .meta{color:var(--ink-2); font-size:13.5px; margin-top:6px}
+  .tierline{display:flex; gap:12px; align-items:center; margin:18px 0 4px; flex-wrap:wrap}
+  .badge{display:inline-block; padding:5px 14px; border-radius:999px; font-weight:700;
+         font-size:14px; border:1.5px solid currentColor}
+  .statusnote{font-size:12.5px; color:var(--muted)}
+  .tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0 4px}
+  .tile{border:1px solid var(--border); border-radius:8px; padding:12px 14px}
+  .tile .lbl{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-2)}
+  .tile .val{font-size:30px; font-weight:700; margin:2px 0}
+  .tile .band{font-size:12.5px; font-weight:600}
+  .meter{height:6px; background:var(--grid); border-radius:4px; margin-top:8px; overflow:hidden}
+  .meter i{display:block; height:100%; border-radius:4px}
+  table{width:100%; border-collapse:collapse; font-size:13.5px; margin:8px 0}
+  th{color:var(--ink-2); font-weight:600; text-align:left; padding:7px 10px 5px;
+     border-bottom:1px solid var(--baseline); font-size:12px; text-transform:uppercase; letter-spacing:0.05em}
+  td{padding:7px 10px; border-bottom:1px solid var(--grid); vertical-align:top}
+  td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .pbar{display:flex; align-items:center; gap:8px; min-width:130px}
+  .pbar .track{flex:1; height:6px; background:var(--grid); border-radius:4px; overflow:hidden}
+  .pbar .track i{display:block; height:100%; background:var(--seq); border-radius:4px}
+  .pbar .v{font-variant-numeric:tabular-nums; font-size:12.5px; color:var(--ink-2); width:34px; text-align:right}
+  .conf{font-size:11px; padding:1.5px 7px; border-radius:999px; border:1px solid var(--border); color:var(--ink-2); white-space:nowrap}
+  .missing{color:var(--muted); font-style:italic}
+  ul{padding-left:20px; margin:6px 0}
+  li{margin:4px 0}
+  .drivers li{font-weight:500}
+  .note{font-size:12.5px; color:var(--ink-2); background:var(--page);
+        border:1px solid var(--grid); border-radius:6px; padding:8px 12px; margin:8px 0}
+  .mixbar{display:flex; height:26px; border-radius:6px; overflow:hidden; margin:10px 0 6px; background:var(--grid)}
+  .mixbar div{display:flex; align-items:center; justify-content:center; font-size:11px;
+              font-weight:600; color:#fff; margin-right:2px}
+  .mixbar div:last-child{margin-right:0}
+  .legend{display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:var(--ink-2); margin-bottom:6px}
+  .legend i{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:5px; vertical-align:-1px}
+  .mit{border-left:3px solid var(--seq); padding:2px 0 2px 12px; margin:12px 0}
+  .mit .prec{font-size:12.5px; color:var(--ink-2); margin-top:3px}
+  .prov{font-size:12px}
+  .prov td{padding:5px 8px}
+  .foot{margin-top:34px; padding-top:14px; border-top:1px solid var(--baseline);
+        font-size:11.5px; color:var(--muted)}
+  .foot p{margin:4px 0}
+  a{color:var(--seq-deep); text-decoration:none}
+  @media print{
+    body{background:#fff; padding:0}
+    .doc{border:none; border-radius:0; padding:24px; max-width:none}
+    .tile .val{font-size:24px}
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <div class="brand">
+    <div class="logo">WATTER<span>SHED</span></div>
+    <div class="kind">Environmental siting screen · v{{ s.tool_version }} · generated {{ s.generated_at[:10] }}</div>
+  </div>
+
+  <h1>{{ s.site.name }}</h1>
+  <p class="meta">
+    {{ s.site.operator or "Operator undisclosed" }} · {{ s.geo.county_name }} County, {{ s.geo.state_abbr }}
+    · census tract {{ s.geo.tract_geoid }} · {{ "%.4f"|format(s.site.lat) }}, {{ "%.4f"|format(s.site.lon) }}
+    ({{ s.site.coord_precision }} precision)
+    {% if s.site.status %} · status: <strong>{{ s.site.status }}</strong>{% endif %}
+    {% if s.site.it_mw %} · announced capacity: <strong>{{ s.site.it_mw|fmt_num }} MW</strong>{% endif %}
+  </p>
+
+  <div class="tierline">
+    <span class="badge" style="color:{{ tier_fg }}; background:{{ tier_bg }}">Screening tier: {{ s.tier.value|upper }}</span>
+    <span class="statusnote">Rule-based tier — the three pillars are deliberately not averaged (see methodology).</span>
+  </div>
+  <ul>
+    {% for r in s.tier_reasons %}<li>{{ r }}</li>{% endfor %}
+  </ul>
+
+  <div class="tiles">
+    {% for p in [s.water, s.grid, s.burden] %}
+    <div class="tile">
+      <div class="lbl">{{ {"water":"Water stress","grid":"Grid strain & carbon","burden":"Community burden"}[p.pillar] }}</div>
+      <div class="val">{{ "%.0f"|format(p.score) if p.score is not none else "—" }}<span style="font-size:14px; color:var(--muted)">/100</span></div>
+      <div class="band" style="color:{{ band_color[p.band] }}">{{ p.band }}</div>
+      <div class="meter"><i style="width:{{ p.score or 0 }}%; background:{{ band_color[p.band] }}"></i></div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if s.site.notes %}<div class="note"><strong>Site context (curated, cited):</strong> {{ s.site.notes }}</div>{% endif %}
+
+  {% for p, title in [(s.water, "Water stress"), (s.grid, "Grid strain & carbon"), (s.burden, "Cumulative community burden")] %}
+  <h2>{{ title }} — {{ "%.0f"|format(p.score) if p.score is not none else "insufficient data" }}{% if p.score is not none %}/100 ({{ p.band }}){% endif %}</h2>
+  {% if p.drivers %}
+  <ul class="drivers">{% for d in p.drivers %}<li>{{ d }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% if p.pillar == "grid" and mix_groups %}
+    <div class="mixbar">
+      {% for g in mix_groups %}<div style="width:{{ g.pct }}%; background:{{ g.color }}">{% if g.pct >= 8 %}{{ g.label }} {{ g.pct }}%{% endif %}</div>{% endfor %}
+    </div>
+    <div class="legend">{% for g in mix_groups %}<span><i style="background:{{ g.color }}"></i>{{ g.label }} {{ g.pct }}%</span>{% endfor %}</div>
+  {% endif %}
+  <table>
+    <thead><tr><th style="width:34%">Indicator</th><th>Value</th><th style="width:22%">National percentile</th><th>Vintage</th><th>Conf.</th></tr></thead>
+    <tbody>
+    {% for i in p.indicators %}
+      <tr>
+        <td>{{ i.label }}{% if i.note %}<div style="font-size:11.5px;color:var(--muted)">{{ i.note }}</div>{% endif %}</td>
+        <td class="num">{% if i.missing %}<span class="missing">no data</span>{% else %}{{ i.display }}{% endif %}</td>
+        <td>{% if i.percentile is not none %}
+          <div class="pbar"><div class="track"><i style="width:{{ i.percentile }}%"></i></div><span class="v">P{{ "%.0f"|format(i.percentile) }}</span></div>
+        {% else %}<span style="color:var(--muted)">—</span>{% endif %}</td>
+        <td style="font-size:12px; color:var(--ink-2)">{{ i.vintage }}</td>
+        <td><span class="conf">{{ i.confidence.value }}</span></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% if p.data_gaps %}
+  <div class="note"><strong>Data notes:</strong> {% for g in p.data_gaps %}{{ g }} {% endfor %}</div>
+  {% endif %}
+  {% endfor %}
+
+  {% if s.demand %}
+  <h2>Modeled resource demand — {{ s.demand.it_mw|fmt_num }} MW IT @ {{ (s.demand.utilization*100)|round|int }}% utilization</h2>
+  <p class="meta">All values are engineering estimates from published factors (LBNL 2024; Macknick 2012; eGRID2023) — not measured facility data. IT energy: {{ (s.demand.it_energy_mwh_yr/1e6)|round(2) }} TWh/yr.</p>
+  <table>
+    <thead><tr><th>Cooling scenario</th><th>PUE</th><th>Site WUE (L/kWh IT)</th><th>Facility energy</th><th>Cooling water</th><th>vs county public supply</th><th>CO₂e (grid)</th></tr></thead>
+    <tbody>
+    {% for sc in s.demand.scenarios %}
+      <tr {% if sc.cooling == s.site.cooling.value %}style="background:var(--page); font-weight:600"{% endif %}>
+        <td>{{ sc.cooling }}{% if sc.cooling == s.site.cooling.value %} ◂ site design{% endif %}</td>
+        <td class="num">{{ sc.pue }}</td>
+        <td class="num">{{ sc.wue_l_per_kwh_it }}</td>
+        <td class="num">{{ (sc.facility_energy_mwh_yr/1e6)|round(2) }} TWh/yr</td>
+        <td class="num">{{ sc.water_mgd }} MGD</td>
+        <td class="num">{{ sc.pct_county_public_supply ~ "%" if sc.pct_county_public_supply is not none else "—" }}</td>
+        <td class="num">{{ sc.co2e_tonnes_yr|fmt_num }} t/yr</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% if s.demand.grid_share_note %}<div class="note">{{ s.demand.grid_share_note }}</div>{% endif %}
+  {% if s.demand.indirect_water_note %}<div class="note">{{ s.demand.indirect_water_note }}</div>{% endif %}
+  {% endif %}
+
+  <h2>Neighborhood context (5 km, population-weighted)</h2>
+  {% set n = s.neighborhood %}
+  {% if n.get("tracts") %}
+  <p>{{ n.tracts }} populated tract(s), ≈{{ n.population|fmt_num }} residents within 5 km.
+     Combined burden index P{{ n.cbi_percentile|fmt0 }} ·
+     low-income {{ n.pct_low_income|fmt0 }}% ·
+     people of color {{ n.pct_people_of_color|fmt0 }}% (reported for transparency; not a scoring input) ·
+     adult asthma {{ n.pct_adult_asthma|fmt1 }}%.</p>
+  {% else %}
+  <p class="missing">No populated tracts within 5 km of the point.</p>
+  {% endif %}
+  {% if s.nearby_facilities %}
+  <h3>TRI-reporting facilities within 5 km (live EPA FRS query)</h3>
+  <table><thead><tr><th>Facility</th><th>City</th><th>Distance</th></tr></thead><tbody>
+    {% for f in s.nearby_facilities %}
+    <tr><td>{{ f.name }}</td><td>{{ f.city }}, {{ f.state }}</td><td class="num">{{ f.dist_km }} km</td></tr>
+    {% endfor %}
+  </tbody></table>
+  {% endif %}
+
+  <h2>What would reduce this site's risk</h2>
+  {% for m in s.mitigations %}
+  <div class="mit">
+    <strong>{{ m.title }}</strong> <span class="conf">{{ m.pillar }}</span>
+    <p>{{ m.detail }}</p>
+    {% if m.precedent %}<p class="prec"><strong>Precedent:</strong> {{ m.precedent }}</p>{% endif %}
+  </div>
+  {% endfor %}
+
+  {% if s.site.provenance %}
+  <h2>Curated-site citations</h2>
+  <table class="prov"><thead><tr><th>Claim source</th><th>Publisher</th><th>Date</th></tr></thead><tbody>
+    {% for c in s.site.provenance %}
+    <tr><td><a href="{{ c.url }}">{{ c.title }}</a></td><td>{{ c.source }}</td><td>{{ c.date }}</td></tr>
+    {% endfor %}
+  </tbody></table>
+  <p class="statusnote">Site facts hand-compiled from the reporting above; registry access date 2026-07-16. Not exhaustive, not authoritative.</p>
+  {% endif %}
+
+  <h2>Data provenance ledger</h2>
+  <table class="prov">
+    <thead><tr><th>Source</th><th>Provider</th><th>Data vintage</th><th>Retrieved</th></tr></thead>
+    <tbody>
+    {% for src in s.sources %}
+      <tr><td><a href="{{ src.url }}">{{ src.name }}</a></td><td>{{ src.provider }}</td>
+          <td>{{ src.vintage }}</td><td>{{ src.retrieved[:10] }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Limitations</h2>
+  <ul>
+    {% for l in s.limitations %}<li>{{ l }}</li>{% endfor %}
+  </ul>
+
+  <div class="foot">
+    <p><strong>Screening-level analysis only.</strong> This document supports early-stage siting review and public discussion. It is not an environmental impact assessment, NEPA document, or engineering due diligence, and must not be represented as one.</p>
+    <p>The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration.</p>
+    <p>Water-risk data: Kuzma et al. (2023), Aqueduct 4.0, World Resources Institute (CC BY 4.0).</p>
+    <p>Generated by Wattershed v{{ s.tool_version }} — open-source environmental screening for U.S. data center siting.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets — never commit keys
+.env
+
+# Downloaded/cached raw data (reproducible via `wattershed fetch` / build scripts)
+data/cache/
+
+# Large intermediate artifacts (rebuilt by `scripts/build_reference.py`)
+data/interim/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/

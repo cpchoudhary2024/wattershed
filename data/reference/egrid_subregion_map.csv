@@ -1,0 +1,28 @@
+subrgn,rto_label,nerc_area,map_confidence,note
+AKGD,Alaska (non-RTO),Alaska,high,
+AKMS,Alaska (non-RTO),Alaska,high,
+AZNM,WECC Southwest (non-RTO),WECC-Southwest,high,
+CAMX,CAISO,WECC-CA/MX,high,
+ERCT,ERCOT,Texas RE-ERCOT,high,
+FRCC,Florida (non-RTO),SERC-Florida-Peninsula,high,
+HIMS,Hawaii (non-RTO),Hawaii,high,
+HIOA,Hawaii (non-RTO),Hawaii,high,
+MROE,MISO,MISO,high,
+MROW,MISO/SPP,MISO,medium,"MROW spans MISO-West and part of SPP; mapped to MISO (larger share). Both are elevated-or-high areas."
+NEWE,ISO-NE,NPCC-New England,high,
+NWPP,Northwest (non-RTO),WECC-Northwest,medium,"NWPP spans WECC-Northwest and WECC-Basin; both are High-risk from 2029."
+NYCW,NYISO,NPCC-New York,high,
+NYLI,NYISO,NPCC-New York,high,
+NYUP,NYISO,NPCC-New York,high,
+PRMS,Puerto Rico,Puerto Rico,high,
+RFCE,PJM,PJM,high,
+RFCM,MISO,MISO,high,
+RFCW,PJM,PJM,medium,"RFCW is mostly PJM-West with MISO fringes; both High-risk in the 2025 LTRA window."
+RMPA,Rocky Mountain (non-RTO),WECC-RMRG,high,
+SPNO,SPP,MRO-SPP,high,
+SPSO,SPP,MRO-SPP,high,
+SRMV,MISO South,MISO,medium,"Lower Mississippi Valley is predominantly MISO-South."
+SRMW,MISO,MISO,high,
+SRSO,Southeast (non-RTO),SERC-Southeast,high,
+SRTV,Tennessee Valley (non-RTO),SERC-Central,high,
+SRVC,PJM/Carolinas,SERC-East,medium,"SRVC spans PJM (Virginia) and Carolinas (SERC-East). Virginia sites should override to PJM; curated sites carry an explicit rto override."
