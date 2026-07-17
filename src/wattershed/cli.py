@@ -192,7 +192,7 @@ def build_dashboard(
     console.print(f"Dashboard → {out_file}")
 
 
-@app.command()
+@app.command("provenance")
 def provenance_cmd():
     """Print the full registered source ledger."""
     from .provenance import SOURCES
