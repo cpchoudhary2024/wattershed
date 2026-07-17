@@ -45,8 +45,8 @@ def build_us_extract() -> Path:
     import pyogrio
 
     gdb = gdbs[0]
-    layers = [l[0] for l in pyogrio.list_layers(gdb)]
-    layer = next(l for l in layers if "baseline" in l.lower() and "annual" in l.lower())
+    layers = [entry[0] for entry in pyogrio.list_layers(gdb)]
+    layer = next(n for n in layers if "baseline" in n.lower() and "annual" in n.lower())
     # CONUS + AK + HI + PR bounding boxes
     frames = []
     for bbox in [(-125.5, 24.0, -66.0, 49.8), (-170.5, 51.0, -129.0, 71.6),

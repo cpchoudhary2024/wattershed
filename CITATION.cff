@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Wattershed: open environmental screening for U.S. data center siting"
+message: "If you use this software or its flagship analysis, please cite it."
+type: software
+version: 0.1.0
+date-released: "2026-07-17"
+license: MIT
+abstract: >
+  Screening tool combining water stress (WRI Aqueduct 4.0, U.S. Drought
+  Monitor), grid strain and carbon intensity (EPA eGRID2023, NERC 2025 LTRA),
+  and cumulative community burden (rebuilt at census-tract level from ACS,
+  CDC PLACES, EPA FRS/TRI, and the community-restored EJScreen 2.32) for
+  U.S. data center siting, with full per-value provenance.
