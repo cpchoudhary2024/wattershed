@@ -43,10 +43,16 @@ def _county_centroids(tracts: pd.DataFrame) -> pd.DataFrame:
 
     def agg(g):
         ww = g["population"].fillna(0).clip(lower=0) + 1e-9
+        # circular mean for longitude — a naive mean puts antimeridian
+        # geographies (Aleutians West) on the wrong side of the planet
+        rad = np.radians(g["intptlon"])
+        mean_lon = np.degrees(
+            np.arctan2(np.average(np.sin(rad), weights=ww), np.average(np.cos(rad), weights=ww))
+        )
         return pd.Series(
             {
                 "lat": np.average(g["intptlat"], weights=ww),
-                "lon": np.average(g["intptlon"], weights=ww),
+                "lon": mean_lon,
                 "population": g["population"].fillna(0).sum(),
                 "burden": (
                     np.average(
@@ -75,13 +81,20 @@ def build_atlas() -> pd.DataFrame:
         crs=4326,
     )
 
-    # water: BWS category at county centroid
+    # water: BWS category at county centroid; polygon-gap misses (simplified
+    # basin slivers, coastal centroids) fall back to nearest-basin lookup
     basins = gpd.read_file(config.PROCESSED_DIR / "aqueduct_bws_us.gpkg")[["bws_cat", "geometry"]]
     j = gpd.sjoin(pts, basins, how="left", predicate="within")
     j = j[~j.index.duplicated(keep="first")]
-    counties["water"] = [
-        BWS_BASE_SCORE.get(int(c)) if pd.notna(c) else None for c in j["bws_cat"]
-    ]
+    water = [BWS_BASE_SCORE.get(int(c)) if pd.notna(c) else None for c in j["bws_cat"]]
+    from ..sources import aqueduct
+
+    for i, v in enumerate(water):
+        if v is None:
+            near = aqueduct.bws_for_point(counties.loc[i, "lat"], counties.loc[i, "lon"])
+            if near and near.get("bws_cat") is not None:
+                water[i] = BWS_BASE_SCORE.get(near["bws_cat"])
+    counties["water"] = water
 
     # grid: subregion at centroid -> same 60/40 blend as sites
     sub_gdf = egrid._subregions_gdf()
@@ -89,8 +102,11 @@ def build_atlas() -> pd.DataFrame:
     j2 = j2[~j2.index.duplicated(keep="first")]
     table = egrid.subregion_table().set_index("SUBRGN")
     grid_scores, subrgns = [], []
-    for code in j2["SUBRGN"]:
+    for i, code in enumerate(j2["SUBRGN"]):
         if pd.isna(code) or code not in table.index:
+            # coastal centroids can miss the polygon edge; snap like site screening
+            code = egrid.subregion_for_point(counties.loc[i, "lat"], counties.loc[i, "lon"])
+        if code is None or code not in table.index:
             grid_scores.append(None)
             subrgns.append(None)
             continue
@@ -103,13 +119,20 @@ def build_atlas() -> pd.DataFrame:
     counties["grid"] = grid_scores
     counties["subrgn"] = subrgns
 
-    # tier from pure location signal (no demand escalators)
+    # tier from pure location signal (no demand escalators); a tier is only
+    # assigned when at least two pillars are present — otherwise it would
+    # systematically understate pressure for data-gap counties
     tiers = []
     for _, r in counties.iterrows():
+        b = None if pd.isna(r["burden"]) else float(r["burden"])
+        present = sum(v is not None for v in (r["water"], r["grid"], b))
+        if present < 2:
+            tiers.append("")
+            continue
         t, _reasons = assign_tier(
             PillarScore(pillar="water", score=r["water"], band=""),
             PillarScore(pillar="grid", score=r["grid"], band=""),
-            PillarScore(pillar="burden", score=None if pd.isna(r["burden"]) else float(r["burden"]), band=""),
+            PillarScore(pillar="burden", score=b, band=""),
         )
         tiers.append(t.value)
     counties["tier"] = tiers
