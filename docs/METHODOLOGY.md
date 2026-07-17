@@ -177,7 +177,21 @@ scenario table (never one number):
   complete county compilation — vintage flagged on every use); eGRID2023
   subregion net generation.
 
-## 7. Sensitivity: what moves when the weights move
+## 7. The national atlas (county layer)
+
+The atlas (`wattershed build-atlas`) applies the same pillar constructions
+at county resolution for all of CONUS, with three deliberate coarsenings,
+each disclosed in the dashboard legend: water uses the Aqueduct structural
+layer only (no drought climatology — 3,100 county time-series calls would
+hammer NDMC's API for marginal screening value); burden is the population-
+weighted mean of tract CBI percentiles (a smoothing that understates
+within-county hot spots); and **no tiers are painted** — with no project
+assumed there are no demand escalators, and NERC's own finding that 13 of 23
+assessment areas are at risk means action tiers saturate at national scale
+(65% of counties would read Elevated+). The atlas is a *pressure surface*
+for exploration; the site pipeline is the *screening instrument*.
+
+## 8. Sensitivity: what moves when the weights move
 
 Computed on the 10-site flagship set (all shifts are single-step; nothing
 jumps two tiers):
@@ -197,7 +211,7 @@ question. The 60/40 default reflects that carbon intensity is a measured
 quantity while the strain category is itself an assessment; users who weight
 reliability higher can change one constant and re-run.
 
-## 8. Known methodological debts
+## 9. Known methodological debts
 
 Carried openly (see LIMITATIONS.md for the full list): average-vs-marginal
 emissions; 2015 water denominators; frozen EJScreen pollution fields;

@@ -172,6 +172,60 @@ def screen_all(out_dir: Path = typer.Option(Path("out"), help="Directory for per
             console.print(f"[red]failed: {e}[/red]")
 
 
+@app.command()
+def batch(
+    input_csv: Path = typer.Argument(..., help="CSV with columns: name,lat,lon[,mw,cooling]"),
+    out_dir: Path = typer.Option(Path("out/batch"), help="Per-row JSON + memos + summary.csv"),
+):
+    """Portfolio mode: screen every row of a CSV, write a scored summary table."""
+    import csv as csv_mod
+
+    from .pipelines.screen import screen_point
+    from .report.render import render_report
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    rows = list(csv_mod.DictReader(open(input_csv)))
+    summary = []
+    for i, r in enumerate(rows):
+        name = r.get("name") or f"row-{i+1}"
+        try:
+            res = screen_point(
+                float(r["lat"]), float(r["lon"]), name=name,
+                it_mw=float(r["mw"]) if r.get("mw") else None,
+                cooling=(r.get("cooling") or "unknown").strip().lower(),
+            )
+            slug = "".join(ch if ch.isalnum() else "-" for ch in name.lower()).strip("-")
+            (out_dir / f"{slug}.json").write_text(res.to_json())
+            (out_dir / f"{slug}.html").write_text(render_report(res))
+            summary.append(
+                {
+                    "name": name, "lat": r["lat"], "lon": r["lon"],
+                    "county": f"{res.geo.county_name}, {res.geo.state_abbr}",
+                    "tier": res.tier.value,
+                    "water": res.water.score, "grid": res.grid.score, "burden": res.burden.score,
+                }
+            )
+            console.print(f"{name}: {res.tier.value}")
+        except Exception as e:
+            summary.append({"name": name, "lat": r.get("lat"), "lon": r.get("lon"),
+                            "county": "", "tier": f"ERROR: {e}", "water": None, "grid": None, "burden": None})
+            console.print(f"[red]{name}: {e}[/red]")
+    with open(out_dir / "summary.csv", "w", newline="") as f:
+        w = csv_mod.DictWriter(f, fieldnames=list(summary[0].keys()))
+        w.writeheader()
+        w.writerows(summary)
+    console.print(f"Summary → {out_dir/'summary.csv'}")
+
+
+@app.command("build-atlas")
+def build_atlas_cmd():
+    """Rebuild the national county siting-pressure atlas from committed artifacts."""
+    from .pipelines.atlas import ATLAS_PATH, build_atlas
+
+    df = build_atlas()
+    console.print(f"{len(df)} counties → {ATLAS_PATH}")
+
+
 @app.command("build-reference")
 def build_reference(skip_aqueduct: bool = typer.Option(False, help="Skip the 261 MB Aqueduct step")):
     """Rebuild the national tract reference table from primary sources."""

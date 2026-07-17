@@ -50,6 +50,7 @@ So that `git clone` → `wattershed screen` works with zero keys and no
 | `data/processed/tract_indicators.parquet` | 26 MB | 85,396 tracts × 16 indicators + national percentiles + CBI | `wattershed build-reference` |
 | `data/processed/aqueduct_bws_us.gpkg` | 21 MB | U.S. clip of Aqueduct 4.0 baseline-annual bws fields | idem |
 | `data/processed/tri_facilities.csv.gz` | 1.7 MB | geocoded TRI-linked facilities from FRS | idem |
+| `data/processed/county_atlas.csv` | <1 MB | all-county siting-pressure atlas (three pillar scores per county) | `wattershed build-atlas` (derives from the artifacts above) |
 
 `data/processed/reference_manifest.json` records build timestamps, row
 counts, and per-indicator coverage for the committed build.

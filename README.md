@@ -48,6 +48,9 @@ wattershed screen --site xai-colossus-memphis --report memphis.html
 wattershed screen-all --out-dir out
 wattershed build-dashboard
 open site/index.html
+
+# portfolio mode: score a whole CSV of candidate sites
+wattershed batch candidates.csv --out-dir out/batch   # name,lat,lon[,mw,cooling]
 ```
 
 Works offline-from-clone for the national indicator layers: the tract
@@ -85,6 +88,24 @@ sources so you can diff my build against yours.
   whichever pillar drives the tier.
 - **Provenance ledger:** every source consulted for *this* screening, with
   vintage and retrieval timestamp.
+
+## The National Siting Pressure Atlas
+
+The dashboard's second view is, to my knowledge, the first open national map
+of data-center siting pressure: **every CONUS county (3,109) scored on all
+three pillars**, computed entirely from the committed reference artifacts
+and toggleable as water / grid / burden choropleths. No project is assumed,
+so the atlas shows the pure location signal — where structural water
+scarcity, grid strain, and community burden each concentrate, and (the
+design's point) how differently they distribute. Rebuild it yourself:
+`wattershed build-atlas` → `data/processed/county_atlas.csv`.
+
+![National atlas — water stress layer](docs/img/atlas.png)
+
+Atlas honesty notes: county water uses the Aqueduct structural layer only
+(the 5-year drought climatology and weekly USDM join at site-screening
+time); atlas scores carry no demand escalators and no action tiers — tiers
+are project-screening outputs, not map paint.
 
 ## The flagship analysis
 

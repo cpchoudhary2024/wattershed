@@ -137,6 +137,48 @@ def _site_payload(results_dir: Path) -> list[dict]:
     return sites
 
 
+def _county_payload() -> list[dict]:
+    """Atlas layer: per-county SVG path + pillar scores, from the committed
+    county_atlas.csv and cartographic county boundaries."""
+    import pandas as pd
+
+    from ..pipelines import atlas as atlas_mod
+
+    if not atlas_mod.ATLAS_PATH.exists():
+        return []
+    scores = pd.read_csv(atlas_mod.ATLAS_PATH, dtype={"county": str})
+    scores["county"] = scores["county"].str.zfill(5)
+    lookup = scores.set_index("county")
+    gdf = atlas_mod.county_shapes()
+    out = []
+    for _, row in gdf.iterrows():
+        fips = row["GEOID"]
+        if fips not in lookup.index:
+            continue
+        geom = row.geometry
+        polys = geom.geoms if geom.geom_type == "MultiPolygon" else [geom]
+        d_attr = "".join(_ring_to_path(list(p.exterior.coords), row["STATEFP"]) for p in polys)
+        if not d_attr:
+            continue
+        s = lookup.loc[fips]
+
+        def num(v):
+            return None if pd.isna(v) else round(float(v), 1)
+
+        out.append(
+            {
+                "f": fips,
+                "n": f"{row['NAME']}, {row['STUSPS']}",
+                "d": d_attr,
+                "w": num(s["water"]),
+                "g": num(s["grid"]),
+                "b": num(s["burden"]),
+                "p": int(s["population"]),
+            }
+        )
+    return out
+
+
 def build(results_dir: Path, out_file: Path) -> None:
     template = (Path(__file__).parent / "template.html").read_text()
     sites = _site_payload(results_dir)
@@ -144,9 +186,11 @@ def build(results_dir: Path, out_file: Path) -> None:
     build_date = ""
     if manifest_path.exists():
         build_date = json.loads(manifest_path.read_text()).get("build_date", "")
+    counties = _county_payload()
     html = (
         template.replace("<!--__MAP_PATHS__-->", build_state_paths())
         .replace("/*__SITE_DATA__*/", "const SITES = " + json.dumps(sites) + ";")
+        .replace("/*__COUNTY_DATA__*/", "const COUNTIES = " + json.dumps(counties, separators=(",", ":")) + ";")
         .replace("__BUILD_DATE__", build_date or "n/a")
         .replace("__GEN_DATE__", sites[0]["generated"] if sites else "")
     )
