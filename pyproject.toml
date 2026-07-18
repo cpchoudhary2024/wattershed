@@ -9,7 +9,7 @@ description = "Open environmental screening for U.S. data center siting: water s
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "PolyForm-Noncommercial-1.0.0" }
-authors = [{ name = "cpchoudhary2024" }]
+authors = [{ name = "Chandra Prakash Choudhary" }]
 keywords = [
   "environmental-screening",
   "data-centers",
