@@ -187,5 +187,9 @@ Institute (CC BY 4.0). Grid data: EPA eGRID2023. Reliability categories:
 NERC 2025 LTRA. Burden inputs: U.S. Census Bureau, CDC, EPA, and the Public
 Environmental Data Partners' restored EJScreen 2.32.
 
-MIT licensed. Built as an open portfolio project in environmental
-engineering; issues and corrections welcome.
+© 2026 cpchoudhary2024. Licensed under the **PolyForm Noncommercial License
+1.0.0** — free to read, run, reproduce, fork, and share for any noncommercial
+purpose (research, journalism, education, nonprofits, environmental and
+government use all expressly permitted); commercial use requires a separate
+license from the author. See [LICENSE](LICENSE). Issues and corrections
+welcome.

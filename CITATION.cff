@@ -4,7 +4,7 @@ message: "If you use this software or its flagship analysis, please cite it."
 type: software
 version: 0.1.0
 date-released: "2026-07-17"
-license: MIT
+license: PolyForm-Noncommercial-1.0.0
 abstract: >
   Screening tool combining water stress (WRI Aqueduct 4.0, U.S. Drought
   Monitor), grid strain and carbon intensity (EPA eGRID2023, NERC 2025 LTRA),
