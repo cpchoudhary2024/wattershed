@@ -107,19 +107,19 @@ def neighborhood(lat: float, lon: float, radius_km: float | None = None) -> dict
         + np.cos(lat_r) * np.cos(tlat) * np.sin((tlon - lon_r) / 2) ** 2
     )
     dist = 2 * 6371.0088 * np.arcsin(np.sqrt(a))
-    sub = t[dist <= radius_km]
+    # populated tracts only — matches the scoring basis in neighborhood_row(),
+    # so the reported tract count never overstates what the score rests on
+    sub = t[(dist <= radius_km) & (t["population"].fillna(0) > 0)]
     if sub.empty:
         return None
-    w = sub["population"].fillna(0).clip(lower=0).values
-    if w.sum() <= 0:
-        return None
+    w = sub["population"].values.astype(float)
 
     def wmean(col: str) -> float | None:
         v = sub[col].values.astype(float)
         m = ~np.isnan(v)
         if not m.any():
             return None
-        return float(np.average(v[m], weights=np.maximum(w[m], 1)))
+        return float(np.average(v[m], weights=w[m]))
 
     return {
         "radius_km": radius_km,

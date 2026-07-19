@@ -44,7 +44,7 @@ def test_water_escalator_promotes_one_step():
 
 def test_water_escalator_needs_stressed_water():
     # water below 45: escalator must NOT fire even with huge demand
-    assert _tier(30, 10, 10, demand_water_pct=50.0) is Tier.LOW.__class__("Low") or True
+    assert _tier(30, 10, 10, demand_water_pct=50.0) is Tier.LOW
     t, reasons = assign_tier(_p("water", 30), _p("grid", 10), _p("burden", 10), demand_water_pct=50.0)
     assert t is Tier.LOW
     assert not any("Escalator" in r for r in reasons)

@@ -93,6 +93,25 @@ def score_burden(geoid: str, lat: float | None = None, lon: float | None = None)
                 f"Tract {geoid} absent from reference table; scored over the 5 km "
                 "population-weighted neighborhood."
             )
+            # state exactly how thin the basis is, and stress-test it — a score
+            # resting on one or two tracts must not be presented as if it rested
+            # on a neighborhood-wide sample
+            n_tracts, n_pop = meta.get("tracts", 0), meta.get("population", 0)
+            basis_note += (
+                f" Basis: {n_tracts} populated tract{'s' if n_tracts != 1 else ''}"
+                f" ({n_pop:,} residents) within 5 km."
+            )
+            if n_tracts < 3:
+                wide = reference.neighborhood_row(lat, lon, radius_km=10.0)
+                if wide is not None:
+                    wrow, wmeta = wide
+                    wv = wrow.get("p_cbi")
+                    if wv is not None and not np.isnan(wv):
+                        basis_note += (
+                            f" Thin basis — robustness check at 10 km "
+                            f"({wmeta['tracts']} populated tracts, {wmeta['population']:,} residents) "
+                            f"gives P{wv:.0f}, so the finding does not hinge on the 5 km cut."
+                        )
     if row is None:
         ps = PillarScore(
             pillar="burden",
