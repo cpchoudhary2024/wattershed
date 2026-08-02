@@ -80,7 +80,11 @@
   .rs .bd{font-size:12px; font-weight:600}
   .rs .meter{height:5px; background:var(--grid); border-radius:3px; margin-top:6px; overflow:hidden}
   .rs .meter i{display:block; height:100%; border-radius:3px}
-  .result .foot{font-size:12px; color:var(--ink2); margin-top:10px}
+  .result .plain{margin-top:14px; font-size:14px; line-height:1.5}
+  .result .plain ul{margin:6px 0 0; padding-left:18px}
+  .result .plain li{margin:3px 0}
+  .result .foot{font-size:12px; color:var(--ink2); margin-top:12px}
+  .rs .lbl[title]{cursor:help}
   .result .foot code{background:var(--page); border:1px solid var(--grid); border-radius:4px; padding:1px 6px}
   .grid2{display:grid; grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr); gap:16px; align-items:start}
   @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
@@ -135,6 +139,16 @@
   .mini{display:inline-block; width:66px; height:6px; background:var(--grid); border-radius:3px; overflow:hidden; vertical-align:middle; margin-right:6px}
   .mini i{display:block; height:100%; background:var(--seq)}
   .num{font-variant-numeric:tabular-nums; text-align:right}
+  .findings{margin-top:28px}
+  .findings h2{font-size:18px; margin:0 0 14px}
+  .fgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  @media (max-width:820px){ .fgrid{grid-template-columns:1fr} }
+  .fcard{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px}
+  .fcard h3{font-size:15.5px; margin:6px 0 8px; line-height:1.3}
+  .fcard p{font-size:13.5px; color:var(--ink2); line-height:1.55; margin:0 0 8px}
+  .ftag{font-size:11px; text-transform:uppercase; letter-spacing:0.06em; font-weight:700; color:var(--accent)}
+  .fcard a{color:var(--accent); text-decoration:none; font-weight:600}
+  .fcard .dl{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; font-size:13px}
   footer{margin-top:28px; font-size:12.5px; color:var(--ink2); line-height:1.65}
   footer h2{font-size:13px; text-transform:uppercase; letter-spacing:0.07em; color:var(--ink2); margin:18px 0 6px}
   footer a{color:var(--accent); text-decoration:none}
@@ -251,6 +265,40 @@
       </tr></thead>
       <tbody></tbody>
     </table>
+    </div>
+  </div>
+
+  <div class="findings">
+    <h2>What this project found (and what you can take with you)</h2>
+    <div class="fgrid">
+      <div class="fcard">
+        <div class="ftag">Original finding</div>
+        <h3>The three pressures don't move together</h3>
+        <p>Scoring all 3,109 U.S. counties, water stress, grid strain, and community burden correlate at
+        a maximum of r = 0.15 — effectively independent. A single blended "environmental score" for
+        siting throws away most of the signal, which is why this tool refuses to produce one.</p>
+      </div>
+      <div class="fcard">
+        <div class="ftag">Blind validation</div>
+        <h3>Siting fights are political, not environmental</h3>
+        <p>On 46 real sites labeled before scoring, the screen did <em>not</em> predict where opposition
+        happens (all AUCs 0.44–0.55). The most environmentally burdened site in the set drew no
+        opposition, while several fiercely contested sites were low-burden affluent suburbs. The tool
+        surfaces burden the political map misses. <a href="https://github.com/cpchoudhary2024/wattershed/blob/main/docs/VALIDATION.md">Read the study →</a></p>
+      </div>
+      <div class="fcard">
+        <div class="ftag">Open data · free to use</div>
+        <h3>An open cumulative-burden layer, rebuilt after EJScreen went offline</h3>
+        <p>EPA withdrew EJScreen and CEJST in 2025. This project rebuilds a tract-level cumulative
+        environmental-burden index across all 85,396 U.S. census tracts from primary sources — and
+        publishes it openly for anyone to download, check, and reuse.</p>
+        <p class="dl">
+          <a href="https://github.com/cpchoudhary2024/wattershed/raw/main/data/processed/county_atlas.csv">↓ County atlas (CSV)</a>
+          <a href="https://github.com/cpchoudhary2024/wattershed/blob/main/docs/METHODOLOGY.md">Methodology</a>
+          <a href="https://github.com/cpchoudhary2024/wattershed/blob/main/docs/DATA_SOURCES.md">Data sources</a>
+          <a href="https://github.com/cpchoudhary2024/wattershed/blob/main/CITATION.cff">How to cite</a>
+        </p>
+      </div>
     </div>
   </div>
 
@@ -494,23 +542,55 @@ const fAc = document.getElementById("finderAc");
 const fRes = document.getElementById("finderResult");
 let acItems = [], acIdx = -1;
 
+// plain-English reading of each pillar, keyed by band, written for a non-expert
+const PLAIN = {
+  w: {
+    what: "how much pressure the local water supply is already under, before adding a large new user",
+    low: "Water supply here is relatively comfortable.",
+    moderate: "Water supply here is under moderate pressure.",
+    elevated: "Water supply here is already strained; a large new user would compete with existing demand.",
+    high: "Water is scarce here. A large water-cooled facility would draw on a supply that is already stretched.",
+  },
+  g: {
+    what: "how carbon-heavy and how strained the regional electricity grid is",
+    low: "The regional grid is relatively clean and has room.",
+    moderate: "The regional grid carries a moderate carbon and reliability load.",
+    elevated: "The regional grid is carbon-heavy or reliability-strained; new large loads add to that.",
+    high: "The regional grid is both carbon-heavy and reliability-strained. A large new load deepens the strain.",
+  },
+  b: {
+    what: "how much pollution and health burden the surrounding community already carries",
+    low: "The surrounding community carries relatively little existing environmental burden.",
+    moderate: "The surrounding community carries a moderate existing environmental burden.",
+    elevated: "The surrounding community already carries an elevated pollution and health burden.",
+    high: "The surrounding community is already heavily burdened by pollution and health stress. New industrial load lands on people who are already carrying more than their share.",
+  },
+};
+const bandKey = v => v == null ? null : v >= 75 ? "high" : v >= 55 ? "elevated" : v >= 35 ? "moderate" : "low";
+
 function renderResult(c){
   const cell = (label, metric) => {
     const v = c[metric], b = bandOf(v), p = pctile(metric, v);
-    return `<div class="rs"><div class="lbl">${label}</div>
+    return `<div class="rs"><div class="lbl" title="${PLAIN[metric].what}">${label} ⓘ</div>
       <div class="v">${v==null?"—":Math.round(v)}<span style="font-size:13px;color:var(--muted)">/100</span></div>
       <div class="bd" style="color:${b.hex}">${b.label}</div>
       <div class="meter"><i style="width:${v==null?0:v}%;background:${b.hex}"></i></div>
       <div class="lbl" style="margin-top:6px">${p==null?"":"higher than "+p+"% of U.S. counties"}</div></div>`;
   };
+  // plain-language summary sentence for each pillar that has a score
+  const plain = ["w", "g", "b"]
+    .filter(m => c[m] != null)
+    .map(m => `<li>${PLAIN[m][bandKey(c[m])]}</li>`)
+    .join("");
   fRes.innerHTML =
     `<h3></h3><div class="loc"></div>
      <div class="rscores">
        ${cell("Water stress","w")}${cell("Grid strain & carbon","g")}${cell("Community burden","b")}
      </div>
+     <div class="plain"><strong>In plain terms:</strong><ul>${plain}</ul></div>
      <div class="foot">County-level snapshot (structural water only; no project load assumed).
-       For the full tract-level screening of a specific parcel — with drought, demand modeling,
-       nearby facilities and the provenance ledger — run
+       Scores are 0–100, higher = more concern. For the full tract-level screening of a specific
+       parcel — with drought, demand modeling, nearby facilities and the provenance ledger — run
        <code>wattershed screen --lat &lt;lat&gt; --lon &lt;lon&gt;</code>.</div>`;
   // set text via textContent so a county name can never inject markup
   fRes.querySelector("h3").textContent = c.n;
