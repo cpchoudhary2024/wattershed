@@ -1,0 +1,37 @@
+{
+  "n_datacenters": 1513,
+  "source": "OpenStreetMap (telecom/man_made=data_center), CONUS bbox",
+  "burden": {
+    "n_dc": 1477,
+    "dc_mean": 47.1,
+    "national_popwt_median": 49.9,
+    "dc_median": 47.6,
+    "pct_dc_in_national_top_quartile": 16.9,
+    "over_representation_x": 0.68,
+    "ks_stat": 0.096,
+    "mannwhitney_p": 0.000131,
+    "effect_rank_biserial": -0.058
+  },
+  "water": {
+    "n_dc": 1513,
+    "dc_mean": 41.7,
+    "national_popwt_median": 50.0,
+    "dc_median": 25.0,
+    "pct_dc_in_national_top_quartile": 35.2,
+    "over_representation_x": 1.41,
+    "ks_stat": 0.103,
+    "mannwhitney_p": 0.126976,
+    "effect_rank_biserial": 0.027
+  },
+  "grid": {
+    "n_dc": 1513,
+    "dc_mean": 45.1,
+    "national_popwt_median": 49.3,
+    "dc_median": 49.3,
+    "pct_dc_in_national_top_quartile": 19.2,
+    "over_representation_x": 0.77,
+    "ks_stat": 0.251,
+    "mannwhitney_p": 0.0,
+    "effect_rank_biserial": -0.283
+  }
+}
