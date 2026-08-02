@@ -1,0 +1,47 @@
+name,operator,location,lat,lon,label,outcome,source
+Diode Ventures — Harper Road,Diode Ventures,"Peculiar, MO",38.71455,-94.46112,contested,rejected by city council 2024,jaredwatkins.com/research/datacenter-opposition
+Provident Realty DC,Provident Realty,"Chesterton, IN",41.61072,-87.05227,contested,developer withdrew 2024,jaredwatkins.com/research/datacenter-opposition
+Roundhouse Digital,Roundhouse,"Cascade Locks, OR",45.66951,-121.89040,contested,project abandoned,jaredwatkins.com/research/datacenter-opposition
+DC Blox Richmond,DC Blox,"Richmond, VA",37.53851,-77.43428,contested,permit denied,jaredwatkins.com/research/datacenter-opposition
+Culpeper Acquisitions DC,Culpeper Acquisitions,"Culpeper, VA",38.47338,-77.99613,contested,planning commission denial 2024,jaredwatkins.com/research/datacenter-opposition
+Amazon Warrenton,Amazon,"Warrenton, VA",38.71355,-77.79537,contested,litigation since 2023,jaredwatkins.com/research/datacenter-opposition
+PW Digital Gateway,QTS/Compass,"Gainesville, VA",38.79274,-77.62920,contested,rezoning voided; project ended 2026,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Meta Beaver Dam,Meta,"Beaver Dam, WI",43.45777,-88.83733,contested,transparency lawsuit Dec 2025,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Vantage Port Washington,Vantage/OpenAI,"Port Washington, WI",43.38855,-87.86928,contested,rate/transparency litigation,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Meta Ida County,Meta,"Ida Grove, IA",42.34498,-95.47136,contested,water permitting; unpermitted wells fine,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Stokes County DC,Eagle Rock,"Walnut Cove, NC",36.29541,-80.14171,contested,zoning litigation ongoing,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+DTE Saline Township,DTE,"Saline, MI",42.16671,-83.78161,contested,NRDC water/air litigation,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+xAI Colossus,xAI,"Memphis, TN",35.14603,-90.05178,contested,NAACP/SELC air-permit lawsuit,earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus
+Boulder City DC,n/a,"Boulder City, NV",35.97876,-114.83376,contested,"2,600-signature petition; stalled",en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Apex DC,n/a,"Apex, NC",35.73254,-78.85055,contested,withdrawn by developer,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Project Hutto,Zydeco,"Hutto, TX",30.54276,-97.54689,contested,rezoning withdrawn 2026,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Project Hazelnut,n/a,"Hazleton, PA",40.95490,-75.97696,contested,blocked Nov 2025,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Project Taurus,Raeden,"Colorado Springs, CO",38.83396,-104.82535,contested,fierce backlash; pending,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Stratos,O'Leary Digital,"Brigham City, UT",41.51104,-112.01550,contested,water permits; scaled back 75%,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Clearbrook DC,n/a,"Winchester, VA",39.18522,-78.16524,contested,denied 10-0 2026,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+San Marcos Campus,n/a,"San Marcos, TX",29.88264,-97.94058,contested,zoning denied 5-2 2026,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+New Brunswick DC,n/a,"New Brunswick, NJ",40.49361,-74.44364,contested,withdrawn; became park 2026,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+Project Sail,Prologis/Atlas,"Newnan, GA",33.38067,-84.79966,contested,approved 3-2; lawsuit May 2026,en.wikipedia.org/wiki/Opposition_to_AI_data_centers
+San Antonio DCs,Microsoft/others,"San Antonio, TX",29.42460,-98.49514,contested,Clean Air Act challenge 2026,tpr.org/podcast/the-source/2026-07-27
+Project Jupiter,n/a,"Santa Teresa, NM",31.87003,-106.68658,contested,lawsuit over tax rebates,insideclimatenews.org/news/22072026
+Imperial Valley DC,n/a,"El Centro, CA",32.79200,-115.56305,contested,Colorado River water lawsuit,kpbs.org/news/environment/2026/06/15
+Project Blue,Beale Infrastructure,"Tucson, AZ",32.22288,-110.97485,contested,council rejected; Amazon exited,kjzz.org/the-show/2025-12-09
+Rock Creek East,n/a,"Fort Worth, TX",32.75318,-97.33275,contested,tax break withdrawn 2026,jaredwatkins.com/research/datacenter-opposition
+St. Albans Township DC,Vantage,"New Albany, OH",40.08117,-82.80879,contested,township zoning ban,jaredwatkins.com/research/datacenter-opposition
+Tract Goodyear,Tract,"Goodyear, AZ",33.46723,-112.38535,contested,rezoning blocked 2024,jaredwatkins.com/research/datacenter-opposition
+Google Council Bluffs,Google,"Council Bluffs, IA",41.25884,-95.85195,quiet,operating since 2007,datacenters.google/locations/iowa
+Meta Prineville,Meta,"Prineville, OR",44.30349,-120.84639,quiet,operating since 2011,datacenterknowledge.com
+Apple Maiden,Apple,"Maiden, NC",35.57660,-81.21392,quiet,operating since 2012,datacenterknowledge.com
+Meta Forest City,Meta,"Forest City, NC",35.33373,-81.86492,quiet,operating since 2012,datacenterknowledge.com
+Google Lenoir,Google,"Lenoir, NC",35.9140,-81.5390,quiet,operating since 2009,datacenterknowledge.com
+Microsoft Boydton,Microsoft,"Boydton, VA",36.66731,-78.38820,quiet,operating since 2010,datacenterknowledge.com
+Meta Altoona,Meta,"Altoona, IA",41.64373,-93.46960,quiet,operating since 2014,datacenterknowledge.com
+Google Pryor,Google,"Pryor, OK",36.30843,-95.31691,quiet,operating since 2011,datacenters.google/locations/oklahoma
+Meta Los Lunas,Meta,"Los Lunas, NM",34.81421,-106.76131,quiet,operating since 2018,datacenterknowledge.com
+Google Moncks Corner,Google,"Moncks Corner, SC",33.19600,-80.01314,quiet,operating since 2008,datacenters.google/locations/south-carolina
+Microsoft Cheyenne,Microsoft,"Cheyenne, WY",41.13998,-104.82025,quiet,operating since 2012,datacenterknowledge.com
+Meta Papillion,Meta,"Papillion, NE",41.15444,-96.04224,quiet,operating since 2020,datacenterknowledge.com
+Meta Eagle Mountain,Meta,"Eagle Mountain, UT",40.30935,-112.01198,quiet,operating since 2021,datacenterknowledge.com
+Microsoft Mount Pleasant,Microsoft,"Mount Pleasant, WI",42.71916,-87.85434,quiet,operating since 2023,datacenterknowledge.com
+Microsoft West Des Moines,Microsoft,"West Des Moines, IA",41.56445,-93.75941,quiet,operating since 2014,datacenterknowledge.com
+Meta Sandston (Henrico),Meta,"Sandston, VA",37.51072,-77.31156,quiet,operating since 2018,datacenterknowledge.com

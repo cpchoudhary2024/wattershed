@@ -1,0 +1,44 @@
+{
+  "n_contested": 30,
+  "n_quiet": 16,
+  "pillars": {
+    "water": {
+      "median_contested": 52.4,
+      "median_quiet": 50.4,
+      "mean_contested": 49.9,
+      "mean_quiet": 45.4,
+      "auc": 0.552,
+      "p_one_sided": 0.2821
+    },
+    "grid": {
+      "median_contested": 49.3,
+      "median_quiet": 51.6,
+      "mean_contested": 47.3,
+      "mean_quiet": 51.1,
+      "auc": 0.443,
+      "p_one_sided": 0.74
+    },
+    "burden": {
+      "median_contested": 41.3,
+      "median_quiet": 56.8,
+      "mean_contested": 46.0,
+      "mean_quiet": 47.8,
+      "auc": 0.474,
+      "p_one_sided": 0.6134
+    },
+    "tier_rank": {
+      "median_contested": 2,
+      "median_quiet": 2,
+      "mean_contested": 2.1,
+      "mean_quiet": 2.1,
+      "auc": 0.532,
+      "p_one_sided": 0.3517
+    }
+  },
+  "tier_hit_rate": {
+    "contested_pct_elevated_or_high": 70.0,
+    "quiet_pct_elevated_or_high": 81.2,
+    "contested_pct_high": 43.3,
+    "quiet_pct_high": 25.0
+  }
+}

@@ -1,0 +1,47 @@
+name,location,label,water,grid,burden,tier,tier_rank
+Diode Ventures — Harper Road,"Peculiar, MO",contested,21.9,53.1,23.3,Moderate,1
+Provident Realty DC,"Chesterton, IN",contested,41.9,76.0,58.7,High,3
+Roundhouse Digital,"Cascade Locks, OR",contested,16.1,51.6,33.2,Moderate,1
+DC Blox Richmond,"Richmond, VA",contested,38.0,33.1,36.0,Moderate,1
+Culpeper Acquisitions DC,"Culpeper, VA",contested,47.1,33.1,22.1,Moderate,1
+Amazon Warrenton,"Warrenton, VA",contested,56.0,33.1,17.7,Moderate,1
+PW Digital Gateway,"Gainesville, VA",contested,55.2,33.1,17.4,Moderate,1
+Meta Beaver Dam,"Beaver Dam, WI",contested,47.2,91.6,71.3,High,3
+Vantage Port Washington,"Port Washington, WI",contested,34.0,76.0,39.9,Elevated,2
+Meta Ida County,"Ida Grove, IA",contested,23.6,78.2,18.3,Elevated,2
+Stokes County DC,"Walnut Cove, NC",contested,49.8,33.1,27.3,Moderate,1
+DTE Saline Township,"Saline, MI",contested,7.3,80.4,11.4,High,3
+xAI Colossus,"Memphis, TN",contested,9.2,39.6,33.3,Moderate,1
+Boulder City DC,"Boulder City, NV",contested,85.5,21.8,32.1,High,3
+Apex DC,"Apex, NC",contested,61.8,33.1,6.7,Elevated,2
+Project Hutto,"Hutto, TX",contested,53.4,56.0,29.4,Elevated,2
+Project Hazelnut,"Hazleton, PA",contested,32.7,49.3,83.4,High,3
+Project Taurus,"Colorado Springs, CO",contested,68.6,50.7,75.6,High,3
+Stratos,"Brigham City, UT",contested,72.9,51.6,41.3,Elevated,2
+Clearbrook DC,"Winchester, VA",contested,49.1,33.1,63.5,Elevated,2
+San Marcos Campus,"San Marcos, TX",contested,75.5,56.0,55.8,High,3
+New Brunswick DC,"New Brunswick, NJ",contested,52.4,49.3,87.2,High,3
+Project Sail,"Newnan, GA",contested,35.4,30.7,47.7,Moderate,1
+San Antonio DCs,"San Antonio, TX",contested,71.5,56.0,76.1,High,3
+Project Jupiter,"Santa Teresa, NM",contested,77.5,21.8,51.3,Elevated,2
+Imperial Valley DC,"El Centro, CA",contested,70.8,21.8,86.8,High,3
+Project Blue,"Tucson, AZ",contested,69.6,21.8,81.6,High,3
+Rock Creek East,"Fort Worth, TX",contested,60.4,56.0,75.5,High,3
+St. Albans Township DC,"New Albany, OH",contested,28.8,76.0,16.2,Elevated,2
+Tract Goodyear,"Goodyear, AZ",contested,83.2,21.8,61.3,High,3
+Google Council Bluffs,"Council Bluffs, IA",quiet,14.6,78.2,88.6,High,3
+Meta Prineville,"Prineville, OR",quiet,58.5,51.6,62.0,Elevated,2
+Apple Maiden,"Maiden, NC",quiet,58.6,33.1,32.3,Moderate,1
+Meta Forest City,"Forest City, NC",quiet,57.2,33.1,62.5,Elevated,2
+Google Lenoir,"Lenoir, NC",quiet,45.0,33.1,71.3,Elevated,2
+Microsoft Boydton,"Boydton, VA",quiet,51.0,33.1,5.9,Moderate,1
+Meta Altoona,"Altoona, IA",quiet,12.2,78.2,28.2,Elevated,2
+Google Pryor,"Pryor, OK",quiet,15.8,55.3,56.8,Elevated,2
+Meta Los Lunas,"Los Lunas, NM",quiet,81.0,21.8,61.0,High,3
+Google Moncks Corner,"Moncks Corner, SC",quiet,46.3,33.1,30.6,Moderate,1
+Microsoft Cheyenne,"Cheyenne, WY",quiet,84.4,50.7,52.8,High,3
+Meta Papillion,"Papillion, NE",quiet,16.3,78.2,37.8,Elevated,2
+Meta Eagle Mountain,"Eagle Mountain, UT",quiet,78.7,51.6,6.8,Elevated,2
+Microsoft Mount Pleasant,"Mount Pleasant, WI",quiet,34.2,76.0,61.1,High,3
+Microsoft West Des Moines,"West Des Moines, IA",quiet,22.2,78.2,33.6,Elevated,2
+Meta Sandston (Henrico),"Sandston, VA",quiet,50.4,33.1,73.8,Elevated,2

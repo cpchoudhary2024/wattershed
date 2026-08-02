@@ -151,6 +151,7 @@ and derives the v2 roadmap from it.
 | [DATA_SOURCES.md](docs/DATA_SOURCES.md) | All 16 sources with vintage, license, access mode; post-2025 resilience notes |
 | [LIMITATIONS.md](docs/LIMITATIONS.md) | 15 numbered limitations, each also surfaced in tool output where it applies |
 | [FLAGSHIP_ANALYSIS.md](docs/FLAGSHIP_ANALYSIS.md) | The ten-site comparative analysis |
+| [VALIDATION.md](docs/VALIDATION.md) | Blind test on 46 labeled sites: does the screen predict siting conflict? (Pre-registered; honest null result and what it means) |
 | [SELF_ASSESSMENT.md](docs/SELF_ASSESSMENT.md) | What's strong, what's weaker than it looks, v2 roadmap |
 
 ## Engineering notes
