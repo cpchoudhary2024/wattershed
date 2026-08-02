@@ -6,7 +6,11 @@
 <!-- Hardened CSP: the page is fully self-contained (all CSS/JS/data inline),
      makes zero network requests, and holds no secrets. This locks it down so
      even an injected string cannot load external code or exfiltrate data. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<!-- connect-src is scoped to exactly the two keyless geocoding services the
+     address search uses (OpenStreetMap Nominatim for address->coords, FCC Census
+     Area API for coords->tract) plus same-origin for the tract-burden file.
+     Everything else stays locked to 'none'. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://nominatim.openstreetmap.org https://geo.fcc.gov; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Wattershed — U.S. data center environmental screening</title>
 <style>
@@ -173,12 +177,14 @@
 
   <div class="finder">
     <h2>Screen your area</h2>
-    <p class="hint">Type a U.S. county, or use your location, for an instant three-pillar siting-pressure
-      snapshot — computed from the national reference build, no sign-in, nothing sent anywhere.</p>
+    <p class="hint">Enter a full <strong>street address</strong> for a tract-level screening, pick a
+      <strong>county</strong> from the suggestions, or use your location. No sign-in; the only calls made
+      are to keyless government/OpenStreetMap geocoders to place your address.</p>
     <div class="finder-row">
       <input id="finderInput" type="text" autocomplete="off" spellcheck="false"
-             placeholder="County name, e.g. Maricopa, Loudoun, Shelby…"
-             aria-label="Search for a U.S. county" aria-expanded="false" aria-controls="finderAc">
+             placeholder="Street address, or a county name (e.g. Maricopa, Shelby)…"
+             aria-label="Search an address or U.S. county" aria-expanded="false" aria-controls="finderAc">
+      <button id="finderAddr" class="primary" type="button" title="Screen this street address">Screen address</button>
       <button id="finderGeo" type="button" title="Use my current location">📍 My location</button>
       <div class="ac" id="finderAc" role="listbox" aria-label="County suggestions"></div>
     </div>
@@ -494,6 +500,99 @@ const fAc = document.getElementById("finderAc");
 const fRes = document.getElementById("finderResult");
 let acItems = [], acIdx = -1;
 
+// county lookup by 5-digit FIPS, for joining a tract's county water/grid
+const COUNTY_BY_FIPS = {};
+for(const c of COUNTIES) COUNTY_BY_FIPS[c.f] = c;
+
+// tract-burden lookup, loaded lazily on first address/location search
+// geoid -> [burden_pctile, pollution_domain, vuln_domain, pct_poc, population]
+let TRACTS = null, tractsTried = false;
+async function loadTracts(){
+  if(TRACTS || tractsTried) return TRACTS;
+  tractsTried = true;
+  try{
+    const r = await fetch("./tracts.json", {cache:"force-cache"});
+    if(r.ok) TRACTS = await r.json();
+  }catch(e){ TRACTS = null; }
+  return TRACTS;
+}
+
+const esc = s => String(s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+function busy(msg){ fRes.classList.add("on"); fRes.innerHTML = `<div class="foot">${esc(msg)}</div>`; }
+function fail(msg){ fRes.classList.add("on"); fRes.innerHTML = `<div class="foot">${esc(msg)}</div>`; }
+
+// Render a precise point result: tract-level burden + county-level water/grid.
+async function renderPoint(lat, lon, label){
+  busy("Placing that location…");
+  let geoid = null, countyName = "";
+  try{
+    const r = await fetch(`https://geo.fcc.gov/api/census/area?lat=${lat}&lon=${lon}&censusYear=2020&format=json`);
+    const j = await r.json();
+    const res = (j.results || [])[0];
+    if(res && res.block_fips){ geoid = res.block_fips.slice(0,11); countyName = res.county_name ? res.county_name + ", " + res.state_code : ""; }
+  }catch(e){ /* fall through to county fallback */ }
+
+  if(!geoid){
+    // FCC unavailable: fall back to nearest county centroid (offline, always works)
+    let best=null, bd=Infinity;
+    for(const c of COUNTIES){ const dy=c.y-lat, dx=(c.x-lon)*Math.cos(lat*Math.PI/180); const d=dy*dy+dx*dx; if(d<bd){bd=d;best=c;} }
+    if(best){ renderResult(best, label ? `${label} · nearest county (address lookup unavailable)` : null); }
+    else fail("Couldn’t place that location. Try a county name instead.");
+    return;
+  }
+
+  const fips = geoid.slice(0,5);
+  const county = COUNTY_BY_FIPS[fips];
+  await loadTracts();
+  const tr = TRACTS ? TRACTS[geoid] : null;   // [burden, poll, vuln, poc, pop]
+  const burden = tr ? tr[0] : null;
+  const cW = county ? county.w : null, cG = county ? county.g : null;
+
+  const cell = (lbl, v, metric, pctSuffix) => {
+    const b = bandOf(v);
+    return `<div class="rs"><div class="lbl" title="${PLAIN[metric].what}">${lbl} ⓘ</div>
+      <div class="v">${v==null?"—":Math.round(v)}<span style="font-size:13px;color:var(--muted)">/100</span></div>
+      <div class="bd" style="color:${b.hex}">${b.label}</div>
+      <div class="meter"><i style="width:${v==null?0:v}%;background:${b.hex}"></i></div>
+      <div class="lbl" style="margin-top:6px">${pctSuffix||""}</div></div>`;
+  };
+  const plain = [["b",burden],["w",cW],["g",cG]].filter(([m,v])=>v!=null)
+    .map(([m,v])=>`<li>${PLAIN[m][bandKey(v)]}</li>`).join("");
+  const pocTxt = tr && tr[3]!=null ? ` · ${tr[3]}% people of color` : "";
+  const popTxt = tr && tr[4]!=null ? ` · tract pop. ${fmt(tr[4])}` : "";
+
+  fRes.classList.add("on");
+  fRes.innerHTML =
+    `<h3></h3><div class="loc"></div>
+     <div class="rscores">
+       ${cell("Community burden", burden, "b", burden==null?"tract has no burden data":"tract-level, ranked vs. all U.S. tracts")}
+       ${cell("Water stress", cW, "w", "county / sub-basin level")}
+       ${cell("Grid strain & carbon", cG, "g", "county / grid-region level")}
+     </div>
+     ${plain ? `<div class="plain"><strong>In plain terms:</strong><ul>${plain}</ul></div>` : ""}
+     <div class="foot"><strong>How this was placed:</strong> address geocoded by OpenStreetMap;
+       census tract assigned by the FCC Census Area API (point-in-polygon, 2020 tracts). Community
+       burden is tract-level (the pillar that varies block to block); water and grid are inherently
+       sub-basin / grid-region measures, shown at county level. Scores 0–100, higher = more concern.
+       Full provenance-stamped screening: <code>wattershed screen --address "…"</code>.</div>`;
+  fRes.querySelector("h3").textContent = label || countyName || "Screened location";
+  fRes.querySelector(".loc").textContent =
+    `census tract ${geoid}${countyName ? " · " + countyName : ""}${pocTxt}${popTxt}`;
+}
+
+async function screenAddress(q){
+  q = (q||"").trim();
+  if(q.length < 5){ fail("Enter a full street address (with city and state) for a tract-level screening."); return; }
+  fAc.classList.remove("on");
+  busy("Looking up that address…");
+  try{
+    const r = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&countrycodes=us&format=json&limit=1`);
+    const j = await r.json();
+    if(!j.length){ fail("Couldn’t find that address. Add city and state, or pick a county from the suggestions."); return; }
+    await renderPoint(parseFloat(j[0].lat), parseFloat(j[0].lon), j[0].display_name.split(",").slice(0,3).join(","));
+  }catch(e){ fail("Address lookup is unavailable right now. Try a county name, or use My location."); }
+}
+
 // plain-English reading of each pillar, keyed by band, written for a non-expert
 const PLAIN = {
   w: {
@@ -520,7 +619,7 @@ const PLAIN = {
 };
 const bandKey = v => v == null ? null : v >= 75 ? "high" : v >= 55 ? "elevated" : v >= 35 ? "moderate" : "low";
 
-function renderResult(c){
+function renderResult(c, note){
   const cell = (label, metric) => {
     const v = c[metric], b = bandOf(v), p = pctile(metric, v);
     return `<div class="rs"><div class="lbl" title="${PLAIN[metric].what}">${label} ⓘ</div>
@@ -547,7 +646,7 @@ function renderResult(c){
   // set text via textContent so a county name can never inject markup
   fRes.querySelector("h3").textContent = c.n;
   fRes.querySelector(".loc").textContent =
-    `FIPS ${c.f} · population ${fmt(c.p)}` + (c.sr ? ` · eGRID subregion ${c.sr}` : "");
+    (note ? note + " · " : "") + `FIPS ${c.f} · population ${fmt(c.p)}` + (c.sr ? ` · eGRID subregion ${c.sr}` : "");
   fRes.classList.add("on");
 }
 
@@ -590,15 +689,22 @@ fIn.addEventListener("input", ()=>{
   renderAc(starts.concat(has).slice(0, 8));
 });
 fIn.addEventListener("keydown", e=>{
+  // Enter with a highlighted county suggestion picks it; otherwise Enter runs
+  // an address search on whatever is typed
+  if(e.key==="Enter"){
+    if(fAc.classList.contains("on") && acIdx>=0){ e.preventDefault(); selectCounty(acItems[acIdx].f); }
+    else { e.preventDefault(); screenAddress(fIn.value); }
+    return;
+  }
   if(!fAc.classList.contains("on")) return;
   const rows = [...fAc.children];
   if(e.key==="ArrowDown"){ e.preventDefault(); acIdx = Math.min(acIdx+1, rows.length-1); }
   else if(e.key==="ArrowUp"){ e.preventDefault(); acIdx = Math.max(acIdx-1, 0); }
-  else if(e.key==="Enter" && acIdx>=0){ e.preventDefault(); selectCounty(acItems[acIdx].f); return; }
   else if(e.key==="Escape"){ fAc.classList.remove("on"); return; }
   rows.forEach((r,i)=> r.setAttribute("aria-selected", String(i===acIdx)));
   if(acIdx>=0) rows[acIdx].scrollIntoView({block:"nearest"});
 });
+document.getElementById("finderAddr").addEventListener("click", ()=> screenAddress(fIn.value));
 document.addEventListener("click", e=>{ if(!e.target.closest(".finder-row")) fAc.classList.remove("on"); });
 
 document.getElementById("finderGeo").addEventListener("click", ()=>{
@@ -606,19 +712,13 @@ document.getElementById("finderGeo").addEventListener("click", ()=>{
   const btn = document.getElementById("finderGeo");
   btn.textContent = "📍 Locating…"; btn.disabled = true;
   navigator.geolocation.getCurrentPosition(
-    pos=>{
-      const {latitude:la, longitude:lo} = pos.coords;
-      let best=null, bd=Infinity;
-      for(const c of COUNTIES){
-        const dy=(c.y-la), dx=(c.x-lo)*Math.cos(la*Math.PI/180);
-        const d=dy*dy+dx*dx;
-        if(d<bd){ bd=d; best=c; }
-      }
+    async pos=>{
       btn.textContent = "📍 My location"; btn.disabled = false;
-      if(best){ fIn.value = best.n; selectCounty(best.f); }
+      fIn.value = "";
+      await renderPoint(pos.coords.latitude, pos.coords.longitude, "Your location");
     },
     ()=>{ btn.textContent="📍 My location"; btn.disabled=false;
-          fRes.classList.add("on"); fRes.innerHTML='<div class="foot">Couldn’t get your location — search by county name instead.</div>'; },
+          fail("Couldn’t get your location — search by address or county name instead."); },
     {timeout:8000, maximumAge:600000}
   );
 });

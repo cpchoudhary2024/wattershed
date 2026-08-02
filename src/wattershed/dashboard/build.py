@@ -182,6 +182,35 @@ def _county_payload() -> list[dict]:
     return out
 
 
+def write_tracts_json(out_dir: Path) -> int:
+    """Compact tract-burden lookup for browser address search, served alongside
+    the dashboard. geoid -> [burden_pctile, pollution_domain, vuln_domain,
+    pct_people_of_color, population]. Only populated tracts with a real burden
+    percentile are included; a lookup miss is handled gracefully client-side.
+    Returns the file size in bytes."""
+    import numpy as np
+
+    from ..scoring import reference
+
+    t = reference.table()
+    keep = t[t["p_cbi"].notna()]
+    out: dict[str, list] = {}
+    for geoid, r in keep.iterrows():
+        def num(v, d=1):
+            return None if v is None or (isinstance(v, float) and np.isnan(v)) else round(float(v), d)
+
+        out[str(geoid)] = [
+            num(r.get("p_cbi")),
+            num(r.get("pollution_domain")),
+            num(r.get("vulnerability_domain")),
+            num(r.get("pct_people_of_color")),
+            None if np.isnan(r.get("population", np.nan)) else int(r.get("population")),
+        ]
+    path = out_dir / "tracts.json"
+    path.write_text(json.dumps(out, separators=(",", ":")))
+    return path.stat().st_size
+
+
 def build(results_dir: Path, out_file: Path) -> None:
     template = (Path(__file__).parent / "template.html").read_text()
     sites = _site_payload(results_dir)
@@ -199,3 +228,8 @@ def build(results_dir: Path, out_file: Path) -> None:
     )
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html)
+    try:
+        sz = write_tracts_json(out_file.parent)
+        print(f"[dashboard] tracts.json: {sz/1e6:.1f} MB")
+    except Exception as e:  # reference table optional at build time
+        print(f"[dashboard] tracts.json skipped: {e}")

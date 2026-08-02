@@ -12,10 +12,11 @@ design), named nearby facilities, mitigation options with real-world
 precedents, and a client-grade HTML memo whose every value carries a source,
 vintage, and retrieval date.
 
-**▶ Live tool:** https://cpchoudhary2024.github.io/wattershed/ — search any U.S.
-county (or use your location) for an instant three-pillar siting-pressure
-snapshot, explore ten real sites, and browse the national atlas. Self-updating
-weekly; no sign-in.
+**▶ Live tool:** https://cpchoudhary2024.github.io/wattershed/ — type any U.S.
+**street address** for a tract-level screening (address geocoded by OpenStreetMap,
+census tract assigned by the FCC point-in-polygon service, burden read from the
+committed national tract table), pick a county, or use your location; explore ten
+real sites and the national atlas. Self-updating weekly; no sign-in, no API keys.
 
 ![Wattershed dashboard](docs/img/dashboard.png)
 
