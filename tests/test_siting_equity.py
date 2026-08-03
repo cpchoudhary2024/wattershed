@@ -10,7 +10,9 @@ import numpy as np
 
 from wattershed.pipelines.siting_equity import _ks, _mannwhitney, _weighted_quantile
 
-DC = Path(__file__).resolve().parents[1] / "data" / "study" / "datacenters_osm.csv"
+STUDY = Path(__file__).resolve().parents[1] / "data" / "study"
+DC = STUDY / "datacenters_osm.csv"
+CENSUS = STUDY / "datacenters_census.csv"
 
 
 def test_datacenter_set_valid():
@@ -23,6 +25,16 @@ def test_datacenter_set_valid():
         assert -125 < lon < -66, r["osm_id"]
         coords.add((round(lat, 3), round(lon, 3)))
     assert len(coords) == len(rows), "coordinates should be deduplicated"
+
+
+def test_census_has_exact_tracts():
+    rows = list(csv.DictReader(CENSUS.open()))
+    assert len(rows) > 1000
+    with_tract = [r for r in rows if (r.get("tract_geoid") or "").strip()]
+    # the study relies on a high exact-assignment rate
+    assert len(with_tract) / len(rows) > 0.9
+    for r in with_tract[:50]:
+        assert len(r["tract_geoid"]) == 11 and r["county_fips"] == r["tract_geoid"][:5]
 
 
 def test_mannwhitney_and_effect():

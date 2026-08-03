@@ -106,25 +106,73 @@ def _weighted_quantile(values, weights, q):
     return float(np.interp(q, cw, v))
 
 
+CENSUS_CSV = DIR / "datacenters_census.csv"
+
+
+def _logistic_siting(catlas: pd.DataFrame, dc_counties: set[str]) -> dict:
+    """County-level logistic: P(county hosts >=1 data center) ~ standardized
+    water + grid + burden + log(population). Answers 'does siting probability
+    rise with each pressure, holding population (urbanicity) constant' — the
+    control the raw distributional comparison lacks."""
+    import statsmodels.api as sm
+
+    df = catlas.reset_index().copy()
+    df["has_dc"] = df["county"].isin(dc_counties).astype(int)
+    df["logpop"] = np.log(df["population"].clip(lower=1))
+    preds = ["water", "grid", "burden", "logpop"]
+    df = df.dropna(subset=preds + ["has_dc"])
+    X = (df[preds] - df[preds].mean()) / df[preds].std()
+    X = sm.add_constant(X)
+    res = sm.Logit(df["has_dc"], X).fit(disp=0)
+    labels = {"water": "water stress", "grid": "grid strain", "burden": "community burden",
+              "logpop": "log population (control)"}
+    out = {}
+    for k in preds:
+        out[k] = {
+            "label": labels[k],
+            "odds_ratio_per_SD": round(float(np.exp(res.params[k])), 3),
+            "p": round(float(res.pvalues[k]), 5),
+        }
+    out["_n_counties"] = int(df.shape[0])
+    out["_n_hosting"] = int(df["has_dc"].sum())
+    out["_pseudo_r2"] = round(float(res.prsquared), 3)
+    return out
+
+
 def run() -> dict:
-    dc = list(csv.DictReader(DC_CSV.open()))
     t = reference.table()
     counties = pd.read_csv(atlas_mod.ATLAS_PATH, dtype={"county": str})
     counties["county"] = counties["county"].str.zfill(5)
     catlas = counties.set_index("county")
 
-    # ---- score each data center ----
-    from ..sources import egrid  # noqa: F401  (kept for potential extension)
+    # ---- load census with exact (point-in-polygon) geographies when available ----
+    exact = CENSUS_CSV.exists()
+    src_path = CENSUS_CSV if exact else DC_CSV
+    dc = list(csv.DictReader(src_path.open()))
 
-    dc_burden, dc_water, dc_grid = [], [], []
+    dc_burden, dc_water, dc_grid, dc_counties = [], [], [], set()
+    n_exact_tract, n_fallback = 0, 0
     for r in dc:
         lat, lon = float(r["lat"]), float(r["lon"])
-        b = _nearest_tract_burden(t, lat, lon)
+        geoid = (r.get("tract_geoid") or "").strip() if exact else ""
+        cfips = (r.get("county_fips") or "").strip() if exact else ""
+        # burden via exact tract when we have it, else nearest populated centroid
+        if geoid and geoid in t.index:
+            v = t.loc[geoid, "p_cbi"]
+            b = None if pd.isna(v) else float(v)
+            n_exact_tract += 1
+        else:
+            b = _nearest_tract_burden(t, lat, lon)
+            n_fallback += 1
         if b is not None:
             dc_burden.append(b)
-        # county for water/grid: nearest county centroid in the atlas
-        d2 = (catlas["lat"] - lat) ** 2 + ((catlas["lon"] - lon) * math.cos(math.radians(lat))) ** 2
-        crow = catlas.loc[d2.idxmin()]
+        # water/grid via exact county when we have it, else nearest county centroid
+        if cfips and cfips in catlas.index:
+            crow = catlas.loc[cfips]
+        else:
+            d2 = (catlas["lat"] - lat) ** 2 + ((catlas["lon"] - lon) * math.cos(math.radians(lat))) ** 2
+            crow = catlas.loc[d2.idxmin()]
+        dc_counties.add(str(crow.name))
         if pd.notna(crow["water"]):
             dc_water.append(float(crow["water"]))
         if pd.notna(crow["grid"]):
@@ -154,12 +202,37 @@ def run() -> dict:
             "effect_rank_biserial": round(rbc, 3),
         }
 
+    # ---- urban-stratified robustness for the water finding ----
+    # Split counties at the median population; recompute DC water over-
+    # representation within each stratum against that stratum's own baseline,
+    # so the result cannot be an artifact of OSM's urban coverage skew.
+    med_pop = counties["population"].median()
+    strata = {}
+    for label, mask in [("metro", counties["population"] >= med_pop),
+                        ("nonmetro", counties["population"] < med_pop)]:
+        sub = counties[mask]
+        thr = _weighted_quantile(sub["water"].values, sub["population"].fillna(0).values, 0.75)
+        subfips = set(sub["county"])
+        dcw = [float(catlas.loc[c, "water"]) for c in dc_counties
+               if c in subfips and pd.notna(catlas.loc[c, "water"])]
+        strata[label] = {
+            "n_dc_counties": len(dcw),
+            "pct_in_stratum_top_water_quartile": round(100 * np.mean([v >= thr for v in dcw]), 1) if dcw else None,
+            "over_representation_x": round(float(np.mean([v >= thr for v in dcw]) / 0.25), 2) if dcw else None,
+        }
+
     report = {
         "n_datacenters": len(dc),
-        "source": "OpenStreetMap (telecom/man_made=data_center), CONUS bbox",
+        "n_dc_host_counties": len(dc_counties),
+        "tract_assignment": "FCC point-in-polygon" if exact else "nearest populated centroid",
+        "exact_tract_share_pct": round(100 * n_exact_tract / max(1, n_exact_tract + n_fallback), 1),
+        "sources": "OpenStreetMap + curated flagship + validation set (deduped)" if exact
+        else "OpenStreetMap (telecom/man_made=data_center)",
         "burden": summarize("burden", dc_burden, base_burden, pop_t),
         "water": summarize("water", dc_water, counties["water"].values, cpop),
         "grid": summarize("grid", dc_grid, counties["grid"].values, cpop),
+        "water_by_urbanicity": strata,
+        "logistic_county_model": _logistic_siting(catlas, dc_counties),
     }
     (DIR / "siting_equity_report.json").write_text(json.dumps(report, indent=2))
     return report

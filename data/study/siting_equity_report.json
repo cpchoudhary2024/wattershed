@@ -1,37 +1,77 @@
 {
-  "n_datacenters": 1513,
-  "source": "OpenStreetMap (telecom/man_made=data_center), CONUS bbox",
+  "n_datacenters": 1569,
+  "n_dc_host_counties": 280,
+  "tract_assignment": "FCC point-in-polygon",
+  "exact_tract_share_pct": 95.6,
+  "sources": "OpenStreetMap + curated flagship + validation set (deduped)",
   "burden": {
-    "n_dc": 1477,
-    "dc_mean": 47.1,
+    "n_dc": 1530,
+    "dc_mean": 43.6,
     "national_popwt_median": 49.9,
-    "dc_median": 47.6,
-    "pct_dc_in_national_top_quartile": 16.9,
-    "over_representation_x": 0.68,
-    "ks_stat": 0.096,
-    "mannwhitney_p": 0.000131,
-    "effect_rank_biserial": -0.058
+    "dc_median": 41.7,
+    "pct_dc_in_national_top_quartile": 14.0,
+    "over_representation_x": 0.56,
+    "ks_stat": 0.129,
+    "mannwhitney_p": 0.0,
+    "effect_rank_biserial": -0.128
   },
   "water": {
-    "n_dc": 1513,
-    "dc_mean": 41.7,
+    "n_dc": 1569,
+    "dc_mean": 42.2,
     "national_popwt_median": 50.0,
-    "dc_median": 25.0,
-    "pct_dc_in_national_top_quartile": 35.2,
-    "over_representation_x": 1.41,
-    "ks_stat": 0.103,
-    "mannwhitney_p": 0.126976,
-    "effect_rank_biserial": 0.027
+    "dc_median": 50.0,
+    "pct_dc_in_national_top_quartile": 35.8,
+    "over_representation_x": 1.43,
+    "ks_stat": 0.109,
+    "mannwhitney_p": 0.039706,
+    "effect_rank_biserial": 0.035
   },
   "grid": {
-    "n_dc": 1513,
-    "dc_mean": 45.1,
+    "n_dc": 1569,
+    "dc_mean": 45.2,
     "national_popwt_median": 49.3,
     "dc_median": 49.3,
     "pct_dc_in_national_top_quartile": 19.2,
     "over_representation_x": 0.77,
-    "ks_stat": 0.251,
+    "ks_stat": 0.25,
     "mannwhitney_p": 0.0,
-    "effect_rank_biserial": -0.283
+    "effect_rank_biserial": -0.28
+  },
+  "water_by_urbanicity": {
+    "metro": {
+      "n_dc_counties": 260,
+      "pct_in_stratum_top_water_quartile": 32.3,
+      "over_representation_x": 1.29
+    },
+    "nonmetro": {
+      "n_dc_counties": 20,
+      "pct_in_stratum_top_water_quartile": 45.0,
+      "over_representation_x": 1.8
+    }
+  },
+  "logistic_county_model": {
+    "water": {
+      "label": "water stress",
+      "odds_ratio_per_SD": 1.028,
+      "p": 0.72352
+    },
+    "grid": {
+      "label": "grid strain",
+      "odds_ratio_per_SD": 1.138,
+      "p": 0.09108
+    },
+    "burden": {
+      "label": "community burden",
+      "odds_ratio_per_SD": 0.942,
+      "p": 0.51426
+    },
+    "logpop": {
+      "label": "log population (control)",
+      "odds_ratio_per_SD": 6.359,
+      "p": 0.0
+    },
+    "_n_counties": 3212,
+    "_n_hosting": 280,
+    "_pseudo_r2": 0.329
   }
 }

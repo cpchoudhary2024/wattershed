@@ -20,5 +20,16 @@ study and is disclosed in `docs/SITING_EQUITY.md`. A confirmatory analysis needs
 a de-biased national data-center census, which does not yet exist openly and
 would be a genuine contribution to build.
 
-Regenerate the analysis (not the download) with:
-`python -m wattershed.pipelines.siting_equity`
+## `datacenters_census.csv` — analysis census (with exact geographies)
+
+The `datacenters_osm.csv` locations **unioned** with hand-verified flagship
+campuses (`data/curated/sites.yaml`) and the validation set
+(`data/validation/sites_labeled.csv`), deduplicated at ~150 m (1,569 sites).
+Each site's **census tract and county are assigned by FCC point-in-polygon**
+(the authoritative service the live tool uses) and cached in the
+`tract_geoid` / `county_fips` columns, so the study is reproducible without
+re-calling any API. 95.6% resolved exactly; the remainder fall back to nearest
+populated centroid at analysis time.
+
+Rebuild the census + tract assignment (network): `python data/study/_build_census.py`
+Regenerate the analysis (offline): `python -m wattershed.pipelines.siting_equity`
