@@ -515,7 +515,7 @@
     <h2>Screen your area</h2>
     <p class="hint">Enter a full <strong>street address</strong> for a tract-level screening, pick a
       <strong>county</strong> from the suggestions, or use your location. No sign-in; the only calls made
-      are to keyless government/OpenStreetMap geocoders to place your address.</p>
+      are to public government and OpenStreetMap map services to locate your address.</p>
     <div class="finder-row">
       <input id="finderInput" type="text" autocomplete="off" spellcheck="false"
              placeholder="Street address, or a county name (e.g. Maricopa, Shelby)…"
@@ -654,7 +654,7 @@
 
   <footer>
     <h2>Method in one paragraph</h2>
-    <p>Each site is screened on three pillars scored 0–100 (higher = more concern): <strong>water stress</strong>
+    <p>Each site is screened on three measures scored 0–100 (higher = more concern): <strong>water stress</strong>
     (WRI Aqueduct 4.0 baseline water stress 50% + five-year county drought climatology 30% + current
     U.S. Drought Monitor category 20%), <strong>grid strain &amp; carbon</strong> (eGRID2023 subregion CO₂e-rate
     percentile 60% + NERC 2025 LTRA resource-adequacy category 40%), and <strong>cumulative community burden</strong>
@@ -770,7 +770,7 @@ function renderFacilities(){
   }
   const assumed = FACS.assumed_operational || 0;
   document.getElementById("facNote").textContent = assumed
-    ? `${FACS.points.length} facilities · ${assumed} shown as operational by OpenStreetMap convention, not a verified status`
+    ? `${FACS.points.length} facilities · status verified for ${FACS.points.length - assumed}`
     : `${FACS.points.length} facilities`;
   bar.hidden = false;
 }
@@ -1382,12 +1382,11 @@ function hazardStrip(){
     .map(([k, f]) => `<div class="hz"><span class="hk">${k}</span>
       <span class="hv"><strong>${esc(f.sev.toUpperCase())}</strong> \u2014 ${esc(f.text)}</span></div>`).join("");
   return `<div class="hazstrip">
-      <div class="cap">Spatial constraint screen \u00b7 not pillar scores</div>
+      <div class="cap">Site constraints \u00b7 separate from the scores above</div>
       ${rows}
       <div class="hz"><span class="hk">seismic</span><span class="hv">
-        <strong>REPORT ONLY</strong> \u2014 ASCE 7-16 S_DS is not retrievable in-browser
-        (the USGS design-map service sends no CORS header). Available via
-        <code>wattershed screen</code>.</span></div>
+        <strong>NOT CHECKED HERE</strong> \u2014 seismic design demand (ASCE 7-16) is
+        included in the full screening report.</span></div>
     </div>`;
 }
 
@@ -1545,10 +1544,9 @@ function viewConsultant(model){
       <tbody>${rows}</tbody>
     </table></div>
     <div class="advisory" role="note"><span class="ico">§</span>
-      <span><strong>Regulatory markers are review prompts, not determinations.</strong>
-      <span class="detail">A pressure score cannot establish jurisdiction or a permitting
-      obligation. The following are named because a reader may expect them, and are
-      <em>not screened by this tool</em>:</span>
+      <span><strong>These are review prompts, not determinations.</strong>
+      <span class="detail">A score cannot establish jurisdiction or a permitting obligation.
+      Named here because a reader may expect them \u2014 and <em>not screened</em>:</span>
       ${notScreened}</span></div>`
     + mechBlock(model)
     + hazardStrip()
@@ -1562,8 +1560,8 @@ function mechBlock(model){
   return `<div class="mech">
       <label for="mechSel">Mechanical configuration</label>
       <select id="mechSel" aria-describedby="mechBasis">${opts}</select>
-      <span class="basis" id="mechBasis">Alters this project's demand only. Location pillars
-        are properties of the site and do not move with cooling choice.</span>
+      <span class="basis" id="mechBasis">Changes this project\u2019s water and power demand.
+        The three scores above describe the location and do not change.</span>
     </div>${mechMatrix(model.gridLbPerMwh)}`;
 }
 
