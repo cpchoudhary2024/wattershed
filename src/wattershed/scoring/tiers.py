@@ -45,17 +45,17 @@ def assign_tier(
 
     if top:
         reasons.append(
-            "Pillar(s) at or above 80/100: " + ", ".join(f"{k} ({known[k]:.0f})" for k in top) + "."
+            "Measure(s) at or above 80/100: " + ", ".join(f"{k} ({known[k]:.0f})" for k in top) + "."
         )
     elif high_combo:
         reasons.append(
-            "One pillar ≥70 with a second ≥55: "
+            "One measure ≥70 with a second ≥55: "
             + ", ".join(f"{k} {v:.0f}" for k, v in sorted(known.items(), key=lambda x: -x[1]))
             + "."
         )
     elif tier is Tier.ELEVATED:
         reasons.append(
-            "Pillar scores: " + ", ".join(f"{k} {v:.0f}" for k, v in sorted(known.items(), key=lambda x: -x[1])) + "."
+            "Scores: " + ", ".join(f"{k} {v:.0f}" for k, v in sorted(known.items(), key=lambda x: -x[1])) + "."
         )
 
     # demand escalators (one step, never past HIGH)
@@ -90,9 +90,9 @@ def assign_tier(
     missing = [k for k, v in scores.items() if v is None]
     if missing:
         reasons.append(
-            "Data gaps in: " + ", ".join(missing) + " — tier reflects available pillars only "
+            "Data gaps in: " + ", ".join(missing) + " — tier reflects available measures only "
             "and may understate risk."
         )
     if not reasons:
-        reasons.append("No pillar reached the Moderate threshold (35/100).")
+        reasons.append("No measure reached the Moderate threshold (35/100).")
     return tier, reasons

@@ -43,11 +43,11 @@
   },
   "tier": "Elevated",
   "tier_reasons": [
-    "Pillar scores: water 55, grid 47, burden 3."
+    "Scores: water 55, grid 47, burden 3."
   ],
   "water": {
     "pillar": "water",
-    "score": 55.1,
+    "score": 55.3,
     "band": "high",
     "indicators": [
       {
@@ -67,12 +67,12 @@
       {
         "id": "usdm_5yr_dsci",
         "label": "5-year mean drought severity (county DSCI)",
-        "value": 159.7,
-        "display": "160 / 500 · D2+ in 18% of weeks",
+        "value": 163.6,
+        "display": "164 / 500 · D2+ in 18% of weeks",
         "unit": "DSCI (0–500)",
         "percentile": null,
         "source_id": "usdm_county_history",
-        "vintage": "2021-07-19 → 2026-07-19",
+        "vintage": "2021-08-21 → 2026-08-21",
         "retrieved": "",
         "confidence": "high",
         "note": "",
@@ -87,7 +87,7 @@
         "percentile": null,
         "source_id": "usdm_current",
         "vintage": "map of 2026-07-14",
-        "retrieved": "2026-07-17T02:43:27Z",
+        "retrieved": "2026-08-21T13:18:23Z",
         "confidence": "high",
         "note": "Transient signal — a single wet or dry week should not drive siting; weighted 20%.",
         "missing": false
@@ -99,7 +99,7 @@
     "data_gaps": [],
     "components": {
       "structural": 75.0,
-      "chronic": 31.9,
+      "chronic": 32.7,
       "current": 40.0
     }
   },
@@ -144,7 +144,7 @@
         "unit": "",
         "percentile": null,
         "source_id": "nerc_ltra_2025",
-        "vintage": "2025 LTRA (pub. Jan 2026), 2026–2030 window",
+        "vintage": "assessment horizon 2026–2035 (published January 2026)",
         "retrieved": "",
         "confidence": "high",
         "note": "",
@@ -440,6 +440,15 @@
       "other": 0.001
     }
   },
+  "boundary": {
+    "distance_m": 1399.0,
+    "nearest_geoid": "51153901504",
+    "buffer_m": 150.0,
+    "near_boundary": false,
+    "neighbors_considered": 1,
+    "warning": "",
+    "note": ""
+  },
   "nearby_facilities": [
     {
       "name": "Virginia Concrete Bull Run",
@@ -492,7 +501,7 @@
       "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/",
       "vintage": "pooled 2019–2023",
       "license": "Public domain.",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": "Tables C17002, B23025, C16002, B15003, B03002, B01003."
     },
     {
@@ -502,7 +511,7 @@
       "url": "https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip",
       "vintage": "baseline period 1979–2019 (published 2023)",
       "license": "CC BY 4.0 — attribution: 'Kuzma et al. (2023). Aqueduct 4.0, World Resources Institute.'",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": ""
     },
     {
@@ -512,7 +521,7 @@
       "url": "https://data.cdc.gov/resource/cwsq-ngmh.json",
       "vintage": "model year 2022 (BRFSS 2022, released 2024)",
       "license": "Public domain.",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": "Measures: CASTHMA (adult asthma), GHLTH (fair/poor self-rated health)."
     },
     {
@@ -522,7 +531,7 @@
       "url": "https://geocoding.geo.census.gov/geocoder/",
       "vintage": "current TIGER benchmark",
       "license": "Public domain.",
-      "retrieved": "2026-07-19T22:55:48Z",
+      "retrieved": "2026-08-21T22:45:17Z",
       "notes": ""
     },
     {
@@ -532,7 +541,7 @@
       "url": "data/curated/sites.yaml",
       "vintage": "per-site citation dates in the registry",
       "license": "MIT (compilation); each fact cites its public source.",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": "NOT exhaustive and NOT authoritative — see per-site provenance blocks."
     },
     {
@@ -542,7 +551,7 @@
       "url": "https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx",
       "vintage": "calendar 2023 operations",
       "license": "Public domain (U.S. federal work).",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": ""
     },
     {
@@ -552,7 +561,7 @@
       "url": "https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip",
       "vintage": "eGRID2023 topology",
       "license": "Public domain (U.S. federal work).",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": ""
     },
     {
@@ -562,7 +571,7 @@
       "url": "https://screening-tools.com/epa-ejscreen",
       "vintage": "EJScreen 2.32 (2024 release; ACS 2018–2022 inputs; AirToxScreen 2020)",
       "license": "Public domain (U.S. federal work product, community-rehosted).",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": "EPA removed EJScreen from public access in February 2025. Five pollution-burden fields (PM2.5, ozone, diesel PM, air-toxics cancer risk, traffic proximity) are taken from the restored final release because their upstream models (AirToxScreen, FHWA AADT fusion) are impractical to rebuild live. Vintage is frozen and flagged."
     },
     {
@@ -572,17 +581,17 @@
       "url": "https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip",
       "vintage": "rolling (snapshot at retrieval date)",
       "license": "Public domain.",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": "Used for TRI / Superfund (SEMS) / RCRA facility proximity."
     },
     {
       "source_id": "nerc_ltra_2025",
       "name": "NERC 2025 Long-Term Reliability Assessment — resource-adequacy risk categories",
       "provider": "North American Electric Reliability Corporation",
-      "url": "https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_LTRA_2025.pdf",
-      "vintage": "assessment horizon 2026–2035 (published Dec 2025)",
+      "url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
+      "vintage": "assessment horizon 2026–2035 (published January 2026)",
       "license": "Publicly released assessment; categorical risk designations transcribed to data/reference/nerc_ltra.csv.",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": ""
     },
     {
@@ -592,7 +601,7 @@
       "url": "https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent",
       "vintage": "weekly series, 2000–present",
       "license": "Public (same courtesy line as USDM).",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": ""
     },
     {
@@ -602,7 +611,7 @@
       "url": "https://droughtmonitor.unl.edu/data/shapefiles_m/USDM_current_M.zip",
       "vintage": "updated weekly (Thursday release)",
       "license": "Public. Courtesy line: 'The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration.'",
-      "retrieved": "2026-07-17T02:43:27Z",
+      "retrieved": "2026-08-21T13:18:23Z",
       "notes": ""
     },
     {
@@ -612,7 +621,7 @@
       "url": "https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8",
       "vintage": "calendar 2015 (most recent complete county compilation)",
       "license": "Public domain (USGS). doi:10.5066/F7TB15V5",
-      "retrieved": "2026-07-19T22:55:49Z",
+      "retrieved": "2026-08-21T22:45:18Z",
       "notes": "2015 remains the latest full county water-use census; flagged LOW-confidence for change-sensitive counties."
     }
   ],
@@ -625,6 +634,6 @@
     "All demand figures are modeled from published engineering factors, not measured facility data.",
     "The neighborhood summary assigns tracts by population-weighted centroid distance, an approximation of true buffer intersection."
   ],
-  "generated_at": "2026-07-19T22:55:49Z",
+  "generated_at": "2026-08-21T22:45:18Z",
   "tool_version": "0.1.0"
 }
