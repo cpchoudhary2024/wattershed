@@ -1,0 +1,126 @@
+{
+  "density": {
+    "24003730404": 50.0,
+    "24003751200": 50.0,
+    "24005404101": 50.0,
+    "24021751003": 50.0,
+    "24027606907": 50.0,
+    "24031701425": 61.2,
+    "24033807408": 50.0,
+    "24510040100": 86.6,
+    "24510210100": 79.1,
+    "24510240100": 86.6,
+    "24510260404": 70.7
+  },
+  "facilities": [
+    {
+      "lat": 39.14023,
+      "lon": -76.60643,
+      "name": "CyberNAP Glen Burnie",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24003730404"
+    },
+    {
+      "lat": 39.213455,
+      "lon": -76.682834,
+      "name": "TierPoint Baltimore BWI",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24003751200"
+    },
+    {
+      "lat": 39.427318,
+      "lon": -76.81155,
+      "name": "Expedient Owings Mills",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24005404101"
+    },
+    {
+      "lat": 39.377778,
+      "lon": -77.411545,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24021751003"
+    },
+    {
+      "lat": 39.133687,
+      "lon": -76.851434,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24027606907"
+    },
+    {
+      "lat": 39.058608,
+      "lon": -76.964467,
+      "name": "Lincoln Rackhouse Maryland",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24031701425"
+    },
+    {
+      "lat": 39.05284,
+      "lon": -76.925925,
+      "name": "AiNET",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24033807408"
+    },
+    {
+      "lat": 39.291758,
+      "lon": -76.620374,
+      "name": "AiNET One Market Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510040100"
+    },
+    {
+      "lat": 39.287702,
+      "lon": -76.606489,
+      "name": "Crown Castle Baltimore",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510040100"
+    },
+    {
+      "lat": 39.275367,
+      "lon": -76.62551,
+      "name": "Baltimore Technology Park",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510210100"
+    },
+    {
+      "lat": 39.274655,
+      "lon": -76.591671,
+      "name": "Expedient Tidepoint",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510240100"
+    },
+    {
+      "lat": 39.293559,
+      "lon": -76.551731,
+      "name": "Johns Hopkins Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510260404"
+    }
+  ],
+  "state_fips": "24"
+}

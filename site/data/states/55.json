@@ -1,0 +1,156 @@
+{
+  "density": {
+    "55015020308": 50.0,
+    "55025000800": 61.2,
+    "55025001605": 61.2,
+    "55027961000": 50.0,
+    "55033970802": 50.0,
+    "55077960500": 50.0,
+    "55079013600": 61.2,
+    "55079110100": 61.2,
+    "55079187200": 50.0,
+    "55089630100": 50.0,
+    "55101001703": 50.0,
+    "55101001706": 50.0,
+    "55127000400": 50.0,
+    "55133203307": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 44.204435,
+      "lon": -88.34493,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55015020308"
+    },
+    {
+      "lat": 43.638333,
+      "lon": -89.721403,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55021970300"
+    },
+    {
+      "lat": 43.067297,
+      "lon": -89.436704,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55025000800"
+    },
+    {
+      "lat": 43.067716,
+      "lon": -89.392279,
+      "name": "Lumen Madison 1 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55025001605"
+    },
+    {
+      "lat": 43.45777,
+      "lon": -88.83733,
+      "name": "Meta Beaver Dam",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55027961000"
+    },
+    {
+      "lat": 44.877165,
+      "lon": -91.919999,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55033970802"
+    },
+    {
+      "lat": 43.782176,
+      "lon": -89.574841,
+      "name": "Marquette-Adams Telephone Coop",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55077960500"
+    },
+    {
+      "lat": 43.043941,
+      "lon": -87.953979,
+      "name": "Data Holdings Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55079013600"
+    },
+    {
+      "lat": 43.009378,
+      "lon": -87.961062,
+      "name": "TierPoint Milwaukee",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55079110100"
+    },
+    {
+      "lat": 42.863142,
+      "lon": -87.977876,
+      "name": "Expedient Milwaukee",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55079187200"
+    },
+    {
+      "lat": 43.38855,
+      "lon": -87.86928,
+      "name": "Vantage Port Washington",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55089630100"
+    },
+    {
+      "lat": 42.675665,
+      "lon": -87.918406,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55101001703"
+    },
+    {
+      "lat": 42.71916,
+      "lon": -87.85434,
+      "name": "Microsoft Mount Pleasant",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55101001706"
+    },
+    {
+      "lat": 42.833644,
+      "lon": -88.733998,
+      "name": "Central Office",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55127000400"
+    },
+    {
+      "lat": 43.051373,
+      "lon": -88.216698,
+      "name": "Pewaukee Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55133203307"
+    }
+  ],
+  "state_fips": "55"
+}

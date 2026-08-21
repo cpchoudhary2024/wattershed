@@ -1,0 +1,118 @@
+{
+  "density": {
+    "45015020504": 50.0,
+    "45015020707": 100.0,
+    "45051051000": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 33.196,
+      "lon": -80.01314,
+      "name": "Google Moncks Corner",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020504"
+    },
+    {
+      "lat": 33.061987,
+      "lon": -80.038293,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064272,
+      "lon": -80.041453,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.062184,
+      "lon": -80.039651,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.062098,
+      "lon": -80.041128,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064311,
+      "lon": -80.03845,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.066356,
+      "lon": -80.038524,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064165,
+      "lon": -80.043604,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.062039,
+      "lon": -80.044983,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064442,
+      "lon": -80.046058,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064008,
+      "lon": -80.042374,
+      "name": "Google Berkeley County Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.674607,
+      "lon": -78.943885,
+      "name": "DC BLOX Myrtle Beach Cable Landing Station",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45051051000"
+    }
+  ],
+  "state_fips": "45"
+}

@@ -1,0 +1,110 @@
+{
+  "density": {
+    "01069040205": 50.0,
+    "01073014303": 50.0,
+    "01089001403": 70.7,
+    "01089010704": 100.0
+  },
+  "facilities": [
+    {
+      "lat": 31.231899,
+      "lon": -85.455834,
+      "name": "AngelTrax Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01069040205"
+    },
+    {
+      "lat": 34.913667,
+      "lon": -85.747422,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01071950200"
+    },
+    {
+      "lat": 34.913641,
+      "lon": -85.745924,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01071950200"
+    },
+    {
+      "lat": 34.914665,
+      "lon": -85.748372,
+      "name": "Google Jackson County Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01071950200"
+    },
+    {
+      "lat": 33.404776,
+      "lon": -86.911565,
+      "name": "Sungard Systems International",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01073014303"
+    },
+    {
+      "lat": 34.73654,
+      "lon": -86.673102,
+      "name": "George C. Wallace Alabama Supercomputer Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01089001403"
+    },
+    {
+      "lat": 34.745431,
+      "lon": -86.691883,
+      "name": "SimpleHelix",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01089001403"
+    },
+    {
+      "lat": 34.844257,
+      "lon": -86.628022,
+      "name": "Meta Huntsville Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01089010704"
+    },
+    {
+      "lat": 34.847324,
+      "lon": -86.626919,
+      "name": "Meta Huntsville Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01089010704"
+    },
+    {
+      "lat": 34.843482,
+      "lon": -86.628856,
+      "name": "Meta Huntsville Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01089010704"
+    },
+    {
+      "lat": 34.840441,
+      "lon": -86.628825,
+      "name": "Meta Huntsville Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "01089010704"
+    }
+  ],
+  "state_fips": "01"
+}

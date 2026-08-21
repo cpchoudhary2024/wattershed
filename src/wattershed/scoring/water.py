@@ -20,24 +20,13 @@ from __future__ import annotations
 from ..models import Confidence, Indicator, PillarScore
 from ..provenance import retrieved_at
 from .. import config
+from .normalize import band, blend, clamp, is_number
 
 BWS_BASE_SCORE = {-1: 85.0, 0: 5.0, 1: 25.0, 2: 50.0, 3: 75.0, 4: 95.0}
 
 WEIGHTS = {"structural": 0.5, "chronic": 0.3, "current": 0.2}
 
 CURRENT_SCORE = {None: 0.0, 0: 20.0, 1: 40.0, 2: 60.0, 3: 80.0, 4: 100.0}
-
-
-def band(score: float | None) -> str:
-    if score is None:
-        return "insufficient data"
-    if score >= 75:
-        return "severe"
-    if score >= 55:
-        return "high"
-    if score >= 35:
-        return "moderate"
-    return "low"
 
 
 def score_water(
@@ -92,8 +81,10 @@ def score_water(
 
     # chronic drought — 5-yr county DSCI
     mean_dsci = history.get("mean_dsci")
-    if mean_dsci is not None:
-        chronic = min(100.0, 100.0 * mean_dsci / 500.0)
+    if is_number(mean_dsci):
+        # clamp, not min(): a negative or non-finite DSCI is a data defect,
+        # and 100*(-40)/500 would otherwise enter the blend as -8.
+        chronic = clamp(100.0 * mean_dsci / 500.0) if is_number(mean_dsci) else None
         components["chronic"] = chronic
         indicators.append(
             Indicator(
@@ -115,9 +106,16 @@ def score_water(
     else:
         gaps.append("County drought history unavailable.")
 
-    # current drought — this week's map
+    # current drought — this week's map.
+    # `None` legitimately means "not inside any drought polygon" → 0. An
+    # UNRECOGNIZED category is a different thing entirely and must not default
+    # to the best-case score; it drops out of the blend as a data gap.
     cat = current.get("category")
-    components["current"] = CURRENT_SCORE.get(cat, 0.0)
+    if cat in CURRENT_SCORE:
+        components["current"] = CURRENT_SCORE[cat]
+    else:
+        components["current"] = None
+        gaps.append(f"Unrecognized USDM drought category {cat!r} — current-drought signal excluded.")
     from ..sources.usdm import CATEGORY_LABELS
 
     indicators.append(
@@ -133,7 +131,9 @@ def score_water(
             note="Transient signal — a single wet or dry week should not drive siting; weighted 20%.",
         )
     )
-    if cat is not None and cat >= 2:
+    # `in CATEGORY_LABELS` guard: an unrecognized category reached this line as
+    # a raw KeyError and aborted the whole screening.
+    if cat in CATEGORY_LABELS and cat is not None and cat >= 2:
         drivers.append(f"Site is currently in {CATEGORY_LABELS[cat]}.")
 
     # demand context (unscored)
@@ -160,12 +160,7 @@ def score_water(
             )
 
     # blend available components, renormalizing weights over what exists
-    avail = {k: v for k, v in components.items() if v is not None}
-    if avail:
-        wsum = sum(WEIGHTS[k] for k in avail)
-        score = sum(WEIGHTS[k] * v for k, v in avail.items()) / wsum
-    else:
-        score = None
+    score = blend(components, WEIGHTS)
     return PillarScore(
         pillar="water",
         score=round(score, 1) if score is not None else None,
@@ -173,5 +168,5 @@ def score_water(
         indicators=indicators,
         drivers=drivers,
         data_gaps=gaps,
-        components={k: round(v, 1) for k, v in components.items()},
+        components={k: round(v, 1) for k, v in components.items() if is_number(v)},
     )

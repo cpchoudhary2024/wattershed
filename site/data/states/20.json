@@ -1,0 +1,82 @@
+{
+  "density": {
+    "20051072701": 50.0,
+    "20091052804": 86.6,
+    "20091980001": 86.6
+  },
+  "facilities": [
+    {
+      "lat": 37.278406,
+      "lon": -98.588462,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20007968100"
+    },
+    {
+      "lat": 38.872132,
+      "lon": -99.300187,
+      "name": "Cloud Storage Corp",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20051072701"
+    },
+    {
+      "lat": 38.9392,
+      "lon": -94.860185,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091052804"
+    },
+    {
+      "lat": 38.940134,
+      "lon": -94.867682,
+      "name": "State Farm Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091052804"
+    },
+    {
+      "lat": 38.935585,
+      "lon": -94.864505,
+      "name": "U.S. Bank National Data Process Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091052804"
+    },
+    {
+      "lat": 38.94063,
+      "lon": -94.755233,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091980001"
+    },
+    {
+      "lat": 38.926806,
+      "lon": -94.768373,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091980001"
+    },
+    {
+      "lat": 38.925164,
+      "lon": -94.770316,
+      "name": "Data Center Lenexa",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091980001"
+    }
+  ],
+  "state_fips": "20"
+}

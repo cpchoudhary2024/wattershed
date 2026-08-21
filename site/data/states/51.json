@@ -1,0 +1,2955 @@
+{
+  "density": {
+    "51041100403": 100.0,
+    "51047930204": 61.2,
+    "51059460501": 93.5,
+    "51059460503": 100.0,
+    "51059471201": 100.0,
+    "51059480902": 100.0,
+    "51059481202": 100.0,
+    "51059481900": 86.6,
+    "51059482505": 100.0,
+    "51059490104": 100.0,
+    "51061930305": 70.7,
+    "51061930306": 79.1,
+    "51061930401": 50.0,
+    "51069050700": 50.0,
+    "51087200904": 50.0,
+    "51087201404": 100.0,
+    "51087980100": 50.0,
+    "51107610604": 100.0,
+    "51107611004": 100.0,
+    "51107611006": 100.0,
+    "51107611015": 100.0,
+    "51107611018": 100.0,
+    "51107611019": 100.0,
+    "51107611020": 100.0,
+    "51107611028": 100.0,
+    "51107611501": 100.0,
+    "51107611502": 100.0,
+    "51107611601": 100.0,
+    "51107611702": 100.0,
+    "51107611804": 100.0,
+    "51107611810": 100.0,
+    "51107611812": 100.0,
+    "51107611901": 100.0,
+    "51107980100": 100.0,
+    "51117930600": 70.7,
+    "51153901303": 100.0,
+    "51153901304": 100.0,
+    "51153901409": 100.0,
+    "51153901418": 100.0,
+    "51153901420": 100.0,
+    "51153901421": 100.0,
+    "51153901503": 70.7,
+    "51153901504": 100.0,
+    "51153901507": 100.0,
+    "51153901508": 100.0,
+    "51660000402": 50.0,
+    "51680000500": 50.0,
+    "51683910402": 100.0,
+    "51760030502": 50.0,
+    "51840000201": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 37.356296,
+      "lon": -77.333657,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51041100403"
+    },
+    {
+      "lat": 37.360061,
+      "lon": -77.327038,
+      "name": "Digital Fortress: Richmond",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51041100403"
+    },
+    {
+      "lat": 37.360586,
+      "lon": -77.325687,
+      "name": "PowerHouse CTP-02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51041100403"
+    },
+    {
+      "lat": 37.360703,
+      "lon": -77.331806,
+      "name": "Virginia Information Technologies Agency",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51041100403"
+    },
+    {
+      "lat": 38.47338,
+      "lon": -77.99613,
+      "name": "Culpeper Acquisitions DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51047930204"
+    },
+    {
+      "lat": 38.454844,
+      "lon": -77.978132,
+      "name": "Equinix CU2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51047930400"
+    },
+    {
+      "lat": 38.913724,
+      "lon": -77.225882,
+      "name": "8100 Boone Boulevard",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059460501"
+    },
+    {
+      "lat": 38.908367,
+      "lon": -77.219744,
+      "name": "Element Critical VA1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059460503"
+    },
+    {
+      "lat": 38.909139,
+      "lon": -77.220557,
+      "name": "Equinix DC7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059460503"
+    },
+    {
+      "lat": 38.919905,
+      "lon": -77.213585,
+      "name": "DataBank McLean IAD2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059471201"
+    },
+    {
+      "lat": 38.920854,
+      "lon": -77.211571,
+      "name": "Lumen McLean",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059471201"
+    },
+    {
+      "lat": 38.920021,
+      "lon": -77.211619,
+      "name": "Lumen McLean",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059471201"
+    },
+    {
+      "lat": 38.961573,
+      "lon": -77.377418,
+      "name": "Equinix DC97",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059480902"
+    },
+    {
+      "lat": 38.950606,
+      "lon": -77.36455,
+      "name": "CoreSite Reston Campus VA1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059481202"
+    },
+    {
+      "lat": 38.951455,
+      "lon": -77.363999,
+      "name": "CoreSite Reston Campus VA2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059481202"
+    },
+    {
+      "lat": 38.948334,
+      "lon": -77.37243,
+      "name": "CoreSite Reston VA3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059481202"
+    },
+    {
+      "lat": 38.948812,
+      "lon": -77.329414,
+      "name": "IAD1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059481900"
+    },
+    {
+      "lat": 38.948494,
+      "lon": -77.327307,
+      "name": "VA3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059481900"
+    },
+    {
+      "lat": 38.936464,
+      "lon": -77.42468,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059482505"
+    },
+    {
+      "lat": 38.922767,
+      "lon": -77.427872,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059482505"
+    },
+    {
+      "lat": 38.921124,
+      "lon": -77.426543,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059482505"
+    },
+    {
+      "lat": 38.922711,
+      "lon": -77.426304,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059482505"
+    },
+    {
+      "lat": 38.923119,
+      "lon": -77.424977,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059482505"
+    },
+    {
+      "lat": 38.909237,
+      "lon": -77.472266,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.897864,
+      "lon": -77.454082,
+      "name": "Amazon IAD-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.899724,
+      "lon": -77.453444,
+      "name": "Amazon IAD-9",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.897905,
+      "lon": -77.455103,
+      "name": "Amazon IAD22",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.904344,
+      "lon": -77.452469,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.904837,
+      "lon": -77.45475,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.910116,
+      "lon": -77.472592,
+      "name": "Digital Realty",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059490104"
+    },
+    {
+      "lat": 38.71355,
+      "lon": -77.79537,
+      "name": "Amazon Warrenton",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51061930305"
+    },
+    {
+      "lat": 38.737208,
+      "lon": -77.82628,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51061930306"
+    },
+    {
+      "lat": 38.738214,
+      "lon": -77.825868,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51061930306"
+    },
+    {
+      "lat": 38.74742,
+      "lon": -77.674465,
+      "name": "OVH US East Vint Hill",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51061930401"
+    },
+    {
+      "lat": 39.017678,
+      "lon": -78.290942,
+      "name": "Middletown Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51069050700"
+    },
+    {
+      "lat": 37.64689,
+      "lon": -77.438695,
+      "name": "Flexential - Richmond",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087200904"
+    },
+    {
+      "lat": 37.494395,
+      "lon": -77.237487,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.483918,
+      "lon": -77.247815,
+      "name": "DC4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.484779,
+      "lon": -77.249109,
+      "name": "DC5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.485289,
+      "lon": -77.250182,
+      "name": "DC6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.483913,
+      "lon": -77.23733,
+      "name": "Meta Henrico Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.481953,
+      "lon": -77.233711,
+      "name": "Meta Henrico Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.477856,
+      "lon": -77.226482,
+      "name": "Meta Henrico Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.489234,
+      "lon": -77.247476,
+      "name": "RIC1 DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.488616,
+      "lon": -77.24621,
+      "name": "RIC1 DC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.487858,
+      "lon": -77.244826,
+      "name": "RIC1 DC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.488174,
+      "lon": -77.240062,
+      "name": "RIC2 DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.487092,
+      "lon": -77.240983,
+      "name": "RIC2 DC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.486066,
+      "lon": -77.241891,
+      "name": "RIC2 DC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.484848,
+      "lon": -77.242984,
+      "name": "RIC2 DC5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.483901,
+      "lon": -77.243764,
+      "name": "RIC2 DC6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.480504,
+      "lon": -77.251622,
+      "name": "RIC3 DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.479727,
+      "lon": -77.25221,
+      "name": "RIC3 DC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.47851,
+      "lon": -77.252996,
+      "name": "RIC3 DC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.477917,
+      "lon": -77.248977,
+      "name": "RIC3 DC4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.477015,
+      "lon": -77.249693,
+      "name": "RIC3 DC5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.51072,
+      "lon": -77.31156,
+      "name": "Meta Sandston (Henrico)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087980100"
+    },
+    {
+      "lat": 39.069649,
+      "lon": -77.560771,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.069656,
+      "lon": -77.559433,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.066015,
+      "lon": -77.558569,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.082189,
+      "lon": -77.565121,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.074787,
+      "lon": -77.564129,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.075508,
+      "lon": -77.563035,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.050601,
+      "lon": -77.540023,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.055977,
+      "lon": -77.547334,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.057797,
+      "lon": -77.546734,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.055263,
+      "lon": -77.544785,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.054097,
+      "lon": -77.545995,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.051037,
+      "lon": -77.534801,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.052633,
+      "lon": -77.539573,
+      "name": "Google Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.051467,
+      "lon": -77.539438,
+      "name": "Stonewall Creek Business Park",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611004"
+    },
+    {
+      "lat": 39.017926,
+      "lon": -77.459516,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.018509,
+      "lon": -77.438836,
+      "name": "Amazon IAD118",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.016931,
+      "lon": -77.439389,
+      "name": "Amazon IAD119",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.01608,
+      "lon": -77.438382,
+      "name": "Amazon IAD128",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.01526,
+      "lon": -77.437776,
+      "name": "Amazon IAD601",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.016745,
+      "lon": -77.452006,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.015885,
+      "lon": -77.45314,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.021997,
+      "lon": -77.4532,
+      "name": "Centersquare Ashburn IAD4 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.022168,
+      "lon": -77.453595,
+      "name": "Centersquare IAD4-B",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.01988,
+      "lon": -77.459803,
+      "name": "Digital Realty ACC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.017859,
+      "lon": -77.462471,
+      "name": "Digital Realty ACC4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.020158,
+      "lon": -77.463103,
+      "name": "Digital Realty ACC5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.021026,
+      "lon": -77.463551,
+      "name": "Digital Realty ACC6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.017472,
+      "lon": -77.465675,
+      "name": "Digital Realty ACC7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.013792,
+      "lon": -77.453798,
+      "name": "Equinix",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.015558,
+      "lon": -77.460328,
+      "name": "Equinix Ashburn DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.021005,
+      "lon": -77.451489,
+      "name": "Equinix Ashburn DC10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.014891,
+      "lon": -77.458799,
+      "name": "Equinix Ashburn DC11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.016389,
+      "lon": -77.459069,
+      "name": "Equinix Ashburn DC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.011806,
+      "lon": -77.45451,
+      "name": "Equinix Ashburn DC21",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.022015,
+      "lon": -77.460235,
+      "name": "Equinix Ashburn DC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.01644,
+      "lon": -77.461954,
+      "name": "Equinix Ashburn DC4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.015965,
+      "lon": -77.461223,
+      "name": "Equinix Ashburn DC5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.015197,
+      "lon": -77.459534,
+      "name": "Equinix Ashburn DC6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.013678,
+      "lon": -77.451719,
+      "name": "H5 Data Centers Ashburn",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.022182,
+      "lon": -77.457609,
+      "name": "Level 3 Ashburn",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.022744,
+      "lon": -77.454891,
+      "name": "NTT Ashburn VA1 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.025013,
+      "lon": -77.45764,
+      "name": "NTT Ashburn VA2 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.019599,
+      "lon": -77.450457,
+      "name": "PowerHouse ABX-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.048766,
+      "lon": -77.445397,
+      "name": "VISA Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611015"
+    },
+    {
+      "lat": 39.021675,
+      "lon": -77.432973,
+      "name": "Amazon IAD10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.035494,
+      "lon": -77.450699,
+      "name": "Amazon IAD114",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.036294,
+      "lon": -77.449795,
+      "name": "Amazon IAD115",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.021569,
+      "lon": -77.434794,
+      "name": "Amazon IAD32",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.029567,
+      "lon": -77.459672,
+      "name": "Amazon IAD50",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.028774,
+      "lon": -77.458246,
+      "name": "Amazon IAD60",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.027906,
+      "lon": -77.4575,
+      "name": "Amazon IAD71",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.026368,
+      "lon": -77.44952,
+      "name": "Amazon IAD78",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.026357,
+      "lon": -77.45087,
+      "name": "Amazon IAD79",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.027109,
+      "lon": -77.452829,
+      "name": "Amazon IAD80",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.020225,
+      "lon": -77.433886,
+      "name": "Amazon IAD98",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.019169,
+      "lon": -77.43403,
+      "name": "Amazon IAD99",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.028807,
+      "lon": -77.458838,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.026331,
+      "lon": -77.451632,
+      "name": "Amazon Web Services Datacenter Complex",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.024356,
+      "lon": -77.4341,
+      "name": "CyrusOne NVA5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.026315,
+      "lon": -77.434019,
+      "name": "CyrusOne NVA7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.023015,
+      "lon": -77.449787,
+      "name": "Equinix Ashburn DC12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.024257,
+      "lon": -77.452327,
+      "name": "Equinix Ashburn DC16",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.015422,
+      "lon": -77.47827,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.017043,
+      "lon": -77.473338,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.017904,
+      "lon": -77.481819,
+      "name": "DataBank Ashburn IAD3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.015488,
+      "lon": -77.482156,
+      "name": "Databank Ashburn IAD1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.015603,
+      "lon": -77.483284,
+      "name": "Golds Gym Ashburn",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.017225,
+      "lon": -77.470372,
+      "name": "NTT Ashburn VA3 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.019868,
+      "lon": -77.472592,
+      "name": "NTT Ashburn VA4 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.018303,
+      "lon": -77.472611,
+      "name": "NTT Ashburn VA5 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.016014,
+      "lon": -77.471954,
+      "name": "NTT Ashburn VA7 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.020189,
+      "lon": -77.475509,
+      "name": "NTT Ashburn VA8 Data Centre",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.0145,
+      "lon": -77.479987,
+      "name": "Sabey Intergate.Ashburn (Building A)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 38.986515,
+      "lon": -77.442256,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.000647,
+      "lon": -77.439808,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.000448,
+      "lon": -77.460796,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.999132,
+      "lon": -77.460787,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.001826,
+      "lon": -77.452703,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.002367,
+      "lon": -77.471984,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.005052,
+      "lon": -77.485612,
+      "name": "AWS Building E",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.013608,
+      "lon": -77.470556,
+      "name": "Aligned Ashburn",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.010417,
+      "lon": -77.475159,
+      "name": "Aligned IAD02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.988635,
+      "lon": -77.440778,
+      "name": "Aligned IAD03",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.988724,
+      "lon": -77.447671,
+      "name": "Amazon IAD12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.996721,
+      "lon": -77.435597,
+      "name": "Amazon IAD146",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.99501,
+      "lon": -77.43536,
+      "name": "Amazon IAD147",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.991708,
+      "lon": -77.448564,
+      "name": "Amazon IAD15",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.990686,
+      "lon": -77.44884,
+      "name": "Amazon IAD16",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.98956,
+      "lon": -77.434802,
+      "name": "Amazon IAD192",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.986532,
+      "lon": -77.435177,
+      "name": "Amazon IAD214",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.991412,
+      "lon": -77.436511,
+      "name": "Amazon IAD51",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.986993,
+      "lon": -77.442633,
+      "name": "Amazon IAD57",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.9863,
+      "lon": -77.441885,
+      "name": "Amazon IAD58",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.993794,
+      "lon": -77.450509,
+      "name": "Amazon IAD76",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.991808,
+      "lon": -77.441172,
+      "name": "Amazon IAD87",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.990968,
+      "lon": -77.441868,
+      "name": "Amazon IAD88",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.99585,
+      "lon": -77.471294,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.996604,
+      "lon": -77.47326,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.995088,
+      "lon": -77.471078,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.002752,
+      "lon": -77.485449,
+      "name": "Amazon Web Services Building C",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.980929,
+      "lon": -77.444379,
+      "name": "Centersquare IAD3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.010247,
+      "lon": -77.462671,
+      "name": "CloudHQ LC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.011755,
+      "lon": -77.462459,
+      "name": "CloudHQ LC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.011212,
+      "lon": -77.460425,
+      "name": "CloudHQ LC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.004843,
+      "lon": -77.485127,
+      "name": "Digital Loudoun Plaza",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.001629,
+      "lon": -77.482362,
+      "name": "Digital Loudoun Plaza",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.012656,
+      "lon": -77.465604,
+      "name": "Digital Realty ACC10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.015433,
+      "lon": -77.467373,
+      "name": "Digital Realty ACC9",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.002741,
+      "lon": -77.481957,
+      "name": "Digital Realty Building A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.008806,
+      "lon": -77.458236,
+      "name": "Digital Realty IAD41 (Building P)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.005689,
+      "lon": -77.449464,
+      "name": "Digital Realty IAD42",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.992193,
+      "lon": -77.433922,
+      "name": "Digital Realty IAD55",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.002023,
+      "lon": -77.483347,
+      "name": "Digital Realty Northern Virginia IAD12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.003336,
+      "lon": -77.487094,
+      "name": "Digital Realty Northern Virginia IAD14",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.004319,
+      "lon": -77.484415,
+      "name": "Digital Realty Northern Virginia IAD24",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.000533,
+      "lon": -77.480577,
+      "name": "Digital Realty Northern Virginia IAD35",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.001549,
+      "lon": -77.479375,
+      "name": "Digital Realty Northern Virginia IAD36",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.000032,
+      "lon": -77.478015,
+      "name": "Digital Realty Northern Virginia IAD37",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.001084,
+      "lon": -77.477201,
+      "name": "Digital Realty Northern Virginia IAD38",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.007614,
+      "lon": -77.46763,
+      "name": "Digital Realty Northern Virginia IAD39",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.006479,
+      "lon": -77.467385,
+      "name": "Digital Realty Northern Virginia IAD40",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.012562,
+      "lon": -77.475405,
+      "name": "Equinix DC13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.999528,
+      "lon": -77.450111,
+      "name": "QTS Ashburn 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.995307,
+      "lon": -77.455264,
+      "name": "QTS Ashburn Lockridge",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.995181,
+      "lon": -77.456819,
+      "name": "QTS Ashburn Lockridge",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.994222,
+      "lon": -77.448201,
+      "name": "QTS Ashburn-Moran",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.998078,
+      "lon": -77.475471,
+      "name": "QTS Ashburn-Shellhorn DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.99871,
+      "lon": -77.474326,
+      "name": "QTS Ashburn-Shellhorn DC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.004693,
+      "lon": -77.44174,
+      "name": "STACK NVA01A - Northern Virginia",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.002379,
+      "lon": -77.437688,
+      "name": "Vantage VA11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.003199,
+      "lon": -77.439853,
+      "name": "Vantage VA13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.043496,
+      "lon": -77.54084,
+      "name": "42254 THUNDERBALL DR",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611028"
+    },
+    {
+      "lat": 39.041653,
+      "lon": -77.539212,
+      "name": "42255 THUNDERBALL DR",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611028"
+    },
+    {
+      "lat": 39.044103,
+      "lon": -77.539711,
+      "name": "42310 THUNDERBALL DR",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611028"
+    },
+    {
+      "lat": 39.04252,
+      "lon": -77.53829,
+      "name": "42311 THUNDERBALL DR",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611028"
+    },
+    {
+      "lat": 39.044254,
+      "lon": -77.537958,
+      "name": "TikTok Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611028"
+    },
+    {
+      "lat": 39.043613,
+      "lon": -77.537262,
+      "name": "True North Data Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611028"
+    },
+    {
+      "lat": 39.032305,
+      "lon": -77.429702,
+      "name": "Amazon IAD163",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.030471,
+      "lon": -77.428945,
+      "name": "Amazon IAD164",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.028914,
+      "lon": -77.427478,
+      "name": "Amazon IAD174",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.025485,
+      "lon": -77.4147,
+      "name": "Amazon Web Services IAD69",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.024754,
+      "lon": -77.412204,
+      "name": "Centersquare IAD1-C",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.025902,
+      "lon": -77.41447,
+      "name": "CyrusOne NVA1, NVA2 & NVA3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.024346,
+      "lon": -77.420439,
+      "name": "Amazon Web Services IAD116",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611502"
+    },
+    {
+      "lat": 39.023698,
+      "lon": -77.419095,
+      "name": "Amazon Web Services IAD117",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611502"
+    },
+    {
+      "lat": 39.023298,
+      "lon": -77.413212,
+      "name": "Centersquare IAD1-A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611502"
+    },
+    {
+      "lat": 39.023868,
+      "lon": -77.415209,
+      "name": "Centersquare IAD1-B",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611502"
+    },
+    {
+      "lat": 39.021179,
+      "lon": -77.413244,
+      "name": "CyrusOne NVA8",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611502"
+    },
+    {
+      "lat": 38.997953,
+      "lon": -77.430255,
+      "name": "Vantage VA2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611601"
+    },
+    {
+      "lat": 38.984866,
+      "lon": -77.42567,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.981446,
+      "lon": -77.426036,
+      "name": "AWS",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.981455,
+      "lon": -77.41755,
+      "name": "Amazon IAD140",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.982388,
+      "lon": -77.416786,
+      "name": "Amazon IAD141",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.981635,
+      "lon": -77.427429,
+      "name": "Amazon IAD144",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.982552,
+      "lon": -77.42463,
+      "name": "Amazon IAD145",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.979868,
+      "lon": -77.425476,
+      "name": "Amazon IAD175",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.981544,
+      "lon": -77.419361,
+      "name": "Amazon IAD603",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.988603,
+      "lon": -77.411652,
+      "name": "Amazon IAD90",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.987847,
+      "lon": -77.411119,
+      "name": "Amazon IAD91",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.986943,
+      "lon": -77.410475,
+      "name": "Amazon IAD92",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.979563,
+      "lon": -77.417491,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.979147,
+      "lon": -77.419905,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.983585,
+      "lon": -77.417515,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.98442,
+      "lon": -77.42381,
+      "name": "Centersquare IAD2-A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.915805,
+      "lon": -77.491987,
+      "name": "Amazon IAD-61",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.916073,
+      "lon": -77.477249,
+      "name": "Amazon IAD150",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.916147,
+      "lon": -77.478696,
+      "name": "Amazon IAD151",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.916572,
+      "lon": -77.479733,
+      "name": "Amazon IAD152",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.916885,
+      "lon": -77.493251,
+      "name": "Amazon IAD63",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.917011,
+      "lon": -77.494366,
+      "name": "Amazon IAD65",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.917256,
+      "lon": -77.495674,
+      "name": "Amazon IAD86",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.915903,
+      "lon": -77.490551,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.914991,
+      "lon": -77.490974,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.921305,
+      "lon": -77.485801,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611804"
+    },
+    {
+      "lat": 38.948035,
+      "lon": -77.558984,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611810"
+    },
+    {
+      "lat": 38.949895,
+      "lon": -77.560452,
+      "name": "Amazon IAD124",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611810"
+    },
+    {
+      "lat": 38.94809,
+      "lon": -77.560545,
+      "name": "Amazon IAD125",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611810"
+    },
+    {
+      "lat": 38.949518,
+      "lon": -77.559445,
+      "name": "Microsoft Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611810"
+    },
+    {
+      "lat": 38.949322,
+      "lon": -77.519875,
+      "name": "Amazon IAD62",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.948687,
+      "lon": -77.520952,
+      "name": "Amazon IAD68",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.948388,
+      "lon": -77.52183,
+      "name": "Amazon IAD81",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.947949,
+      "lon": -77.523099,
+      "name": "Amazon IAD83",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.946539,
+      "lon": -77.522188,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.949149,
+      "lon": -77.523594,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.947374,
+      "lon": -77.520238,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.949268,
+      "lon": -77.555626,
+      "name": "Arcola Tech Park",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.943205,
+      "lon": -77.52433,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.943321,
+      "lon": -77.526164,
+      "name": "Google Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.941812,
+      "lon": -77.527451,
+      "name": "Google: Arcola 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.948258,
+      "lon": -77.555911,
+      "name": "Microsoft IAD11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.957917,
+      "lon": -77.498058,
+      "name": "Amazon IAD120",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611901"
+    },
+    {
+      "lat": 38.956777,
+      "lon": -77.497784,
+      "name": "Amazon IAD121",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611901"
+    },
+    {
+      "lat": 38.955871,
+      "lon": -77.497186,
+      "name": "Amazon IAD122",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611901"
+    },
+    {
+      "lat": 38.958326,
+      "lon": -77.505728,
+      "name": "CyrusOne Sterling IX",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611901"
+    },
+    {
+      "lat": 38.960854,
+      "lon": -77.491398,
+      "name": "Digital Realty Northern Virginia IAD44",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107980100"
+    },
+    {
+      "lat": 36.66731,
+      "lon": -78.3882,
+      "name": "Microsoft Boydton",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.68592,
+      "lon": -78.37641,
+      "name": "Microsoft Boydton Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 38.734598,
+      "lon": -77.506642,
+      "name": "Amazon IAD100",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901303"
+    },
+    {
+      "lat": 38.735438,
+      "lon": -77.505701,
+      "name": "Amazon IAD101",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901303"
+    },
+    {
+      "lat": 38.735973,
+      "lon": -77.504896,
+      "name": "Amazon IAD102",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901303"
+    },
+    {
+      "lat": 38.736985,
+      "lon": -77.504088,
+      "name": "Amazon IAD103",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901303"
+    },
+    {
+      "lat": 38.717062,
+      "lon": -77.49994,
+      "name": "CloudHQ MCC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901304"
+    },
+    {
+      "lat": 38.723192,
+      "lon": -77.498971,
+      "name": "CloudHQ MCC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901304"
+    },
+    {
+      "lat": 38.715017,
+      "lon": -77.49512,
+      "name": "CloudHQ MCC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901304"
+    },
+    {
+      "lat": 38.745991,
+      "lon": -77.537549,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.758931,
+      "lon": -77.516694,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.74837,
+      "lon": -77.5207,
+      "name": "AWS IAD104",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.7476,
+      "lon": -77.51948,
+      "name": "AWS IAD105",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.746979,
+      "lon": -77.518524,
+      "name": "AWS IAD106",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.760361,
+      "lon": -77.519302,
+      "name": "Amazon IAD130",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.761105,
+      "lon": -77.518221,
+      "name": "Amazon IAD131",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.779381,
+      "lon": -77.541725,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.780152,
+      "lon": -77.539884,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.778451,
+      "lon": -77.539427,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.779342,
+      "lon": -77.542896,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.743052,
+      "lon": -77.533375,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.744287,
+      "lon": -77.533332,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.746153,
+      "lon": -77.517223,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.745134,
+      "lon": -77.533101,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.74731,
+      "lon": -77.531826,
+      "name": "COPT Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.744055,
+      "lon": -77.529196,
+      "name": "COPT Data Center Bldg 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.743886,
+      "lon": -77.530625,
+      "name": "COPT Innovation Park Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.777963,
+      "lon": -77.547101,
+      "name": "Iron Mountain VA-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.777237,
+      "lon": -77.545997,
+      "name": "Iron Mountain VA-2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.775547,
+      "lon": -77.54515,
+      "name": "Iron Mountain VA-3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.774415,
+      "lon": -77.54223,
+      "name": "Iron Mountain VA-4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.773028,
+      "lon": -77.541185,
+      "name": "Iron Mountain VA-5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.768143,
+      "lon": -77.538648,
+      "name": "Iron Mountain VA-6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.752543,
+      "lon": -77.513108,
+      "name": "QTS Manassas DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.752545,
+      "lon": -77.51246,
+      "name": "QTS Manassas DC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.753166,
+      "lon": -77.510882,
+      "name": "QTS Manassas DC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.754768,
+      "lon": -77.517388,
+      "name": "QTS Manassas DC5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.790495,
+      "lon": -77.54111,
+      "name": "Amazon IAD11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.789885,
+      "lon": -77.548229,
+      "name": "Amazon IAD14",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.790346,
+      "lon": -77.54001,
+      "name": "Amazon IAD24",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.791119,
+      "lon": -77.548386,
+      "name": "Amazon IAD52",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.792187,
+      "lon": -77.548467,
+      "name": "Amazon IAD59",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.791199,
+      "lon": -77.538266,
+      "name": "Amazon IAD7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.778859,
+      "lon": -77.557116,
+      "name": "Amazon IAD601",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901420"
+    },
+    {
+      "lat": 38.77798,
+      "lon": -77.559099,
+      "name": "Amazon IAD73",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901420"
+    },
+    {
+      "lat": 38.777437,
+      "lon": -77.557891,
+      "name": "Amazon IAD74",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901420"
+    },
+    {
+      "lat": 38.776145,
+      "lon": -77.582514,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901421"
+    },
+    {
+      "lat": 38.774437,
+      "lon": -77.585618,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901421"
+    },
+    {
+      "lat": 38.779305,
+      "lon": -77.586335,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901421"
+    },
+    {
+      "lat": 38.778061,
+      "lon": -77.594905,
+      "name": "VA 4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901421"
+    },
+    {
+      "lat": 38.803379,
+      "lon": -77.510546,
+      "name": "Equinix DC14",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901503"
+    },
+    {
+      "lat": 38.8305,
+      "lon": -77.5595,
+      "name": "Prince William Digital Gateway (terminated)",
+      "operator": "",
+      "status": "planned",
+      "status_source": "curated",
+      "tract": "51153901503"
+    },
+    {
+      "lat": 38.80237,
+      "lon": -77.582306,
+      "name": "Microsoft Data Center 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901504"
+    },
+    {
+      "lat": 38.799972,
+      "lon": -77.583348,
+      "name": "Microsoft Data Center 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901504"
+    },
+    {
+      "lat": 38.802884,
+      "lon": -77.622122,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901507"
+    },
+    {
+      "lat": 38.801862,
+      "lon": -77.621212,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901507"
+    },
+    {
+      "lat": 38.80125,
+      "lon": -77.620476,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901507"
+    },
+    {
+      "lat": 38.799973,
+      "lon": -77.609964,
+      "name": "NTT VA11 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901507"
+    },
+    {
+      "lat": 38.79274,
+      "lon": -77.6292,
+      "name": "PW Digital Gateway",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901508"
+    },
+    {
+      "lat": 38.815975,
+      "lon": -77.65254,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901509"
+    },
+    {
+      "lat": 38.815021,
+      "lon": -77.64868,
+      "name": "Amazon IAD-55",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901509"
+    },
+    {
+      "lat": 38.815132,
+      "lon": -77.652919,
+      "name": "Amazon IAD64",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901509"
+    },
+    {
+      "lat": 38.816103,
+      "lon": -77.652499,
+      "name": "Amazon IAD84",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901509"
+    },
+    {
+      "lat": 38.814593,
+      "lon": -77.654319,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901509"
+    },
+    {
+      "lat": 38.816971,
+      "lon": -77.652153,
+      "name": "Amazon Web Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901509"
+    },
+    {
+      "lat": 38.462603,
+      "lon": -78.856725,
+      "name": "DBT Data - Harrisonburg Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51660000402"
+    },
+    {
+      "lat": 37.415688,
+      "lon": -79.142706,
+      "name": "Lumos Networks",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51680000500"
+    },
+    {
+      "lat": 38.740385,
+      "lon": -77.503977,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51683910402"
+    },
+    {
+      "lat": 37.53851,
+      "lon": -77.43428,
+      "name": "DC Blox Richmond",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51760030502"
+    },
+    {
+      "lat": 39.18522,
+      "lon": -78.16524,
+      "name": "Clearbrook DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51840000201"
+    }
+  ],
+  "state_fips": "51"
+}

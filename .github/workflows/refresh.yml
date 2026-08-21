@@ -6,6 +6,19 @@ name: weekly-refresh
 on:
   push:
     branches: [main]         # deploy the dashboard on every push
+    # Loop guard: data_sync.yml pushes these paths back to main. A
+    # GITHUB_TOKEN push does not start workflows, so this is belt-and-braces
+    # for a replayed or manually re-pushed sync commit.
+    paths-ignore:
+      - "data/news/**"
+      - "site/data/**"
+      # Narrow, not data/processed/** — that directory also holds the
+      # committed reference table, and a genuine `build-reference` rebuild
+      # must still run CI.
+      - "data/processed/facility_registry.json"
+      - "data/processed/infrastructure_density.json"
+      - "data/processed/eia_capacity.json"
+      - "data/processed/data_sync_manifest.json"
   schedule:
     - cron: "0 13 * * FRI"   # Fridays 13:00 UTC, after Thursday's USDM release
   workflow_dispatch:
@@ -14,6 +27,12 @@ permissions:
   contents: read
   pages: write
   id-token: write
+
+# Shared with data-sync: both workflows publish Pages, and two concurrent
+# deploy-pages runs race for the same deployment slot.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   refresh:

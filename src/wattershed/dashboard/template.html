@@ -6,11 +6,13 @@
 <!-- Hardened CSP: the page is fully self-contained (all CSS/JS/data inline),
      makes zero network requests, and holds no secrets. This locks it down so
      even an injected string cannot load external code or exfiltrate data. -->
-<!-- connect-src is scoped to exactly the two keyless geocoding services the
+<!-- connect-src is scoped to exactly the three keyless geo services the
      address search uses (OpenStreetMap Nominatim for address->coords, FCC Census
-     Area API for coords->tract) plus same-origin for the tract-burden file.
+     Area API for coords->tract, Census TIGERweb for the tract polygons the
+     boundary-proximity check measures against, FEMA NFHL and USFWS NWI for the
+     spatial constraint screen) plus same-origin for the tract-burden file.
      Everything else stays locked to 'none'. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://nominatim.openstreetmap.org https://geo.fcc.gov; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://nominatim.openstreetmap.org https://geo.fcc.gov https://tigerweb.geo.census.gov https://hazards.fema.gov https://fwspublicservices.wim.usgs.gov; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Wattershed — U.S. data center environmental screening</title>
 <style>
@@ -21,6 +23,43 @@
     --seq:#2a78d6; --seq-deep:#1c5cab; --accent:#1c5cab;
     --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --critical:#d03b3b;
     --state-fill:#f0efec; --state-stroke:#c3c2b7;
+
+    /* Hazard ramp, light: slate baseline -> soft amber -> muted ochre -> deep
+       institutional crimson. Desaturated on purpose — the old ramp used a
+       primary green and a saturated orange, which read as a traffic light and
+       shouted at the reader before they had read a single number.
+       Saturation and contrast are independent axes, so muting was checked,
+       not assumed: every value clears WCAG AA (>=4.5:1) as TEXT against both
+       --surface and --page, and 1.4.11 (>=3:1) as a meter FILL against --grid.
+       The previous ramp did not — moderate ran 1.79:1 and elevated 2.57:1,
+       i.e. the two bands a reader most needs to tell apart were the least
+       legible of the four. */
+    --band-low:#475569;        /* slate      7.38:1 on surface */
+    --band-moderate:#7d5f1c;   /* amber      5.80:1 */
+    --band-elevated:#8f5228;   /* ochre      6.01:1 */
+    --band-high:#8c1c24;       /* crimson    8.87:1 */
+    --band-none:#52514e;       /* no data — same weight as --ink2 */
+
+    /* Advisory surface: semi-transparent over the panel, blurred, so
+       technical prose sits ON the data rather than in a separate box. The
+       tint alpha is fixed at 0.14 and the text colours were contrast-checked
+       against the COMPOSITED result (#f2ebd9), not against the declared
+       tint — with translucency the effective background is the mix. */
+    --adv-tint:#b8860b; --adv-alpha:0.14;
+    --adv-border:rgba(138,106,31,0.34); --adv-rule:#7d5f1c;
+    --adv-ink:#4a3c00; --adv-ink2:#5f4d0a;
+
+    /* Typography: one sans stack for language, one mono stack for every
+       number. Numerals are tabular so columns of figures align on the decimal
+       in the analytics matrix. */
+    --font-sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-mono:ui-monospace,SFMono-Regular,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+    --fs-micro:11px; --fs-cap:12px; --fs-body:13.5px; --fs-lead:15px;
+    --fs-h3:19px; --fs-num:clamp(23px,2.2vw,30px);
+    --tracking-cap:0.07em;
+
+    /* Motion */
+    --motion:150ms; --ease:cubic-bezier(.4,0,.2,1);
   }
   @media (prefers-color-scheme: dark){
     :root:where(:not([data-theme="light"])) .wroot{
@@ -29,6 +68,17 @@
       --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
       --seq:#3987e5; --seq-deep:#86b6ef; --accent:#86b6ef;
       --state-fill:#242423; --state-stroke:#383835;
+      /* Dark hazard ramp — a separate set, not the light one reused. The light
+         ramp is tuned to sit ON a near-white ground; against #1a1a19 its
+         crimson falls to 3.62:1. Same muted hues, lifted in value. */
+      --band-low:#94a3b8;        /* slate    6.79:1 on surface */
+      --band-moderate:#d4a94f;   /* amber    7.95:1 */
+      --band-elevated:#d98b5f;   /* ochre    6.48:1 */
+      --band-high:#e8767f;       /* crimson  6.08:1 */
+      --band-none:#c3c2b7;       /* 9.72:1 */
+      --adv-tint:#e3b341; --adv-alpha:0.14;
+      --adv-border:rgba(227,179,65,0.30); --adv-rule:#d4a94f;
+      --adv-ink:#f0e2b6; --adv-ink2:#d4c391;
     }
   }
   :root[data-theme="dark"] .wroot{
@@ -37,6 +87,11 @@
     --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
     --seq:#3987e5; --seq-deep:#86b6ef; --accent:#86b6ef;
     --state-fill:#242423; --state-stroke:#383835;
+    --band-low:#94a3b8; --band-moderate:#d4a94f; --band-elevated:#d98b5f;
+    --band-high:#e8767f; --band-none:#c3c2b7;
+    --adv-tint:#e3b341; --adv-alpha:0.14;
+    --adv-border:rgba(227,179,65,0.30); --adv-rule:#d4a94f;
+    --adv-ink:#f0e2b6; --adv-ink2:#d4c391;
   }
   *{box-sizing:border-box; margin:0}
   body{margin:0}
@@ -76,19 +131,283 @@
   .result.on{display:block}
   .result h3{font-size:19px; margin:0}
   .result .loc{font-size:13px; color:var(--ink2); margin:2px 0 12px}
-  .rscores{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
-  @media (max-width:560px){ .rscores{grid-template-columns:1fr} }
-  .rs{border:1px solid var(--border); border-radius:8px; padding:10px 12px}
-  .rs .lbl{font-size:11.5px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink2)}
-  .rs .v{font-size:26px; font-weight:700; line-height:1.1; margin:2px 0}
-  .rs .bd{font-size:12px; font-weight:600}
-  .rs .meter{height:5px; background:var(--grid); border-radius:3px; margin-top:6px; overflow:hidden}
-  .rs .meter i{display:block; height:100%; border-radius:3px}
-  .result .plain{margin-top:14px; font-size:14px; line-height:1.5}
+  /* ---------- Results panel: one payload, two treatments ----------
+     Layout is border-only throughout: no card boxes, no nested radii. Grid
+     gaps expose a 1px ground colour to draw every divider, so hairlines stay
+     exactly 1px at any wrap point and never double up where cells meet. */
+  .rhead{display:flex; align-items:flex-start; justify-content:space-between;
+         gap:14px; flex-wrap:wrap; margin-bottom:12px}
+  .rhead .rtitle{min-width:min(100%,260px); flex:1 1 260px}
+  .num{font-family:var(--font-mono); font-variant-numeric:tabular-nums;
+       font-feature-settings:"tnum" 1, "zero" 1}
+  .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+           overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+  #viewpanel:focus-visible{outline:2px solid var(--seq); outline-offset:3px}
+
+  /* Dual-view controller (ARIA tablist) */
+  .vtoggle{display:inline-flex; flex:0 0 auto; border:1px solid var(--baseline);
+           border-radius:7px; overflow:hidden; background:var(--page)}
+  .vtoggle button{appearance:none; border:0; background:transparent; color:var(--ink2);
+                  font:600 var(--fs-cap)/1 var(--font-sans); letter-spacing:0.02em;
+                  padding:9px 15px; cursor:pointer; white-space:nowrap;
+                  transition:background var(--motion) var(--ease), color var(--motion) var(--ease)}
+  .vtoggle button + button{border-left:1px solid var(--baseline)}
+  .vtoggle button:hover:not([aria-selected="true"]){
+    background:color-mix(in srgb, var(--ink) 7%, transparent); color:var(--ink)}
+  .vtoggle button[aria-selected="true"]{background:var(--ink); color:var(--surface)}
+  .vtoggle button:focus-visible{outline:2px solid var(--seq); outline-offset:-2px}
+
+  /* ---------- Public Summary ---------- */
+  .pubgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+           gap:1px; background:var(--grid); border:1px solid var(--grid)}
+  .pubcell{background:var(--surface); padding:14px 16px 16px;
+           transition:background var(--motion) var(--ease)}
+  .pubcell:hover{background:color-mix(in srgb, var(--ink) 3%, var(--surface))}
+  .pubcell .lbl{font:600 var(--fs-micro)/1.3 var(--font-sans); text-transform:uppercase;
+                letter-spacing:var(--tracking-cap); color:var(--ink2)}
+  .pubcell .lbl[title]{cursor:help}
+  .pubcell .v{font:700 var(--fs-num)/1.05 var(--font-mono); font-variant-numeric:tabular-nums;
+              margin:6px 0 2px; letter-spacing:-0.02em}
+  .pubcell .v small{font:500 var(--fs-cap)/1 var(--font-mono); color:var(--muted)}
+  /* Risk chip: colour + swatch shape + text, so the band never rests on hue alone */
+  .chip{display:inline-flex; align-items:center; gap:6px; margin-top:3px;
+        font:700 var(--fs-micro)/1 var(--font-sans); text-transform:uppercase;
+        letter-spacing:var(--tracking-cap)}
+  .chip::before{content:""; width:8px; height:8px; border-radius:2px;
+                background:currentColor; flex:none}
+  .pmeter{height:6px; background:var(--grid); margin-top:11px; overflow:hidden}
+  .pmeter i{display:block; height:100%; width:100%; transform-origin:left center;
+            transform:scaleX(var(--v,0));
+            transition:transform var(--motion) var(--ease)}
+  .pubcell .say{font:400 var(--fs-body)/1.5 var(--font-sans); color:var(--ink2); margin-top:10px}
+
+  /* ---------- Consultant Analytics ---------- */
+  .mxwrap{border:1px solid var(--grid); overflow-x:auto; -webkit-overflow-scrolling:touch}
+  .mx{width:100%; min-width:660px; border-collapse:collapse;
+      font:var(--fs-cap)/1.45 var(--font-mono); font-variant-numeric:tabular-nums}
+  .mx caption{text-align:left; padding:10px 12px; border-bottom:1px solid var(--baseline);
+              font:600 var(--fs-micro)/1.3 var(--font-sans); text-transform:uppercase;
+              letter-spacing:var(--tracking-cap); color:var(--muted)}
+  .mx th{text-align:left; padding:8px 12px; border-bottom:1px solid var(--baseline);
+         font:600 var(--fs-micro)/1.3 var(--font-sans); text-transform:uppercase;
+         letter-spacing:var(--tracking-cap); color:var(--muted); white-space:nowrap}
+  .mx th.r, .mx td.r{text-align:right}
+  .mx td{padding:9px 12px; border-top:1px solid var(--grid); vertical-align:top; color:var(--ink)}
+  .mx tbody tr.row{transition:background var(--motion) var(--ease)}
+  .mx tbody tr.row:hover{background:color-mix(in srgb, var(--ink) 4%, transparent)}
+  .mx td.metric{font:600 var(--fs-body)/1.4 var(--font-sans); white-space:nowrap}
+  .mx td.metric .scope{display:block; font:400 var(--fs-micro)/1.3 var(--font-sans);
+                       color:var(--muted); letter-spacing:0.01em}
+  .mx td.dim{color:var(--ink2)}
+  .mx td.nil{color:var(--muted)}
+  /* Monochrome by default; the band is carried by a text token plus a 2px rule,
+     the single place hue enters this view. */
+  .mx td.bandcell{border-left:2px solid currentColor; font-weight:700;
+                  text-transform:uppercase; letter-spacing:0.05em; white-space:nowrap}
+  .mx .exp{appearance:none; border:1px solid var(--baseline); background:transparent;
+           color:var(--ink2); font:600 var(--fs-micro)/1 var(--font-mono); cursor:pointer;
+           padding:3px 7px; border-radius:4px;
+           transition:background var(--motion) var(--ease), color var(--motion) var(--ease),
+                      transform var(--motion) var(--ease)}
+  .mx .exp:hover{background:color-mix(in srgb, var(--ink) 8%, transparent); color:var(--ink)}
+  .mx .exp:focus-visible{outline:2px solid var(--seq); outline-offset:1px}
+  .mx .exp[aria-expanded="true"]{transform:rotate(90deg)}
+  .mx tr.det td{border-top:0; padding:0 12px 12px 12px;
+                font:400 var(--fs-micro)/1.55 var(--font-sans); color:var(--ink2)}
+  .mx tr.det dl{display:grid; grid-template-columns:minmax(84px,auto) 1fr; gap:2px 12px; margin:0}
+  .mx tr.det dt{color:var(--muted); font-weight:600}
+  .mx tr.det dd{margin:0}
+  .reg{display:inline-block; font:600 var(--fs-micro)/1.3 var(--font-mono);
+       color:var(--ink2); white-space:nowrap}
+  .reg + .reg{margin-top:2px}
+
+  .result .plain{margin-top:14px; font-size:var(--fs-lead); line-height:1.5}
   .result .plain ul{margin:6px 0 0; padding-left:18px}
   .result .plain li{margin:3px 0}
-  .result .foot{font-size:12px; color:var(--ink2); margin-top:12px}
-  .rs .lbl[title]{cursor:help}
+  .result .foot{font-size:var(--fs-cap); color:var(--ink2); margin-top:12px; line-height:1.55}
+
+  /* Masthead: name, affiliation and portfolio links on one institutional rule.
+     Three-column at width, stacking to one column on a tablet without the
+     links wrapping mid-word. */
+  .masthead{display:flex; align-items:flex-end; justify-content:space-between; gap:18px;
+            flex-wrap:wrap; padding-bottom:12px; border-bottom:1px solid var(--baseline)}
+  .masthead .logo{flex:0 0 auto}
+  .byline{flex:1 1 320px; min-width:0}
+  .byline .author{font:400 var(--fs-body)/1.4 var(--font-sans); color:var(--ink2); margin:0}
+  .byline .author strong{color:var(--ink); font-weight:600}
+  .byline .affil{font:400 var(--fs-cap)/1.45 var(--font-sans); color:var(--muted); margin:2px 0 0}
+  .portfolio{display:flex; gap:6px; flex-wrap:wrap; flex:0 0 auto}
+  .portfolio a{font:600 var(--fs-micro)/1 var(--font-mono); letter-spacing:0.02em;
+               color:var(--ink2); text-decoration:none; padding:5px 9px;
+               border:1px solid var(--grid); border-radius:5px; white-space:nowrap;
+               transition:color var(--motion) var(--ease), border-color var(--motion) var(--ease),
+                          background var(--motion) var(--ease)}
+  .portfolio a span{color:var(--muted); margin-right:1px}
+  .portfolio a:hover{color:var(--ink); border-color:var(--ink2);
+                     background:color-mix(in srgb, var(--ink) 5%, transparent)}
+  .portfolio a:hover span{color:var(--seq)}
+  .portfolio a:focus-visible{outline:2px solid var(--seq); outline-offset:2px}
+  .hero .disclaimer{font:400 var(--fs-micro)/1.5 var(--font-sans); color:var(--muted);
+                    margin-top:8px; max-width:78ch}
+  @media (max-width:720px){
+    .masthead{align-items:flex-start}
+    .byline{flex-basis:100%}
+    .portfolio{flex-basis:100%}
+  }
+
+  /* Infrastructure layer + status filter.
+     Filtering flips ONE class on the parent <g>; the 1,569 child circles are
+     never re-created, re-queried, or re-bound. Toggling is a single style
+     recalculation instead of a full re-render. */
+  .facbar{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:0 0 8px}
+  .facbar-label{font:600 var(--fs-micro)/1 var(--font-sans); text-transform:uppercase;
+                letter-spacing:var(--tracking-cap); color:var(--muted)}
+  .facfilter{appearance:none; border:1px solid var(--baseline); background:var(--page);
+             color:var(--ink2); font:600 var(--fs-micro)/1 var(--font-sans); letter-spacing:0.02em;
+             padding:6px 10px; border-radius:6px; cursor:pointer; display:inline-flex; gap:6px;
+             transition:background var(--motion) var(--ease), color var(--motion) var(--ease),
+                        border-color var(--motion) var(--ease)}
+  .facfilter b{font-family:var(--font-mono); font-weight:700; font-variant-numeric:tabular-nums;
+               color:var(--muted)}
+  .facfilter:hover{color:var(--ink); border-color:var(--ink2)}
+  .facfilter:focus-visible{outline:2px solid var(--seq); outline-offset:2px}
+  .facfilter[aria-pressed="true"]{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+  .facfilter[aria-pressed="true"] b{color:var(--surface); opacity:0.75}
+  .facbar-note{font:400 var(--fs-micro)/1.4 var(--font-sans); color:var(--muted); margin-left:auto}
+  .faclayer circle{fill:var(--seq); fill-opacity:0.38; stroke:var(--surface); stroke-width:0.4;
+                   transition:fill-opacity var(--motion) var(--ease)}
+  .faclayer circle[data-s="c"]{fill:var(--band-moderate); fill-opacity:0.75}
+  .faclayer circle[data-s="p"]{fill:var(--band-elevated); fill-opacity:0.75}
+  /* Hand-verified records read solid; assumed ones stay faint. */
+  .faclayer circle[data-a="1"]{fill-opacity:0.95; stroke-width:0.8}
+  .faclayer.off-o circle[data-s="o"],
+  .faclayer.off-c circle[data-s="c"],
+  .faclayer.off-p circle[data-s="p"]{display:none}
+  .map.atlas .faclayer{display:none}
+
+  /* Dense institutional matrix, used by BOTH views. Public and analytics
+     differ in which columns they carry, not in typographic register:
+     1px rules, monospace tabular figures, no fills. */
+  .dmx{width:100%; border-collapse:collapse; font:var(--fs-cap)/1.45 var(--font-mono);
+       font-variant-numeric:tabular-nums; border:1px solid var(--grid)}
+  .dmx caption{text-align:left; padding:9px 12px; border-bottom:1px solid var(--baseline);
+               font:600 var(--fs-micro)/1.3 var(--font-sans); text-transform:uppercase;
+               letter-spacing:var(--tracking-cap); color:var(--muted)}
+  .dmx th{text-align:left; padding:7px 12px; border-bottom:1px solid var(--baseline);
+          font:600 var(--fs-micro)/1.3 var(--font-sans); text-transform:uppercase;
+          letter-spacing:var(--tracking-cap); color:var(--muted); white-space:nowrap}
+  .dmx th.r, .dmx td.r{text-align:right}
+  .dmx td{padding:8px 12px; border-top:1px solid var(--grid); vertical-align:top; color:var(--ink)}
+  .dmx tr.row{transition:background var(--motion) var(--ease)}
+  .dmx tr.row:hover{background:color-mix(in srgb, var(--ink) 4%, transparent)}
+  .dmx td.metric{font:600 var(--fs-body)/1.4 var(--font-sans); white-space:nowrap}
+  .dmx td.metric .scope{display:block; font:400 var(--fs-micro)/1.3 var(--font-sans);
+                        color:var(--muted)}
+  .dmx td.read{font:400 var(--fs-micro)/1.5 var(--font-sans); color:var(--ink2); max-width:34ch}
+  .dmx td.dim{color:var(--ink2)}
+  .dmx td.nil{color:var(--muted)}
+  .dmx td.bandcell{border-left:2px solid currentColor; font-weight:700;
+                   text-transform:uppercase; letter-spacing:0.05em; white-space:nowrap}
+  .dmxwrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+
+  /* Mechanical configuration selector */
+  .mech{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:14px 0 8px;
+        padding-top:12px; border-top:1px solid var(--grid)}
+  .mech label{font:600 var(--fs-micro)/1 var(--font-sans); text-transform:uppercase;
+              letter-spacing:var(--tracking-cap); color:var(--muted)}
+  .mech select{font:600 var(--fs-cap)/1 var(--font-mono); padding:7px 10px;
+               background:var(--page); color:var(--ink); border:1px solid var(--baseline);
+               border-radius:6px; cursor:pointer;
+               transition:border-color var(--motion) var(--ease)}
+  .mech select:hover{border-color:var(--ink2)}
+  .mech select:focus-visible{outline:2px solid var(--seq); outline-offset:2px}
+  .mech .basis{font:400 var(--fs-micro)/1.4 var(--font-sans); color:var(--muted);
+               margin-left:auto; max-width:46ch; text-align:right}
+
+  /* Fatal-flaw caution strip. Low-saturation by design: a site constraint is
+     a fact to verify, not an alarm, and it must not out-shout the scores. */
+  .hazstrip{margin-top:12px; border:1px solid var(--grid); border-left:2px solid var(--band-elevated)}
+  .hazstrip .hz{display:flex; gap:10px; padding:8px 12px; border-top:1px solid var(--grid);
+                font:400 var(--fs-micro)/1.5 var(--font-sans); color:var(--ink2)}
+  .hazstrip .hz:first-of-type{border-top:0}
+  .hazstrip .hk{font:600 var(--fs-micro)/1.5 var(--font-mono); text-transform:uppercase;
+                letter-spacing:0.05em; color:var(--muted); flex:0 0 62px}
+  .hazstrip .hv strong{color:var(--ink); font-weight:600}
+  .hazstrip .cap{padding:8px 12px; font:600 var(--fs-micro)/1.3 var(--font-sans);
+                 text-transform:uppercase; letter-spacing:var(--tracking-cap); color:var(--muted)}
+
+  /* Actionable Technical Advisory Brief. Same hairline-and-rule language as
+     the matrix; the crimson token marks the trigger level without repainting
+     the block, which would compete with the scores above it. */
+  .advisory-brief{margin-top:16px; border:1px solid var(--grid); border-top:2px solid var(--band-high);
+                  padding:14px 16px 15px; background:var(--surface)}
+  .advisory-brief h4{font:600 var(--fs-micro)/1.3 var(--font-sans); text-transform:uppercase;
+                     letter-spacing:var(--tracking-cap); color:var(--ink2); margin:0}
+  .advisory-brief .adv-sub{font:400 var(--fs-micro)/1.5 var(--font-sans); color:var(--muted);
+                           margin:5px 0 12px; max-width:70ch}
+  .adv-tag{font:700 var(--fs-micro)/1 var(--font-mono); text-transform:uppercase;
+           letter-spacing:0.06em; margin-right:7px; white-space:nowrap}
+  .adv-list{list-style:none; margin:0; padding:0}
+  .adv-list li{font:400 var(--fs-body)/1.55 var(--font-sans); color:var(--ink2);
+               padding:7px 0; border-top:1px solid var(--grid)}
+  .adv-block{padding:11px 0; border-top:1px solid var(--grid)}
+  .adv-head{font:600 var(--fs-body)/1.4 var(--font-sans); color:var(--ink)}
+  .adv-block ul{margin:7px 0 0; padding-left:17px}
+  .adv-block li{font:400 var(--fs-cap)/1.55 var(--font-sans); color:var(--ink2); margin:4px 0}
+  .advisory-brief .adv-foot{font:400 var(--fs-micro)/1.5 var(--font-sans); color:var(--muted);
+                            margin-top:12px; padding-top:9px; border-top:1px solid var(--grid);
+                            max-width:74ch}
+
+  /* Soft advisories: informational, never a score change. Amber reads as
+     "read this" without borrowing the hazard ramp's status colours.
+     Translucent + blurred so the prose sits on the data plane rather than in
+     a separate opaque box. color-mix gives a real fallback: browsers without
+     backdrop-filter still get the exact composited tint the contrast figures
+     were computed against, so legibility never depends on the blur landing. */
+  .advisory{display:flex; gap:10px; align-items:flex-start; margin:12px 0 0; padding:11px 14px;
+            background:color-mix(in srgb, var(--adv-tint) calc(var(--adv-alpha) * 100%), var(--surface));
+            border:1px solid var(--adv-border); border-left:3px solid var(--adv-rule);
+            border-radius:8px;
+            font-size:var(--fs-body); color:var(--adv-ink); line-height:1.5}
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)){
+    .advisory{
+      background:color-mix(in srgb, var(--adv-tint) calc(var(--adv-alpha) * 100%), transparent);
+      -webkit-backdrop-filter:blur(14px) saturate(1.4);
+      backdrop-filter:blur(14px) saturate(1.4)}
+  }
+  .advisory .ico{font-weight:700; flex:none; color:var(--adv-rule); line-height:1.4}
+  .advisory strong{color:var(--adv-ink)}
+  .advisory .detail{display:block; margin-top:4px; color:var(--adv-ink2); font-size:var(--fs-cap)}
+
+  /* High-alert status indicator. Drawn as an SVG so it stays crisp at any
+     zoom and inherits currentColor from the band token. The ring animates
+     transform + opacity only, both compositor properties, so the pulse never
+     triggers layout or paint on the main thread. */
+  .pulse{width:14px; height:14px; flex:none; overflow:visible; vertical-align:-2px}
+  .pulse .core{fill:currentColor}
+  .pulse .ring{fill:none; stroke:currentColor; stroke-width:1.5; opacity:0;
+               transform-origin:50% 50%; transform-box:fill-box;
+               animation:pulsering 2.4s var(--ease) infinite}
+  .pulse .ring.b{animation-delay:1.2s}
+  @keyframes pulsering{
+    0%   {transform:scale(0.55); opacity:0.55}
+    70%  {transform:scale(1.85); opacity:0}
+    100% {transform:scale(1.85); opacity:0}
+  }
+  .chip .pulse{margin-left:1px}
+  .mx td.bandcell .pulse{margin-right:5px}
+
+  /* Respect a stated preference for reduced motion: the state stays, the
+     animation goes. The pulse ring resolves to a static outline so the
+     high-alert marker is still visibly present, not silently removed. */
+  @media (prefers-reduced-motion: reduce){
+    .vtoggle button, .pubcell, .pmeter i, .mx tbody tr.row, .mx .exp{transition-duration:1ms}
+    .pulse .ring{animation:none; opacity:0.5; transform:scale(1.5)}
+  }
+  @media (max-width:560px){
+    .vtoggle{width:100%}
+    .vtoggle button{flex:1 1 50%; padding:10px 8px}
+  }
   .result .foot code{background:var(--page); border:1px solid var(--grid); border-radius:4px; padding:1px 6px}
   .grid2{display:grid; grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr); gap:16px; align-items:start}
   @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
@@ -165,12 +484,29 @@
 <div class="shell">
 
   <header class="hero">
-    <div class="logo">WATTER<span>SHED</span></div>
+    <div class="masthead">
+      <div class="logo">WATTER<span>SHED</span></div>
+      <div class="byline">
+        <p class="author">Engineered by <strong>Chandra Prakash Choudhary</strong></p>
+        <p class="affil">M.S. Candidate, Department of Environmental Health and Engineering,
+          Johns Hopkins University</p>
+      </div>
+      <nav class="portfolio" aria-label="Project resources">
+        <a href="https://github.com/cpchoudhary2024/wattershed/blob/main/docs/METHODOLOGY.md">
+          <span aria-hidden="true">/</span>methodology</a>
+        <a href="https://github.com/cpchoudhary2024/wattershed/blob/main/data_catalog.json">
+          <span aria-hidden="true">/</span>data-schema</a>
+        <a href="__LINKEDIN_URL__"><span aria-hidden="true">/</span>linkedin</a>
+      </nav>
+    </div>
     <p class="tagline">Open environmental screening for U.S. data center siting — water stress, grid
       strain &amp; carbon, and cumulative community burden, from public data with a full provenance
       ledger on every number.</p>
     <p class="datestamp">Flagship screening generated __GEN_DATE__ · national reference table built __BUILD_DATE__ ·
       drought layer updates weekly · <strong>screening-level, not due diligence</strong></p>
+    <p class="disclaimer">Affiliation shown for identification only. This is an independent
+      open-source project — it is not affiliated with, endorsed by, or an official work product of
+      Johns Hopkins University.</p>
   </header>
 
   <div class="tiles" id="statTiles"></div>
@@ -202,9 +538,17 @@
         <button class="metric" data-m="g" aria-selected="false">Grid strain &amp; carbon</button>
         <button class="metric" data-m="b" aria-selected="false">Community burden</button>
       </div>
+      <div class="facbar" id="facBar" hidden>
+        <span class="facbar-label">Infrastructure layer</span>
+        <button class="facfilter" type="button" data-s="o" aria-pressed="true">Operational <b></b></button>
+        <button class="facfilter" type="button" data-s="c" aria-pressed="true">Under construction <b></b></button>
+        <button class="facfilter" type="button" data-s="p" aria-pressed="true">Planned / announced <b></b></button>
+        <span class="facbar-note" id="facNote"></span>
+      </div>
       <svg class="map" id="mapSvg" viewBox="0 0 975 610" role="img" aria-label="Map of screened U.S. data center sites and county siting-pressure atlas">
         <g id="counties"></g>
         <!--__MAP_PATHS__-->
+        <g id="facilities" class="faclayer" aria-hidden="true"></g>
         <g id="dots"></g>
       </svg>
       <div class="legend" id="legend"></div>
@@ -341,6 +685,57 @@ function dots(){
   });
 }
 
+// ---- Infrastructure layer (populated by .github/workflows/data_sync.yml) ----
+// Points arrive pre-projected from the sync, so the client does no projection
+// maths: one innerHTML write builds the layer, and every later filter change
+// is a single class toggle on the parent group.
+const FAC_STATUS = {o: "Operational", c: "Under construction", p: "Planned / announced"};
+let FACS = null, facsTried = false;
+
+async function loadFacilities(){
+  if(FACS || facsTried) return FACS;
+  facsTried = true;
+  try{
+    const r = await fetch("./data/facilities.json", {cache: "no-cache"});
+    if(r.ok) FACS = await r.json();
+  }catch(e){ FACS = null; }   // layer simply stays absent until the first sync
+  return FACS;
+}
+
+function renderFacilities(){
+  const bar = document.getElementById("facBar");
+  const g = document.getElementById("facilities");
+  if(!FACS || !Array.isArray(FACS.points) || !FACS.points.length){ bar.hidden = true; return; }
+
+  // Single write. Radius is deliberately small and translucent so ~1.5k points
+  // read as density rather than obscuring the flagship dots above them.
+  g.innerHTML = FACS.points.map(pt =>
+    `<circle data-s="${pt.s}" data-a="${pt.a}" cx="${pt.x}" cy="${pt.y}" r="2.4"></circle>`
+  ).join("");
+
+  const counts = FACS.counts || {};
+  const byKey = {o: counts.operational || 0, c: counts.construction || 0, p: counts.planned || 0};
+  for(const btn of bar.querySelectorAll(".facfilter")){
+    const n = byKey[btn.getAttribute("data-s")] || 0;
+    btn.querySelector("b").textContent = n;
+    btn.disabled = n === 0;
+  }
+  const assumed = FACS.assumed_operational || 0;
+  document.getElementById("facNote").textContent = assumed
+    ? `${FACS.points.length} facilities · ${assumed} shown as operational by OpenStreetMap convention, not a verified status`
+    : `${FACS.points.length} facilities`;
+  bar.hidden = false;
+}
+
+// Filtering = one class on the parent. No node churn, no re-binding.
+document.getElementById("facBar").addEventListener("click", e => {
+  const btn = e.target.closest(".facfilter");
+  if(!btn || btn.disabled) return;
+  const on = btn.getAttribute("aria-pressed") === "true";
+  btn.setAttribute("aria-pressed", String(!on));
+  document.getElementById("facilities").classList.toggle("off-" + btn.getAttribute("data-s"), on);
+});
+
 function scoreRow(label, v){
   return `<div class="row"><span>${label}</span>
     <span class="track"><i style="width:${v==null?0:v}%"></i></span>
@@ -456,6 +851,9 @@ function setMode(atlas){
   document.getElementById("metricBtns").classList.toggle("on", atlas);
   document.getElementById("ramp").classList.toggle("on", atlas);
   document.getElementById("mapSvg").classList.toggle("atlas", atlas);
+  const bar = document.getElementById("facBar");
+  if(atlas){ bar.hidden = true; }
+  else { loadFacilities().then(renderFacilities); }
   document.getElementById("dots").style.display = atlas ? "none" : "";
   document.getElementById("counties").style.display = atlas ? "" : "none";
   document.getElementById("legend").style.display = atlas ? "none" : "";
@@ -480,20 +878,99 @@ document.querySelectorAll(".metric").forEach(b=> b.addEventListener("click", ()=
 }));
 
 // ---- "Screen your area" finder (fully client-side, no network) ----
-const BAND = [
-  {min:75, label:"high pressure",     hex:"#d03b3b"},
-  {min:55, label:"elevated pressure", hex:"#ec835a"},
-  {min:35, label:"moderate pressure", hex:"#c98500"},
-  {min:0,  label:"low pressure",      hex:"#0ca30c"},
+// Band ladders. Colours are CSS custom properties, never hex: the ramp is
+// theme-dependent (a red legible on near-white is not legible on #1a1a19) and
+// baking hex into JS is what previously made the bands untouchable by the
+// theme. Markup emits var(--band-*) and the stylesheet decides.
+const BAND4 = [   // analytic ladder — matches the CLI, the memos and the atlas
+  {min:75, key:"high",     label:"high pressure"},
+  {min:55, key:"elevated", label:"elevated pressure"},
+  {min:35, key:"moderate", label:"moderate pressure"},
+  {min:0,  key:"low",      label:"low pressure"},
 ];
-const bandOf = v => v==null ? {label:"no data", hex:"var(--muted)"} : BAND.find(b=>v>=b.min);
-// national percentile context — mid-rank (ties split) so the top value never
-// reads as "higher than 100%" and heavily-tied categories aren't overstated
+// Public ladder — three tiers, because four adjacent pressure words is a
+// distinction a non-specialist reader cannot act on. "High Risk" deliberately
+// absorbs BOTH elevated and high: collapsing upward errs toward not
+// understating risk. The analytics view always shows the precise band.
+const RISK3 = [
+  {min:55, key:"high",     label:"High Risk",     tone:"high"},
+  {min:35, key:"moderate", label:"Moderate Risk", tone:"moderate"},
+  {min:0,  key:"low",      label:"Low Risk",      tone:"low"},
+];
+const NO_BAND = {key:"none", label:"no data", tone:"none"};
+function bandOf(v, ladder){
+  if(v == null || !isFinite(v)) return NO_BAND;
+  const hit = ladder.find(b => v >= b.min) || ladder[ladder.length-1];
+  return Object.assign({tone: hit.key}, hit);
+}
+const bandKey = v => v == null || !isFinite(v) ? null : bandOf(v, BAND4).key;
+const bandVar = tone => tone === "none" ? "var(--band-none)" : `var(--band-${tone})`;
+
+// ---- National distribution over the county atlas ----
+// Mid-rank percentile (ties split) so the top value never reads as "higher
+// than 100%" and heavily-tied categories are not overstated.
 function pctile(metric, v){
-  if(v==null) return null;
+  if(v == null) return null;
   let n=0, below=0, equal=0;
   for(const c of COUNTIES){ const x=c[metric]; if(x!=null){ n++; if(x<v) below++; else if(x===v) equal++; } }
   return n ? Math.round(100*(below + 0.5*equal)/n) : null;
+}
+// Mean / population SD per metric, computed once on first use and reused.
+const _STATS = Object.create(null);
+function statsFor(metric){
+  if(_STATS[metric]) return _STATS[metric];
+  let n=0, sum=0;
+  for(const c of COUNTIES){ const x=c[metric]; if(x!=null && isFinite(x)){ n++; sum+=x; } }
+  if(!n) return (_STATS[metric] = {n:0, mean:null, sd:null});
+  const mean = sum/n;
+  let ss=0;
+  for(const c of COUNTIES){ const x=c[metric]; if(x!=null && isFinite(x)) ss += (x-mean)*(x-mean); }
+  return (_STATS[metric] = {n, mean, sd: Math.sqrt(ss/n)});
+}
+function zScore(metric, v){
+  const s = statsFor(metric);
+  if(v == null || !isFinite(v) || !s.sd) return null;
+  return (v - s.mean) / s.sd;
+}
+
+// ---- Regulatory review indicators ----
+// These are SCREENING PROMPTS, not determinations. A 0-100 environmental
+// pressure score cannot establish CWA jurisdiction or a NEPA obligation:
+// CWA 404 turns on a discharge of dredged or fill material into waters of the
+// United States, established by an aquatic-resource delineation and a
+// jurisdictional determination on the parcel; CWA 401 certification follows
+// from a federal licence or permit that may result in a discharge; and NEPA
+// attaches to a major FEDERAL action, which most private data centres never
+// have. Wattershed screens none of those triggers, so the panel names the
+// statute, states the real test, and says plainly what it has not screened.
+const REG = {
+  w: {
+    at: 55,
+    code: "STATE WATER APPROPRIATION",
+    text: "Elevated basin stress with a large modeled withdrawal commonly triggers state water-appropriation or large-withdrawal permitting, and basin-level review where a compact or adjudication applies. Review the applicable state programme.",
+  },
+  g: {
+    at: 55,
+    code: "LARGE-LOAD INTERCONNECTION",
+    text: "Elevated grid strain indicates interconnection and large-load tariff scrutiny (RTO/ISO study queue, state need or CPCN review). Not an environmental permit, but the schedule-driving one.",
+  },
+  b: {
+    at: 75,
+    code: "STATE EJ REVIEW / TITLE VI",
+    text: "A tract in the upper quartile of national cumulative burden is the population that state environmental-justice review statutes and Title VI of the Civil Rights Act are written around. Check the state programme and any overburdened-community designation.",
+  },
+};
+// Named, never score-derived. Shown once per panel so a consultant sees what
+// this tool does NOT answer, rather than assuming silence means "clear".
+const REG_NOT_SCREENED = [
+  ["CWA §404", "Discharge of dredged/fill material into waters of the U.S. Turns on an aquatic-resource delineation and a jurisdictional determination for the parcel — not on any score here. Not screened."],
+  ["CWA §401", "State/tribal water-quality certification, contingent on a federal licence or permit under §404 or similar. Not screened."],
+  ["NEPA / EIS", "Attaches to a major federal action (federal permit, funding, or land). Absent a federal nexus, no EIS threshold exists to cross. Not screened."],
+];
+function regFor(metric, v){
+  const r = REG[metric];
+  if(!r || v == null || !isFinite(v) || v < r.at) return null;
+  return r;
 }
 const fIn = document.getElementById("finderInput");
 const fAc = document.getElementById("finderAc");
@@ -518,6 +995,85 @@ async function loadTracts(){
 }
 
 const esc = s => String(s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+
+// ---- Tract-boundary proximity (pure geometry + one keyless lookup) ----
+// A marker near a tract line inherits one tract's indicators while the block
+// around it may sit mostly in the next tract. Measured against real TIGERweb
+// polygons, in metres, in a local plane centred on the point — degrees are
+// never compared to metres. Every function below the fetch is pure.
+const BOUNDARY_BUFFER_M = 150;
+const BOUNDARY_WARNING =
+  "High Boundary Proximity: Surrounding environmental vectors may influence local risk metrics.";
+
+function metresPerDegree(lat){
+  const r = lat * Math.PI / 180;
+  return [111132.92 - 559.82*Math.cos(2*r) + 1.175*Math.cos(4*r),
+          Math.max(Math.abs(111412.84*Math.cos(r) - 93.5*Math.cos(3*r)), 1e-6)];
+}
+// squared distance from P to segment AB, planar. Pure.
+function segDist2(px,py,ax,ay,bx,by){
+  const dx=bx-ax, dy=by-ay, L=dx*dx+dy*dy;
+  let t = L ? ((px-ax)*dx + (py-ay)*dy)/L : 0;
+  t = t<0?0:t>1?1:t;
+  const qx=ax+t*dx, qy=ay+t*dy;
+  return (px-qx)*(px-qx) + (py-qy)*(py-qy);
+}
+// Metres from (lat,lon) to the nearest edge of a GeoJSON ring set. Pure.
+function ringsDistanceM(lat, lon, rings){
+  const [mLat, mLon] = metresPerDegree(lat);
+  let best = Infinity;
+  for(const ring of rings){
+    for(let i=0; i+1<ring.length; i++){
+      const a=ring[i], b=ring[i+1];
+      if(!a || !b || a.length<2 || b.length<2) continue;
+      const d2 = segDist2(0, 0,
+                          (a[0]-lon)*mLon, (a[1]-lat)*mLat,
+                          (b[0]-lon)*mLon, (b[1]-lat)*mLat);
+      if(d2 < best) best = d2;
+    }
+  }
+  return best === Infinity ? null : Math.sqrt(best);
+}
+function featureRings(geom){
+  if(!geom) return [];
+  if(geom.type === "Polygon") return geom.coordinates || [];
+  if(geom.type === "MultiPolygon") return (geom.coordinates||[]).flat();
+  return [];
+}
+// Nearest ADJACENT tract, in metres. Pure: features in, measurement out.
+function nearestAdjacentTractM(lat, lon, homeGeoid, features){
+  let best = null, geoid = "", n = 0;
+  for(const f of (features||[])){
+    const g = f && f.properties ? String(f.properties.GEOID||"") : "";
+    if(!g || g === String(homeGeoid)) continue;
+    const d = ringsDistanceM(lat, lon, featureRings(f.geometry));
+    if(d == null || !isFinite(d)) continue;
+    n++;
+    if(best == null || d < best){ best = d; geoid = g; }
+  }
+  return {distance_m: best, nearest_geoid: geoid, neighbors_considered: n};
+}
+// Fetch + classify. Resolves to a neutral record on any failure: an
+// undetermined check is reported as unknown, never as an all-clear.
+async function checkBoundary(lat, lon, homeGeoid){
+  const none = {distance_m:null, nearest_geoid:"", near_boundary:false};
+  try{
+    const [mLat, mLon] = metresPerDegree(lat), half = 1200;
+    const env = {xmin: lon-half/mLon, ymin: lat-half/mLat,
+                 xmax: lon+half/mLon, ymax: lat+half/mLat,
+                 spatialReference:{wkid:4326}};
+    const url = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/"
+      + "Tracts_Blocks/MapServer/0/query?geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326"
+      + "&spatialRel=esriSpatialRelIntersects&outFields=GEOID&returnGeometry=true&f=geojson"
+      + "&geometry=" + encodeURIComponent(JSON.stringify(env));
+    const r = await fetch(url);
+    if(!r.ok) return none;
+    const j = await r.json();
+    const m = nearestAdjacentTractM(lat, lon, homeGeoid, j.features);
+    m.near_boundary = m.distance_m != null && m.distance_m <= BOUNDARY_BUFFER_M;
+    return m;
+  }catch(e){ return none; }
+}
 function busy(msg){ fRes.classList.add("on"); fRes.innerHTML = `<div class="foot">${esc(msg)}</div>`; }
 function fail(msg){ fRes.classList.add("on"); fRes.innerHTML = `<div class="foot">${esc(msg)}</div>`; }
 
@@ -543,41 +1099,45 @@ async function renderPoint(lat, lon, label){
 
   const fips = geoid.slice(0,5);
   const county = COUNTY_BY_FIPS[fips];
-  await loadTracts();
+  // Run in parallel: the boundary check adds no latency to the tract load.
+  const [, bnd] = await Promise.all([
+    loadTracts(), checkBoundary(lat, lon, geoid), screenHazards(lat, lon),
+  ]);
   const tr = TRACTS ? TRACTS[geoid] : null;   // [burden, poll, vuln, poc, pop]
   const burden = tr ? tr[0] : null;
   const cW = county ? county.w : null, cG = county ? county.g : null;
 
-  const cell = (lbl, v, metric, pctSuffix) => {
-    const b = bandOf(v);
-    return `<div class="rs"><div class="lbl" title="${PLAIN[metric].what}">${lbl} ⓘ</div>
-      <div class="v">${v==null?"—":Math.round(v)}<span style="font-size:13px;color:var(--muted)">/100</span></div>
-      <div class="bd" style="color:${b.hex}">${b.label}</div>
-      <div class="meter"><i style="width:${v==null?0:v}%;background:${b.hex}"></i></div>
-      <div class="lbl" style="margin-top:6px">${pctSuffix||""}</div></div>`;
-  };
-  const plain = [["b",burden],["w",cW],["g",cG]].filter(([m,v])=>v!=null)
-    .map(([m,v])=>`<li>${PLAIN[m][bandKey(v)]}</li>`).join("");
   const pocTxt = tr && tr[3]!=null ? ` · ${tr[3]}% people of color` : "";
   const popTxt = tr && tr[4]!=null ? ` · tract pop. ${fmt(tr[4])}` : "";
 
-  fRes.classList.add("on");
-  fRes.innerHTML =
-    `<h3></h3><div class="loc"></div>
-     <div class="rscores">
-       ${cell("Community burden", burden, "b", burden==null?"tract has no burden data":"tract-level, ranked vs. all U.S. tracts")}
-       ${cell("Water stress", cW, "w", "county / sub-basin level")}
-       ${cell("Grid strain & carbon", cG, "g", "county / grid-region level")}
-     </div>
-     ${plain ? `<div class="plain"><strong>In plain terms:</strong><ul>${plain}</ul></div>` : ""}
-     <div class="foot"><strong>How this was placed:</strong> address geocoded by OpenStreetMap;
-       census tract assigned by the FCC Census Area API (point-in-polygon, 2020 tracts). Community
-       burden is tract-level (the pillar that varies block to block); water and grid are inherently
-       sub-basin / grid-region measures, shown at county level. Scores 0–100, higher = more concern.
-       Full provenance-stamped screening: <code>wattershed screen --address "…"</code>.</div>`;
-  fRes.querySelector("h3").textContent = label || countyName || "Screened location";
-  fRes.querySelector(".loc").textContent =
-    `census tract ${geoid}${countyName ? " · " + countyName : ""}${pocTxt}${popTxt}`;
+  renderModel({
+    title: label || countyName || "Screened location",
+    loc: `census tract ${geoid}${countyName ? " · " + countyName : ""}${pocTxt}${popTxt}`,
+    rows: [
+      // Burden here is ALREADY a national tract percentile, so it is its own
+      // percentile and a z-score against it would be circular — a percentile
+      // distribution is uniform by construction. Marked rank-based instead.
+      buildRow("b", "Community burden", burden, {
+        scope: "Census tract", isPercentile: true,
+        note: burden==null ? "tract has no burden data" : "ranked against all U.S. tracts",
+      }),
+      buildRow("w", "Water stress", cW, {scope: "County / sub-basin"}),
+      buildRow("g", "Grid strain & carbon", cG, {scope: "County / grid region"}),
+    ],
+    advisory: bnd.near_boundary ? {
+      icon: "⚑", title: BOUNDARY_WARNING,
+      detail: `This point is ${Math.round(bnd.distance_m)} m from adjacent census tract `
+        + `${bnd.nearest_geoid} (flag threshold ${BOUNDARY_BUFFER_M} m). The community-burden score `
+        + `describes tract ${geoid}; this close to the line, the blocks around the address may be `
+        + `better described by the neighbouring tract. Water and grid are county/regional measures `
+        + `and are unaffected.`,
+    } : null,
+    foot: `<strong>How this was placed:</strong> address geocoded by OpenStreetMap; census tract
+      assigned by the FCC Census Area API (point-in-polygon, 2020 tracts). Community burden is
+      tract-level (the pillar that varies block to block); water and grid are inherently sub-basin /
+      grid-region measures, shown at county level. Scores 0–100, higher = more concern.
+      Full provenance-stamped screening: <code>wattershed screen --address "…"</code>.`,
+  });
 }
 
 async function screenAddress(q){
@@ -596,58 +1156,463 @@ async function screenAddress(q){
 // plain-English reading of each pillar, keyed by band, written for a non-expert
 const PLAIN = {
   w: {
-    what: "how much pressure the local water supply is already under, before adding a large new user",
-    low: "Water supply here is relatively comfortable.",
-    moderate: "Water supply here is under moderate pressure.",
-    elevated: "Water supply here is already strained; a large new user would compete with existing demand.",
-    high: "Water is scarce here. A large water-cooled facility would draw on a supply that is already stretched.",
+    what: "sub-basin withdrawal-to-supply balance, before any new large user",
+    low: "Withdrawal-to-supply ratio in the lower national range.",
+    moderate: "Withdrawal-to-supply ratio in the middle national range.",
+    elevated: "Basin demand is a substantial share of renewable supply; a large new withdrawal competes with existing users.",
+    high: "Basin withdrawals approach or exceed renewable supply. A large water-cooled load draws on an over-allocated source.",
   },
   g: {
-    what: "how carbon-heavy and how strained the regional electricity grid is",
-    low: "The regional grid is relatively clean and has room.",
-    moderate: "The regional grid carries a moderate carbon and reliability load.",
-    elevated: "The regional grid is carbon-heavy or reliability-strained; new large loads add to that.",
-    high: "The regional grid is both carbon-heavy and reliability-strained. A large new load deepens the strain.",
+    what: "carbon intensity and resource adequacy of the regional grid",
+    low: "Subregion emission rate and resource adequacy both in the lower national range.",
+    moderate: "Subregion carries a mid-range emission rate or resource-adequacy margin.",
+    elevated: "Subregion is carbon-intensive or resource-adequacy constrained; new large load adds to the shortfall.",
+    high: "Subregion is both carbon-intensive and resource-adequacy constrained across the assessment horizon.",
   },
   b: {
-    what: "how much pollution and health burden the surrounding community already carries",
-    low: "The surrounding community carries relatively little existing environmental burden.",
-    moderate: "The surrounding community carries a moderate existing environmental burden.",
-    elevated: "The surrounding community already carries an elevated pollution and health burden.",
-    high: "The surrounding community is already heavily burdened by pollution and health stress. New industrial load lands on people who are already carrying more than their share.",
+    what: "existing cumulative pollution and health burden of the surrounding population",
+    low: "Tract ranks in the lower range of national cumulative burden.",
+    moderate: "Tract ranks in the middle range of national cumulative burden.",
+    elevated: "Tract ranks above the national third quartile for combined pollution and health burden.",
+    high: "Tract ranks in the upper decile of national cumulative burden. Additional industrial load is sited on an already-overburdened population.",
   },
 };
-const bandKey = v => v == null ? null : v >= 75 ? "high" : v >= 55 ? "elevated" : v >= 35 ? "moderate" : "low";
+// ============================================================================
+//  Dual-view results engine
+//
+//  One payload, two treatments. Every derived number — band, percentile,
+//  z-score, regulatory prompt — is computed ONCE in buildRow() and stored on
+//  the model. The two views are formatters over that same array; neither
+//  recomputes anything, and toggling re-renders from the cached model without
+//  touching the network. Adding a metric means one buildRow() call, not an
+//  edit in two places (which is how the old cell() helper drifted into two
+//  near-identical copies).
+// ============================================================================
+const VIEWS = {
+  public:     {label:"Public Summary View",       short:"Public Summary"},
+  consultant: {label:"Consultant Analytics View", short:"Consultant Analytics"},
+};
+const VIEWSTATE = {view:"public", model:null};
+
+function buildRow(metric, label, value, opts){
+  opts = opts || {};
+  const v = (value == null || !isFinite(value)) ? null : value;
+  const isPct = !!opts.isPercentile;
+  return {
+    metric, label, value: v,
+    scope: opts.scope || "",
+    note: opts.note || "",
+    isPercentile: isPct,
+    risk:  bandOf(v, RISK3),     // 3-tier, public
+    band:  bandOf(v, BAND4),     // 4-tier, analytic
+    // A tract percentile IS its own rank; ranking it against the county atlas
+    // would compare two different populations.
+    pctile: isPct ? (v == null ? null : Math.round(v)) : pctile(metric, v),
+    z:      isPct ? null : zScore(metric, v),
+    stats:  isPct ? null : statsFor(metric),
+    plain: v == null ? "" : (PLAIN[metric] || {})[bandKey(v)] || "",
+    advisory: advisoryFor(metric, v),
+    what:  (PLAIN[metric] || {}).what || "",
+    reg:   regFor(metric, v),
+  };
+}
+
+const fmtNum = (v, d) => v == null || !isFinite(v) ? "—" : v.toFixed(d == null ? 1 : d);
+const fmtZ = z => z == null ? "—" : (z >= 0 ? "+" : "−") + Math.abs(z).toFixed(2);
+
+// High-alert status indicator. Fires on the top analytic band only — if it
+// appeared on "elevated" too it would be lit on most results and stop meaning
+// anything. Two offset rings read as a slow sonar sweep rather than a blink.
+// aria-hidden: the band label already carries this in text, so the ring is
+// decoration to a screen reader, not a second announcement.
+const isAlert = r => r.band.key === "high";
+
+// Explicit +/-1 sigma bounds of the reference distribution, so a reader can
+// place the value without recomputing from mu and sigma separately.
+function sigmaBounds(r){
+  const s = r.stats;
+  if(r.isPercentile || !s || s.mean == null || !s.sd) return "\u2014";
+  return `${(s.mean - s.sd).toFixed(1)}\u2013${(s.mean + s.sd).toFixed(1)}`;
+}
+const pulseSVG = () =>
+  `<svg class="pulse" viewBox="0 0 14 14" aria-hidden="true" focusable="false">
+     <circle class="ring" cx="7" cy="7" r="4"></circle>
+     <circle class="ring b" cx="7" cy="7" r="4"></circle>
+     <circle class="core" cx="7" cy="7" r="2.6"></circle>
+   </svg>`;
+
+// ---- Mechanical configuration overlay --------------------------------------
+// Mirrors wattershed.scoring.project exactly; tests assert the two agree.
+// The location pillars are NOT touched: cooling changes this project's demand,
+// not the basin's water stress or the subregion's emission rate.
+const LB_PER_KG = 2.204622, HOURS_PER_YEAR = 8760, L_PER_GAL = 3.785412;
+const COOLING = {
+  evaporative: {label:"Evaporative cooling loop",   pue:1.20, wue:1.80, conf:"high"},
+  air:         {label:"Closed-loop air chillers",   pue:1.35, wue:0.05, conf:"high"},
+  dlc:         {label:"Direct-liquid cooling",      pue:1.15, wue:0.20, conf:"medium"},
+};
+const COOLING_BASE = "evaporative";
+let MECH = COOLING_BASE;
+
+const cueKgPerKwh = (pue, lbPerMwh) =>
+  (lbPerMwh == null || !isFinite(lbPerMwh)) ? null : pue * (lbPerMwh / LB_PER_KG / 1000);
+const waterMultiplier = k => +(COOLING[k].wue / COOLING[COOLING_BASE].wue).toFixed(4);
+const gridMultiplier  = k => +(COOLING[k].pue / COOLING[COOLING_BASE].pue).toFixed(4);
+
+// Green Grid matrix for all three configurations, active row marked.
+function mechMatrix(lbPerMwh){
+  const rows = Object.keys(COOLING).map(k => {
+    const c = COOLING[k], cue = cueKgPerKwh(c.pue, lbPerMwh);
+    const on = k === MECH;
+    return `<tr class="row">
+      <td class="metric">${on ? "\u25B8 " : ""}${esc(c.label)}
+        <span class="scope">${k === COOLING_BASE ? "baseline" : "vs baseline"}${c.conf === "medium" ? " \u00b7 medium-confidence factors" : ""}</span></td>
+      <td class="r">${c.pue.toFixed(2)}</td>
+      <td class="r">${c.wue.toFixed(2)}</td>
+      <td class="r ${cue==null?"nil":""}">${cue==null ? "\u2014" : cue.toFixed(4)}</td>
+      <td class="r dim">${waterMultiplier(k).toFixed(3)}\u00d7</td>
+      <td class="r dim">${gridMultiplier(k).toFixed(3)}\u00d7</td>
+    </tr>`;
+  }).join("");
+  return `<div class="dmxwrap"><table class="dmx">
+    <caption>Green Grid metrics by mechanical configuration \u00b7 location pillars unchanged</caption>
+    <thead><tr>
+      <th scope="col">Configuration</th>
+      <th scope="col" class="r">PUE</th>
+      <th scope="col" class="r">WUE L/kWh</th>
+      <th scope="col" class="r">CUE kg/kWh</th>
+      <th scope="col" class="r">Site water</th>
+      <th scope="col" class="r">Facility power</th>
+    </tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+// ---- Fatal-flaw screening (browser subset) ---------------------------------
+// FEMA NFHL permits cross-origin reads; the USGS design-map service sends no
+// CORS header, so S_DS is reported as report-only rather than silently omitted.
+const HAZ = {flood:null, wetland:null, checked:false};
+async function screenHazards(lat, lon){
+  const pt = encodeURIComponent(JSON.stringify({x:lon, y:lat}));
+  const q = u => `${u}?geometry=${pt}&geometryType=esriGeometryPoint&inSR=4326`
+    + `&spatialRel=esriSpatialRelIntersects&returnGeometry=false&f=json`;
+  try{
+    const r = await fetch(q("https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query")
+      + "&outFields=FLD_ZONE,ZONE_SUBTY,SFHA_TF");
+    const j = await r.json();
+    HAZ.flood = (j.features || []).map(f => f.attributes);
+  }catch(e){ HAZ.flood = null; }
+  try{
+    const r = await fetch(q("https://fwspublicservices.wim.usgs.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0/query")
+      + "&outFields=Wetlands.WETLAND_TYPE,Wetlands.ACRES");
+    const j = await r.json();
+    HAZ.wetland = (j.features || []).map(f => {
+      const o = {}; for(const k in f.attributes) o[k.split(".").pop()] = f.attributes[k];
+      return o;
+    });
+  }catch(e){ HAZ.wetland = null; }
+  HAZ.checked = true;
+  return HAZ;
+}
+
+// Pure classifiers, mirroring scoring/hazards.py.
+function floodFlag(zones){
+  if(zones == null) return {sev:"unscreened", text:"FEMA NFHL not reached; floodplain status unknown."};
+  if(!zones.length) return {sev:"advisory", text:"No NFHL coverage at this point. Absence of a mapped polygon is not evidence of absence of flood risk."};
+  const sfha = zones.find(z => String(z.SFHA_TF || "").toUpperCase() === "T");
+  if(sfha) return {sev:"high", text:`Within FEMA Special Flood Hazard Area (Zone ${sfha.FLD_ZONE || "unspecified"}). Regulatory 1%-annual-chance floodplain; NFIP and local floodplain-development review apply.`};
+  return {sev:"none", text:`Outside the Special Flood Hazard Area (Zone ${zones[0].FLD_ZONE || "unspecified"}).`};
+}
+function wetlandFlag(feats){
+  if(feats == null) return {sev:"unscreened", text:"USFWS NWI not reached; wetland status unknown."};
+  if(!feats.length) return {sev:"none", text:"No NWI wetland polygon at this point. NWI is an inventory, not a jurisdictional determination."};
+  const kinds = [...new Set(feats.map(f => f.WETLAND_TYPE).filter(Boolean))];
+  return {sev:"elevated", text:`Mapped NWI wetland intersects this point${kinds.length ? " ("+kinds.join(", ")+")" : ""}. Indicates a possible Clean Water Act \u00a7404 pathway; requires an aquatic-resource delineation. NWI is not a jurisdictional determination.`};
+}
+
+function hazardStrip(){
+  if(!HAZ.checked) return "";
+  const rows = [["flood", floodFlag(HAZ.flood)], ["wetland", wetlandFlag(HAZ.wetland)]]
+    .map(([k, f]) => `<div class="hz"><span class="hk">${k}</span>
+      <span class="hv"><strong>${esc(f.sev.toUpperCase())}</strong> \u2014 ${esc(f.text)}</span></div>`).join("");
+  return `<div class="hazstrip">
+      <div class="cap">Spatial constraint screen \u00b7 not pillar scores</div>
+      ${rows}
+      <div class="hz"><span class="hk">seismic</span><span class="hv">
+        <strong>REPORT ONLY</strong> \u2014 ASCE 7-16 S_DS is not retrievable in-browser
+        (the USGS design-map service sends no CORS header). Available via
+        <code>wattershed screen</code>.</span></div>
+    </div>`;
+}
+
+// ---- Actionable Technical Advisory Brief -----------------------------------
+// Fires above ADVISORY_AT on any pillar. Computed once per row in buildRow()
+// and cached on the model, so toggling views re-reads a string rather than
+// re-deriving anything.
+//
+// Threshold caveat, stated in the brief itself: 70 does not mean the same
+// thing on all three pillars. Water and grid are constructed 0-100 indices;
+// community burden IS a national percentile, so >70 there means "worse than
+// 70% of U.S. tracts".
+const ADVISORY_AT = 70;
+const ADVISORY = {
+  w: {
+    level: "CRITICAL", head: "Water — reduce withdrawal, don't work around the permit",
+    plain: "A water-cooled design here would compete with a supply that is already stretched. Air-cooled or reclaimed-water designs are the usual answer.",
+    points: [
+      "Evaluate closed-loop air-cooled (dry cooler) or hybrid-adiabatic heat rejection to cut or eliminate evaporative make-up water.",
+      "Pursue a municipal reclaimed / greywater supply agreement where the utility offers one — proven at scale in Phoenix-metro and Douglas County, GA.",
+      "Zero Liquid Discharge treats cooling blowdown to near-zero discharge; it is a discharge control, not a cooling method, and it raises energy and carbon. Model it against the grid score before committing.",
+      "Target withdrawal below the state's permitting threshold on engineering merit. Designing to evade a threshold is a diligence finding, not a mitigation.",
+    ],
+  },
+  g: {
+    level: "WARNING", head: "Grid — carbon-intense and capacity-constrained",
+    plain: "The regional grid is both carbon-heavy and tight on capacity, so a large new load is expensive to serve and expensive to account for.",
+    points: [
+      "Expect substation and transmission upgrade costs to be allocated to the project in the interconnection study; price the study queue into the schedule, not just the capex.",
+      "Evaluate on-site storage for capacity contribution and peak-shaving under the applicable large-load tariff.",
+      "Contract 24/7 carbon-free energy or hourly-matched PPAs. Annual unbundled RECs move the reported Scope 2 number without changing the physical burden on this grid — an increasingly contested position in disclosure review.",
+      "Location-based Scope 2 is what this score reflects; market-based accounting will read differently and both are usually requested.",
+    ],
+  },
+  b: {
+    level: "HIGH RISK", head: "Community — cumulative burden already in the upper tier",
+    plain: "People here already carry more pollution and health burden than most of the country. New industrial load lands on top of that.",
+    points: [
+      "Principal exposure is permitting and administrative — state EJ review provisions, Title VI complaints, and organised local opposition — more often than litigation.",
+      "Open a Community Benefits Agreement early, while siting is still negotiable; a CBA offered after approval reads as a settlement.",
+      "Fund independent local air and noise monitoring with a public data commitment, including a pre-construction baseline.",
+      "Backup-generator testing hours and water draw are the two operating parameters communities most commonly litigate or legislate; set them conservatively in the permit.",
+    ],
+  },
+};
+
+function advisoryFor(metric, value){
+  if(value == null || !isFinite(value) || value <= ADVISORY_AT) return null;
+  const a = ADVISORY[metric];
+  return a ? Object.assign({metric: metric, at: ADVISORY_AT}, a) : null;
+}
+
+// Shared by BOTH views — one source of truth, two densities of presentation.
+function renderAdvisory(rows, view){
+  const hits = rows.map(r => r.advisory).filter(Boolean);
+  if(!hits.length) return "";
+  const body = view === "public"
+    ? `<ul class="adv-list">${hits.map(a =>
+        `<li><span class="adv-tag" style="color:${bandVar('high')}">${esc(a.level)}</span>
+         ${esc(a.plain)}</li>`).join("")}</ul>`
+    : hits.map(a =>
+        `<div class="adv-block">
+           <div class="adv-head"><span class="adv-tag" style="color:${bandVar('high')}">${esc(a.level)}</span>
+             ${esc(a.head)}</div>
+           <ul>${a.points.map(pt => `<li>${esc(pt)}</li>`).join("")}</ul>
+         </div>`).join("");
+  return `<section class="advisory-brief" aria-labelledby="advbrief">
+      <h4 id="advbrief">Actionable Technical Advisory Brief</h4>
+      <p class="adv-sub">Triggered where a pillar exceeds ${ADVISORY_AT}/100.
+        Water and grid are constructed indices; community burden is a national
+        percentile, so &gt;${ADVISORY_AT} there means worse than ${ADVISORY_AT}% of U.S. tracts.</p>
+      ${body}
+      <p class="adv-foot">Screening-level engineering guidance for early siting review —
+        not a design specification, permit determination, or substitute for site-specific
+        engineering and legal counsel.</p>
+    </section>`;
+}
+
+// ---- View A: Public Summary ------------------------------------------------
+// Same typographic register as the analytics matrix: 1px rules, monospace
+// tabular figures, no fills. It carries fewer columns, not a softer voice.
+// The single reading column is retained deliberately — a screening tool whose
+// findings a resident cannot parse fails the population the burden pillar is
+// about. It is written as a declarative statement, not a conversational one.
+function viewPublic(model){
+  const rows = model.rows.map(r => {
+    const pct = r.value == null ? 0 : Math.max(0, Math.min(100, r.value));
+    const vtext = r.value == null ? "no data"
+      : `${Math.round(r.value)} of 100, ${r.risk.label}`;
+    return `<tr class="row">
+      <td class="metric">${esc(r.label)}<span class="scope">${esc(r.scope)}</span></td>
+      <td class="r">${r.value == null ? "\u2014" : Math.round(r.value)}</td>
+      <td class="bandcell" style="color:${bandVar(r.risk.tone)}">${esc(r.risk.label)}${isAlert(r)?pulseSVG():""}</td>
+      <td>
+        <div class="pmeter" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+             ${r.value==null ? "" : `aria-valuenow="${Math.round(r.value)}"`}
+             aria-valuetext="${esc(vtext)}" aria-label="${esc(r.label)} score">
+          <i style="--v:${(pct/100).toFixed(4)}; background:${bandVar(r.risk.tone)}"></i>
+        </div>
+      </td>
+      <td class="read">${esc(r.plain || r.note || "No data for this location.")}</td>
+    </tr>`;
+  }).join("");
+  return `<div class="dmxwrap"><table class="dmx">
+      <caption>Location pressure \u00b7 0\u2013100, higher = greater pressure</caption>
+      <thead><tr>
+        <th scope="col">Metric</th><th scope="col" class="r">Score</th>
+        <th scope="col">Band</th><th scope="col">Scale</th><th scope="col">Reading</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>`
+    + renderAdvisory(model.rows, "public");
+}
+
+// ---- View B: Consultant Analytics -----------------------------------------
+function viewConsultant(model){
+  const rows = model.rows.map((r, i) => {
+    const s = r.stats;
+    const dist = r.isPercentile
+      ? "rank-based"
+      : (s && s.mean != null ? `μ ${fmtNum(s.mean)} · σ ${fmtNum(s.sd)}` : "—");
+    const nil = v => v == null;
+    return `<tr class="row">
+      <td class="metric">${esc(r.label)}<span class="scope">${esc(r.scope)}</span></td>
+      <td class="r ${nil(r.value)?"nil":""}">${r.value==null?"—":fmtNum(r.value)}</td>
+      <td class="r ${nil(r.pctile)?"nil":"dim"}">${r.pctile==null?"—":"P"+r.pctile}</td>
+      <td class="r ${nil(r.z)?"nil":""}">${fmtZ(r.z)}</td>
+      <td class="dim">${esc(dist)}</td>
+      <td class="r dim">${esc(sigmaBounds(r))}</td>
+      <td class="bandcell" style="color:${bandVar(r.band.tone)}">${isAlert(r)?pulseSVG():""}${esc(r.band.label)}</td>
+      <td>${r.reg ? `<span class="reg">▸ ${esc(r.reg.code)}</span>` : `<span class="reg nil">—</span>`}</td>
+      <td class="r"><button class="exp" type="button" aria-expanded="false"
+            aria-controls="det${i}" aria-label="Detail for ${esc(r.label)}"
+            data-exp="${i}">›</button></td>
+    </tr>
+    <tr class="det" id="det${i}" hidden><td colspan="9"><dl>
+      <dt>Definition</dt><dd>${esc(r.what || "—")}</dd>
+      <dt>Scope</dt><dd>${esc(r.scope)}${r.note ? " · " + esc(r.note) : ""}</dd>
+      <dt>Distribution</dt><dd>${r.isPercentile
+        ? "Value is a national percentile rank across all U.S. census tracts; a z-score against it would be circular, as a percentile distribution is uniform by construction."
+        : (s && s.n ? `z computed against ${fmt(s.n)} U.S. counties (population σ).` : "No reference distribution available.")}</dd>
+      ${r.reg ? `<dt>Regulatory</dt><dd><strong>${esc(r.reg.code)}</strong> — ${esc(r.reg.text)}</dd>` : ""}
+    </dl></td></tr>`;
+  }).join("");
+
+  const notScreened = REG_NOT_SCREENED
+    .map(([k, v]) => `<span class="detail"><strong>${esc(k)}</strong> — ${esc(v)}</span>`).join("");
+
+  return `<div class="dmxwrap"><table class="dmx">
+      <caption>Screening matrix · values 0–100, higher = greater pressure</caption>
+      <thead><tr>
+        <th scope="col">Metric</th><th scope="col" class="r">Value</th>
+        <th scope="col" class="r">Pctl</th><th scope="col" class="r">z (σ)</th>
+        <th scope="col">Reference dist.</th><th scope="col" class="r">\u03bc\u00b11\u03c3</th><th scope="col">Band</th>
+        <th scope="col">Regulatory pathway</th><th scope="col" class="r"><span class="sr-only">Detail</span></th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <div class="advisory" role="note"><span class="ico">§</span>
+      <span><strong>Regulatory markers are review prompts, not determinations.</strong>
+      <span class="detail">A pressure score cannot establish jurisdiction or a permitting
+      obligation. The following are named because a reader may expect them, and are
+      <em>not screened by this tool</em>:</span>
+      ${notScreened}</span></div>`
+    + mechBlock(model)
+    + hazardStrip()
+    + renderAdvisory(model.rows, "consultant");
+}
+
+// Mechanical configuration selector + Green Grid matrix.
+function mechBlock(model){
+  const opts = Object.keys(COOLING).map(k =>
+    `<option value="${k}"${k === MECH ? " selected" : ""}>${esc(COOLING[k].label)}</option>`).join("");
+  return `<div class="mech">
+      <label for="mechSel">Mechanical configuration</label>
+      <select id="mechSel" aria-describedby="mechBasis">${opts}</select>
+      <span class="basis" id="mechBasis">Alters this project's demand only. Location pillars
+        are properties of the site and do not move with cooling choice.</span>
+    </div>${mechMatrix(model.gridLbPerMwh)}`;
+}
+
+// ---- Controller ------------------------------------------------------------
+function renderModel(model){
+  if(model) VIEWSTATE.model = model;
+  const m = VIEWSTATE.model;
+  if(!m) return;
+  const view = VIEWSTATE.view;
+  const tabs = Object.keys(VIEWS).map(k =>
+    `<button role="tab" type="button" id="tab-${k}" data-view="${k}"
+       aria-selected="${k===view}" aria-controls="viewpanel" tabindex="${k===view?0:-1}"
+     >${esc(VIEWS[k].short)}</button>`).join("");
+
+  fRes.innerHTML =
+    `<div class="rhead">
+       <div class="rtitle"><h3></h3><div class="loc"></div></div>
+       <div class="vtoggle" role="tablist" aria-label="Results detail level">${tabs}</div>
+     </div>
+     <div id="viewpanel" role="tabpanel" aria-labelledby="tab-${view}" tabindex="0">
+       ${view === "public" ? viewPublic(m) : viewConsultant(m)}
+     </div>
+     ${m.advisory ? `<div class="advisory" role="note"><span class="ico">${esc(m.advisory.icon)}</span>
+       <span><strong>${esc(m.advisory.title)}</strong>
+       <span class="detail">${esc(m.advisory.detail)}</span></span></div>` : ""}
+     ${m.foot ? `<div class="foot">${m.foot}</div>` : ""}`;
+
+  // Titles go in as text, never markup — a county name can never inject HTML.
+  fRes.querySelector("h3").textContent = m.title;
+  fRes.querySelector(".loc").textContent = m.loc;
+  fRes.classList.add("on");
+}
+
+function setView(v){
+  if(!VIEWS[v] || v === VIEWSTATE.view) return;
+  VIEWSTATE.view = v;
+  renderModel();                                  // re-render from cache; no refetch
+  const btn = fRes.querySelector(`.vtoggle button[data-view="${v}"]`);
+  if(btn) btn.focus();
+}
+
+// One delegated listener for the whole panel: the toggle and every expander,
+// however many times the panel is re-rendered.
+fRes.addEventListener("change", e => {
+  const sel = e.target.closest("#mechSel");
+  if(!sel) return;
+  MECH = sel.value in COOLING ? sel.value : COOLING_BASE;
+  renderModel();                      // cached model; no refetch, no recompute
+});
+fRes.addEventListener("click", e => {
+  const tab = e.target.closest(".vtoggle button[data-view]");
+  if(tab){ setView(tab.getAttribute("data-view")); return; }
+  const exp = e.target.closest("button[data-exp]");
+  if(exp){
+    const row = document.getElementById("det" + exp.getAttribute("data-exp"));
+    if(!row) return;
+    const open = exp.getAttribute("aria-expanded") === "true";
+    exp.setAttribute("aria-expanded", String(!open));
+    row.hidden = open;
+  }
+});
+// Arrow-key navigation between tabs, as expected of a tablist.
+fRes.addEventListener("keydown", e => {
+  if(!e.target.closest(".vtoggle button[data-view]")) return;
+  const keys = Object.keys(VIEWS);
+  let i = keys.indexOf(VIEWSTATE.view);
+  if(e.key === "ArrowRight" || e.key === "ArrowDown") i++;
+  else if(e.key === "ArrowLeft" || e.key === "ArrowUp") i--;
+  else if(e.key === "Home") i = 0;
+  else if(e.key === "End") i = keys.length - 1;
+  else return;
+  e.preventDefault();
+  setView(keys[(i + keys.length) % keys.length]);
+});
 
 function renderResult(c, note){
-  const cell = (label, metric) => {
-    const v = c[metric], b = bandOf(v), p = pctile(metric, v);
-    return `<div class="rs"><div class="lbl" title="${PLAIN[metric].what}">${label} ⓘ</div>
-      <div class="v">${v==null?"—":Math.round(v)}<span style="font-size:13px;color:var(--muted)">/100</span></div>
-      <div class="bd" style="color:${b.hex}">${b.label}</div>
-      <div class="meter"><i style="width:${v==null?0:v}%;background:${b.hex}"></i></div>
-      <div class="lbl" style="margin-top:6px">${p==null?"":"higher than "+p+"% of U.S. counties"}</div></div>`;
-  };
-  // plain-language summary sentence for each pillar that has a score
-  const plain = ["w", "g", "b"]
-    .filter(m => c[m] != null)
-    .map(m => `<li>${PLAIN[m][bandKey(c[m])]}</li>`)
-    .join("");
-  fRes.innerHTML =
-    `<h3></h3><div class="loc"></div>
-     <div class="rscores">
-       ${cell("Water stress","w")}${cell("Grid strain & carbon","g")}${cell("Community burden","b")}
-     </div>
-     <div class="plain"><strong>In plain terms:</strong><ul>${plain}</ul></div>
-     <div class="foot">County-level snapshot (structural water only; no project load assumed).
-       Scores are 0–100, higher = more concern. For the full tract-level screening of a specific
-       parcel — with drought, demand modeling, nearby facilities and the provenance ledger — run
-       <code>wattershed screen --lat &lt;lat&gt; --lon &lt;lon&gt;</code>.</div>`;
-  // set text via textContent so a county name can never inject markup
-  fRes.querySelector("h3").textContent = c.n;
-  fRes.querySelector(".loc").textContent =
-    (note ? note + " · " : "") + `FIPS ${c.f} · population ${fmt(c.p)}` + (c.sr ? ` · eGRID subregion ${c.sr}` : "");
-  fRes.classList.add("on");
+  renderModel({
+    title: c.n,
+    loc: (note ? note + " · " : "") + `FIPS ${c.f} · population ${fmt(c.p)}`
+         + (c.sr ? ` · eGRID subregion ${c.sr}` : ""),
+    rows: [
+      buildRow("w", "Water stress", c.w, {scope: "County / sub-basin"}),
+      buildRow("g", "Grid strain & carbon", c.g, {scope: "County / grid region"}),
+      buildRow("b", "Community burden", c.b, {scope: "County aggregate"}),
+    ],
+    advisory: {
+      icon: "⚠",
+      title: "Scale Alert: County-level aggregated metrics mask hyper-local, tract-level variances.",
+      detail: "This is a whole-county average. Community burden in particular varies sharply block "
+        + "to block — a county in the low band routinely contains tracts in the top national "
+        + "decile. Enter a street address above for a tract-level screening of a specific parcel.",
+    },
+    foot: `County-level snapshot (structural water only; no project load assumed). Scores are 0–100,
+      higher = more concern. For the full tract-level screening of a specific parcel — with drought,
+      demand modeling, nearby facilities and the provenance ledger — run
+      <code>wattershed screen --lat &lt;lat&gt; --lon &lt;lon&gt;</code>.`,
+  });
 }
 
 function selectCounty(fips){
@@ -724,6 +1689,10 @@ document.getElementById("finderGeo").addEventListener("click", ()=>{
 });
 
 statTiles(); legend(); dots(); table();
+// Infrastructure layer loads after first paint: the map is usable immediately
+// and the ~90 KB layer arrives without blocking it. Absent (before the first
+// data-sync run) the bar stays hidden and nothing else changes.
+loadFacilities().then(renderFacilities);
 document.getElementById("counties").style.display = "none";
 select(SITES.slice().sort((a,b)=>ORDER.indexOf(a.tier)-ORDER.indexOf(b.tier))[0].slug);
 </script>

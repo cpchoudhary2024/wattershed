@@ -1,0 +1,265 @@
+{
+  "density": {
+    "47037010201": 50.0,
+    "47037012701": 70.7,
+    "47037015630": 50.0,
+    "47037016100": 50.0,
+    "47057500401": 50.0,
+    "47065002000": 50.0,
+    "47125102010": 100.0,
+    "47145980100": 50.0,
+    "47157004200": 50.0,
+    "47157022700": 61.2,
+    "47187050304": 50.0,
+    "47187050306": 61.2,
+    "47187050307": 79.1,
+    "47187050904": 70.7,
+    "47187051001": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 36.282175,
+      "lon": -86.797137,
+      "name": "Verizon Wireless",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47037010201"
+    },
+    {
+      "lat": 36.215392,
+      "lon": -86.783629,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47037012701"
+    },
+    {
+      "lat": 36.215644,
+      "lon": -86.784001,
+      "name": "Tennessee Processing Center LLC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47037012701"
+    },
+    {
+      "lat": 36.032635,
+      "lon": -86.637717,
+      "name": "HCA Information Technology & Services Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47037015630"
+    },
+    {
+      "lat": 36.1405,
+      "lon": -86.764136,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47037016100"
+    },
+    {
+      "lat": 36.328074,
+      "lon": -83.376704,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47057500401"
+    },
+    {
+      "lat": 35.03155,
+      "lon": -85.297252,
+      "name": "DC Blox Chattanooga",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47065002000"
+    },
+    {
+      "lat": 36.327032,
+      "lon": -88.320073,
+      "name": "Newrays Two LLC Mining",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47079969300"
+    },
+    {
+      "lat": 36.62459,
+      "lon": -87.261292,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
+      "lat": 36.624839,
+      "lon": -87.26351,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
+      "lat": 36.628255,
+      "lon": -87.260102,
+      "name": "Google Montgomery Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
+      "lat": 36.624311,
+      "lon": -87.259022,
+      "name": "SPC3A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
+      "lat": 36.624063,
+      "lon": -87.256912,
+      "name": "SPC4A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
+      "lat": 35.929513,
+      "lon": -84.310567,
+      "name": "Frontier (supercomputer)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47145980100"
+    },
+    {
+      "lat": 35.14603,
+      "lon": -90.05178,
+      "name": "xAI Colossus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47157004200"
+    },
+    {
+      "lat": 34.997983,
+      "lon": -90.034867,
+      "name": "xAI Macrohard Colossus 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47157022700"
+    },
+    {
+      "lat": 35.05995,
+      "lon": -90.156382,
+      "name": "xAI Colossus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47157980300"
+    },
+    {
+      "lat": 35.06008,
+      "lon": -90.15219,
+      "name": "xAI Colossus 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "curated",
+      "tract": "47157980300"
+    },
+    {
+      "lat": 36.408496,
+      "lon": -86.37162,
+      "name": "Gallatin Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.411893,
+      "lon": -86.369653,
+      "name": "Meta Gallatin Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.411378,
+      "lon": -86.366004,
+      "name": "Meta Gallatin Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.406064,
+      "lon": -86.366628,
+      "name": "Meta Gallatin Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.023489,
+      "lon": -86.79162,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47187050304"
+    },
+    {
+      "lat": 35.972729,
+      "lon": -86.808495,
+      "name": "Flexential Nashville - Brentwood",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47187050306"
+    },
+    {
+      "lat": 35.951045,
+      "lon": -86.833406,
+      "name": "Flexential Nashville - Cool Springs",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47187050307"
+    },
+    {
+      "lat": 35.92451,
+      "lon": -86.855687,
+      "name": "TierPoint",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47187050904"
+    },
+    {
+      "lat": 35.92042,
+      "lon": -86.81554,
+      "name": "Flexential Nashville - Franklin",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47187051001"
+    }
+  ],
+  "state_fips": "47"
+}

@@ -1,0 +1,1243 @@
+{
+  "density": {
+    "48027020800": 50.0,
+    "48029110100": 79.1,
+    "48029110600": 70.7,
+    "48029141700": 50.0,
+    "48029171912": 100.0,
+    "48029171918": 100.0,
+    "48029171923": 100.0,
+    "48029171926": 100.0,
+    "48029171928": 100.0,
+    "48029172002": 100.0,
+    "48029172009": 100.0,
+    "48029191405": 50.0,
+    "48029191814": 50.0,
+    "48085030517": 50.0,
+    "48085031418": 100.0,
+    "48085031510": 70.7,
+    "48085031657": 50.0,
+    "48085031813": 100.0,
+    "48085031901": 93.5,
+    "48085032016": 93.5,
+    "48113002100": 86.6,
+    "48113003103": 86.6,
+    "48113010001": 100.0,
+    "48113010003": 100.0,
+    "48113014159": 70.7,
+    "48113019042": 86.6,
+    "48113019053": 100.0,
+    "48113020401": 86.6,
+    "48121020312": 100.0,
+    "48139060206": 100.0,
+    "48139060802": 86.6,
+    "48141004309": 50.0,
+    "48201420200": 50.0,
+    "48201540200": 50.0,
+    "48201542901": 50.0,
+    "48201554201": 70.7,
+    "48209010100": 50.0,
+    "48221160212": 50.0,
+    "48325000103": 86.6,
+    "48339691201": 70.7,
+    "48439106002": 50.0,
+    "48439106518": 61.2,
+    "48439111314": 50.0,
+    "48439113510": 61.2,
+    "48439113941": 100.0,
+    "48439113955": 50.0,
+    "48439123302": 50.0,
+    "48441013404": 50.0,
+    "48453000902": 70.7,
+    "48453002216": 50.0,
+    "48453002313": 100.0,
+    "48453002448": 100.0,
+    "48453040300": 50.0,
+    "48453044800": 50.0,
+    "48485013201": 50.0,
+    "48491020709": 50.0,
+    "48491020820": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 31.057523,
+      "lon": -97.298298,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48027020800"
+    },
+    {
+      "lat": 29.429371,
+      "lon": -98.486906,
+      "name": "H5 Data Centers San Antonio",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029110100"
+    },
+    {
+      "lat": 29.4246,
+      "lon": -98.49514,
+      "name": "San Antonio DCs",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029110100"
+    },
+    {
+      "lat": 29.438279,
+      "lon": -98.506522,
+      "name": "Lumen San Antonio 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029110600"
+    },
+    {
+      "lat": 29.29301,
+      "lon": -98.391599,
+      "name": "Amazon AWS SAT - 12807 Donop",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029141700"
+    },
+    {
+      "lat": 29.470328,
+      "lon": -98.686191,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.470212,
+      "lon": -98.687667,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.46661,
+      "lon": -98.688087,
+      "name": "CyrusOne San Antonio I",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.472854,
+      "lon": -98.689575,
+      "name": "Lowe's Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.47827,
+      "lon": -98.690685,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.481054,
+      "lon": -98.69657,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.479881,
+      "lon": -98.692534,
+      "name": "Microsoft San Antonio",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.474237,
+      "lon": -98.680079,
+      "name": "Valero Wiserman",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.479085,
+      "lon": -98.697701,
+      "name": "Vantage Data Centers TX22",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171912"
+    },
+    {
+      "lat": 29.47022,
+      "lon": -98.698835,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171918"
+    },
+    {
+      "lat": 29.449157,
+      "lon": -98.653126,
+      "name": "QTS San Antonio II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171923"
+    },
+    {
+      "lat": 29.450677,
+      "lon": -98.638704,
+      "name": "Amazon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171926"
+    },
+    {
+      "lat": 29.447379,
+      "lon": -98.640716,
+      "name": "Texas Cryptologic Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171926"
+    },
+    {
+      "lat": 29.470888,
+      "lon": -98.673047,
+      "name": "CyrusOne San Antonio II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171928"
+    },
+    {
+      "lat": 29.470057,
+      "lon": -98.672106,
+      "name": "CyrusOne San Antonio III",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171928"
+    },
+    {
+      "lat": 29.47076,
+      "lon": -98.670723,
+      "name": "CyrusOne San Antonio IV",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171928"
+    },
+    {
+      "lat": 29.472003,
+      "lon": -98.67172,
+      "name": "Stream San Antonio II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171928"
+    },
+    {
+      "lat": 29.419002,
+      "lon": -98.787481,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.418466,
+      "lon": -98.788796,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.418221,
+      "lon": -98.787837,
+      "name": "CyrusOne SAT10 & SAT11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.415797,
+      "lon": -98.803316,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.415796,
+      "lon": -98.804515,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.412012,
+      "lon": -98.80273,
+      "name": "Microsoft TRP1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.411987,
+      "lon": -98.803995,
+      "name": "Microsoft TRP2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.44968,
+      "lon": -98.714404,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172009"
+    },
+    {
+      "lat": 29.450931,
+      "lon": -98.713908,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172009"
+    },
+    {
+      "lat": 29.45223,
+      "lon": -98.714064,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172009"
+    },
+    {
+      "lat": 29.580152,
+      "lon": -98.541304,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029191405"
+    },
+    {
+      "lat": 29.686403,
+      "lon": -98.462648,
+      "name": "GVTC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029191814"
+    },
+    {
+      "lat": 33.171796,
+      "lon": -96.725505,
+      "name": "Experian McKinney Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085030517"
+    },
+    {
+      "lat": 33.137823,
+      "lon": -96.655941,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031418"
+    },
+    {
+      "lat": 33.140647,
+      "lon": -96.659526,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031418"
+    },
+    {
+      "lat": 33.135962,
+      "lon": -96.660992,
+      "name": "Cisco Allen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031418"
+    },
+    {
+      "lat": 33.138521,
+      "lon": -96.659952,
+      "name": "CyrusOne Allen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031418"
+    },
+    {
+      "lat": 33.13791,
+      "lon": -96.657329,
+      "name": "Tierpoint Dallas-Allen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031418"
+    },
+    {
+      "lat": 33.096018,
+      "lon": -96.681542,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031510"
+    },
+    {
+      "lat": 33.095083,
+      "lon": -96.683788,
+      "name": "Evoque Allen DA1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031510"
+    },
+    {
+      "lat": 33.087741,
+      "lon": -96.815218,
+      "name": "DataBank Plano Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031657"
+    },
+    {
+      "lat": 32.994812,
+      "lon": -96.752497,
+      "name": "Flexential Dallas - Richardson",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031813"
+    },
+    {
+      "lat": 33.009314,
+      "lon": -96.676562,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031901"
+    },
+    {
+      "lat": 33.007033,
+      "lon": -96.666351,
+      "name": "Flexential Dallas - Plano",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085031901"
+    },
+    {
+      "lat": 33.006007,
+      "lon": -96.657092,
+      "name": "Aligned Data Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085032016"
+    },
+    {
+      "lat": 33.000144,
+      "lon": -96.661647,
+      "name": "Stream DFW IV",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48085032016"
+    },
+    {
+      "lat": 32.783749,
+      "lon": -96.794636,
+      "name": "Live Oak Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113002100"
+    },
+    {
+      "lat": 32.778447,
+      "lon": -96.798496,
+      "name": "Rad Web Hosting",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113003103"
+    },
+    {
+      "lat": 32.800953,
+      "lon": -96.819523,
+      "name": "Equinix Infomart",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010001"
+    },
+    {
+      "lat": 32.80041,
+      "lon": -96.819371,
+      "name": "Flexential Dallas - Downtown Dallas",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010001"
+    },
+    {
+      "lat": 32.817551,
+      "lon": -96.873071,
+      "name": "CoreSpace Dallas",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.82175,
+      "lon": -96.873553,
+      "name": "DataBank Dallas Empire Central Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.82755,
+      "lon": -96.87375,
+      "name": "Digital Realty DFW36",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.806955,
+      "lon": -96.868589,
+      "name": "Lumen Dallas - 3180 Irving Blvd.",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.827998,
+      "lon": -96.884379,
+      "name": "Lumen Dallas 6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.837958,
+      "lon": -96.878401,
+      "name": "Prime DFW01-01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.837814,
+      "lon": -96.879846,
+      "name": "Prime DFW01-01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.807982,
+      "lon": -96.857389,
+      "name": "TierPoint Dallas Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113010003"
+    },
+    {
+      "lat": 32.894761,
+      "lon": -96.981938,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113014159"
+    },
+    {
+      "lat": 32.897248,
+      "lon": -96.982647,
+      "name": "QTS Irving - Dallas Data Center Campus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113014159"
+    },
+    {
+      "lat": 32.983624,
+      "lon": -96.654263,
+      "name": "Stream Data Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019042"
+    },
+    {
+      "lat": 32.966244,
+      "lon": -96.711226,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.966043,
+      "lon": -96.715592,
+      "name": "Digital Realty Dallas DFW16",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.96628,
+      "lon": -96.713212,
+      "name": "Digital Realty Dallas DFW17",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.965258,
+      "lon": -96.712611,
+      "name": "Digital Realty Dallas DFW18",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.967282,
+      "lon": -96.713322,
+      "name": "Digital Realty Dallas DFW28",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.967276,
+      "lon": -96.710529,
+      "name": "Digital Realty Dallas DFW29",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.96505,
+      "lon": -96.710255,
+      "name": "Digital Realty Dallas DFW35",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.964781,
+      "lon": -96.715855,
+      "name": "Rackspace Richardson DFW3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019053"
+    },
+    {
+      "lat": 32.782546,
+      "lon": -96.782815,
+      "name": "VIRTBIZ",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113020401"
+    },
+    {
+      "lat": 33.006382,
+      "lon": -97.24529,
+      "name": "CITIGROUP TECHNOLOGY INC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48121020312"
+    },
+    {
+      "lat": 33.004512,
+      "lon": -97.246141,
+      "name": "Charles Schwab Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48121020312"
+    },
+    {
+      "lat": 33.777264,
+      "lon": -100.868901,
+      "name": "Argo Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48125950300"
+    },
+    {
+      "lat": 32.538767,
+      "lon": -96.804459,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.545504,
+      "lon": -96.802207,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.544192,
+      "lon": -96.802189,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.542899,
+      "lon": -96.802194,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.541589,
+      "lon": -96.802207,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.540276,
+      "lon": -96.80222,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.542676,
+      "lon": -96.793719,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.543994,
+      "lon": -96.793719,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.545299,
+      "lon": -96.793756,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.543961,
+      "lon": -96.788398,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.545292,
+      "lon": -96.788382,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.539004,
+      "lon": -96.793207,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.442139,
+      "lon": -97.062465,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060802"
+    },
+    {
+      "lat": 32.443564,
+      "lon": -97.06331,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060802"
+    },
+    {
+      "lat": 32.440104,
+      "lon": -97.06092,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060802"
+    },
+    {
+      "lat": 31.750007,
+      "lon": -106.309926,
+      "name": "MDC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48141004309"
+    },
+    {
+      "lat": 29.658145,
+      "lon": -95.443312,
+      "name": "Rice Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48201420200"
+    },
+    {
+      "lat": 29.821576,
+      "lon": -95.5708,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48201540200"
+    },
+    {
+      "lat": 29.802893,
+      "lon": -95.755339,
+      "name": "Skybox Houston One",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48201542901"
+    },
+    {
+      "lat": 30.0187,
+      "lon": -95.863747,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48201543100"
+    },
+    {
+      "lat": 29.995198,
+      "lon": -95.563333,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48201554201"
+    },
+    {
+      "lat": 29.997335,
+      "lon": -95.56404,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48201554201"
+    },
+    {
+      "lat": 29.88264,
+      "lon": -97.94058,
+      "name": "San Marcos Campus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48209010100"
+    },
+    {
+      "lat": 32.341341,
+      "lon": -97.731692,
+      "name": "MARA Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48221160212"
+    },
+    {
+      "lat": 29.412977,
+      "lon": -98.806374,
+      "name": "Microsoft TRP3 (SAT46)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48325000103"
+    },
+    {
+      "lat": 30.177708,
+      "lon": -95.486593,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48339691201"
+    },
+    {
+      "lat": 30.178137,
+      "lon": -95.486046,
+      "name": "Stream Data Centers Houston",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48339691201"
+    },
+    {
+      "lat": 32.651201,
+      "lon": -97.319673,
+      "name": "Novartis",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439106002"
+    },
+    {
+      "lat": 32.832716,
+      "lon": -97.041024,
+      "name": "Cyxtera Dallas-Fort Worth Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439106518"
+    },
+    {
+      "lat": 32.549823,
+      "lon": -97.074855,
+      "name": "Alinged Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439111314"
+    },
+    {
+      "lat": 32.850483,
+      "lon": -97.070297,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439113510"
+    },
+    {
+      "lat": 32.983783,
+      "lon": -97.259335,
+      "name": "Facebook Fort Worth Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439113941"
+    },
+    {
+      "lat": 32.98492,
+      "lon": -97.255045,
+      "name": "Facebook Fort Worth Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439113941"
+    },
+    {
+      "lat": 32.988316,
+      "lon": -97.255111,
+      "name": "Facebook Fort Worth Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439113941"
+    },
+    {
+      "lat": 32.988913,
+      "lon": -97.259274,
+      "name": "QTS Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439113941"
+    },
+    {
+      "lat": 32.972041,
+      "lon": -97.156714,
+      "name": "Verizon Wireless Mew Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439113955"
+    },
+    {
+      "lat": 32.75318,
+      "lon": -97.33275,
+      "name": "Rock Creek East",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48439123302"
+    },
+    {
+      "lat": 32.383,
+      "lon": -99.662,
+      "name": "Stargate Site 1 (Crusoe / Lancium Clean Campus)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "curated",
+      "tract": "48441013404"
+    },
+    {
+      "lat": 30.261053,
+      "lon": -97.722122,
+      "name": "Alpheus DataCenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453000902"
+    },
+    {
+      "lat": 30.261396,
+      "lon": -97.723597,
+      "name": "Lumen Austin 3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453000902"
+    },
+    {
+      "lat": 30.215605,
+      "lon": -97.618939,
+      "name": "Cortex supercomputer",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002216"
+    },
+    {
+      "lat": 30.214297,
+      "lon": -97.712667,
+      "name": "LightEdge Austin I",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002313"
+    },
+    {
+      "lat": 30.205921,
+      "lon": -97.697951,
+      "name": "CyrusOne Austin Data Center II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.207006,
+      "lon": -97.701132,
+      "name": "CyrusOne Austin Data Center III",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.198907,
+      "lon": -97.713784,
+      "name": "Data Foundry - Texas 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.199574,
+      "lon": -97.71307,
+      "name": "Data Foundry - Texas 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.215504,
+      "lon": -97.696074,
+      "name": "Data Foundry Austin 1 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.212156,
+      "lon": -97.695756,
+      "name": "Digital Realty Austin AUS11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.200677,
+      "lon": -97.707046,
+      "name": "LightEdge Austin II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.1965,
+      "lon": -97.712402,
+      "name": "Lumen Austin 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453002448"
+    },
+    {
+      "lat": 30.342803,
+      "lon": -97.696174,
+      "name": "Element Critical",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453040300"
+    },
+    {
+      "lat": 30.421141,
+      "lon": -97.591603,
+      "name": "Thin-nology",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48453044800"
+    },
+    {
+      "lat": 31.513444,
+      "lon": -103.448548,
+      "name": "IONIC Digital Cedarvale",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48475950100"
+    },
+    {
+      "lat": 33.953373,
+      "lon": -98.524786,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48485013201"
+    },
+    {
+      "lat": 30.488019,
+      "lon": -97.672526,
+      "name": "Switch: The Rock",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48491020709"
+    },
+    {
+      "lat": 30.54276,
+      "lon": -97.54689,
+      "name": "Project Hutto",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48491020820"
+    }
+  ],
+  "state_fips": "48"
+}

@@ -21,6 +21,29 @@ from pathlib import Path
 
 
 
+# --- Canonical citation constants -------------------------------------------
+# Some citations are repeated across the scorer, the CLI freshness table, the
+# catalog and the docs. Repeating the literal is how they drift: the NERC
+# assessment carried one publication month here and a different one in
+# three other files, plus two different horizons. Declaring it once and
+# importing it makes that class of drift structurally impossible, and
+# test_citation_alignment.py fails the build if a stray literal reappears.
+#
+# Verified 2026-08-21: the PDF is titled "Long-Term Reliability Assessment,
+# January 2026" (released 2026-01-29). The horizon below is the full 10-year
+# outlook — the transcribed risk table in data/reference/nerc_ltra.csv carries
+# designations through 2035, so the narrower five-year window previously cited
+# in the scorer and CLI understated its scope.
+NERC_LTRA_EDITION = "NERC 2025 Long-Term Reliability Assessment"
+NERC_LTRA_PUBLISHED = "January 2026"
+NERC_LTRA_PUBLISHED_ISO = "2026-01"
+NERC_LTRA_HORIZON = "2026\u20132035"
+NERC_LTRA_URL = "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf"
+NERC_LTRA_VINTAGE = (
+    f"assessment horizon {NERC_LTRA_HORIZON} (published {NERC_LTRA_PUBLISHED})"
+)
+
+
 @dataclass(frozen=True)
 class Source:
     id: str
@@ -150,10 +173,10 @@ SOURCES: dict[str, Source] = {
         ),
         Source(
             id="nerc_ltra_2025",
-            name="NERC 2025 Long-Term Reliability Assessment — resource-adequacy risk categories",
+            name=f"{NERC_LTRA_EDITION} — resource-adequacy risk categories",
             provider="North American Electric Reliability Corporation",
-            url="https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_LTRA_2025.pdf",
-            vintage="assessment horizon 2026–2035 (published Dec 2025)",
+            url=NERC_LTRA_URL,
+            vintage=NERC_LTRA_VINTAGE,
             license="Publicly released assessment; categorical risk designations transcribed to data/reference/nerc_ltra.csv.",
         ),
         Source(
@@ -189,6 +212,44 @@ SOURCES: dict[str, Source] = {
             url="https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_tracts_national.zip",
             vintage="2024 TIGER geography",
             license="Public domain.",
+        ),
+        Source(
+            id="osm_datacenters",
+            name="OpenStreetMap — data-centre facility tags (telecom=data_center)",
+            provider="OpenStreetMap contributors (via Overpass API)",
+            url="https://overpass-api.de/api/interpreter",
+            vintage="rolling — snapshot at each sync",
+            license="ODbL 1.0 — © OpenStreetMap contributors.",
+            notes=(
+                "Crowd-sourced and NOT exhaustive: coverage varies by region and a campus "
+                "is only present once a mapper adds it. Feeds the descriptive infrastructure-"
+                "density layer only; never a pillar score."
+            ),
+        ),
+        Source(
+            id="google_news_rss",
+            name="Google News RSS — data-centre announcement leads",
+            provider="Google News (aggregator of third-party publishers)",
+            url="https://news.google.com/rss/search",
+            vintage="rolling — trailing weeks at each sync",
+            license="Headlines and links only; each item links to its publisher.",
+            notes=(
+                "UNVERIFIED secondary reporting. Lead generation for human review — "
+                "explicitly not a measurement and not an input to any score."
+            ),
+        ),
+        Source(
+            id="eia_v2_capacity",
+            name="EIA v2 — operating generator capacity by balancing authority",
+            provider="U.S. Energy Information Administration",
+            url="https://api.eia.gov/v2/electricity/operating-generator-capacity/data/",
+            vintage="monthly series",
+            license="Public domain (U.S. federal work). Requires a free API key.",
+            notes=(
+                "OPTIONAL and key-gated — the only registered source that is not keyless. "
+                "Absent EIA_API_KEY the sync skips it and succeeds. Supply-side capacity "
+                "context; NOT the EIA-930 hourly balancing-authority feed."
+            ),
         ),
         Source(
             id="curated_sites",
@@ -264,6 +325,12 @@ def retrieved_at(path: Path) -> str | None:
 
 
 __all__ = [
+    "NERC_LTRA_EDITION",
+    "NERC_LTRA_PUBLISHED",
+    "NERC_LTRA_PUBLISHED_ISO",
+    "NERC_LTRA_HORIZON",
+    "NERC_LTRA_URL",
+    "NERC_LTRA_VINTAGE",
     "Source",
     "SOURCES",
     "Ledger",

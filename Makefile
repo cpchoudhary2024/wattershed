@@ -1,7 +1,7 @@
 PY := .venv/bin/python
 PIP := .venv/bin/pip
 
-.PHONY: install test lint screen-all reports dashboard reference all clean
+.PHONY: install test lint catalog sync screen-all reports dashboard reference all clean
 
 install:
 	python3 -m venv .venv
@@ -12,6 +12,14 @@ test:
 
 lint:
 	.venv/bin/ruff check src tests
+
+## Regenerate the data schema map -> data_catalog.json
+catalog:
+	.venv/bin/wattershed build-catalog
+
+## Refresh facility registry, density layer and announcement leads
+sync:
+	.venv/bin/wattershed data-sync -v
 
 ## Screen every curated site -> out/*.json
 screen-all:
@@ -34,7 +42,7 @@ dashboard:
 reference:
 	.venv/bin/wattershed build-reference
 
-all: screen-all reports dashboard
+all: catalog screen-all reports dashboard
 
 clean:
 	rm -rf out site .pytest_cache .ruff_cache

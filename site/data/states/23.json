@@ -1,0 +1,27 @@
+{
+  "density": {
+    "23005000300": 50.0,
+    "23005011100": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 43.657839,
+      "lon": -70.261379,
+      "name": "FirstLight Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "23005000300"
+    },
+    {
+      "lat": 43.895157,
+      "lon": -69.923434,
+      "name": "Oxford Networks",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "23005011100"
+    }
+  ],
+  "state_fips": "23"
+}

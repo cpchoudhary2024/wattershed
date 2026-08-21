@@ -1,0 +1,170 @@
+{
+  "density": {
+    "56021001000": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 44.189237,
+      "lon": -105.61048,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56005000101"
+    },
+    {
+      "lat": 41.13998,
+      "lon": -104.82025,
+      "name": "Microsoft Cheyenne",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001000"
+    },
+    {
+      "lat": 41.126294,
+      "lon": -104.901853,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.124033,
+      "lon": -104.898089,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.124037,
+      "lon": -104.899269,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125284,
+      "lon": -104.899271,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125287,
+      "lon": -104.898083,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125403,
+      "lon": -104.907552,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.126438,
+      "lon": -104.899516,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125411,
+      "lon": -104.901978,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.122266,
+      "lon": -104.908142,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.122246,
+      "lon": -104.909517,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.124403,
+      "lon": -104.897015,
+      "name": "CYS41 Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125382,
+      "lon": -104.908889,
+      "name": "CYS42 Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.122588,
+      "lon": -104.903517,
+      "name": "Microsoft CYS Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.12499,
+      "lon": -104.894849,
+      "name": "MineOne Wyoming Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.128747,
+      "lon": -104.897431,
+      "name": "NCAR-Wyoming Supercomputing Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.182601,
+      "lon": -104.068498,
+      "name": "Windbreak Cable",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021002001"
+    }
+  ],
+  "state_fips": "56"
+}

@@ -1,0 +1,379 @@
+{
+  "density": {
+    "32003000513": 86.6,
+    "32003000700": 50.0,
+    "32003001608": 79.1,
+    "32003001610": 86.6,
+    "32003001615": 93.5,
+    "32003002847": 70.7,
+    "32003002979": 100.0,
+    "32003002981": 100.0,
+    "32003003626": 61.2,
+    "32003003642": 61.2,
+    "32003005112": 70.7,
+    "32003005503": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 36.182998,
+      "lon": -115.06267,
+      "name": "CenturyLink",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003000513"
+    },
+    {
+      "lat": 36.168644,
+      "lon": -115.143145,
+      "name": "Flexential Las Vegas - Downtown",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003000700"
+    },
+    {
+      "lat": 36.14372,
+      "lon": -115.083385,
+      "name": "CenturyLink",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003001608"
+    },
+    {
+      "lat": 36.144733,
+      "lon": -115.077928,
+      "name": "Verizon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003001610"
+    },
+    {
+      "lat": 36.143646,
+      "lon": -115.076779,
+      "name": "Switch Las Vegas 4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003001615"
+    },
+    {
+      "lat": 36.142764,
+      "lon": -115.076696,
+      "name": "Switch Las Vegas 5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003001615"
+    },
+    {
+      "lat": 36.059754,
+      "lon": -115.147172,
+      "name": "DataBank Las Vegas LAS1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002847"
+    },
+    {
+      "lat": 36.065941,
+      "lon": -115.139883,
+      "name": "Fiberhub LAS1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002847"
+    },
+    {
+      "lat": 36.064021,
+      "lon": -115.221109,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.059134,
+      "lon": -115.213688,
+      "name": "Switch Edge 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.057992,
+      "lon": -115.210328,
+      "name": "Switch Las Vegas 12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.065208,
+      "lon": -115.222045,
+      "name": "Switch Las Vegas 14",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.059919,
+      "lon": -115.210197,
+      "name": "Switch Las Vegas 7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.057834,
+      "lon": -115.214258,
+      "name": "Switch Las Vegas 8",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.061739,
+      "lon": -115.213292,
+      "name": "Switch12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.055586,
+      "lon": -115.223061,
+      "name": "Switch Las Vegas 10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002981"
+    },
+    {
+      "lat": 36.055885,
+      "lon": -115.214137,
+      "name": "Switch Las Vegas 11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002981"
+    },
+    {
+      "lat": 36.055707,
+      "lon": -115.219628,
+      "name": "Switch Las Vegas 9",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002981"
+    },
+    {
+      "lat": 36.248163,
+      "lon": -115.101255,
+      "name": "Flexential Las Vegas - North",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003003626"
+    },
+    {
+      "lat": 36.221894,
+      "lon": -115.147047,
+      "name": "Verizon North Las Vegas",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003003642"
+    },
+    {
+      "lat": 36.056271,
+      "lon": -115.008575,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003005112"
+    },
+    {
+      "lat": 36.058816,
+      "lon": -115.008802,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003005112"
+    },
+    {
+      "lat": 35.97876,
+      "lon": -114.83376,
+      "name": "Boulder City DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003005503"
+    },
+    {
+      "lat": 39.514068,
+      "lon": -119.475515,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.513871,
+      "lon": -119.484853,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.51152,
+      "lon": -119.483306,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.509868,
+      "lon": -119.483041,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.508083,
+      "lon": -119.483237,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.514096,
+      "lon": -119.479592,
+      "name": "Switch Tahoe Reno - The Citadel Campus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.56711,
+      "lon": -119.548534,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.567714,
+      "lon": -119.542363,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.567501,
+      "lon": -119.54321,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.56716,
+      "lon": -119.544388,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.566921,
+      "lon": -119.545227,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.565758,
+      "lon": -119.547974,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.565106,
+      "lon": -119.54769,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.569711,
+      "lon": -119.537859,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.570053,
+      "lon": -119.537092,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.570592,
+      "lon": -119.536034,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.570986,
+      "lon": -119.535317,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    }
+  ],
+  "state_fips": "32"
+}

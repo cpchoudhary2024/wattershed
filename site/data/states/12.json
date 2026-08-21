@@ -1,0 +1,156 @@
+{
+  "density": {
+    "12001000400": 50.0,
+    "12011050208": 50.0,
+    "12011060113": 50.0,
+    "12031015926": 50.0,
+    "12031017200": 50.0,
+    "12057011017": 50.0,
+    "12057011611": 50.0,
+    "12057013315": 50.0,
+    "12086002402": 61.2,
+    "12086003710": 61.2,
+    "12086009102": 50.0,
+    "12086980200": 50.0,
+    "12095015202": 50.0,
+    "12095017401": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 29.672591,
+      "lon": -82.299929,
+      "name": "UF Research Computing Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12001000400"
+    },
+    {
+      "lat": 26.190086,
+      "lon": -80.193297,
+      "name": "Flexential Fort Lauderdale",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12011050208"
+    },
+    {
+      "lat": 26.184994,
+      "lon": -80.286877,
+      "name": "T-Mobile Everglades MSO Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12011060113"
+    },
+    {
+      "lat": 30.245748,
+      "lon": -81.581723,
+      "name": "Flexential Jacksonville",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12031015926"
+    },
+    {
+      "lat": 30.33143,
+      "lon": -81.662426,
+      "name": "Cologix Jacksonville JAX1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12031017200"
+    },
+    {
+      "lat": 28.07387,
+      "lon": -82.368362,
+      "name": "Flexential Tampa - North",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12057011017"
+    },
+    {
+      "lat": 28.037299,
+      "lon": -82.539978,
+      "name": "Flexential Tampa - West",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12057011611"
+    },
+    {
+      "lat": 27.945535,
+      "lon": -82.351102,
+      "name": "Cyxtera Tampa TP1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12057013315"
+    },
+    {
+      "lat": 25.797545,
+      "lon": -80.230034,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12086002402"
+    },
+    {
+      "lat": 25.782389,
+      "lon": -80.19308,
+      "name": "NAP of the Americas",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12086003710"
+    },
+    {
+      "lat": 25.791545,
+      "lon": -80.317748,
+      "name": "NocRoom Miami IT Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12086009102"
+    },
+    {
+      "lat": 25.646562,
+      "lon": -80.423435,
+      "name": "NocRoom Miami IT Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12086980200"
+    },
+    {
+      "lat": 28.617449,
+      "lon": -81.393461,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12095015202"
+    },
+    {
+      "lat": 28.577942,
+      "lon": -81.564549,
+      "name": "E-Foam",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12095017401"
+    },
+    {
+      "lat": 28.294069,
+      "lon": -81.834865,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12105012306"
+    }
+  ],
+  "state_fips": "12"
+}

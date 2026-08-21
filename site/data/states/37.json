@@ -1,0 +1,243 @@
+{
+  "density": {
+    "37027030100": 61.2,
+    "37027030300": 61.2,
+    "37035011702": 50.0,
+    "37045950601": 50.0,
+    "37063001501": 50.0,
+    "37063002037": 61.2,
+    "37119003805": 79.1,
+    "37119003809": 79.1,
+    "37119005533": 50.0,
+    "37119005915": 70.7,
+    "37119005928": 79.1,
+    "37161960800": 86.6,
+    "37161961104": 100.0,
+    "37169070702": 50.0,
+    "37179020203": 50.0,
+    "37183053009": 50.0,
+    "37183053429": 50.0,
+    "37183053519": 50.0,
+    "37183053609": 50.0,
+    "37183054304": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 35.914,
+      "lon": -81.539,
+      "name": "Google Lenoir",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37027030100"
+    },
+    {
+      "lat": 35.895147,
+      "lon": -81.546278,
+      "name": "Google Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37027030300"
+    },
+    {
+      "lat": 35.5766,
+      "lon": -81.21392,
+      "name": "Apple Maiden",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37035011602"
+    },
+    {
+      "lat": 35.588765,
+      "lon": -81.26231,
+      "name": "Apple - Maiden Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37035011702"
+    },
+    {
+      "lat": 35.250425,
+      "lon": -81.395039,
+      "name": "T5 Charlotte Campus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37045950601"
+    },
+    {
+      "lat": 36.003099,
+      "lon": -78.938532,
+      "name": "Brandaleone Lab for Data and Visualization",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37063001501"
+    },
+    {
+      "lat": 35.881397,
+      "lon": -78.851552,
+      "name": "Windstream Communications",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37063002037"
+    },
+    {
+      "lat": 35.180051,
+      "lon": -80.92636,
+      "name": "SEGRA",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37119003805"
+    },
+    {
+      "lat": 35.142808,
+      "lon": -80.916223,
+      "name": "Spectrum Charlotte National Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37119003809"
+    },
+    {
+      "lat": 35.329773,
+      "lon": -80.765759,
+      "name": "Flexential Charlotte - North",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37119005533"
+    },
+    {
+      "lat": 35.135415,
+      "lon": -80.936831,
+      "name": "Flexential Charlotte - South",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37119005915"
+    },
+    {
+      "lat": 35.173195,
+      "lon": -80.928121,
+      "name": "TierPoint - Charlotte Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37119005928"
+    },
+    {
+      "lat": 35.33373,
+      "lon": -81.86492,
+      "name": "Meta Forest City",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37161960800"
+    },
+    {
+      "lat": 35.31426,
+      "lon": -81.822055,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37161961104"
+    },
+    {
+      "lat": 35.317385,
+      "lon": -81.826248,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37161961104"
+    },
+    {
+      "lat": 35.316612,
+      "lon": -81.825176,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37161961104"
+    },
+    {
+      "lat": 35.315669,
+      "lon": -81.822109,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37161961104"
+    },
+    {
+      "lat": 36.29541,
+      "lon": -80.14171,
+      "name": "Stokes County DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37169070702"
+    },
+    {
+      "lat": 35.179488,
+      "lon": -80.570183,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37179020203"
+    },
+    {
+      "lat": 35.724992,
+      "lon": -78.662363,
+      "name": "Segra Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37183053009"
+    },
+    {
+      "lat": 35.73254,
+      "lon": -78.85055,
+      "name": "Apex DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37183053429"
+    },
+    {
+      "lat": 35.766751,
+      "lon": -78.783987,
+      "name": "iGLASS Networks",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37183053519"
+    },
+    {
+      "lat": 35.850528,
+      "lon": -78.829143,
+      "name": "Flexential Raleigh",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37183053609"
+    },
+    {
+      "lat": 35.839336,
+      "lon": -78.328135,
+      "name": "BB&T Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37183054304"
+    }
+  ],
+  "state_fips": "37"
+}

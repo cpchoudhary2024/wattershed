@@ -1,0 +1,419 @@
+{
+  "catalog_version": "1.0",
+  "tool_version": "0.1.0",
+  "generated_at": "2026-08-21T21:42:24Z",
+  "generated_by": "wattershed build-catalog (derived from sources/versioning.py)",
+  "description": "Schema map from each Wattershed score metric back to the official registry and ingestion endpoint that produces it, with publication timestamp and native spatial resolution per index block.",
+  "conventions": {
+    "published": "When the PUBLISHER released the block. Granularity varies (YYYY, YYYY-MM, or 'rolling').",
+    "describes": "The period the data describes — distinct from 'published' and from retrieval.",
+    "observed_retrieval": "When THIS checkout actually fetched the file (from data/cache/*.meta.json).",
+    "spatial_unit": "Native geometry a value resolves to. A point score is only as sharp as its coarsest input.",
+    "ingestion_mode": {
+      "static_snapshot": "Bulk file pinned at reference-build time.",
+      "periodic_bulk": "Bulk file refreshed on a cadence.",
+      "api_live": "Queried per screening run; retrieval stamped in the run ledger.",
+      "transcribed_constant": "Constants hand-copied from a cited publication."
+    },
+    "status": {
+      "active": "Ingested and feeding a score.",
+      "declared_not_ingested": "Listed only to state plainly that it is NOT read by this tool."
+    }
+  },
+  "pillars": {
+    "water": {
+      "label": "Water stress",
+      "registries": [
+        "NDMC / USDA / NOAA (Univ. of Nebraska–Lincoln)",
+        "NDMC data services (usdmdataservices.unl.edu)",
+        "U.S. Geological Survey (ScienceBase)",
+        "World Resources Institute"
+      ],
+      "blocks": [
+        {
+          "block_id": "water.baseline_stress",
+          "source_id": "aqueduct40",
+          "role": "Baseline water stress (withdrawals ÷ renewable supply) — structural scarcity",
+          "ingestion_mode": "static_snapshot",
+          "published": "2023-08",
+          "describes": "baseline period 1979–2019",
+          "spatial_unit": "hydrological sub-basin polygon",
+          "spatial_note": "Native Aqueduct 4.0 sub-basin geometry; variable area, no raster cell size. U.S. clip committed as data/processed/aqueduct_bws_us.gpkg.",
+          "refresh_cadence": "major release (4.0 superseded 3.0 after 4 years)",
+          "status": "active",
+          "observed_retrieval": "2026-07-17T03:03:15Z"
+        },
+        {
+          "block_id": "water.drought_current",
+          "source_id": "usdm_current",
+          "role": "Current drought category at the point — the dynamic water signal",
+          "ingestion_mode": "periodic_bulk",
+          "published": "rolling — weekly Thursday release",
+          "describes": "the week of the release",
+          "spatial_unit": "drought polygon (analyst-delineated)",
+          "spatial_note": "Generalized to roughly county / sub-county scale; not a gridded product.",
+          "refresh_cadence": "weekly (Thursday); cached ≤3 days",
+          "status": "active",
+          "observed_retrieval": "2026-08-21T13:18:23Z"
+        },
+        {
+          "block_id": "water.drought_climatology",
+          "source_id": "usdm_county_history",
+          "role": "5-year county DSCI climatology — distinguishes chronic from episodic drought",
+          "ingestion_mode": "api_live",
+          "published": "rolling — weekly series since 2000",
+          "describes": "weekly series, 2000–present",
+          "spatial_unit": "county",
+          "refresh_cadence": "weekly",
+          "status": "active"
+        },
+        {
+          "block_id": "water.county_use_denominator",
+          "source_id": "usgs_wateruse_2015",
+          "role": "County public-supply withdrawal denominator for modeled demand comparison",
+          "ingestion_mode": "static_snapshot",
+          "published": "2018",
+          "describes": "calendar 2015",
+          "spatial_unit": "county",
+          "refresh_cadence": "~5-yearly compilation; 2015 remains the latest complete county census",
+          "status": "active",
+          "caveat": "Eleven years stale as of screening. Flagged LOW confidence for counties with material post-2015 demand change; it is a denominator, never a score input.",
+          "observed_retrieval": "2026-07-17T02:44:56Z"
+        }
+      ]
+    },
+    "grid": {
+      "label": "Grid strain & carbon",
+      "registries": [
+        "North American Electric Reliability Corporation",
+        "U.S. EPA"
+      ],
+      "blocks": [
+        {
+          "block_id": "grid.emissions_factors",
+          "source_id": "egrid2023",
+          "role": "Subregion CO₂e output emission rate, fuel mix, and annual net generation",
+          "ingestion_mode": "static_snapshot",
+          "published": "2025-06",
+          "describes": "calendar 2023 operations",
+          "spatial_unit": "eGRID subregion",
+          "spatial_note": "Annual average, location-based accounting — NOT marginal or hourly emissions. A subregion spans multiple states; the point inherits the whole subregion's rate.",
+          "refresh_cadence": "annual, ~2-year publication lag",
+          "status": "active",
+          "observed_retrieval": "2026-07-17T02:46:07Z"
+        },
+        {
+          "block_id": "grid.subregion_geometry",
+          "source_id": "egrid_subregions_gis",
+          "role": "Point-in-polygon assignment of a site to its eGRID subregion",
+          "ingestion_mode": "static_snapshot",
+          "published": "2025-01",
+          "describes": "eGRID2023 topology",
+          "spatial_unit": "eGRID subregion polygon",
+          "refresh_cadence": "with each eGRID release",
+          "status": "active",
+          "observed_retrieval": "2026-07-17T02:45:32Z"
+        },
+        {
+          "block_id": "grid.resource_adequacy",
+          "source_id": "nerc_ltra_2025",
+          "role": "Forward resource-adequacy risk category for the assessment area",
+          "ingestion_mode": "transcribed_constant",
+          "published": "2026-01",
+          "describes": "assessment horizon 2026–2035",
+          "spatial_unit": "NERC assessment area",
+          "spatial_note": "Coarser than eGRID subregion; joined via a hand-maintained crosswalk (data/reference/egrid_subregion_map.csv). Imperfect mappings are documented.",
+          "refresh_cadence": "annual (December)",
+          "status": "active",
+          "caveat": "Categorical risk designations are hand-transcribed from the published PDF and are checkable against it. Publication date and horizon come from provenance.NERC_LTRA_* so every surface cites one verified edition."
+        }
+      ]
+    },
+    "burden": {
+      "label": "Community burden",
+      "registries": [
+        "CDC (data.cdc.gov, Socrata)",
+        "Public Environmental Data Partners (original: U.S. EPA)",
+        "U.S. Census Bureau",
+        "U.S. EPA"
+      ],
+      "blocks": [
+        {
+          "block_id": "burden.health_prevalence",
+          "source_id": "cdc_places_2024",
+          "role": "Tract adult-asthma and fair/poor self-rated health prevalence",
+          "ingestion_mode": "api_live",
+          "published": "2024",
+          "describes": "model year 2022 (BRFSS 2022)",
+          "spatial_unit": "census tract",
+          "spatial_note": "Small-area MODELED estimates, not direct measurement — tract values are synthesized from BRFSS respondents plus tract covariates.",
+          "refresh_cadence": "annual release",
+          "status": "active"
+        },
+        {
+          "block_id": "burden.facility_proximity",
+          "source_id": "frs_national",
+          "role": "TRI / Superfund / RCRA facility coordinates → 5 km proximity and per-tract density",
+          "ingestion_mode": "static_snapshot",
+          "published": "rolling — snapshot at retrieval date",
+          "describes": "rolling facility registry",
+          "spatial_unit": "facility point coordinate",
+          "spatial_note": "Point locations buffered to 5 km per EJScreen's proximity convention. This is the facility REGISTRY (FRS), not annual TRI release quantities.",
+          "refresh_cadence": "continuous upstream; re-pulled at reference build",
+          "status": "active",
+          "observed_retrieval": "2026-07-17T03:02:48Z"
+        },
+        {
+          "block_id": "burden.tri_facility_detail",
+          "source_id": "envirofacts_tri",
+          "role": "Live per-site TRI facility enrichment (names, programs) for nearby facilities",
+          "ingestion_mode": "api_live",
+          "published": "rolling",
+          "describes": "rolling",
+          "spatial_unit": "facility point coordinate",
+          "spatial_note": "Enrichment only — displayed as context, carries no score weight.",
+          "refresh_cadence": "continuous",
+          "status": "active",
+          "caveat": "TRI *release* tonnage logs are not ingested. Toxics burden enters the index through EJScreen's RSEI-modeled air-toxics field, not raw TRI reporting."
+        },
+        {
+          "block_id": "burden.socioeconomic",
+          "source_id": "acs_2023_5yr",
+          "role": "Tract low-income, unemployment, limited-English, education, race/ethnicity, population",
+          "ingestion_mode": "static_snapshot",
+          "published": "2024-12",
+          "describes": "pooled 2019–2023 5-year",
+          "spatial_unit": "census tract",
+          "spatial_note": "5-year pooled estimates carry margins of error that are not propagated into the index.",
+          "refresh_cadence": "annual (December)",
+          "status": "active",
+          "observed_retrieval": "2026-07-17T02:52:42Z"
+        },
+        {
+          "block_id": "burden.pollution_indicators",
+          "source_id": "ejscreen_v232_replica",
+          "role": "Nine frozen pollution-burden indicators (PM2.5, ozone, NO₂, diesel PM, air toxics, traffic, NPL/RMP/TSDF proximity)",
+          "ingestion_mode": "static_snapshot",
+          "published": "2024",
+          "describes": "EJScreen 2.32 (ACS 2018–2022 inputs; AirToxScreen 2020)",
+          "spatial_unit": "census tract (aggregated from block group)",
+          "spatial_note": "Native geometry is block group; aggregated to tract population-weighted at reference build. Aggregation smooths within-tract variation.",
+          "refresh_cadence": "FROZEN — EPA withdrew EJScreen in February 2025",
+          "status": "active",
+          "caveat": "Vintage cannot advance. Sourced from the Public Environmental Data Partners restoration of the final public release; alternates at Harvard Dataverse doi:10.7910/DVN/RLR5AX and Zenodo doi:10.5281/zenodo.14767363."
+        }
+      ]
+    }
+  },
+  "cross_cutting": [
+    {
+      "block_id": "geo.tract_assignment",
+      "source_id": "census_geocoder",
+      "role": "Address / coordinate → census tract and county assignment",
+      "ingestion_mode": "api_live",
+      "published": "rolling — current TIGER benchmark",
+      "describes": "current benchmark",
+      "spatial_unit": "census tract polygon",
+      "refresh_cadence": "benchmark updates",
+      "status": "active"
+    },
+    {
+      "block_id": "geo.tract_centroids",
+      "source_id": "census_gazetteer_2024",
+      "role": "Population-weighted tract centroids for the 5 km neighborhood summary",
+      "ingestion_mode": "static_snapshot",
+      "published": "2024",
+      "describes": "2024 TIGER geography",
+      "spatial_unit": "tract centroid point",
+      "spatial_note": "Centroid membership, not areal intersection — a large tract counts wholly in or wholly out of the 5 km buffer.",
+      "refresh_cadence": "annual",
+      "status": "active",
+      "observed_retrieval": "2026-07-17T02:52:40Z"
+    }
+  ],
+  "context_layers": {
+    "note": "Refreshed automatically; feeds no pillar score by design.",
+    "blocks": [
+      {
+        "block_id": "infra.facility_registry",
+        "source_id": "osm_datacenters",
+        "role": "Data-centre facility locations → per-tract clustering (Infrastructure Density Modifier)",
+        "ingestion_mode": "api_live",
+        "published": "rolling — snapshot at each sync",
+        "describes": "OSM database state at fetch time",
+        "spatial_unit": "facility point (node or way centroid)",
+        "spatial_note": "Assigned to an exact census tract by FCC point-in-polygon, cached per facility so each cycle geocodes only newly discovered sites.",
+        "refresh_cadence": "bi-weekly (1st and 15th) via .github/workflows/data_sync.yml",
+        "status": "active",
+        "caveat": "Crowd-sourced and not exhaustive. Descriptive context only — deliberately excluded from all three pillars, and from the siting-equity study, where feeding data-centre density into the burden pillar would be circular."
+      },
+      {
+        "block_id": "infra.announcement_leads",
+        "source_id": "google_news_rss",
+        "role": "Announcement / permit / construction headlines for human review",
+        "ingestion_mode": "api_live",
+        "published": "rolling",
+        "describes": "trailing weeks of press coverage",
+        "spatial_unit": "none (headline text, not georeferenced)",
+        "refresh_cadence": "bi-weekly (1st and 15th)",
+        "status": "active",
+        "caveat": "UNVERIFIED secondary reporting, capped at 400 retained items. Never a measurement, never a score input; every record carries verified=false."
+      },
+      {
+        "block_id": "infra.eia_capacity",
+        "source_id": "eia_v2_capacity",
+        "role": "Operating generator capacity by balancing authority — supply-side context",
+        "ingestion_mode": "api_live",
+        "published": "monthly",
+        "describes": "most recent monthly capacity listing",
+        "spatial_unit": "balancing authority / state",
+        "refresh_cadence": "bi-weekly poll of a monthly series",
+        "status": "active",
+        "caveat": "OPTIONAL and key-gated — the one registered source that is not keyless. Skipped cleanly when EIA_API_KEY is unset. Supply-side capacity only; the EIA-930 hourly feed remains uningested (see grid.eia_hourly_ba)."
+      }
+    ]
+  },
+  "not_ingested": [
+    {
+      "block_id": "water.usgs_realtime_hydrology",
+      "expected_registry": "real-time gauge hydrology (USGS NWIS/Water Services) is not read by this tool",
+      "spatial_unit": "gauge point",
+      "why_not": "Declared explicitly to prevent a plausible misreading: the water pillar's dynamic component is USDM weekly drought, not USGS real-time streamflow. Instantaneous gauge discharge is a poor proxy for siting-horizon supply risk and no NWIS endpoint is called anywhere in the codebase."
+    },
+    {
+      "block_id": "grid.eia_hourly_ba",
+      "expected_registry": "EIA-930 hourly balancing-authority operations are not read by this tool",
+      "spatial_unit": "balancing authority",
+      "why_not": "config.EIA_API_KEY exists as an unused optional hook; no EIA endpoint is called. The grid pillar is annual-average (eGRID) plus forward-looking categorical (NERC). Hourly BA data would enable marginal/time-matched emissions — a documented v2 roadmap item, not a current input. See docs/LIMITATIONS.md."
+    }
+  ],
+  "registries": {
+    "usdm_current": {
+      "name": "U.S. Drought Monitor — current weekly map",
+      "provider": "NDMC / USDA / NOAA (Univ. of Nebraska–Lincoln)",
+      "url": "https://droughtmonitor.unl.edu/data/shapefiles_m/USDM_current_M.zip",
+      "vintage": "updated weekly (Thursday release)",
+      "license": "Public. Courtesy line: 'The U.S. Drought Monitor is jointly produced by the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration.'"
+    },
+    "usdm_county_history": {
+      "name": "U.S. Drought Monitor — county drought-severity time series",
+      "provider": "NDMC data services (usdmdataservices.unl.edu)",
+      "url": "https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent",
+      "vintage": "weekly series, 2000–present",
+      "license": "Public (same courtesy line as USDM)."
+    },
+    "aqueduct40": {
+      "name": "WRI Aqueduct 4.0 — baseline water stress (bws), annual, sub-basin",
+      "provider": "World Resources Institute",
+      "url": "https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip",
+      "vintage": "baseline period 1979–2019 (published 2023)",
+      "license": "CC BY 4.0 — attribution: 'Kuzma et al. (2023). Aqueduct 4.0, World Resources Institute.'"
+    },
+    "usgs_wateruse_2015": {
+      "name": "USGS Estimated Use of Water in the U.S. — county-level, 2015",
+      "provider": "U.S. Geological Survey (ScienceBase)",
+      "url": "https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8",
+      "vintage": "calendar 2015 (most recent complete county compilation)",
+      "license": "Public domain (USGS). doi:10.5066/F7TB15V5",
+      "notes": "2015 remains the latest full county water-use census; flagged LOW-confidence for change-sensitive counties."
+    },
+    "egrid2023": {
+      "name": "EPA eGRID2023 (rev. 2, June 2025) — subregion emission rates, fuel mix, net generation",
+      "provider": "U.S. EPA",
+      "url": "https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx",
+      "vintage": "calendar 2023 operations",
+      "license": "Public domain (U.S. federal work)."
+    },
+    "egrid_subregions_gis": {
+      "name": "EPA eGRID2023 subregion boundaries (shapefile)",
+      "provider": "U.S. EPA",
+      "url": "https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip",
+      "vintage": "eGRID2023 topology",
+      "license": "Public domain (U.S. federal work)."
+    },
+    "census_geocoder": {
+      "name": "U.S. Census Bureau geocoder (address & coordinate → tract/county)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://geocoding.geo.census.gov/geocoder/",
+      "vintage": "current TIGER benchmark",
+      "license": "Public domain."
+    },
+    "acs_2023_5yr": {
+      "name": "American Community Survey 2019–2023 5-year, tract tables (bulk summary file)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/",
+      "vintage": "pooled 2019–2023",
+      "license": "Public domain.",
+      "notes": "Tables C17002, B23025, C16002, B15003, B03002, B01003."
+    },
+    "cdc_places_2024": {
+      "name": "CDC PLACES 2024 release — census-tract health outcomes",
+      "provider": "CDC (data.cdc.gov, Socrata)",
+      "url": "https://data.cdc.gov/resource/cwsq-ngmh.json",
+      "vintage": "model year 2022 (BRFSS 2022, released 2024)",
+      "license": "Public domain.",
+      "notes": "Measures: CASTHMA (adult asthma), GHLTH (fair/poor self-rated health)."
+    },
+    "frs_national": {
+      "name": "EPA Facility Registry Service — national geocoded facility file",
+      "provider": "U.S. EPA",
+      "url": "https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip",
+      "vintage": "rolling (snapshot at retrieval date)",
+      "license": "Public domain.",
+      "notes": "Used for TRI / Superfund (SEMS) / RCRA facility proximity."
+    },
+    "envirofacts_tri": {
+      "name": "EPA Envirofacts — TRI facility detail (live per-site enrichment)",
+      "provider": "U.S. EPA",
+      "url": "https://data.epa.gov/efservice/",
+      "vintage": "rolling",
+      "license": "Public domain."
+    },
+    "ejscreen_v232_replica": {
+      "name": "EPA EJScreen 2.32 tract data (community-restored replica)",
+      "provider": "Public Environmental Data Partners (original: U.S. EPA)",
+      "url": "https://screening-tools.com/epa-ejscreen",
+      "vintage": "EJScreen 2.32 (2024 release; ACS 2018–2022 inputs; AirToxScreen 2020)",
+      "license": "Public domain (U.S. federal work product, community-rehosted).",
+      "notes": "EPA removed EJScreen from public access in February 2025. Five pollution-burden fields (PM2.5, ozone, diesel PM, air-toxics cancer risk, traffic proximity) are taken from the restored final release because their upstream models (AirToxScreen, FHWA AADT fusion) are impractical to rebuild live. Vintage is frozen and flagged."
+    },
+    "nerc_ltra_2025": {
+      "name": "NERC 2025 Long-Term Reliability Assessment — resource-adequacy risk categories",
+      "provider": "North American Electric Reliability Corporation",
+      "url": "https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf",
+      "vintage": "assessment horizon 2026–2035 (published January 2026)",
+      "license": "Publicly released assessment; categorical risk designations transcribed to data/reference/nerc_ltra.csv."
+    },
+    "census_gazetteer_2024": {
+      "name": "Census 2024 national tract gazetteer (population-weighted centroids)",
+      "provider": "U.S. Census Bureau",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_tracts_national.zip",
+      "vintage": "2024 TIGER geography",
+      "license": "Public domain."
+    },
+    "osm_datacenters": {
+      "name": "OpenStreetMap — data-centre facility tags (telecom=data_center)",
+      "provider": "OpenStreetMap contributors (via Overpass API)",
+      "url": "https://overpass-api.de/api/interpreter",
+      "vintage": "rolling — snapshot at each sync",
+      "license": "ODbL 1.0 — © OpenStreetMap contributors.",
+      "notes": "Crowd-sourced and NOT exhaustive: coverage varies by region and a campus is only present once a mapper adds it. Feeds the descriptive infrastructure-density layer only; never a pillar score."
+    },
+    "google_news_rss": {
+      "name": "Google News RSS — data-centre announcement leads",
+      "provider": "Google News (aggregator of third-party publishers)",
+      "url": "https://news.google.com/rss/search",
+      "vintage": "rolling — trailing weeks at each sync",
+      "license": "Headlines and links only; each item links to its publisher.",
+      "notes": "UNVERIFIED secondary reporting. Lead generation for human review — explicitly not a measurement and not an input to any score."
+    },
+    "eia_v2_capacity": {
+      "name": "EIA v2 — operating generator capacity by balancing authority",
+      "provider": "U.S. Energy Information Administration",
+      "url": "https://api.eia.gov/v2/electricity/operating-generator-capacity/data/",
+      "vintage": "monthly series",
+      "license": "Public domain (U.S. federal work). Requires a free API key.",
+      "notes": "OPTIONAL and key-gated — the only registered source that is not keyless. Absent EIA_API_KEY the sync skips it and succeeds. Supply-side capacity context; NOT the EIA-930 hourly balancing-authority feed."
+    }
+  }
+}

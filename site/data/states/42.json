@@ -1,0 +1,143 @@
+{
+  "density": {
+    "42003453004": 50.0,
+    "42003469000": 50.0,
+    "42077005902": 50.0,
+    "42077006205": 50.0,
+    "42079216100": 86.6,
+    "42079217500": 50.0,
+    "42091205906": 50.0,
+    "42091206006": 70.7,
+    "42091206104": 50.0,
+    "42101037600": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 40.45137,
+      "lon": -80.190166,
+      "name": "DataBank Pittsburgh PIT2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42003453004"
+    },
+    {
+      "lat": 40.427371,
+      "lon": -80.042521,
+      "name": "Expedient Pittsburgh South",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42003469000"
+    },
+    {
+      "lat": 40.878246,
+      "lon": -78.728788,
+      "name": "Verizon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42033331500"
+    },
+    {
+      "lat": 40.635695,
+      "lon": -75.457573,
+      "name": "Flexential Allentown data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42077005902"
+    },
+    {
+      "lat": 40.544255,
+      "lon": -75.654369,
+      "name": "Allentown-TekPark",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42077006205"
+    },
+    {
+      "lat": 41.089,
+      "lon": -76.148,
+      "name": "AWS Susquehanna Campus (nuclear co-located)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "curated",
+      "tract": "42079216100"
+    },
+    {
+      "lat": 41.083991,
+      "lon": -76.143375,
+      "name": "Amazon AWS PHL",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42079216100"
+    },
+    {
+      "lat": 41.082625,
+      "lon": -76.151419,
+      "name": "Nautilus Cryptomine",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42079216100"
+    },
+    {
+      "lat": 40.9549,
+      "lon": -75.97696,
+      "name": "Project Hazelnut",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42079217500"
+    },
+    {
+      "lat": 40.087919,
+      "lon": -75.33972,
+      "name": "DāStor: 3400 Horizon Drive",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42091205906"
+    },
+    {
+      "lat": 40.127067,
+      "lon": -75.408659,
+      "name": "Lumen Norristown",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42091206006"
+    },
+    {
+      "lat": 40.121881,
+      "lon": -75.420878,
+      "name": "TierPoint Valley Forge",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42091206006"
+    },
+    {
+      "lat": 40.152237,
+      "lon": -75.477618,
+      "name": "Flexential Philadelphia - Collegeville",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42091206104"
+    },
+    {
+      "lat": 39.959812,
+      "lon": -75.160833,
+      "name": "Terminal Commerce Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42101037600"
+    }
+  ],
+  "state_fips": "42"
+}

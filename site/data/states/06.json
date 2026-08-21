@@ -1,0 +1,1020 @@
+{
+  "density": {
+    "06001441503": 70.7,
+    "06001441525": 70.7,
+    "06001450743": 50.0,
+    "06001982100": 50.0,
+    "06013328000": 50.0,
+    "06025011600": 50.0,
+    "06037206020": 86.6,
+    "06037207712": 86.6,
+    "06037292001": 50.0,
+    "06037310501": 50.0,
+    "06037910501": 50.0,
+    "06037980013": 86.6,
+    "06059075516": 50.0,
+    "06065040902": 50.0,
+    "06067007019": 100.0,
+    "06067009010": 50.0,
+    "06073000302": 50.0,
+    "06073002801": 50.0,
+    "06073008511": 70.7,
+    "06073019905": 50.0,
+    "06075018000": 61.2,
+    "06075023300": 50.0,
+    "06075061505": 61.2,
+    "06085500800": 70.7,
+    "06085500901": 61.2,
+    "06085504322": 100.0,
+    "06085504323": 93.5,
+    "06085504602": 50.0,
+    "06085504807": 100.0,
+    "06085505006": 100.0,
+    "06085505007": 100.0,
+    "06085505010": 100.0,
+    "06085505015": 100.0,
+    "06085505202": 100.0,
+    "06085506401": 61.2,
+    "06085508708": 100.0,
+    "06085511302": 61.2,
+    "06085511608": 61.2,
+    "06085512032": 100.0,
+    "06095252402": 50.0,
+    "06099000602": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 37.471834,
+      "lon": -121.920291,
+      "name": "Hurricane Electric Fremont 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06001441503"
+    },
+    {
+      "lat": 37.475325,
+      "lon": -121.922107,
+      "name": "XO Fremont",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06001441503"
+    },
+    {
+      "lat": 37.489885,
+      "lon": -121.931024,
+      "name": "Hurricane Electric Fremont 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06001441525"
+    },
+    {
+      "lat": 37.699475,
+      "lon": -121.9038,
+      "name": "QES Computers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06001450743"
+    },
+    {
+      "lat": 37.869852,
+      "lon": -122.259823,
+      "name": "Open Computing Facility",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06001982100"
+    },
+    {
+      "lat": 37.971081,
+      "lon": -122.043738,
+      "name": "e360",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06013328000"
+    },
+    {
+      "lat": 32.792,
+      "lon": -115.56305,
+      "name": "Imperial Valley DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06025011600"
+    },
+    {
+      "lat": 34.058479,
+      "lon": -118.235914,
+      "name": "CoreSite - LA2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037206020"
+    },
+    {
+      "lat": 34.058104,
+      "lon": -118.235394,
+      "name": "USPO Terminal Annex",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037206020"
+    },
+    {
+      "lat": 34.04733,
+      "lon": -118.25751,
+      "name": "DRT LAX10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037207712"
+    },
+    {
+      "lat": 34.047888,
+      "lon": -118.255541,
+      "name": "One Wilshire",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037207712"
+    },
+    {
+      "lat": 33.850752,
+      "lon": -118.304081,
+      "name": "Equinix",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037292001"
+    },
+    {
+      "lat": 34.199869,
+      "lon": -118.343789,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037310501"
+    },
+    {
+      "lat": 34.579978,
+      "lon": -118.114007,
+      "name": "AT&T",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037910501"
+    },
+    {
+      "lat": 33.917728,
+      "lon": -118.386223,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037980013"
+    },
+    {
+      "lat": 33.915659,
+      "lon": -118.384619,
+      "name": "DRT LAX12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037980013"
+    },
+    {
+      "lat": 33.921742,
+      "lon": -118.386459,
+      "name": "Serverfarm - LAX1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06037980013"
+    },
+    {
+      "lat": 38.254065,
+      "lon": -122.273092,
+      "name": "Kaiser Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06055201005"
+    },
+    {
+      "lat": 33.707507,
+      "lon": -117.844104,
+      "name": "TPx Colocation Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06059075516"
+    },
+    {
+      "lat": 33.91029,
+      "lon": -117.503021,
+      "name": "IT",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06065040902"
+    },
+    {
+      "lat": 38.646376,
+      "lon": -121.486269,
+      "name": "QTS Sacramento",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06067007019"
+    },
+    {
+      "lat": 38.650432,
+      "lon": -121.489187,
+      "name": "RagingWire CA1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06067007019"
+    },
+    {
+      "lat": 38.6504,
+      "lon": -121.491946,
+      "name": "RagingWire CA2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06067007019"
+    },
+    {
+      "lat": 38.644239,
+      "lon": -121.498763,
+      "name": "RagingWire CA3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06067007019"
+    },
+    {
+      "lat": 38.592299,
+      "lon": -121.27744,
+      "name": "Edgeconnex Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06067009010"
+    },
+    {
+      "lat": 32.747654,
+      "lon": -117.158954,
+      "name": "AT&T Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06073000302"
+    },
+    {
+      "lat": 32.775025,
+      "lon": -117.070888,
+      "name": "SDSU Computer Room",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06073002801"
+    },
+    {
+      "lat": 32.842355,
+      "lon": -117.169423,
+      "name": "EdgeConneX San Diego",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06073008511"
+    },
+    {
+      "lat": 32.827894,
+      "lon": -117.129927,
+      "name": "LightEdge SAN1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06073008511"
+    },
+    {
+      "lat": 33.1536,
+      "lon": -117.238846,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06073019905"
+    },
+    {
+      "lat": 37.779653,
+      "lon": -122.394001,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06075018000"
+    },
+    {
+      "lat": 37.723627,
+      "lon": -122.397954,
+      "name": "Digital Realty San Francisco SFO10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06075023300"
+    },
+    {
+      "lat": 37.788992,
+      "lon": -122.390137,
+      "name": "360 Spear Street Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06075061505"
+    },
+    {
+      "lat": 35.255316,
+      "lon": -120.641513,
+      "name": "Digital West Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06079011505"
+    },
+    {
+      "lat": 37.334118,
+      "lon": -121.891646,
+      "name": "San Jose Colocation Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085500800"
+    },
+    {
+      "lat": 37.333633,
+      "lon": -121.887964,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085500901"
+    },
+    {
+      "lat": 37.388274,
+      "lon": -121.888446,
+      "name": "Equinix San Jose SV3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504322"
+    },
+    {
+      "lat": 37.402745,
+      "lon": -121.891051,
+      "name": "STACK Infrastructure",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504322"
+    },
+    {
+      "lat": 37.40256,
+      "lon": -121.893391,
+      "name": "Stack Infrastructure",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504322"
+    },
+    {
+      "lat": 37.402209,
+      "lon": -121.892387,
+      "name": "Stack Infrastructure",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504322"
+    },
+    {
+      "lat": 37.403964,
+      "lon": -121.889231,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504323"
+    },
+    {
+      "lat": 37.414511,
+      "lon": -122.014556,
+      "name": "Equinix SV4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504602"
+    },
+    {
+      "lat": 37.399626,
+      "lon": -122.014558,
+      "name": "Equinix SV6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085504807"
+    },
+    {
+      "lat": 37.405686,
+      "lon": -121.91626,
+      "name": "CoreSite SV2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505006"
+    },
+    {
+      "lat": 37.37979,
+      "lon": -121.949903,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505007"
+    },
+    {
+      "lat": 37.389929,
+      "lon": -121.965991,
+      "name": "Amazon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.397572,
+      "lon": -121.980963,
+      "name": "Csquare SFO2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.398638,
+      "lon": -121.981156,
+      "name": "Csquare SFO2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.407303,
+      "lon": -121.96598,
+      "name": "DataBank Santa Clara SFO1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.383719,
+      "lon": -121.965404,
+      "name": "EdgeCore Silicon Valley",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.389536,
+      "lon": -121.96194,
+      "name": "Evocative Santa Clara SJC11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.393986,
+      "lon": -121.978321,
+      "name": "QTS Santa Clara 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.392731,
+      "lon": -121.978428,
+      "name": "QTS Santa Clara 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
+      "lat": 37.418381,
+      "lon": -121.943117,
+      "name": "Dell 350 Holger Way",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505015"
+    },
+    {
+      "lat": 37.373308,
+      "lon": -121.972778,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.371779,
+      "lon": -121.972505,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.361154,
+      "lon": -121.94234,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.370643,
+      "lon": -121.974482,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.365402,
+      "lon": -121.961673,
+      "name": "Cologix Santa Clara SV1 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.376723,
+      "lon": -121.953144,
+      "name": "Colovore",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375158,
+      "lon": -121.971714,
+      "name": "CoreSite SV3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.376261,
+      "lon": -121.970685,
+      "name": "CoreSite SV4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375196,
+      "lon": -121.970689,
+      "name": "CoreSite SV5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.376302,
+      "lon": -121.972084,
+      "name": "CoreSite SV6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.376079,
+      "lon": -121.973057,
+      "name": "CoreSite SV7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.377383,
+      "lon": -121.97184,
+      "name": "CoreSite SV8",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375555,
+      "lon": -121.969605,
+      "name": "CoreSite SV9",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.37045,
+      "lon": -121.969825,
+      "name": "Csquare SFO1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.371471,
+      "lon": -121.969683,
+      "name": "Csquare SFO1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.372054,
+      "lon": -121.986041,
+      "name": "Csquare SFO3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375765,
+      "lon": -121.95627,
+      "name": "Csquare SFO4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375799,
+      "lon": -121.955184,
+      "name": "Csquare SFO4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.361647,
+      "lon": -121.943978,
+      "name": "Digital Realty Silicon Valley SC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375822,
+      "lon": -121.953336,
+      "name": "Digital Realty Silicon Valley SJC10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.376367,
+      "lon": -121.948565,
+      "name": "Digital Realty Silicon Valley SJC11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.374997,
+      "lon": -121.954077,
+      "name": "Digital Realty Silicon Valley SJC15",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.374932,
+      "lon": -121.955999,
+      "name": "Digital Realty Silicon Valley SJC16",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375023,
+      "lon": -121.958096,
+      "name": "Digital Realty Silicon Valley SJC29",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.378287,
+      "lon": -121.958111,
+      "name": "Digital Realty Silicon Valley SJC30",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.372408,
+      "lon": -121.973647,
+      "name": "Digital Realty Silicon Valley SJC34",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.370919,
+      "lon": -121.947217,
+      "name": "Digital Realty Silicon Valley SJC37",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.37847,
+      "lon": -121.954984,
+      "name": "Equinix Santa Clara SV2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.378037,
+      "lon": -121.954128,
+      "name": "Layer42 Santa Clara",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.377585,
+      "lon": -121.950682,
+      "name": "Lumen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.377033,
+      "lon": -121.952059,
+      "name": "Lumen Santa Clara",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.362103,
+      "lon": -121.946459,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.369053,
+      "lon": -121.955338,
+      "name": "NTT Silicon Valley SV1 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.378829,
+      "lon": -121.955926,
+      "name": "OpenColo",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375029,
+      "lon": -121.954877,
+      "name": "Prime SANTA CLARA DATA CENTER",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.366662,
+      "lon": -121.962865,
+      "name": "Prime Santa Clara",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.375017,
+      "lon": -121.95325,
+      "name": "Prime Santa Clara",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.361934,
+      "lon": -121.953731,
+      "name": "STACK SVY02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.36428,
+      "lon": -121.958788,
+      "name": "SV Colo",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.372221,
+      "lon": -121.948262,
+      "name": "Silicon Valley SJC31",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.364001,
+      "lon": -121.94689,
+      "name": "Vantage Santa Clara CA2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.322868,
+      "lon": -121.947418,
+      "name": "Forescout Technologies, Inc.",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085506401"
+    },
+    {
+      "lat": 37.375495,
+      "lon": -121.988406,
+      "name": "Equinix SV15",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085508708"
+    },
+    {
+      "lat": 37.376124,
+      "lon": -121.988672,
+      "name": "Equinix SV16",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085508708"
+    },
+    {
+      "lat": 37.376531,
+      "lon": -121.988583,
+      "name": "Equinix SV17",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085508708"
+    },
+    {
+      "lat": 37.373469,
+      "lon": -121.9878,
+      "name": "Lumen Sunnyvale 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085508708"
+    },
+    {
+      "lat": 37.445895,
+      "lon": -122.160786,
+      "name": "Equinix SV8",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085511302"
+    },
+    {
+      "lat": 37.433413,
+      "lon": -122.180708,
+      "name": "Northwest Data Center and Communications Hub",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085511608"
+    },
+    {
+      "lat": 37.241597,
+      "lon": -121.783328,
+      "name": "Equinix SV1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085512032"
+    },
+    {
+      "lat": 37.241229,
+      "lon": -121.784754,
+      "name": "Equinix SV10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085512032"
+    },
+    {
+      "lat": 37.242615,
+      "lon": -121.784022,
+      "name": "Equinix SV11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085512032"
+    },
+    {
+      "lat": 37.242072,
+      "lon": -121.781785,
+      "name": "Equinix SV5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085512032"
+    },
+    {
+      "lat": 38.246238,
+      "lon": -122.067184,
+      "name": "PG&E Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06095252402"
+    },
+    {
+      "lat": 37.665145,
+      "lon": -121.040033,
+      "name": "Modesto Junior College West Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06099000602"
+    }
+  ],
+  "state_fips": "06"
+}

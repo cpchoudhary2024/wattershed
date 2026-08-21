@@ -1,0 +1,113 @@
+{
+  "density": {
+    "40013796400": 50.0,
+    "40097040100": 50.0,
+    "40109106912": 50.0,
+    "40143002500": 100.0,
+    "40143005808": 50.0,
+    "40143009008": 61.2,
+    "40143009019": 61.2
+  },
+  "facilities": [
+    {
+      "lat": 33.971685,
+      "lon": -96.402849,
+      "name": "Choctaw Nation of Oklahoma Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40013796400"
+    },
+    {
+      "lat": 36.30843,
+      "lon": -95.31691,
+      "name": "Google Pryor",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40097040100"
+    },
+    {
+      "lat": 35.568135,
+      "lon": -95.512417,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40101001100"
+    },
+    {
+      "lat": 35.467205,
+      "lon": -97.649745,
+      "name": "Rack59 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40109106912"
+    },
+    {
+      "lat": 36.15859,
+      "lon": -95.988629,
+      "name": "TierPoint",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
+      "lat": 36.153294,
+      "lon": -95.989193,
+      "name": "TulsaConnect",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
+      "lat": 36.148452,
+      "lon": -95.99082,
+      "name": "TulsaConnect",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
+      "lat": 36.148501,
+      "lon": -95.990514,
+      "name": "Windstream",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
+      "lat": 36.26255,
+      "lon": -95.910041,
+      "name": "Cherokee Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143005808"
+    },
+    {
+      "lat": 36.099474,
+      "lon": -95.838283,
+      "name": "TulsaConnect DC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143009008"
+    },
+    {
+      "lat": 36.081252,
+      "lon": -95.854149,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143009019"
+    }
+  ],
+  "state_fips": "40"
+}

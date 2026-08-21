@@ -286,8 +286,10 @@ def doctor():
          "check epa.gov/egrid ~early 2027 for eGRID2024; update URL in sources/egrid.py")
     )
     rows.append(
-        ("Grid strain (NERC 2025 LTRA)", "pub. 2026-01, window 2026–2030", "CURRENT EDITION",
-         "next LTRA ~Dec 2026; refresh data/reference/nerc_ltra.csv from its Table 1")
+        ("Grid strain (NERC 2025 LTRA)",
+         f"pub. {provenance.NERC_LTRA_PUBLISHED_ISO}, horizon {provenance.NERC_LTRA_HORIZON}",
+         "CURRENT EDITION",
+         "next LTRA expected winter 2026/27; refresh data/reference/nerc_ltra.csv from its Table 1")
     )
     rows.append(
         ("EJScreen 2.32 pollution fields", "frozen (EPA withdrew tool 2025-02)", "FROZEN",
@@ -325,6 +327,105 @@ def provenance_cmd():
     for s in SOURCES.values():
         t.add_row(s.id, s.provider, s.vintage)
     console.print(t)
+
+
+@app.command("build-catalog")
+def build_catalog_cmd(
+    out: Optional[Path] = typer.Option(None, help="Write elsewhere than <repo>/data_catalog.json"),
+    check: bool = typer.Option(False, "--check", help="Verify the committed catalog is current; do not write"),
+):
+    """Regenerate data_catalog.json from the ingestion registry."""
+    import json
+
+    from .sources.catalog import CATALOG_PATH, build_catalog, declarative_view, write_catalog
+
+    if check:
+        dest = out or CATALOG_PATH
+        if not dest.exists():
+            console.print(f"[red]missing[/red] {dest} — run `wattershed build-catalog`")
+            raise typer.Exit(1)
+        live = declarative_view(build_catalog())
+        committed = declarative_view(json.loads(dest.read_text()))
+        if live != committed:
+            console.print("[red]stale[/red] data_catalog.json — regenerate it")
+            raise typer.Exit(1)
+        console.print("[green]current[/green] data_catalog.json matches the ingestion registry")
+        return
+
+    dest = write_catalog(out)
+    cat = json.loads(dest.read_text())
+    t = Table(show_header=True, header_style="bold")
+    for col in ("pillar", "blocks", "registries"):
+        t.add_column(col)
+    for key, p in cat["pillars"].items():
+        t.add_row(p["label"], str(len(p["blocks"])), "\n".join(p["registries"]))
+    console.print(t)
+    if cat["not_ingested"]:
+        console.print("[yellow]declared not ingested:[/yellow] "
+                      + ", ".join(b["block_id"] for b in cat["not_ingested"]))
+    console.print(f"Catalog → {dest}")
+
+
+@app.command("versions")
+def versions_cmd():
+    """Publication timestamp and spatial resolution for every ingested block."""
+    from .sources.versioning import controller
+
+    dvc = controller()
+    t = Table(show_header=True, header_style="bold")
+    for col in ("block", "published", "spatial unit", "mode", "retrieved"):
+        t.add_column(col, overflow="fold")
+    for b in dvc.active_blocks:
+        t.add_row(b.block_id, b.published, b.spatial_unit, b.ingestion_mode,
+                  dvc.observed_retrieval(b.block_id) or "—")
+    console.print(t)
+    gaps = dvc.stale_report()
+    if gaps:
+        console.print("[yellow]unstamped cache files:[/yellow] "
+                      + ", ".join(g["cache_file"] for g in gaps))
+
+
+@app.command("data-sync")
+def data_sync_cmd(
+    skip_osm: bool = typer.Option(False, help="Skip the Overpass facility pull"),
+    skip_news: bool = typer.Option(False, help="Skip the Google News RSS pull"),
+    skip_eia: bool = typer.Option(False, help="Skip EIA even if a key is configured"),
+    verbose: bool = typer.Option(False, "-v", help="Log each source as it runs"),
+):
+    """Refresh the facility registry, density layer and announcement leads.
+
+    Exit code 0 = success (whether or not anything changed). The workflow reads
+    `files_written` from the manifest to decide whether to commit.
+    """
+    import logging
+
+    logging.basicConfig(
+        level=logging.INFO if verbose else logging.WARNING,
+        format="%(levelname)-7s %(name)s: %(message)s",
+    )
+    from .pipelines.data_sync import sync
+
+    report = sync(skip_osm=skip_osm, skip_news=skip_news, skip_eia=skip_eia)
+
+    t = Table(show_header=True, header_style="bold")
+    for col in ("source", "status", "records", "note"):
+        t.add_column(col, overflow="fold")
+    for r in report.results:
+        t.add_row(r.source_id, "[green]ok[/green]" if r.ok else "[yellow]degraded[/yellow]",
+                  str(r.count), r.note or "")
+    console.print(t)
+    console.print(
+        f"facilities: [bold]{report.facilities_total}[/bold] "
+        f"(+{report.facilities_new} new) · tracts with density: "
+        f"[bold]{report.tracts_with_density}[/bold] · news items retained: "
+        f"[bold]{report.news_total}[/bold]"
+    )
+    if report.changed:
+        console.print(f"[green]{len(report.written)} file(s) changed[/green]")
+        for f in sorted(report.written):
+            console.print(f"  • {f}")
+    else:
+        console.print("[dim]No changes — nothing to commit.[/dim]")
 
 
 if __name__ == "__main__":

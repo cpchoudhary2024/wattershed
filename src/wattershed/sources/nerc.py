@@ -1,4 +1,7 @@
-"""NERC 2025 LTRA resource-adequacy risk categories (published Jan 2026).
+"""NERC 2025 LTRA resource-adequacy risk categories.
+
+Edition, publication date and horizon are declared once in
+`provenance.NERC_LTRA_*`; see there for the verified citation.
 
 The categorical designations were transcribed from the assessment's Table 1 /
 regional dashboards into data/reference/nerc_ltra.csv (cited, hand-checked).

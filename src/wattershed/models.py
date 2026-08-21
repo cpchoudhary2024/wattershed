@@ -111,6 +111,23 @@ class GeoContext(BaseModel):
     matched_address: str = ""
 
 
+class BoundaryProximity(BaseModel):
+    """How close the geocoded point sits to the nearest ADJACENT census tract.
+
+    Tract-level indicators describe a polygon; a point near its edge may be
+    surrounded mostly by the next tract's conditions. Measured, not assumed.
+    `distance_m is None` means the check could not run — an unknown, which is
+    never rendered as an all-clear."""
+
+    distance_m: Optional[float] = None
+    nearest_geoid: str = ""
+    buffer_m: float = 150.0
+    near_boundary: bool = False
+    neighbors_considered: int = 0
+    warning: str = ""
+    note: str = ""
+
+
 class Screening(BaseModel):
     """Complete screening result for one site — the unit of output."""
 
@@ -124,6 +141,7 @@ class Screening(BaseModel):
     demand: Optional[DemandModel] = None
     mitigations: list[Mitigation] = Field(default_factory=list)
     neighborhood: dict[str, Any] = Field(default_factory=dict)  # 5 km pop-weighted context
+    boundary: Optional[BoundaryProximity] = None  # tract-edge proximity check
     nearby_facilities: list[dict[str, Any]] = Field(default_factory=list)
     sources: list[dict[str, Any]] = Field(default_factory=list)  # ledger records
     limitations: list[str] = Field(default_factory=list)

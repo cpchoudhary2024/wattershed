@@ -9,12 +9,16 @@ file:// URL, on GitHub Pages, and inside a strict CSP.
 
 from __future__ import annotations
 
+import html
 import json
+import logging
 import math
 from pathlib import Path
 
 from .. import config
 from ..sources.base import cached_download, extract_zip
+
+log = logging.getLogger("wattershed.dashboard")
 
 _STATES_URL = "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip"
 
@@ -62,6 +66,27 @@ def _ring_to_path(coords, statefp: str) -> str:
     d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f}"
     d += "".join(f"L{x:.1f},{y:.1f}" for x, y in pts[1:])
     return d + "Z"
+
+
+# The masthead's LinkedIn anchor, verbatim from the template. Substituted with
+# itself when a URL is configured and with nothing when it is not, so an unset
+# profile link ships as no link rather than as a dead one.
+_LINKEDIN_ANCHOR = (
+    '<a href="__LINKEDIN_URL__"><span aria-hidden="true">/</span>linkedin</a>'
+)
+
+
+def _linkedin_anchor() -> str:
+    url = config.LINKEDIN_URL
+    if not url:
+        log.warning("masthead: LINKEDIN_URL is empty — the /linkedin anchor is omitted.")
+        return ""
+    if url.rstrip("/") == config.LINKEDIN_PLACEHOLDER.rstrip("/"):
+        log.warning(
+            "masthead: /linkedin points at the LinkedIn HOMEPAGE placeholder, not a profile. "
+            "Set config.LINKEDIN_URL (or WATTERSHED_LINKEDIN_URL) before recruiter review."
+        )
+    return _LINKEDIN_ANCHOR.replace("__LINKEDIN_URL__", html.escape(url, quote=True))
 
 
 def build_state_paths() -> str:
@@ -225,6 +250,7 @@ def build(results_dir: Path, out_file: Path) -> None:
         .replace("/*__COUNTY_DATA__*/", "const COUNTIES = " + json.dumps(counties, separators=(",", ":")) + ";")
         .replace("__BUILD_DATE__", build_date or "n/a")
         .replace("__GEN_DATE__", sites[0]["generated"] if sites else "")
+        .replace(_LINKEDIN_ANCHOR, _linkedin_anchor())
     )
     out_file.parent.mkdir(parents=True, exist_ok=True)
     out_file.write_text(html)

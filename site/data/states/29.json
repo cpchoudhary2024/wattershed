@@ -1,0 +1,159 @@
+{
+  "density": {
+    "29019001004": 50.0,
+    "29037061002": 50.0,
+    "29095015702": 79.1,
+    "29095015800": 70.7,
+    "29165030201": 100.0,
+    "29165980000": 86.6,
+    "29510119101": 50.0,
+    "29510125600": 70.7
+  },
+  "facilities": [
+    {
+      "lat": 38.923517,
+      "lon": -92.288606,
+      "name": "Carfax",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29019001004"
+    },
+    {
+      "lat": 39.744048,
+      "lon": -93.997376,
+      "name": "CenturyLink",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29025950202"
+    },
+    {
+      "lat": 38.71455,
+      "lon": -94.46112,
+      "name": "Diode Ventures — Harper Road",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29037061002"
+    },
+    {
+      "lat": 39.322631,
+      "lon": -94.594795,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29047021900"
+    },
+    {
+      "lat": 39.322628,
+      "lon": -94.598075,
+      "name": "Meta Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29047021900"
+    },
+    {
+      "lat": 39.101182,
+      "lon": -94.578821,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29095015702"
+    },
+    {
+      "lat": 39.100907,
+      "lon": -94.581145,
+      "name": "Netrality Data Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29095015702"
+    },
+    {
+      "lat": 39.094468,
+      "lon": -94.579442,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29095015800"
+    },
+    {
+      "lat": 39.290638,
+      "lon": -94.675916,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29165030201"
+    },
+    {
+      "lat": 39.295555,
+      "lon": -94.673486,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29165030201"
+    },
+    {
+      "lat": 39.302406,
+      "lon": -94.684792,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29165030201"
+    },
+    {
+      "lat": 39.295481,
+      "lon": -94.678011,
+      "name": "Black Rock Financial Management",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29165030201"
+    },
+    {
+      "lat": 39.290135,
+      "lon": -94.685064,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29165980000"
+    },
+    {
+      "lat": 38.636552,
+      "lon": -90.255436,
+      "name": "Genome Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29510119101"
+    },
+    {
+      "lat": 38.629262,
+      "lon": -90.197175,
+      "name": "Netrality Data Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29510125600"
+    },
+    {
+      "lat": 38.62976,
+      "lon": -90.196421,
+      "name": "TierPoint",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29510125600"
+    }
+  ],
+  "state_fips": "29"
+}

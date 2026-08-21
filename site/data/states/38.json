@@ -1,0 +1,35 @@
+{
+  "density": {
+    "38017040504": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 46.815102,
+      "lon": -96.844314,
+      "name": "Dakota Carrier Network",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38017040504"
+    },
+    {
+      "lat": 46.974172,
+      "lon": -96.87394,
+      "name": "Applied Digital",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38017040800"
+    },
+    {
+      "lat": 46.013722,
+      "lon": -98.572551,
+      "name": "Applied Digital / Ellendale Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    }
+  ],
+  "state_fips": "38"
+}

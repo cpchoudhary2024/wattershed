@@ -1,0 +1,482 @@
+{
+  "density": {
+    "17019001400": 50.0,
+    "17031330101": 100.0,
+    "17031770300": 100.0,
+    "17031770400": 100.0,
+    "17031770500": 100.0,
+    "17031811302": 79.1,
+    "17031811702": 79.1,
+    "17031811800": 86.6,
+    "17031839000": 100.0,
+    "17031839100": 100.0,
+    "17031840200": 100.0,
+    "17031841900": 100.0,
+    "17031843200": 100.0,
+    "17037001500": 86.6,
+    "17043840000": 100.0,
+    "17043840101": 100.0,
+    "17043840201": 100.0,
+    "17043841312": 50.0,
+    "17043844702": 50.0,
+    "17043845803": 50.0,
+    "17043846102": 50.0,
+    "17043846409": 100.0,
+    "17043846507": 86.6,
+    "17097864513": 50.0,
+    "17119403002": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 40.095259,
+      "lon": -88.242031,
+      "name": "NCSA Petascale Computing Facility",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17019001400"
+    },
+    {
+      "lat": 41.853383,
+      "lon": -87.618607,
+      "name": "Centersquare Chicago Data Center - ORD1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031330101"
+    },
+    {
+      "lat": 41.853351,
+      "lon": -87.618307,
+      "name": "Digital Realty ORD10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031330101"
+    },
+    {
+      "lat": 41.853558,
+      "lon": -87.618048,
+      "name": "Equinix Chicago Data Center - CH1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031330101"
+    },
+    {
+      "lat": 41.994241,
+      "lon": -87.961935,
+      "name": "Digital Realty CH1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770300"
+    },
+    {
+      "lat": 41.994353,
+      "lon": -87.964942,
+      "name": "Digital Realty CH3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770300"
+    },
+    {
+      "lat": 42.006856,
+      "lon": -87.965177,
+      "name": "STACK Chicago CHI01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770300"
+    },
+    {
+      "lat": 41.993661,
+      "lon": -87.973521,
+      "name": "Skybox Chicago I",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770300"
+    },
+    {
+      "lat": 42.023143,
+      "lon": -87.972186,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770400"
+    },
+    {
+      "lat": 42.02308,
+      "lon": -87.961463,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770400"
+    },
+    {
+      "lat": 42.023042,
+      "lon": -87.975557,
+      "name": "T5 Chicago II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770400"
+    },
+    {
+      "lat": 41.994533,
+      "lon": -87.957751,
+      "name": "Digital Realty CH2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770500"
+    },
+    {
+      "lat": 42.000775,
+      "lon": -87.950769,
+      "name": "EdgeConneX CHI01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770500"
+    },
+    {
+      "lat": 42.001495,
+      "lon": -87.952562,
+      "name": "EdgeConneX CHI02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770500"
+    },
+    {
+      "lat": 42.001221,
+      "lon": -87.9552,
+      "name": "Equinix Chicago CH3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770500"
+    },
+    {
+      "lat": 42.00263,
+      "lon": -87.951112,
+      "name": "Stream Chicago I",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770500"
+    },
+    {
+      "lat": 41.999124,
+      "lon": -87.957765,
+      "name": "Stream Chicago II",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770500"
+    },
+    {
+      "lat": 41.928356,
+      "lon": -87.859255,
+      "name": "Digital Realty Chicago ORD12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031811302"
+    },
+    {
+      "lat": 41.922956,
+      "lon": -87.918263,
+      "name": "Microsoft - Azure Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031811702"
+    },
+    {
+      "lat": 41.914003,
+      "lon": -87.917516,
+      "name": "Aligned Data Center - Chicago ORD-01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031811800"
+    },
+    {
+      "lat": 41.912963,
+      "lon": -87.91759,
+      "name": "Aligned Data Center - Chicago ORD-02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031811800"
+    },
+    {
+      "lat": 41.874304,
+      "lon": -87.62994,
+      "name": "Digital Realty ORD11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839000"
+    },
+    {
+      "lat": 41.872881,
+      "lon": -87.63344,
+      "name": "Netrality",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839000"
+    },
+    {
+      "lat": 41.87594,
+      "lon": -87.631466,
+      "name": "CoreSite Chicago Data Center (CH1)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839100"
+    },
+    {
+      "lat": 41.880527,
+      "lon": -87.635938,
+      "name": "West Monroe",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839100"
+    },
+    {
+      "lat": 41.848705,
+      "lon": -87.645458,
+      "name": "Iron Mountain Data & Record Storage",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031840200"
+    },
+    {
+      "lat": 41.862797,
+      "lon": -87.641301,
+      "name": "CoreSite Chicago Data Center (CH2)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031841900"
+    },
+    {
+      "lat": 41.870944,
+      "lon": -87.640141,
+      "name": "Serverfarm CH1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031841900"
+    },
+    {
+      "lat": 41.84219,
+      "lon": -87.668943,
+      "name": "QTS Chicago",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031843200"
+    },
+    {
+      "lat": 41.888546,
+      "lon": -88.721834,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17037001500"
+    },
+    {
+      "lat": 41.889299,
+      "lon": -88.73103,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17037001500"
+    },
+    {
+      "lat": 41.890305,
+      "lon": -88.726628,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17037001500"
+    },
+    {
+      "lat": 41.992088,
+      "lon": -87.958014,
+      "name": "Centersquare Elk Grove Village Data Center Campus ORD2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840000"
+    },
+    {
+      "lat": 41.975732,
+      "lon": -87.964691,
+      "name": "Element Critical CH1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840101"
+    },
+    {
+      "lat": 41.974227,
+      "lon": -87.967176,
+      "name": "Element Critical CH2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840101"
+    },
+    {
+      "lat": 41.987962,
+      "lon": -88.007222,
+      "name": "NTT Chicago CH1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840201"
+    },
+    {
+      "lat": 41.989015,
+      "lon": -88.007213,
+      "name": "NTT Chicago CH2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840201"
+    },
+    {
+      "lat": 41.986941,
+      "lon": -88.007985,
+      "name": "NTT Chicago CH3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840201"
+    },
+    {
+      "lat": 41.989101,
+      "lon": -88.004758,
+      "name": "NTT Chicago CH4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840201"
+    },
+    {
+      "lat": 41.90534,
+      "lon": -88.219506,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043841312"
+    },
+    {
+      "lat": 41.812563,
+      "lon": -87.97285,
+      "name": "Equinix Chicago Data CH7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043844702"
+    },
+    {
+      "lat": 41.707134,
+      "lon": -87.975956,
+      "name": "Datacenter (386)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043845803"
+    },
+    {
+      "lat": 41.802341,
+      "lon": -88.094886,
+      "name": "Centersquare Lisle ORD4 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846102"
+    },
+    {
+      "lat": 41.795377,
+      "lon": -88.246965,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846409"
+    },
+    {
+      "lat": 41.802861,
+      "lon": -88.246752,
+      "name": "CyrusOne CHI3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846409"
+    },
+    {
+      "lat": 41.796608,
+      "lon": -88.243823,
+      "name": "CyrusOne Chicago Aurora CME",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846409"
+    },
+    {
+      "lat": 41.806931,
+      "lon": -88.241097,
+      "name": "Edged Chicago ORD01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846409"
+    },
+    {
+      "lat": 41.772103,
+      "lon": -88.217082,
+      "name": "Lincoln Rackhouse",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846507"
+    },
+    {
+      "lat": 42.216776,
+      "lon": -87.95293,
+      "name": "VISA",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17097864513"
+    },
+    {
+      "lat": 38.81056,
+      "lon": -89.948703,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17119403002"
+    }
+  ],
+  "state_fips": "17"
+}

@@ -1,0 +1,47 @@
+{
+  "density": {
+    "21071920301": 50.0,
+    "21107970302": 50.0,
+    "21111006300": 50.0,
+    "21111010406": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 37.600186,
+      "lon": -82.678769,
+      "name": "East Kentucky Network Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "21071920301"
+    },
+    {
+      "lat": 37.362998,
+      "lon": -87.547151,
+      "name": "Dynamics Mining",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "21107970302"
+    },
+    {
+      "lat": 38.242501,
+      "lon": -85.733336,
+      "name": "Flexential Louisville - Downtown",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "21111006300"
+    },
+    {
+      "lat": 38.277191,
+      "lon": -85.50724,
+      "name": "Flexential Louisville - East",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "21111010406"
+    }
+  ],
+  "state_fips": "21"
+}

@@ -1,0 +1,277 @@
+{
+  "density": {
+    "36001001100": 50.0,
+    "36001013505": 50.0,
+    "36001013703": 61.2,
+    "36029009009": 50.0,
+    "36029009200": 50.0,
+    "36047001802": 50.0,
+    "36061003300": 100.0,
+    "36063021700": 86.6,
+    "36063022000": 100.0,
+    "36063022714": 50.0,
+    "36067016100": 50.0,
+    "36085029105": 70.7,
+    "36087012800": 93.5,
+    "36087013001": 79.1,
+    "36089490800": 50.0,
+    "36103159407": 50.0,
+    "36119000702": 50.0,
+    "36123150102": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 42.649353,
+      "lon": -73.752745,
+      "name": "IBM Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36001001100"
+    },
+    {
+      "lat": 42.745445,
+      "lon": -73.759201,
+      "name": "Turnkey Internet",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36001013505"
+    },
+    {
+      "lat": 42.735631,
+      "lon": -73.818665,
+      "name": "Lumen Albany 4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36001013703"
+    },
+    {
+      "lat": 43.044944,
+      "lon": -78.749203,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36029009009"
+    },
+    {
+      "lat": 42.990201,
+      "lon": -78.812384,
+      "name": "Frontier Science",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36029009200"
+    },
+    {
+      "lat": 44.893006,
+      "lon": -74.072881,
+      "name": "NYGC Chateaugay",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36033952000"
+    },
+    {
+      "lat": 40.657696,
+      "lon": -74.004816,
+      "name": "Dataverge",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36047001802"
+    },
+    {
+      "lat": 40.719994,
+      "lon": -74.004568,
+      "name": "32 Avenue of the Americas",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36061003300"
+    },
+    {
+      "lat": 40.716521,
+      "lon": -74.005902,
+      "name": "33 Thomas Street",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36061003300"
+    },
+    {
+      "lat": 40.717677,
+      "lon": -74.008441,
+      "name": "Digital Realty New York JFK12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36061003300"
+    },
+    {
+      "lat": 40.719928,
+      "lon": -74.004458,
+      "name": "Digital Realty New York JFK13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36061003300"
+    },
+    {
+      "lat": 43.082179,
+      "lon": -79.030778,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063021700"
+    },
+    {
+      "lat": 43.083492,
+      "lon": -79.00294,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.083031,
+      "lon": -79.003982,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.082029,
+      "lon": -79.003417,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.082178,
+      "lon": -79.003509,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.074831,
+      "lon": -78.944809,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022714"
+    },
+    {
+      "lat": 43.012076,
+      "lon": -76.115925,
+      "name": "SU Green Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36067016100"
+    },
+    {
+      "lat": 40.60738,
+      "lon": -74.173167,
+      "name": "Merrill Lynch Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36085029105"
+    },
+    {
+      "lat": 40.607037,
+      "lon": -74.174905,
+      "name": "Telehouse Teleport",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36085029105"
+    },
+    {
+      "lat": 41.036194,
+      "lon": -73.987626,
+      "name": "Bloomberg Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087012800"
+    },
+    {
+      "lat": 41.039951,
+      "lon": -73.989572,
+      "name": "Databank LGA3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087012800"
+    },
+    {
+      "lat": 41.034493,
+      "lon": -73.975786,
+      "name": "fifteenfortyseven CSR ORNY1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087012800"
+    },
+    {
+      "lat": 41.052332,
+      "lon": -73.971774,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087013001"
+    },
+    {
+      "lat": 44.668107,
+      "lon": -74.980582,
+      "name": "Old Main",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36089490800"
+    },
+    {
+      "lat": 40.843652,
+      "lon": -72.883376,
+      "name": "Cable & Wireless Cable Landing Station",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36103159407"
+    },
+    {
+      "lat": 40.95127,
+      "lon": -73.897901,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36119000702"
+    },
+    {
+      "lat": 42.679359,
+      "lon": -76.948581,
+      "name": "Greenidge Power Plant and Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36123150102"
+    }
+  ],
+  "state_fips": "36"
+}

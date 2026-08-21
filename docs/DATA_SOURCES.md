@@ -1,7 +1,9 @@
 # Data sources
 
 Every upstream source, its vintage, license, access mode, and role. All
-sources are free and keyless. Access date for all sources: **2026-07-16**
+sources used for SCORING are free and keyless — see the automated context
+layers below for the one optional exception. Access date for all scoring
+sources: **2026-07-16**
 (retrieval timestamps are also stamped per-file in `data/cache/*.meta.json`
 and per-run in every screening JSON/report).
 
@@ -23,6 +25,71 @@ and per-run in every screening JSON/report).
 | [LBNL 2024 U.S. Data Center Energy Usage Report](https://eta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report) | LBNL (Shehabi et al.) | pub. Dec 2024 | constants transcribed | PUE/WUE scenario factors | Public report, cited |
 | [Macknick et al. 2012](https://iopscience.iop.org/article/10.1088/1748-9326/7/4/045802) | NREL / ERL | 2012 medians | constants transcribed | generation water-consumption factors | Open access, cited |
 | `data/curated/sites.yaml` | this repo | per-fact citation dates | hand-curated | flagship site registry | MIT (compilation); every load-bearing fact cites public reporting. **Not exhaustive, not authoritative** |
+
+## Automated context layers (bi-weekly)
+
+`.github/workflows/data_sync.yml` runs on the 1st and 15th of each month and
+refreshes three layers that inform **context only**. None of them feeds a
+pillar score, and `tests/test_data_sync.py` enforces that by asserting no
+module in `wattershed.scoring` imports them.
+
+| Source | Provider | Access | Role | Licence |
+|---|---|---|---|---|
+| [OpenStreetMap via Overpass](https://overpass-api.de/api/interpreter) | OSM contributors | POST, keyless, 3 mirrors | data-centre facility locations → Infrastructure Density Modifier | ODbL 1.0 — © OpenStreetMap contributors |
+| [Google News RSS](https://news.google.com/rss/search) | Google News (aggregator) | REST, keyless | announcement / permit / construction **leads** for human review | headlines + links only |
+| [EIA v2 operating generator capacity](https://api.eia.gov/v2/) | U.S. EIA | REST, **free API key required** | supply-side capacity context by balancing authority | Public domain |
+
+Three things worth stating plainly:
+
+- **EIA is the one source that is not keyless.** An unauthenticated request
+  returns `{"error": {"code": "API_KEY_MISSING"}}`. The key is free (no
+  payment) but it is a registration, so the adapter is **optional**: with no
+  `EIA_API_KEY` secret the layer reports itself skipped and the sync still
+  succeeds. Screening never depends on it. This is also *not* the EIA-930
+  hourly balancing-authority feed — that remains uningested (see
+  `grid.eia_hourly_ba` in the catalog).
+- **The density layer is deliberately scoreless.** Letting a twice-monthly
+  unattended job move a pillar would mean a published result could change
+  because a volunteer edited OSM, with no reviewer and no changelog. It would
+  also make the siting-equity study circular: that study asks whether data
+  centres cluster in already-burdened tracts, which cannot be answered by a
+  burden score that counts data centres.
+- **News is unverified secondary reporting.** Every record carries
+  `verified: false`, retention is capped at 400 items, and the layer exists to
+  tell a human where to look — never to measure anything.
+
+OpenStreetMap coverage is crowd-sourced and **not exhaustive**; a campus
+appears only once a mapper adds it. HIFLD, the former federal infrastructure
+layer, was discontinued in August 2025 and its community mirrors are served
+through vendor platforms rather than plain HTTP, so OSM is currently the only
+keyless national source of data-centre locations.
+
+## Machine-readable schema map
+
+`data_catalog.json` (repo root) is the generated map from each score metric
+back to its registry, ingestion endpoint, publication timestamp, and **native
+spatial resolution**. It is derived from `src/wattershed/sources/versioning.py`
+— never hand-edited — so it cannot drift from what the code ingests:
+
+```
+wattershed build-catalog          # regenerate
+wattershed build-catalog --check  # CI guard: fails if the committed copy is stale
+wattershed versions               # per-block publication date, resolution, retrieval stamp
+```
+
+Two distinctions the table above collapses are explicit there: `published`
+(when the publisher released it) vs `describes` (the period the data covers)
+vs `observed_retrieval` (when this checkout fetched it), and the native
+geometry each value resolves to — a point score is only as sharp as its
+coarsest input.
+
+The catalog also carries a `not_ingested` block naming registries a reader
+might reasonably assume are wired in but are not: **EIA-930 hourly
+balancing-authority data** (the grid pillar is annual-average eGRID plus
+categorical NERC; hourly/marginal emissions are a v2 item) and **USGS
+real-time gauge hydrology** (the dynamic water signal is USDM weekly drought,
+not NWIS streamflow). Every per-site HTML memo surfaces the same lineage
+under each score block.
 
 ## Resilience notes (post-2025 federal data environment)
 

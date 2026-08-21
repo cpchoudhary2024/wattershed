@@ -28,6 +28,7 @@ import pandas as pd
 
 from ..models import Confidence, Indicator, PillarScore
 from . import reference
+from .normalize import percentile_band, to_score
 
 # (column, label, source_id, vintage, confidence)
 _POLLUTION_META = [
@@ -52,16 +53,10 @@ _VULN_META = [
 ]
 
 
-def band(score: float | None) -> str:
-    if score is None:
-        return "insufficient data"
-    if score >= 90:
-        return "severe"
-    if score >= 75:
-        return "high"
-    if score >= 50:
-        return "moderate"
-    return "low"
+# The burden score is a national percentile, so it reads against the
+# percentile ladder (top decile = severe), not the constructed-index ladder
+# used by water and grid. See normalize.PERCENTILE_BAND_THRESHOLDS.
+band = percentile_band
 
 
 def _fmt(v: float, col: str) -> str:
@@ -154,7 +149,7 @@ def score_burden(geoid: str, lat: float | None = None, lon: float | None = None)
     if dom["vulnerability"] is None:
         gaps.append(f"Only {dom['vulnerability_n']}/6 vulnerability indicators available (floor: 4).")
 
-    score = dom["cbi_percentile"]
+    score = to_score(dom["cbi_percentile"])
     poc = row.get("pct_people_of_color")
     context = {
         "pollution_domain": None if dom["pollution"] is None else round(dom["pollution"], 1),

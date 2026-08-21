@@ -1,0 +1,611 @@
+{
+  "density": {
+    "04003000301": 50.0,
+    "04013061052": 93.5,
+    "04013061054": 70.7,
+    "04013061058": 86.6,
+    "04013061300": 93.5,
+    "04013110502": 70.7,
+    "04013111203": 93.5,
+    "04013113601": 86.6,
+    "04013115200": 100.0,
+    "04013115900": 79.1,
+    "04013117200": 86.6,
+    "04013216816": 86.6,
+    "04013216845": 79.1,
+    "04013216860": 79.1,
+    "04013319705": 79.1,
+    "04013319709": 93.5,
+    "04013319710": 100.0,
+    "04013319909": 50.0,
+    "04013420206": 50.0,
+    "04013421303": 50.0,
+    "04013422304": 79.1,
+    "04013422307": 61.2,
+    "04013422514": 79.1,
+    "04013422636": 70.7,
+    "04013422643": 100.0,
+    "04013422647": 100.0,
+    "04013422654": 100.0,
+    "04013422655": 100.0,
+    "04013522802": 70.7,
+    "04013523102": 70.7,
+    "04013614700": 70.7,
+    "04013616500": 79.1,
+    "04013811400": 70.7,
+    "04013811800": 100.0,
+    "04013812200": 100.0,
+    "04019000100": 50.0,
+    "04019004074": 61.2
+  },
+  "facilities": [
+    {
+      "lat": 31.972675,
+      "lon": -110.304752,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04003000301"
+    },
+    {
+      "lat": 33.439377,
+      "lon": -112.377048,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061052"
+    },
+    {
+      "lat": 33.46723,
+      "lon": -112.38535,
+      "name": "Tract Goodyear",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061054"
+    },
+    {
+      "lat": 33.407946,
+      "lon": -112.36483,
+      "name": "PHX-10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061058"
+    },
+    {
+      "lat": 33.409031,
+      "lon": -112.364827,
+      "name": "PHX-11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061058"
+    },
+    {
+      "lat": 33.419491,
+      "lon": -112.359988,
+      "name": "Stream Data Centers PHX-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061058"
+    },
+    {
+      "lat": 33.446303,
+      "lon": -112.373887,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061300"
+    },
+    {
+      "lat": 33.493351,
+      "lon": -112.07055,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013110502"
+    },
+    {
+      "lat": 33.494309,
+      "lon": -112.070792,
+      "name": "Lumen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013110502"
+    },
+    {
+      "lat": 33.454726,
+      "lon": -111.976218,
+      "name": "Iron Mountain AZP-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013111203"
+    },
+    {
+      "lat": 33.452157,
+      "lon": -111.977294,
+      "name": "Iron Mountain AZP-2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013111203"
+    },
+    {
+      "lat": 33.460881,
+      "lon": -111.997156,
+      "name": "QTS",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013113601"
+    },
+    {
+      "lat": 33.46468,
+      "lon": -111.99756,
+      "name": "QTS",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013113601"
+    },
+    {
+      "lat": 33.416077,
+      "lon": -112.009472,
+      "name": "PhoenixNAP",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013115200"
+    },
+    {
+      "lat": 33.400219,
+      "lon": -112.047879,
+      "name": "Cogent Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013115900"
+    },
+    {
+      "lat": 33.421693,
+      "lon": -112.034303,
+      "name": "Data Storage Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013117200"
+    },
+    {
+      "lat": 33.42038,
+      "lon": -112.041326,
+      "name": "Iron Mountain Records Storage",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013117200"
+    },
+    {
+      "lat": 33.611662,
+      "lon": -111.913983,
+      "name": "DataPro USA Web Development",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216816"
+    },
+    {
+      "lat": 33.627248,
+      "lon": -111.902048,
+      "name": "Profit Finder Pro Software",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216816"
+    },
+    {
+      "lat": 33.644666,
+      "lon": -111.896098,
+      "name": "Iron Mountain Data Centers AZS-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216845"
+    },
+    {
+      "lat": 33.634484,
+      "lon": -111.884346,
+      "name": "K-Motion Interactive",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216860"
+    },
+    {
+      "lat": 33.394436,
+      "lon": -111.952517,
+      "name": "Omnis Network",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319705"
+    },
+    {
+      "lat": 33.405131,
+      "lon": -111.977335,
+      "name": "Alembic Computer Services, Inc.",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319709"
+    },
+    {
+      "lat": 33.395586,
+      "lon": -111.970076,
+      "name": "EdgeConneX Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319709"
+    },
+    {
+      "lat": 33.413186,
+      "lon": -111.971154,
+      "name": "J-Curve Technologies",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319710"
+    },
+    {
+      "lat": 33.34462,
+      "lon": -111.899219,
+      "name": "Digital Realty Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319909"
+    },
+    {
+      "lat": 33.475421,
+      "lon": -111.719165,
+      "name": "Myndshift Technologies",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013420206"
+    },
+    {
+      "lat": 33.421254,
+      "lon": -111.859019,
+      "name": "Centersquare: Phoenix - (PHX1 - Mesa)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013421303"
+    },
+    {
+      "lat": 33.342608,
+      "lon": -111.840962,
+      "name": "StrongMind",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422304"
+    },
+    {
+      "lat": 33.361931,
+      "lon": -111.83929,
+      "name": "GoDaddy - Gilbert",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422307"
+    },
+    {
+      "lat": 33.380415,
+      "lon": -111.752668,
+      "name": "OptimumHQ",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422514"
+    },
+    {
+      "lat": 33.380601,
+      "lon": -111.752889,
+      "name": "The Chatfield Group",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422514"
+    },
+    {
+      "lat": 33.379986,
+      "lon": -111.728405,
+      "name": "Alliance Technology",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422636"
+    },
+    {
+      "lat": 33.356679,
+      "lon": -111.635236,
+      "name": "Comarch",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422643"
+    },
+    {
+      "lat": 33.353666,
+      "lon": -111.612411,
+      "name": "NTT PH1 Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422643"
+    },
+    {
+      "lat": 33.347198,
+      "lon": -111.63246,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422647"
+    },
+    {
+      "lat": 33.346333,
+      "lon": -111.628914,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422647"
+    },
+    {
+      "lat": 33.347189,
+      "lon": -111.625792,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422647"
+    },
+    {
+      "lat": 33.347033,
+      "lon": -111.604142,
+      "name": "Apple Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422647"
+    },
+    {
+      "lat": 33.344149,
+      "lon": -111.619588,
+      "name": "EdgeCore",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422647"
+    },
+    {
+      "lat": 33.353215,
+      "lon": -111.678033,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422654"
+    },
+    {
+      "lat": 33.354139,
+      "lon": -111.676427,
+      "name": "Google Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422654"
+    },
+    {
+      "lat": 33.352009,
+      "lon": -111.647529,
+      "name": "EdgeConneX PHX02 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422655"
+    },
+    {
+      "lat": 33.30628,
+      "lon": -111.671722,
+      "name": "AZ Labs",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013522802"
+    },
+    {
+      "lat": 33.305337,
+      "lon": -111.67169,
+      "name": "L3Harris Technologies Inc",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013522802"
+    },
+    {
+      "lat": 33.302965,
+      "lon": -111.840539,
+      "name": "Emailage",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013523102"
+    },
+    {
+      "lat": 33.684677,
+      "lon": -112.09834,
+      "name": "Flexential Phoenix - Deer Valley",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013614700"
+    },
+    {
+      "lat": 33.664746,
+      "lon": -112.111714,
+      "name": "Accelera Data Systems",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013616500"
+    },
+    {
+      "lat": 33.659055,
+      "lon": -112.111159,
+      "name": "Aligned Energy Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013616500"
+    },
+    {
+      "lat": 33.319916,
+      "lon": -111.809686,
+      "name": "All About Serving Process Server",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013811400"
+    },
+    {
+      "lat": 33.276999,
+      "lon": -111.885891,
+      "name": "H5 Phoenix",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013811800"
+    },
+    {
+      "lat": 33.270878,
+      "lon": -111.881995,
+      "name": "CyrusOne PHX1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.271916,
+      "lon": -111.881627,
+      "name": "CyrusOne PHX3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.268778,
+      "lon": -111.882522,
+      "name": "CyrusOne PHX4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.271809,
+      "lon": -111.883263,
+      "name": "CyrusOne PHX4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.26975,
+      "lon": -111.881584,
+      "name": "CyrusOne PHX5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.26763,
+      "lon": -111.882512,
+      "name": "CyrusOne PHX6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.266374,
+      "lon": -111.881894,
+      "name": "CyrusOne PHX7",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.266328,
+      "lon": -111.883304,
+      "name": "CyrusOne PHX8",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.274923,
+      "lon": -111.886638,
+      "name": "Digital Realty Phoenix PHX15",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 32.22288,
+      "lon": -110.97485,
+      "name": "Project Blue",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04019000100"
+    },
+    {
+      "lat": 32.092706,
+      "lon": -110.787424,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04019004074"
+    },
+    {
+      "lat": 32.04857,
+      "lon": -110.77386,
+      "name": "Project Blue (Beale Infrastructure)",
+      "operator": "",
+      "status": "planned",
+      "status_source": "curated",
+      "tract": "04019004109"
+    }
+  ],
+  "state_fips": "04"
+}

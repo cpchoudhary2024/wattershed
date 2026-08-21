@@ -1,0 +1,582 @@
+{
+  "density": {
+    "53017950300": 100.0,
+    "53025010600": 100.0,
+    "53033002000": 50.0,
+    "53033007202": 100.0,
+    "53033007203": 100.0,
+    "53033007303": 93.5,
+    "53033008004": 93.5,
+    "53033027100": 100.0,
+    "53033027200": 100.0,
+    "53053071207": 50.0,
+    "53061042004": 61.2,
+    "53061051601": 70.7,
+    "53061051702": 70.7,
+    "53063003500": 50.0,
+    "53063013203": 50.0,
+    "53063013600": 50.0,
+    "53073000502": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 47.357433,
+      "lon": -120.159546,
+      "name": "EAT12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53007961200"
+    },
+    {
+      "lat": 47.358426,
+      "lon": -120.159976,
+      "name": "EAT13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53007961200"
+    },
+    {
+      "lat": 47.359497,
+      "lon": -120.160091,
+      "name": "EAT14",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53007961200"
+    },
+    {
+      "lat": 47.407242,
+      "lon": -120.213935,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.392149,
+      "lon": -120.217462,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.391794,
+      "lon": -120.217877,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.407508,
+      "lon": -120.214011,
+      "name": "Actapio",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.40862,
+      "lon": -120.189398,
+      "name": "Intergate Columbia A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.407164,
+      "lon": -120.187524,
+      "name": "Intergate Columbia B",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.407585,
+      "lon": -120.191579,
+      "name": "Intergate Columbia D",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.416868,
+      "lon": -120.207688,
+      "name": "Microsoft EAT02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.418324,
+      "lon": -120.20771,
+      "name": "Microsoft EAT03",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.419638,
+      "lon": -120.213813,
+      "name": "Microsoft EAT04",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.24621,
+      "lon": -119.813226,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.247651,
+      "lon": -119.813186,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.246168,
+      "lon": -119.815756,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.246736,
+      "lon": -119.828866,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.237097,
+      "lon": -119.895155,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.244813,
+      "lon": -119.818095,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.24429,
+      "lon": -119.814806,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.251587,
+      "lon": -119.818805,
+      "name": "H5 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.245367,
+      "lon": -119.81609,
+      "name": "Intergate Quincy Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.239478,
+      "lon": -119.883009,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.239487,
+      "lon": -119.88741,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.237662,
+      "lon": -119.887531,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.237632,
+      "lon": -119.883219,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.236722,
+      "lon": -119.883335,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.236737,
+      "lon": -119.887432,
+      "name": "Microsoft",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.250165,
+      "lon": -119.81449,
+      "name": "Vantage WA11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.25397,
+      "lon": -119.813699,
+      "name": "Vantage WA12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.252481,
+      "lon": -119.813639,
+      "name": "Vantage WA13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.246761,
+      "lon": -119.826616,
+      "name": "Yahoo Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.238819,
+      "lon": -119.859359,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.238262,
+      "lon": -119.859366,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.237669,
+      "lon": -119.864626,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.238593,
+      "lon": -119.864537,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.240171,
+      "lon": -119.863265,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.243847,
+      "lon": -119.869669,
+      "name": "CyrusOne Quincy",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.24358,
+      "lon": -119.865748,
+      "name": "NTT Data Quincy",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.693324,
+      "lon": -122.317317,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033002000"
+    },
+    {
+      "lat": 47.614423,
+      "lon": -122.339743,
+      "name": "Equinix SE3 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033007202"
+    },
+    {
+      "lat": 47.614356,
+      "lon": -122.338864,
+      "name": "Westin Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033007202"
+    },
+    {
+      "lat": 47.619233,
+      "lon": -122.348287,
+      "name": "KOMO Plaza East",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033007203"
+    },
+    {
+      "lat": 47.61896,
+      "lon": -122.348526,
+      "name": "KOMO Plaza West",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033007203"
+    },
+    {
+      "lat": 47.618954,
+      "lon": -122.336531,
+      "name": "The Seattle Times",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033007303"
+    },
+    {
+      "lat": 47.617787,
+      "lon": -122.356694,
+      "name": "CTI Biopharma",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033008004"
+    },
+    {
+      "lat": 47.492183,
+      "lon": -122.293318,
+      "name": "Intergate Seattle West Building A",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027100"
+    },
+    {
+      "lat": 47.493074,
+      "lon": -122.293684,
+      "name": "Intergate Seattle West Building B",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027100"
+    },
+    {
+      "lat": 47.494123,
+      "lon": -122.294397,
+      "name": "Intergate Seattle West Building C",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027100"
+    },
+    {
+      "lat": 47.49486,
+      "lon": -122.288194,
+      "name": "Intergate Seattle East Building 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027200"
+    },
+    {
+      "lat": 47.495031,
+      "lon": -122.29057,
+      "name": "Intergate Seattle East Building 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027200"
+    },
+    {
+      "lat": 47.49348,
+      "lon": -122.290465,
+      "name": "Intergate Seattle East Building 3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027200"
+    },
+    {
+      "lat": 47.493403,
+      "lon": -122.28888,
+      "name": "Intergate Seattle East Building 4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027200"
+    },
+    {
+      "lat": 47.491986,
+      "lon": -122.289665,
+      "name": "Intergate Seattle East Building 5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53033027200"
+    },
+    {
+      "lat": 47.15907,
+      "lon": -122.279564,
+      "name": "Centeris",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53053071207"
+    },
+    {
+      "lat": 47.864693,
+      "lon": -122.284153,
+      "name": "Norma Beach Cable Landing Station",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53061042004"
+    },
+    {
+      "lat": 47.841809,
+      "lon": -122.301665,
+      "name": "Centersquare Lynnwood SE1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53061051601"
+    },
+    {
+      "lat": 47.822404,
+      "lon": -122.289614,
+      "name": "Digital Fortress Lynnwood",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53061051702"
+    },
+    {
+      "lat": 47.654226,
+      "lon": -117.420001,
+      "name": "Lumen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53063003500"
+    },
+    {
+      "lat": 47.671915,
+      "lon": -117.095932,
+      "name": "TierPoint",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53063013203"
+    },
+    {
+      "lat": 47.594616,
+      "lon": -117.537148,
+      "name": "Iron Mountain",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53063013600"
+    },
+    {
+      "lat": 48.75726,
+      "lon": -122.480548,
+      "name": "CSSNW Bellingham",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53073000502"
+    }
+  ],
+  "state_fips": "53"
+}

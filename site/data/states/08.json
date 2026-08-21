@@ -1,0 +1,218 @@
+{
+  "density": {
+    "08001008555": 50.0,
+    "08005006815": 100.0,
+    "08005006861": 100.0,
+    "08005006864": 100.0,
+    "08005007110": 70.7,
+    "08005080400": 50.0,
+    "08014031403": 50.0,
+    "08031001707": 79.1,
+    "08031002602": 70.7,
+    "08035014014": 100.0,
+    "08041002300": 50.0,
+    "08041004501": 50.0,
+    "08041004603": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 39.922465,
+      "lon": -104.983425,
+      "name": "Google - Thornton",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08001008555"
+    },
+    {
+      "lat": 39.589248,
+      "lon": -104.877933,
+      "name": "Verizon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006815"
+    },
+    {
+      "lat": 39.598961,
+      "lon": -104.860378,
+      "name": "Time Warner Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006861"
+    },
+    {
+      "lat": 39.599933,
+      "lon": -104.86017,
+      "name": "Time Warner Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006861"
+    },
+    {
+      "lat": 39.590131,
+      "lon": -104.846963,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006864"
+    },
+    {
+      "lat": 39.593873,
+      "lon": -104.84316,
+      "name": "Flexential - Denver - Centennial Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006864"
+    },
+    {
+      "lat": 39.588324,
+      "lon": -104.832418,
+      "name": "Xfinity/Comcast Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006864"
+    },
+    {
+      "lat": 39.59134,
+      "lon": -104.847065,
+      "name": "zColo by Zayo",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006864"
+    },
+    {
+      "lat": 39.729559,
+      "lon": -104.712783,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005007110"
+    },
+    {
+      "lat": 39.734062,
+      "lon": -104.707937,
+      "name": "QTS",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005007110"
+    },
+    {
+      "lat": 39.661049,
+      "lon": -104.848832,
+      "name": "Flexential - Denver - Aurora",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005080400"
+    },
+    {
+      "lat": 39.989158,
+      "lon": -105.020726,
+      "name": "JPMorgan Chase",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08014031403"
+    },
+    {
+      "lat": 39.74597,
+      "lon": -104.994159,
+      "name": "Flexential Denver - Downtown",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08031001707"
+    },
+    {
+      "lat": 39.745572,
+      "lon": -104.995691,
+      "name": "Insurance Exchange Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08031001707"
+    },
+    {
+      "lat": 39.74523,
+      "lon": -104.979332,
+      "name": "Pearl Plaza Office Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08031002602"
+    },
+    {
+      "lat": 39.559068,
+      "lon": -104.833534,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08035014014"
+    },
+    {
+      "lat": 39.558994,
+      "lon": -104.837556,
+      "name": "Flexential Denver - Englewood",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08035014014"
+    },
+    {
+      "lat": 38.83396,
+      "lon": -104.82535,
+      "name": "Project Taurus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08041002300"
+    },
+    {
+      "lat": 38.78616,
+      "lon": -104.788583,
+      "name": "T5@Colorado Springs",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08041004501"
+    },
+    {
+      "lat": 38.802671,
+      "lon": -104.521981,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08041004603"
+    },
+    {
+      "lat": 38.988916,
+      "lon": -104.786329,
+      "name": "SAP COS02",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08041007502"
+    },
+    {
+      "lat": 38.985733,
+      "lon": -104.787263,
+      "name": "Walmart Colorado Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08041007502"
+    }
+  ],
+  "state_fips": "08"
+}

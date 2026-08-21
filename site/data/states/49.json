@@ -1,0 +1,162 @@
+{
+  "density": {
+    "49003960601": 50.0,
+    "49035102600": 61.2,
+    "49035111906": 50.0,
+    "49035114500": 50.0,
+    "49035115211": 70.7,
+    "49035980100": 50.0,
+    "49047968401": 50.0,
+    "49049000601": 50.0,
+    "49049010114": 50.0,
+    "49049010115": 100.0,
+    "49053271703": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 41.51104,
+      "lon": -112.0155,
+      "name": "Stratos",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49003960601"
+    },
+    {
+      "lat": 40.766796,
+      "lon": -111.920295,
+      "name": "Flexential Salt Lake City - Fair Park",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035102600"
+    },
+    {
+      "lat": 40.685569,
+      "lon": -111.885051,
+      "name": "Flexential Salt Lake City - Millcreek",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035111906"
+    },
+    {
+      "lat": 40.756307,
+      "lon": -111.954837,
+      "name": "Flexential Salt Lake City - Downtown",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035114500"
+    },
+    {
+      "lat": 40.564113,
+      "lon": -112.050635,
+      "name": "Ebay",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035115211"
+    },
+    {
+      "lat": 40.563602,
+      "lon": -112.047805,
+      "name": "eBay",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035115211"
+    },
+    {
+      "lat": 40.620352,
+      "lon": -111.986047,
+      "name": "Flexential Salt Lake City - South Valley",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035980100"
+    },
+    {
+      "lat": 40.456595,
+      "lon": -109.529017,
+      "name": "Strata Networks",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49047968401"
+    },
+    {
+      "lat": 40.332648,
+      "lon": -111.727875,
+      "name": "Flexential Salt Lake City - Lindon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049000601"
+    },
+    {
+      "lat": 40.30935,
+      "lon": -112.01198,
+      "name": "Meta Eagle Mountain",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010114"
+    },
+    {
+      "lat": 40.265862,
+      "lon": -112.019433,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.269859,
+      "lon": -112.019456,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.268588,
+      "lon": -112.015101,
+      "name": "Meta Eagle Mountain Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.265564,
+      "lon": -112.01513,
+      "name": "Meta Eagle Mountain Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.272331,
+      "lon": -112.015058,
+      "name": "Meta Eagle Mountain Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 37.062799,
+      "lon": -113.544748,
+      "name": "Lumen",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49053271703"
+    }
+  ],
+  "state_fips": "49"
+}

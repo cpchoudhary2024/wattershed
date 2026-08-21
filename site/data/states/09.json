@@ -1,0 +1,51 @@
+{
+  "density": {},
+  "facilities": [
+    {
+      "lat": 41.091785,
+      "lon": -73.516673,
+      "name": "amnet Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09001020900"
+    },
+    {
+      "lat": 41.113092,
+      "lon": -73.388649,
+      "name": "CyrusOne Norwalk",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09001044300"
+    },
+    {
+      "lat": 41.240731,
+      "lon": -73.147267,
+      "name": "Digital Realty New York HVN10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09001090500"
+    },
+    {
+      "lat": 41.707078,
+      "lon": -72.589864,
+      "name": "Ergonomic Group",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09003520302"
+    },
+    {
+      "lat": 41.478815,
+      "lon": -72.801014,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09009175800"
+    }
+  ],
+  "state_fips": "09"
+}

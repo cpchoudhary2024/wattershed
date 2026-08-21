@@ -68,15 +68,57 @@
         font-size:11.5px; color:var(--muted)}
   .foot p{margin:4px 0}
   a{color:var(--seq-deep); text-decoration:none}
+  /* Soft advisory badge — informational, not a tier change. Amber-on-cream
+     reads as "read this" without competing with the tier badge's status colour. */
+  .advisory{display:flex; gap:9px; align-items:flex-start; margin:14px 0 0; padding:9px 13px;
+            background:#fdf3d7; border:1px solid #e8d9a8; border-left:3px solid #8a6d00;
+            border-radius:6px; font-size:12.5px; color:#4a3c00; line-height:1.5}
+  .advisory .ico{font-weight:700; flex:none; line-height:1.3}
+  .advisory .detail{color:#6b5800; display:block; margin-top:3px}
+
+  /* Provenance flag + lineage modal. Understated by design: a screening memo
+     should show its sourcing without competing with the score for attention. */
+  .provflag{display:inline-flex; align-items:center; gap:6px; margin-top:8px; padding:2px 0;
+            font-size:11px; color:var(--muted); background:none; border:0; cursor:pointer;
+            font-family:inherit; letter-spacing:0.01em; text-align:left; line-height:1.35}
+  .provflag:hover,.provflag:focus-visible{color:var(--seq-deep)}
+  .provflag i{display:inline-block; width:5px; height:5px; border-radius:50%;
+              background:var(--baseline); flex:none}
+  .provflag:hover i{background:var(--seq)}
+  .provflag .dt{font-variant-numeric:tabular-nums}
+  .provflag.section{margin:10px 0 0}
+  .pmodal{position:fixed; inset:0; z-index:50; display:none; padding:24px 16px;
+          background:rgba(11,11,11,0.42); overflow-y:auto}
+  .pmodal[open]{display:block}
+  .pmodal .card{max-width:720px; margin:0 auto; background:var(--surface); border-radius:10px;
+                border:1px solid var(--border); padding:26px 28px}
+  .pmodal h3{font-size:13px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-2);
+             border-bottom:1px solid var(--grid); padding-bottom:8px; margin:0 0 4px}
+  .pmodal .sub{font-size:12.5px; color:var(--muted); margin-bottom:14px}
+  .pmodal .close{position:sticky; top:0; float:right; border:1px solid var(--border);
+                 background:var(--page); border-radius:6px; cursor:pointer; font-size:12px;
+                 color:var(--ink-2); padding:3px 10px; font-family:inherit}
+  .step{border-left:2px solid var(--grid); padding:2px 0 2px 14px; margin:14px 0}
+  .step.off{border-left-style:dashed}
+  .step .who{font-size:13.5px; font-weight:600}
+  .step .role{font-size:12.5px; color:var(--ink-2); margin:2px 0 6px}
+  .step dl{display:grid; grid-template-columns:130px 1fr; gap:3px 12px; font-size:12px; margin:0}
+  .step dt{color:var(--muted)}
+  .step dd{margin:0; color:var(--ink-2)}
+  .step .flagnote{font-size:11.5px; color:var(--ink-2); background:var(--page);
+                  border:1px solid var(--grid); border-radius:5px; padding:6px 9px; margin-top:7px}
+  .step .tag{font-size:10px; text-transform:uppercase; letter-spacing:0.06em; padding:1px 6px;
+             border-radius:999px; border:1px solid var(--border); color:var(--muted); margin-left:6px}
   @media print{
     body{background:#fff; padding:0}
+    .provflag{cursor:default}
+    .pmodal{display:none !important}
     .doc{border:none; border-radius:0; padding:24px; max-width:none}
     .tile .val{font-size:24px}
   }
 </style>
 </head>
-<body>
-<div class="doc">
+<body><div class="doc">
 
   <div class="brand">
     <div class="logo">WATTER<span>SHED</span></div>
@@ -91,6 +133,8 @@
      · status: <strong>operating</strong>
     
   </p>
+
+  
 
   <div class="tierline">
     <span class="badge" style="color:#a34f13; background:#fde8dc">Screening tier: ELEVATED</span>
@@ -107,6 +151,11 @@
       <div class="val">14<span style="font-size:14px; color:var(--muted)">/100</span></div>
       <div class="band" style="color:#0ca30c">low</div>
       <div class="meter"><i style="width:14.5%; background:#0ca30c"></i></div>
+      <button class="provflag " type="button" data-prov="water"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — 4 source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date · collected <span class="dt">2026-07-19</span></span>
+</button>
     </div>
     
     <div class="tile">
@@ -114,6 +163,11 @@
       <div class="val">78<span style="font-size:14px; color:var(--muted)">/100</span></div>
       <div class="band" style="color:#d03b3b">severe</div>
       <div class="meter"><i style="width:78.2%; background:#d03b3b"></i></div>
+      <button class="provflag " type="button" data-prov="grid"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — 3 source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date · collected <span class="dt">2026-07-19</span></span>
+</button>
     </div>
     
     <div class="tile">
@@ -121,6 +175,11 @@
       <div class="val">42<span style="font-size:14px; color:var(--muted)">/100</span></div>
       <div class="band" style="color:#0ca30c">low</div>
       <div class="meter"><i style="width:41.5%; background:#0ca30c"></i></div>
+      <button class="provflag " type="button" data-prov="burden"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — 5 source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date · collected <span class="dt">2026-07-19</span></span>
+</button>
     </div>
     
   </div>
@@ -163,6 +222,11 @@
     </tbody>
   </table>
   
+  <button class="provflag section" type="button" data-prov="water"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — 4 source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date · collected <span class="dt">2026-07-19</span></span>
+</button>
   
   <h2>Grid strain & carbon — 78/100 (severe)</h2>
   
@@ -207,6 +271,11 @@
     </tbody>
   </table>
   
+  <button class="provflag section" type="button" data-prov="grid"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — 3 source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date · collected <span class="dt">2026-07-19</span></span>
+</button>
   
   <h2>Cumulative community burden — 42/100 (low)</h2>
   
@@ -378,6 +447,11 @@
     </tbody>
   </table>
   
+  <button class="provflag section" type="button" data-prov="burden"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — 5 source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date · collected <span class="dt">2026-07-19</span></span>
+</button>
   
 
   
@@ -502,5 +576,111 @@
     <p>Generated by Wattershed v0.1.0 — open-source environmental screening for U.S. data center siting.</p>
   </div>
 </div>
+
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
+  <div class="card">
+    <button class="close" type="button" data-prov-close>Close</button>
+    <h3 id="pmodal-title"></h3>
+    <div class="sub" id="pmodal-sub"></div>
+    <div id="pmodal-body"></div>
+    
+    <div class="step off" style="margin-top:20px">
+      <div class="who">Declared not ingested</div>
+      <div class="role">Registries a reader might expect that this tool does not read.</div>
+      
+      <div class="flagnote"><strong>real-time gauge hydrology (USGS NWIS/Water Services) is not read by this tool</strong> — Declared explicitly to prevent a plausible misreading: the water pillar's dynamic component is USDM weekly drought, not USGS real-time streamflow. Instantaneous gauge discharge is a poor proxy for siting-horizon supply risk and no NWIS endpoint is called anywhere in the codebase.</div>
+      
+      <div class="flagnote"><strong>EIA-930 hourly balancing-authority operations are not read by this tool</strong> — config.EIA_API_KEY exists as an unused optional hook; no EIA endpoint is called. The grid pillar is annual-average (eGRID) plus forward-looking categorical (NERC). Hourly BA data would enable marginal/time-matched emissions — a documented v2 roadmap item, not a current input. See docs/LIMITATIONS.md.</div>
+      
+    </div>
+    
+    <div class="sub" style="margin:16px 0 0">Lineage from <code>data_catalog.json</code> v1.0 · generated 2026-07-19</div>
+  </div>
+</div>
+
+<script type="application/json" id="prov-data">{"water":{"label":"Water stress","collected":"2026-07-19","oldest":"2026-07-17","blocks":[{"role":"Baseline water stress (withdrawals ÷ renewable supply) — structural scarcity","ingestion_mode":"static_snapshot","published":"2023-08","describes":"baseline period 1979–2019","spatial_unit":"hydrological sub-basin polygon","spatial_note":"Native Aqueduct 4.0 sub-basin geometry; variable area, no raster cell size. U.S. clip committed as data/processed/aqueduct_bws_us.gpkg.","refresh_cadence":"major release (4.0 superseded 3.0 after 4 years)","source_id":"aqueduct40","status":"active","registry":"WRI Aqueduct 4.0 — baseline water stress (bws), annual, sub-basin","provider":"World Resources Institute","url":"https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip","retrieved":"2026-07-19T22:55:53Z"},{"role":"Current drought category at the point — the dynamic water signal","ingestion_mode":"periodic_bulk","published":"rolling — weekly Thursday release","describes":"the week of the release","spatial_unit":"drought polygon (analyst-delineated)","spatial_note":"Generalized to roughly county / sub-county scale; not a gridded product.","refresh_cadence":"weekly (Thursday); cached ≤3 days","source_id":"usdm_current","status":"active","registry":"U.S. Drought Monitor — current weekly map","provider":"NDMC / USDA / NOAA (Univ. of Nebraska–Lincoln)","url":"https://droughtmonitor.unl.edu/data/shapefiles_m/USDM_current_M.zip","retrieved":"2026-07-17T02:43:27Z"},{"role":"5-year county DSCI climatology — distinguishes chronic from episodic drought","ingestion_mode":"api_live","published":"rolling — weekly series since 2000","describes":"weekly series, 2000–present","spatial_unit":"county","refresh_cadence":"weekly","source_id":"usdm_county_history","status":"active","registry":"U.S. Drought Monitor — county drought-severity time series","provider":"NDMC data services (usdmdataservices.unl.edu)","url":"https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent","retrieved":"2026-07-19T22:55:53Z"},{"role":"County public-supply withdrawal denominator for modeled demand comparison","ingestion_mode":"static_snapshot","published":"2018","describes":"calendar 2015","spatial_unit":"county","refresh_cadence":"~5-yearly compilation; 2015 remains the latest complete county census","caveat":"Eleven years stale as of screening. Flagged LOW confidence for counties with material post-2015 demand change; it is a denominator, never a score input.","source_id":"usgs_wateruse_2015","status":"active","registry":"USGS Estimated Use of Water in the U.S. — county-level, 2015","provider":"U.S. Geological Survey (ScienceBase)","url":"https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8","retrieved":"2026-07-19T22:55:53Z"}]},"grid":{"label":"Grid strain & carbon","collected":"2026-07-19","oldest":"2026-07-19","blocks":[{"role":"Subregion CO₂e output emission rate, fuel mix, and annual net generation","ingestion_mode":"static_snapshot","published":"2025-06","describes":"calendar 2023 operations","spatial_unit":"eGRID subregion","spatial_note":"Annual average, location-based accounting — NOT marginal or hourly emissions. A subregion spans multiple states; the point inherits the whole subregion's rate.","refresh_cadence":"annual, ~2-year publication lag","source_id":"egrid2023","status":"active","registry":"EPA eGRID2023 (rev. 2, June 2025) — subregion emission rates, fuel mix, net generation","provider":"U.S. EPA","url":"https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx","retrieved":"2026-07-19T22:55:53Z"},{"role":"Point-in-polygon assignment of a site to its eGRID subregion","ingestion_mode":"static_snapshot","published":"2025-01","describes":"eGRID2023 topology","spatial_unit":"eGRID subregion polygon","refresh_cadence":"with each eGRID release","source_id":"egrid_subregions_gis","status":"active","registry":"EPA eGRID2023 subregion boundaries (shapefile)","provider":"U.S. EPA","url":"https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip","retrieved":"2026-07-19T22:55:53Z"},{"role":"Forward resource-adequacy risk category for the assessment area","ingestion_mode":"transcribed_constant","published":"2026-01","describes":"assessment horizon 2026–2035","spatial_unit":"NERC assessment area","spatial_note":"Coarser than eGRID subregion; joined via a hand-maintained crosswalk (data/reference/egrid_subregion_map.csv). Imperfect mappings are documented.","refresh_cadence":"annual (December)","caveat":"Categorical risk designations are hand-transcribed from the published PDF and are checkable against it. Publication date and horizon come from provenance.NERC_LTRA_* so every surface cites one verified edition.","source_id":"nerc_ltra_2025","status":"active","registry":"NERC 2025 Long-Term Reliability Assessment — resource-adequacy risk categories","provider":"North American Electric Reliability Corporation","url":"https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf","retrieved":"2026-07-19T22:55:53Z"}]},"burden":{"label":"Community burden","collected":"2026-07-19","oldest":"2026-07-19","blocks":[{"role":"Tract adult-asthma and fair/poor self-rated health prevalence","ingestion_mode":"api_live","published":"2024","describes":"model year 2022 (BRFSS 2022)","spatial_unit":"census tract","spatial_note":"Small-area MODELED estimates, not direct measurement — tract values are synthesized from BRFSS respondents plus tract covariates.","refresh_cadence":"annual release","source_id":"cdc_places_2024","status":"active","registry":"CDC PLACES 2024 release — census-tract health outcomes","provider":"CDC (data.cdc.gov, Socrata)","url":"https://data.cdc.gov/resource/cwsq-ngmh.json","retrieved":"2026-07-19T22:55:53Z"},{"role":"TRI / Superfund / RCRA facility coordinates → 5 km proximity and per-tract density","ingestion_mode":"static_snapshot","published":"rolling — snapshot at retrieval date","describes":"rolling facility registry","spatial_unit":"facility point coordinate","spatial_note":"Point locations buffered to 5 km per EJScreen's proximity convention. This is the facility REGISTRY (FRS), not annual TRI release quantities.","refresh_cadence":"continuous upstream; re-pulled at reference build","source_id":"frs_national","status":"active","registry":"EPA Facility Registry Service — national geocoded facility file","provider":"U.S. EPA","url":"https://ordsext.epa.gov/FLA/www3/state_files/national_single.zip","retrieved":"2026-07-19T22:55:53Z"},{"role":"Live per-site TRI facility enrichment (names, programs) for nearby facilities","ingestion_mode":"api_live","published":"rolling","describes":"rolling","spatial_unit":"facility point coordinate","spatial_note":"Enrichment only — displayed as context, carries no score weight.","refresh_cadence":"continuous","caveat":"TRI *release* tonnage logs are not ingested. Toxics burden enters the index through EJScreen's RSEI-modeled air-toxics field, not raw TRI reporting.","source_id":"envirofacts_tri","status":"active","registry":"EPA Envirofacts — TRI facility detail (live per-site enrichment)","provider":"U.S. EPA","url":"https://data.epa.gov/efservice/","retrieved":""},{"role":"Tract low-income, unemployment, limited-English, education, race/ethnicity, population","ingestion_mode":"static_snapshot","published":"2024-12","describes":"pooled 2019–2023 5-year","spatial_unit":"census tract","spatial_note":"5-year pooled estimates carry margins of error that are not propagated into the index.","refresh_cadence":"annual (December)","source_id":"acs_2023_5yr","status":"active","registry":"American Community Survey 2019–2023 5-year, tract tables (bulk summary file)","provider":"U.S. Census Bureau","url":"https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/","retrieved":"2026-07-19T22:55:53Z"},{"role":"Nine frozen pollution-burden indicators (PM2.5, ozone, NO₂, diesel PM, air toxics, traffic, NPL/RMP/TSDF proximity)","ingestion_mode":"static_snapshot","published":"2024","describes":"EJScreen 2.32 (ACS 2018–2022 inputs; AirToxScreen 2020)","spatial_unit":"census tract (aggregated from block group)","spatial_note":"Native geometry is block group; aggregated to tract population-weighted at reference build. Aggregation smooths within-tract variation.","refresh_cadence":"FROZEN — EPA withdrew EJScreen in February 2025","caveat":"Vintage cannot advance. Sourced from the Public Environmental Data Partners restoration of the final public release; alternates at Harvard Dataverse doi:10.7910/DVN/RLR5AX and Zenodo doi:10.5281/zenodo.14767363.","source_id":"ejscreen_v232_replica","status":"active","registry":"EPA EJScreen 2.32 tract data (community-restored replica)","provider":"Public Environmental Data Partners (original: U.S. EPA)","url":"https://screening-tools.com/epa-ejscreen","retrieved":"2026-07-19T22:55:53Z"}]}}</script>
+<script>
+(function () {
+  "use strict";
+  // One delegated listener for every flag in the document. Per-block listeners
+  // would leak if the memo were ever re-rendered in a live view; this cannot.
+  var DATA = JSON.parse(document.getElementById("prov-data").textContent);
+  var modal = document.getElementById("pmodal");
+  var titleEl = document.getElementById("pmodal-title");
+  var subEl = document.getElementById("pmodal-sub");
+  var bodyEl = document.getElementById("pmodal-body");
+  var lastFocus = null;
+
+  var LABELS = {
+    role: "Contributes", ingestion_mode: "Ingestion", published: "Published",
+    describes: "Describes", spatial_unit: "Spatial resolution", spatial_note: "Resolution note",
+    refresh_cadence: "Refresh cadence", retrieved: "Collected"
+  };
+  var ORDER = ["role", "ingestion_mode", "published", "describes", "spatial_unit",
+               "spatial_note", "refresh_cadence", "retrieved"];
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;   // textContent throughout: no markup injection
+    return n;
+  }
+
+  function step(b) {
+    var wrap = el("div", "step" + (b.status === "active" ? "" : " off"));
+    var who = el("div", "who");
+    if (b.url) {
+      var a = el("a", null, b.registry || b.source_id);
+      a.href = b.url; a.rel = "noreferrer";
+      who.appendChild(a);
+    } else {
+      who.appendChild(document.createTextNode(b.registry || b.source_id));
+    }
+    if (b.status !== "active") who.appendChild(el("span", "tag", "not ingested"));
+    wrap.appendChild(who);
+    if (b.provider) wrap.appendChild(el("div", "role", b.provider));
+
+    var dl = el("dl");
+    ORDER.forEach(function (k) {
+      if (!b[k]) return;
+      dl.appendChild(el("dt", null, LABELS[k]));
+      dl.appendChild(el("dd", null, k === "retrieved" ? b[k].slice(0, 10) : b[k]));
+    });
+    wrap.appendChild(dl);
+    if (b.caveat) wrap.appendChild(el("div", "flagnote", b.caveat));
+    return wrap;
+  }
+
+  function open(pillar, trigger) {
+    var p = DATA[pillar];
+    if (!p) return;
+    titleEl.textContent = p.label + " — data pipeline lineage";
+    subEl.textContent = p.blocks.length + " index block(s)"
+      + (p.oldest && p.collected
+          ? " · collected " + (p.oldest === p.collected ? p.collected : p.oldest + " to " + p.collected)
+          : "");
+    bodyEl.textContent = "";
+    p.blocks.forEach(function (b) { bodyEl.appendChild(step(b)); });
+    lastFocus = trigger || null;
+    modal.setAttribute("open", "");
+    modal.querySelector(".close").focus();
+  }
+
+  function close() {
+    modal.removeAttribute("open");
+    bodyEl.textContent = "";              // release the built nodes
+    if (lastFocus) { lastFocus.focus(); lastFocus = null; }
+  }
+
+  document.addEventListener("click", function (e) {
+    var flag = e.target.closest("[data-prov]");
+    if (flag) { open(flag.getAttribute("data-prov"), flag); return; }
+    if (e.target.closest("[data-prov-close]") || e.target === modal) close();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.hasAttribute("open")) close();
+  });
+})();
+</script>
 </body>
 </html>

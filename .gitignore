@@ -26,3 +26,7 @@ Thumbs.db
 .vscode/
 .idea/
 site/artifact.html
+
+# Local verification artifacts (staging copy of site/, preview renders)
+out/_pages/
+out/*-preview.html

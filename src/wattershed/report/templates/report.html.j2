@@ -68,14 +68,67 @@
         font-size:11.5px; color:var(--muted)}
   .foot p{margin:4px 0}
   a{color:var(--seq-deep); text-decoration:none}
+  /* Soft advisory badge — informational, not a tier change. Amber-on-cream
+     reads as "read this" without competing with the tier badge's status colour. */
+  .advisory{display:flex; gap:9px; align-items:flex-start; margin:14px 0 0; padding:9px 13px;
+            background:#fdf3d7; border:1px solid #e8d9a8; border-left:3px solid #8a6d00;
+            border-radius:6px; font-size:12.5px; color:#4a3c00; line-height:1.5}
+  .advisory .ico{font-weight:700; flex:none; line-height:1.3}
+  .advisory .detail{color:#6b5800; display:block; margin-top:3px}
+
+  /* Provenance flag + lineage modal. Understated by design: a screening memo
+     should show its sourcing without competing with the score for attention. */
+  .provflag{display:inline-flex; align-items:center; gap:6px; margin-top:8px; padding:2px 0;
+            font-size:11px; color:var(--muted); background:none; border:0; cursor:pointer;
+            font-family:inherit; letter-spacing:0.01em; text-align:left; line-height:1.35}
+  .provflag:hover,.provflag:focus-visible{color:var(--seq-deep)}
+  .provflag i{display:inline-block; width:5px; height:5px; border-radius:50%;
+              background:var(--baseline); flex:none}
+  .provflag:hover i{background:var(--seq)}
+  .provflag .dt{font-variant-numeric:tabular-nums}
+  .provflag.section{margin:10px 0 0}
+  .pmodal{position:fixed; inset:0; z-index:50; display:none; padding:24px 16px;
+          background:rgba(11,11,11,0.42); overflow-y:auto}
+  .pmodal[open]{display:block}
+  .pmodal .card{max-width:720px; margin:0 auto; background:var(--surface); border-radius:10px;
+                border:1px solid var(--border); padding:26px 28px}
+  .pmodal h3{font-size:13px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-2);
+             border-bottom:1px solid var(--grid); padding-bottom:8px; margin:0 0 4px}
+  .pmodal .sub{font-size:12.5px; color:var(--muted); margin-bottom:14px}
+  .pmodal .close{position:sticky; top:0; float:right; border:1px solid var(--border);
+                 background:var(--page); border-radius:6px; cursor:pointer; font-size:12px;
+                 color:var(--ink-2); padding:3px 10px; font-family:inherit}
+  .step{border-left:2px solid var(--grid); padding:2px 0 2px 14px; margin:14px 0}
+  .step.off{border-left-style:dashed}
+  .step .who{font-size:13.5px; font-weight:600}
+  .step .role{font-size:12.5px; color:var(--ink-2); margin:2px 0 6px}
+  .step dl{display:grid; grid-template-columns:130px 1fr; gap:3px 12px; font-size:12px; margin:0}
+  .step dt{color:var(--muted)}
+  .step dd{margin:0; color:var(--ink-2)}
+  .step .flagnote{font-size:11.5px; color:var(--ink-2); background:var(--page);
+                  border:1px solid var(--grid); border-radius:5px; padding:6px 9px; margin-top:7px}
+  .step .tag{font-size:10px; text-transform:uppercase; letter-spacing:0.06em; padding:1px 6px;
+             border-radius:999px; border:1px solid var(--border); color:var(--muted); margin-left:6px}
   @media print{
     body{background:#fff; padding:0}
+    .provflag{cursor:default}
+    .pmodal{display:none !important}
     .doc{border:none; border-radius:0; padding:24px; max-width:none}
     .tile .val{font-size:24px}
   }
 </style>
 </head>
 <body>
+
+{%- macro provflag(pillar, cls="") -%}
+{%- set pv = prov[pillar] -%}
+<button class="provflag {{ cls }}" type="button" data-prov="{{ pillar }}"
+        aria-haspopup="dialog"
+        title="Data provenance &amp; collection date — {{ pv.blocks|selectattr('status','equalto','active')|list|length }} source blocks">
+  <i></i><span>Data Provenance &amp; Collection Date{% if pv.collected %} · collected <span class="dt">{{ pv.collected }}</span>{% endif %}</span>
+</button>
+{%- endmacro -%}
+
 <div class="doc">
 
   <div class="brand">
@@ -92,6 +145,19 @@
     {% if s.site.it_mw %} · announced capacity: <strong>{{ s.site.it_mw|fmt_num }} MW</strong>{% endif %}
   </p>
 
+  {% if s.boundary and s.boundary.near_boundary %}
+  <div class="advisory" role="note">
+    <span class="ico">⚑</span>
+    <span>{{ s.boundary.warning }}
+      <span class="detail">Geocoded point is {{ "%.0f"|format(s.boundary.distance_m) }} m from
+      adjacent census tract {{ s.boundary.nearest_geoid }} (flag threshold
+      {{ "%.0f"|format(s.boundary.buffer_m) }} m). Tract-level burden indicators below describe
+      tract {{ s.geo.tract_geoid }}; at this distance the conditions surrounding the parcel may be
+      better represented by the neighbouring tract. The 5 km neighbourhood summary is unaffected.</span>
+    </span>
+  </div>
+  {% endif %}
+
   <div class="tierline">
     <span class="badge" style="color:{{ tier_fg }}; background:{{ tier_bg }}">Screening tier: {{ s.tier.value|upper }}</span>
     <span class="statusnote">Rule-based tier — the three pillars are deliberately not averaged (see methodology).</span>
@@ -107,6 +173,7 @@
       <div class="val">{{ "%.0f"|format(p.score) if p.score is not none else "—" }}<span style="font-size:14px; color:var(--muted)">/100</span></div>
       <div class="band" style="color:{{ band_color[p.band] }}">{{ p.band }}</div>
       <div class="meter"><i style="width:{{ p.score or 0 }}%; background:{{ band_color[p.band] }}"></i></div>
+      {{ provflag(p.pillar) }}
     </div>
     {% endfor %}
   </div>
@@ -143,6 +210,7 @@
   {% if p.data_gaps %}
   <div class="note"><strong>Data notes:</strong> {% for g in p.data_gaps %}{{ g }} {% endfor %}</div>
   {% endif %}
+  {{ provflag(p.pillar, "section") }}
   {% endfor %}
 
   {% if s.demand %}
@@ -230,5 +298,109 @@
     <p>Generated by Wattershed v{{ s.tool_version }} — open-source environmental screening for U.S. data center siting.</p>
   </div>
 </div>
+
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
+  <div class="card">
+    <button class="close" type="button" data-prov-close>Close</button>
+    <h3 id="pmodal-title"></h3>
+    <div class="sub" id="pmodal-sub"></div>
+    <div id="pmodal-body"></div>
+    {% if not_ingested %}
+    <div class="step off" style="margin-top:20px">
+      <div class="who">Declared not ingested</div>
+      <div class="role">Registries a reader might expect that this tool does not read.</div>
+      {% for b in not_ingested %}
+      <div class="flagnote"><strong>{{ b.expected_registry }}</strong> — {{ b.why_not }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="sub" style="margin:16px 0 0">Lineage from <code>data_catalog.json</code> v{{ catalog_version }} · generated {{ s.generated_at[:10] }}</div>
+  </div>
+</div>
+
+<script type="application/json" id="prov-data">{{ prov_json|safe }}</script>
+<script>
+(function () {
+  "use strict";
+  // One delegated listener for every flag in the document. Per-block listeners
+  // would leak if the memo were ever re-rendered in a live view; this cannot.
+  var DATA = JSON.parse(document.getElementById("prov-data").textContent);
+  var modal = document.getElementById("pmodal");
+  var titleEl = document.getElementById("pmodal-title");
+  var subEl = document.getElementById("pmodal-sub");
+  var bodyEl = document.getElementById("pmodal-body");
+  var lastFocus = null;
+
+  var LABELS = {
+    role: "Contributes", ingestion_mode: "Ingestion", published: "Published",
+    describes: "Describes", spatial_unit: "Spatial resolution", spatial_note: "Resolution note",
+    refresh_cadence: "Refresh cadence", retrieved: "Collected"
+  };
+  var ORDER = ["role", "ingestion_mode", "published", "describes", "spatial_unit",
+               "spatial_note", "refresh_cadence", "retrieved"];
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;   // textContent throughout: no markup injection
+    return n;
+  }
+
+  function step(b) {
+    var wrap = el("div", "step" + (b.status === "active" ? "" : " off"));
+    var who = el("div", "who");
+    if (b.url) {
+      var a = el("a", null, b.registry || b.source_id);
+      a.href = b.url; a.rel = "noreferrer";
+      who.appendChild(a);
+    } else {
+      who.appendChild(document.createTextNode(b.registry || b.source_id));
+    }
+    if (b.status !== "active") who.appendChild(el("span", "tag", "not ingested"));
+    wrap.appendChild(who);
+    if (b.provider) wrap.appendChild(el("div", "role", b.provider));
+
+    var dl = el("dl");
+    ORDER.forEach(function (k) {
+      if (!b[k]) return;
+      dl.appendChild(el("dt", null, LABELS[k]));
+      dl.appendChild(el("dd", null, k === "retrieved" ? b[k].slice(0, 10) : b[k]));
+    });
+    wrap.appendChild(dl);
+    if (b.caveat) wrap.appendChild(el("div", "flagnote", b.caveat));
+    return wrap;
+  }
+
+  function open(pillar, trigger) {
+    var p = DATA[pillar];
+    if (!p) return;
+    titleEl.textContent = p.label + " — data pipeline lineage";
+    subEl.textContent = p.blocks.length + " index block(s)"
+      + (p.oldest && p.collected
+          ? " · collected " + (p.oldest === p.collected ? p.collected : p.oldest + " to " + p.collected)
+          : "");
+    bodyEl.textContent = "";
+    p.blocks.forEach(function (b) { bodyEl.appendChild(step(b)); });
+    lastFocus = trigger || null;
+    modal.setAttribute("open", "");
+    modal.querySelector(".close").focus();
+  }
+
+  function close() {
+    modal.removeAttribute("open");
+    bodyEl.textContent = "";              // release the built nodes
+    if (lastFocus) { lastFocus.focus(); lastFocus = null; }
+  }
+
+  document.addEventListener("click", function (e) {
+    var flag = e.target.closest("[data-prov]");
+    if (flag) { open(flag.getAttribute("data-prov"), flag); return; }
+    if (e.target.closest("[data-prov-close]") || e.target === modal) close();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.hasAttribute("open")) close();
+  });
+})();
+</script>
 </body>
 </html>

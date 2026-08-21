@@ -1,0 +1,233 @@
+{
+  "density": {
+    "31019969203": 50.0,
+    "31055001600": 61.2,
+    "31055001800": 61.2,
+    "31055007317": 100.0,
+    "31055007319": 100.0,
+    "31055007320": 86.6,
+    "31055007451": 50.0,
+    "31153010619": 61.2,
+    "31153010623": 70.7,
+    "31153010629": 100.0
+  },
+  "facilities": [
+    {
+      "lat": 40.725927,
+      "lon": -99.038336,
+      "name": "Compute North",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31019969203"
+    },
+    {
+      "lat": 41.261422,
+      "lon": -95.936498,
+      "name": "First National Technical Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055001600"
+    },
+    {
+      "lat": 41.257291,
+      "lon": -95.937849,
+      "name": "1623 Farnam",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055001800"
+    },
+    {
+      "lat": 41.342966,
+      "lon": -96.090207,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
+      "lat": 41.339139,
+      "lon": -96.084657,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
+      "lat": 41.341935,
+      "lon": -96.087701,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
+      "lat": 41.345193,
+      "lon": -96.093519,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
+      "lat": 41.317986,
+      "lon": -96.050348,
+      "name": "Union Pacific Jack Koraleski Technology, Research & Development Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007319"
+    },
+    {
+      "lat": 41.338343,
+      "lon": -96.027802,
+      "name": "Verizon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007320"
+    },
+    {
+      "lat": 41.338444,
+      "lon": -96.028618,
+      "name": "Verizon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007320"
+    },
+    {
+      "lat": 41.220402,
+      "lon": -96.147641,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007451"
+    },
+    {
+      "lat": 41.15444,
+      "lon": -96.04224,
+      "name": "Meta Papillion",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010619"
+    },
+    {
+      "lat": 41.165524,
+      "lon": -96.083367,
+      "name": "Fidelity",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010623"
+    },
+    {
+      "lat": 41.134992,
+      "lon": -96.146711,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.134919,
+      "lon": -96.144082,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.134393,
+      "lon": -96.155904,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.137908,
+      "lon": -96.151432,
+      "name": "Google",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.127872,
+      "lon": -96.145071,
+      "name": "Travelers Insurance",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.180499,
+      "lon": -96.084906,
+      "name": "Yahoo",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.123529,
+      "lon": -96.1442,
+      "name": "Meta Sarpy Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010701"
+    },
+    {
+      "lat": 41.120551,
+      "lon": -96.144532,
+      "name": "Meta Sarpy Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010701"
+    },
+    {
+      "lat": 41.11435,
+      "lon": -96.142805,
+      "name": "Meta Sarpy Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010701"
+    },
+    {
+      "lat": 41.112249,
+      "lon": -96.141625,
+      "name": "Meta Sarpy Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010701"
+    },
+    {
+      "lat": 41.123574,
+      "lon": -96.132888,
+      "name": "Meta Sarpy Data center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010702"
+    }
+  ],
+  "state_fips": "31"
+}

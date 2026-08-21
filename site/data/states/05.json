@@ -1,0 +1,26 @@
+{
+  "density": {
+    "05119004218": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 34.75624,
+      "lon": -92.444723,
+      "name": "TierPoint Little Rock",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "05119004218"
+    },
+    {
+      "lat": 35.249216,
+      "lon": -91.740906,
+      "name": "Searcy Information Technologies",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "05145070402"
+    }
+  ],
+  "state_fips": "05"
+}

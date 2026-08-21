@@ -1,0 +1,488 @@
+{
+  "density": {
+    "34003032103": 50.0,
+    "34013008100": 50.0,
+    "34013013600": 79.1,
+    "34015500204": 50.0,
+    "34017014600": 100.0,
+    "34017017900": 100.0,
+    "34017019900": 100.0,
+    "34021004314": 50.0,
+    "34023000603": 100.0,
+    "34023000702": 100.0,
+    "34023001805": 50.0,
+    "34023003500": 50.0,
+    "34023009300": 70.7,
+    "34025808702": 50.0,
+    "34031124402": 93.5,
+    "34035050704": 79.1,
+    "34035050902": 70.7,
+    "34035053501": 100.0,
+    "34035053602": 61.2,
+    "34035053604": 70.7,
+    "34035053707": 61.2,
+    "34039037300": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 41.078316,
+      "lon": -74.152912,
+      "name": "NYSE Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34003032103"
+    },
+    {
+      "lat": 40.73673,
+      "lon": -74.173888,
+      "name": "165 Halsey / Equinix NY1 / Databank EWR1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34013008100"
+    },
+    {
+      "lat": 40.821454,
+      "lon": -74.134187,
+      "name": "BT Radianz: 492 River Road",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34013013600"
+    },
+    {
+      "lat": 39.83093,
+      "lon": -75.195323,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34015500204"
+    },
+    {
+      "lat": 40.796863,
+      "lon": -74.03114,
+      "name": "Equinix NY7 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017014600"
+    },
+    {
+      "lat": 40.76078,
+      "lon": -74.025742,
+      "name": "Cyxtera (Digital Realty Trust) Citibank Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017017900"
+    },
+    {
+      "lat": 40.761818,
+      "lon": -74.025028,
+      "name": "Digital Realty New Jersey EWR10",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017017900"
+    },
+    {
+      "lat": 40.786164,
+      "lon": -74.069164,
+      "name": "Centersquare NYC3 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.784904,
+      "lon": -74.065357,
+      "name": "CoreSite NY3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.784284,
+      "lon": -74.065243,
+      "name": "CoreSite Secaucus Campus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.774903,
+      "lon": -74.068969,
+      "name": "Equinix NY3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.777291,
+      "lon": -74.07594,
+      "name": "Equinix New York Secaucus NY2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.776428,
+      "lon": -74.069776,
+      "name": "Equinix New York Secaucus NY4",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.778585,
+      "lon": -74.072324,
+      "name": "Equinix New York Secaucus NY5",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.777549,
+      "lon": -74.072688,
+      "name": "Equinix Secaucus NY6",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.787552,
+      "lon": -74.06805,
+      "name": "Evocative Secaucus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.785395,
+      "lon": -74.075012,
+      "name": "H5 Secaucus",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
+      "lat": 40.315558,
+      "lon": -74.668851,
+      "name": "501 West",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34021004314"
+    },
+    {
+      "lat": 40.55284,
+      "lon": -74.456687,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.547244,
+      "lon": -74.459737,
+      "name": "Barclays Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.549214,
+      "lon": -74.45821,
+      "name": "DataBank Piscataway EWR2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.553793,
+      "lon": -74.457102,
+      "name": "Digital Realty New York EWR11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.552928,
+      "lon": -74.459204,
+      "name": "Digital Realty New York EWR12",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.55035,
+      "lon": -74.456856,
+      "name": "Open Data Centers Piscataway",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.556943,
+      "lon": -74.483917,
+      "name": "QTS Piscataway Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000603"
+    },
+    {
+      "lat": 40.54492,
+      "lon": -74.495359,
+      "name": "Equinix",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000702"
+    },
+    {
+      "lat": 40.546842,
+      "lon": -74.492046,
+      "name": "Optimum",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000702"
+    },
+    {
+      "lat": 40.544255,
+      "lon": -74.496521,
+      "name": "Verizon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023000702"
+    },
+    {
+      "lat": 40.520817,
+      "lon": -74.347223,
+      "name": "IO Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023001805"
+    },
+    {
+      "lat": 40.584372,
+      "lon": -74.243381,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023003500"
+    },
+    {
+      "lat": 40.49361,
+      "lon": -74.44364,
+      "name": "New Brunswick DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023009300"
+    },
+    {
+      "lat": 40.494903,
+      "lon": -74.443095,
+      "name": "Verizon Wireline Network Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34023009300"
+    },
+    {
+      "lat": 40.157044,
+      "lon": -74.101582,
+      "name": "Apollo Cable Landing Station",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34025808702"
+    },
+    {
+      "lat": 40.83345,
+      "lon": -74.140219,
+      "name": "Credit Suisse: Clifton Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34031124402"
+    },
+    {
+      "lat": 40.829928,
+      "lon": -74.12675,
+      "name": "Digital Realty New Jersey EWR20",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34031124402"
+    },
+    {
+      "lat": 40.830586,
+      "lon": -74.124514,
+      "name": "Digital Realty New Jersey EWR21",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34031124402"
+    },
+    {
+      "lat": 40.570372,
+      "lon": -74.67033,
+      "name": "Goldman Sachs",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035050704"
+    },
+    {
+      "lat": 40.581484,
+      "lon": -74.573887,
+      "name": "365 Bridgewater NJ",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035050902"
+    },
+    {
+      "lat": 40.579896,
+      "lon": -74.519402,
+      "name": "PSE&G Delivery Emergency Response Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035050902"
+    },
+    {
+      "lat": 40.537526,
+      "lon": -74.555524,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.524278,
+      "lon": -74.547881,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.543332,
+      "lon": -74.538374,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.535869,
+      "lon": -74.553432,
+      "name": "BNY Mellon Somerset",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.537962,
+      "lon": -74.545722,
+      "name": "CyrusOne Somerset",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.540843,
+      "lon": -74.537492,
+      "name": "Rackspace Belmont NYC2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.544527,
+      "lon": -74.537788,
+      "name": "Rackspace Somerset NYC1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053501"
+    },
+    {
+      "lat": 40.555609,
+      "lon": -74.70552,
+      "name": "Verizon Wireless NE Headquarters",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053602"
+    },
+    {
+      "lat": 40.599363,
+      "lon": -74.709675,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053604"
+    },
+    {
+      "lat": 40.599741,
+      "lon": -74.710073,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053604"
+    },
+    {
+      "lat": 40.528072,
+      "lon": -74.682816,
+      "name": "Vital Records",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34035053707"
+    },
+    {
+      "lat": 40.643789,
+      "lon": -74.285448,
+      "name": "Barclays Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34039037300"
+    }
+  ],
+  "state_fips": "34"
+}

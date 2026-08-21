@@ -1,0 +1,84 @@
+# Bi-weekly data sync: refresh the data-centre facility registry, the
+# infrastructure-density context layer and announcement leads, commit the
+# result, and republish GitHub Pages.
+#
+# ── Loop safety ──────────────────────────────────────────────────────────────
+# This workflow pushes to main, and both ci.yml and refresh.yml listen on
+# `push: branches: [main]`. Three independent guards stop that recursing:
+#
+#   1. PRIMARY — GitHub does not start workflow runs for pushes authored with
+#      the default GITHUB_TOKEN. This is a platform guarantee, not a
+#      convention, and it is why no PAT is used here. Swapping in a PAT would
+#      remove this guard, so don't.
+#   2. `[skip ci]` in the commit subject, honoured by GitHub Actions.
+#   3. `paths-ignore` in ci.yml and refresh.yml covering every path this job
+#      writes, so even a manually replayed push cannot re-enter the cycle.
+#
+# Guard 1 also means the sync commit will NOT wake refresh.yml, so this
+# workflow publishes Pages itself. Both share the `pages` concurrency group so
+# the two deploy paths can never collide.
+name: data-sync
+
+on:
+  schedule:
+    - cron: "0 0 1,15 * *"   # 00:00 UTC on the 1st and 15th
+  workflow_dispatch:
+    inputs:
+      skip_osm:
+        description: "Skip the Overpass facility pull (use when mirrors are down)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # commit the refreshed artifacts
+  pages: write      # republish the dashboard
+  id-token: write   # required by deploy-pages
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30   # a hung Overpass mirror must not run for six hours
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Sync upstream data
+        env:
+          # Optional. Absent, the EIA layer reports itself skipped and the run
+          # still succeeds — every other source is keyless.
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+        run: |
+          wattershed data-sync -v \
+            ${{ inputs.skip_osm && '--skip-osm' || '' }}
+
+      - name: Commit refreshed data
+        run: |
+          # Scope the add to exactly what the sync owns, so unrelated working-
+          # tree churn can never ride along in an unattended commit.
+          git add -A data/news data/processed site/data 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No upstream change this cycle — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): bi-weekly sync $(date -u +%Y-%m-%d) [skip ci]"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

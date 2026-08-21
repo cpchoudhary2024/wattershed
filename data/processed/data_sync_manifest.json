@@ -1,0 +1,51 @@
+{
+  "synced_at": "2026-08-21T21:42:31Z",
+  "sources": [
+    {
+      "source_id": "osm_datacenters",
+      "ok": true,
+      "count": 1569,
+      "note": "skipped by flag"
+    },
+    {
+      "source_id": "google_news_rss",
+      "ok": true,
+      "count": 245,
+      "note": ""
+    },
+    {
+      "source_id": "eia_v2_capacity",
+      "ok": true,
+      "count": 0,
+      "note": "skipped \u2014 EIA_API_KEY not set (optional source)"
+    }
+  ],
+  "facilities_total": 1569,
+  "facilities_new": 0,
+  "tracts_with_density": 9615,
+  "news_total": 246,
+  "files_written": [
+    "data/news/news_announcements.json"
+  ],
+  "structurally_excluded": [
+    {
+      "block_id": "water.usgs_realtime_hydrology",
+      "stream": "real-time gauge hydrology (USGS NWIS/Water Services) is not read by this tool",
+      "reason": "Declared explicitly to prevent a plausible misreading: the water pillar's dynamic component is USDM weekly drought, not USGS real-time streamflow. Instantaneous gauge discharge is a poor proxy for siting-horizon supply risk and no NWIS endpoint is called anywhere in the codebase."
+    },
+    {
+      "block_id": "grid.eia_hourly_ba",
+      "stream": "EIA-930 hourly balancing-authority operations are not read by this tool",
+      "reason": "config.EIA_API_KEY exists as an unused optional hook; no EIA endpoint is called. The grid pillar is annual-average (eGRID) plus forward-looking categorical (NERC). Hourly BA data would enable marginal/time-matched emissions \u2014 a documented v2 roadmap item, not a current input. See docs/LIMITATIONS.md."
+    }
+  ],
+  "community_friction": {
+    "items_total": 246,
+    "items_with_friction": 12,
+    "by_term": {
+      "moratorium": 11,
+      "injunction": 1
+    },
+    "basis": "Counts of unverified press headlines matching friction terms. Descriptive only: coverage volume tracks media-market size, not community harm, and this modifies no score."
+  }
+}

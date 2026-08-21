@@ -3,13 +3,14 @@
 from __future__ import annotations
 
 from .. import config, demand as demand_mod, geocode, provenance
-from ..models import CoolingTech, Screening, SiteInput
+from ..models import BoundaryProximity, CoolingTech, Screening, SiteInput
 from ..scoring import burden as burden_mod
 from ..scoring import grid as grid_mod
 from ..scoring import mitigation, reference, tiers
 from ..scoring import water as water_mod
 from ..sources import aqueduct, egrid, frs, nerc, usdm, water_use
 from ..sources.base import SourceUnavailable
+from ..spatial import boundary as boundary_mod
 from .. import __version__
 
 STANDING_LIMITATIONS = [
@@ -33,6 +34,12 @@ def screen_site(site: SiteInput, rto_override: str | None = None) -> Screening:
 
     geo = geocode.locate(lat, lon)
     ledger.touch("census_geocoder")
+
+    # Tract-edge proximity. Never fatal: an undetermined check yields a
+    # neutral record, so a screening is not lost to a boundary lookup.
+    bp = BoundaryProximity(
+        **boundary_mod.boundary_proximity(lat, lon, geo.tract_geoid, config.BOUNDARY_BUFFER_M)
+    )
 
     # ---- water pillar inputs
     try:
@@ -139,6 +146,13 @@ def screen_site(site: SiteInput, rto_override: str | None = None) -> Screening:
         ledger.touch("curated_sites")
 
     limitations = list(STANDING_LIMITATIONS)
+    if bp.near_boundary:
+        limitations.insert(
+            0,
+            f"Geocoded point lies {bp.distance_m:.0f} m from adjacent tract {bp.nearest_geoid} "
+            f"(within the {bp.buffer_m:.0f} m boundary buffer) — tract-level burden indicators "
+            "may not describe the parcel's actual surroundings.",
+        )
     if site.coord_precision and site.coord_precision != "address":
         limitations.insert(
             0,
@@ -157,6 +171,7 @@ def screen_site(site: SiteInput, rto_override: str | None = None) -> Screening:
         demand=dm,
         mitigations=mits,
         neighborhood=hood_extra,
+        boundary=bp,
         nearby_facilities=facilities,
         sources=ledger.to_records(),
         limitations=limitations,

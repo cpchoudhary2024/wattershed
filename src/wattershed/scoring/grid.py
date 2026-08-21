@@ -12,20 +12,10 @@ and can escalate the tier, but is not in the score (depends on user MW).
 from __future__ import annotations
 
 from ..models import Confidence, Indicator, PillarScore
+from ..provenance import NERC_LTRA_VINTAGE
+from .normalize import band, blend, is_number, to_score
 
 WEIGHTS = {"carbon": 0.6, "strain": 0.4}
-
-
-def band(score: float | None) -> str:
-    if score is None:
-        return "insufficient data"
-    if score >= 75:
-        return "severe"
-    if score >= 55:
-        return "high"
-    if score >= 35:
-        return "moderate"
-    return "low"
 
 
 def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct: float | None) -> PillarScore:
@@ -34,8 +24,10 @@ def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct:
     drivers: list[str] = []
     gaps: list[str] = []
 
-    if egrid_stats:
-        components["carbon"] = egrid_stats["rate_percentile"]
+    if egrid_stats and is_number(egrid_stats.get("rate_percentile")):
+        # .get + to_score: a malformed eGRID row used to raise KeyError here,
+        # aborting the whole screening instead of degrading to a data gap.
+        components["carbon"] = to_score(egrid_stats.get("rate_percentile"))
         indicators.append(
             Indicator(
                 id="egrid_co2e_rate",
@@ -70,8 +62,8 @@ def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct:
     else:
         gaps.append("eGRID subregion could not be resolved for this point.")
 
-    if nerc_risk and nerc_risk.get("score") is not None:
-        components["strain"] = nerc_risk["score"]
+    if nerc_risk and is_number(nerc_risk.get("score")):
+        components["strain"] = to_score(nerc_risk.get("score"))
         year = f" (first High year: {nerc_risk['first_high_year']})" if nerc_risk.get("first_high_year") else ""
         conf = Confidence.HIGH if nerc_risk.get("map_confidence") == "high" else Confidence.MEDIUM
         indicators.append(
@@ -80,7 +72,7 @@ def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct:
                 label=f"Resource-adequacy risk — {nerc_risk['area']}",
                 display=f"{nerc_risk['category'].upper()}{year}",
                 source_id="nerc_ltra_2025",
-                vintage="2025 LTRA (pub. Jan 2026), 2026–2030 window",
+                vintage=NERC_LTRA_VINTAGE,
                 confidence=conf,
                 note=nerc_risk.get("map_note", ""),
             )
@@ -115,12 +107,7 @@ def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct:
                 "entire current net generation."
             )
 
-    avail = {k: v for k, v in components.items() if v is not None}
-    if avail:
-        wsum = sum(WEIGHTS[k] for k in avail)
-        score = sum(WEIGHTS[k] * v for k, v in avail.items()) / wsum
-    else:
-        score = None
+    score = blend(components, WEIGHTS)
     return PillarScore(
         pillar="grid",
         score=round(score, 1) if score is not None else None,
@@ -128,5 +115,5 @@ def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct:
         indicators=indicators,
         drivers=drivers,
         data_gaps=gaps,
-        components={k: round(v, 1) for k, v in components.items()},
+        components={k: round(v, 1) for k, v in components.items() if is_number(v)},
     )

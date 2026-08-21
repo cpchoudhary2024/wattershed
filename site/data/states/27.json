@@ -1,0 +1,116 @@
+{
+  "density": {
+    "27003050236": 50.0,
+    "27019090802": 50.0,
+    "27037061003": 70.7,
+    "27053025907": 50.0,
+    "27053026812": 50.0,
+    "27053126102": 61.2,
+    "27053126202": 61.2,
+    "27109001403": 50.0,
+    "27123030202": 50.0,
+    "27137000400": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 45.132157,
+      "lon": -93.095616,
+      "name": "Encompass Minneapolis Facility",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27003050236"
+    },
+    {
+      "lat": 44.851612,
+      "lon": -93.598896,
+      "name": "Flexential Minneapolis - Chaska",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27019090802"
+    },
+    {
+      "lat": 44.734759,
+      "lon": -93.06186,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27037061003"
+    },
+    {
+      "lat": 44.734535,
+      "lon": -93.064891,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27037061003"
+    },
+    {
+      "lat": 44.807108,
+      "lon": -93.375382,
+      "name": "Verizon - Bloomington Network",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27053025907"
+    },
+    {
+      "lat": 45.143693,
+      "lon": -93.387119,
+      "name": "DataBank",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27053026812"
+    },
+    {
+      "lat": 44.971288,
+      "lon": -93.254697,
+      "name": "Minnesota Gateway Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27053126102"
+    },
+    {
+      "lat": 44.991442,
+      "lon": -93.28034,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27053126202"
+    },
+    {
+      "lat": 44.070796,
+      "lon": -92.522132,
+      "name": "Epic / Mayo Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27109001403"
+    },
+    {
+      "lat": 44.972195,
+      "lon": -93.147473,
+      "name": "H5 Minneapolis",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27123030202"
+    },
+    {
+      "lat": 46.827468,
+      "lon": -92.130482,
+      "name": "Ark Duluth Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27137000400"
+    }
+  ],
+  "state_fips": "27"
+}

@@ -1,0 +1,26 @@
+{
+  "density": {
+    "46099010405": 70.7
+  },
+  "facilities": [
+    {
+      "lat": 43.599914,
+      "lon": -96.794757,
+      "name": "ADP South Dakota",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "46099010405"
+    },
+    {
+      "lat": 43.606971,
+      "lon": -96.809195,
+      "name": "TierPoint Sioux Falls West Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "46099010405"
+    }
+  ],
+  "state_fips": "46"
+}

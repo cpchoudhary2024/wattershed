@@ -1,0 +1,37 @@
+{
+  "density": {
+    "25009254402": 50.0,
+    "25017312100": 50.0,
+    "25017351500": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 42.685708,
+      "lon": -71.208602,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "25009254402"
+    },
+    {
+      "lat": 42.630283,
+      "lon": -71.304562,
+      "name": "Markley Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "25017312100"
+    },
+    {
+      "lat": 42.376706,
+      "lon": -71.079758,
+      "name": "CoreSite BO1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "25017351500"
+    }
+  ],
+  "state_fips": "25"
+}

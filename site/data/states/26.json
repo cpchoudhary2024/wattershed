@@ -1,0 +1,116 @@
+{
+  "density": {
+    "26045020303": 70.7,
+    "26049010912": 50.0,
+    "26099227300": 50.0,
+    "26115833100": 50.0,
+    "26125161800": 50.0,
+    "26161423400": 50.0,
+    "26163521100": 61.2,
+    "26163581600": 50.0,
+    "26163587900": 50.0,
+    "26163985300": 61.2
+  },
+  "facilities": [
+    {
+      "lat": 42.687953,
+      "lon": -84.643042,
+      "name": "Liquid Web",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26045020303"
+    },
+    {
+      "lat": 42.70539,
+      "lon": -84.666089,
+      "name": "Liquid Web, Inc",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26045020303"
+    },
+    {
+      "lat": 42.968727,
+      "lon": -83.779585,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26049010912"
+    },
+    {
+      "lat": 42.627942,
+      "lon": -82.988394,
+      "name": "Chick-fil-A Hiring Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26099227300"
+    },
+    {
+      "lat": 41.807282,
+      "lon": -83.627629,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26115833100"
+    },
+    {
+      "lat": 42.447669,
+      "lon": -83.262634,
+      "name": "EdgeConneX Detroit DET01",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26125161800"
+    },
+    {
+      "lat": 42.16671,
+      "lon": -83.78161,
+      "name": "DTE Saline Township",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26161423400"
+    },
+    {
+      "lat": 42.326288,
+      "lon": -83.076977,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26163521100"
+    },
+    {
+      "lat": 42.213902,
+      "lon": -83.198214,
+      "name": "Comcast",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26163581600"
+    },
+    {
+      "lat": 42.235327,
+      "lon": -83.444141,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26163587900"
+    },
+    {
+      "lat": 42.326178,
+      "lon": -83.069769,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "26163985300"
+    }
+  ],
+  "state_fips": "26"
+}

@@ -1,0 +1,44 @@
+{
+  "density": {
+    "16065950200": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 43.463141,
+      "lon": -116.268232,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "16001010501"
+    },
+    {
+      "lat": 43.463336,
+      "lon": -116.272095,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "16001010501"
+    },
+    {
+      "lat": 42.317274,
+      "lon": -111.304246,
+      "name": "Family History Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "16007950100"
+    },
+    {
+      "lat": 43.825229,
+      "lon": -111.78207,
+      "name": "VentureData",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "16065950200"
+    }
+  ],
+  "state_fips": "16"
+}

@@ -1,0 +1,37 @@
+{
+  "density": {
+    "33015106200": 50.0,
+    "33015107400": 50.0,
+    "33017080203": 50.0
+  },
+  "facilities": [
+    {
+      "lat": 42.982089,
+      "lon": -70.950595,
+      "name": "Information Technology Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "33015106200"
+    },
+    {
+      "lat": 43.076129,
+      "lon": -70.80804,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "33015107400"
+    },
+    {
+      "lat": 43.14362,
+      "lon": -70.952447,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "33017080203"
+    }
+  ],
+  "state_fips": "33"
+}

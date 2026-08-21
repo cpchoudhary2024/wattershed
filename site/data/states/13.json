@@ -1,0 +1,358 @@
+{
+  "density": {
+    "13067030104": 50.0,
+    "13067030405": 50.0,
+    "13097080105": 100.0,
+    "13113140204": 70.7,
+    "13117130603": 86.6,
+    "13121000700": 86.6,
+    "13121001302": 86.6,
+    "13121001802": 86.6,
+    "13121010801": 50.0,
+    "13121011421": 50.0,
+    "13121011618": 100.0,
+    "13121011640": 100.0,
+    "13121011652": 100.0,
+    "13121011901": 86.6,
+    "13135050224": 86.6,
+    "13135050324": 50.0,
+    "13215010605": 50.0,
+    "13217100202": 100.0
+  },
+  "facilities": [
+    {
+      "lat": 34.0707,
+      "lon": -84.675903,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13067030104"
+    },
+    {
+      "lat": 33.925514,
+      "lon": -84.481634,
+      "name": "CoreSite AT2 - Marietta Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13067030405"
+    },
+    {
+      "lat": 33.38067,
+      "lon": -84.79966,
+      "name": "Project Sail",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13077170308"
+    },
+    {
+      "lat": 33.744222,
+      "lon": -84.581212,
+      "name": "Centersquare Atlanta ATL1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.746561,
+      "lon": -84.579738,
+      "name": "Digital Realty Atlanta ATL11",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.731057,
+      "lon": -84.616081,
+      "name": "Flexential Atlanta - Douglasville 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.730703,
+      "lon": -84.61124,
+      "name": "Flexential Atlanta - Douglasville 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.750447,
+      "lon": -84.585682,
+      "name": "Google Datacenter - Douglas County",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.755025,
+      "lon": -84.587269,
+      "name": "Switch Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.448403,
+      "lon": -84.522489,
+      "name": "QTS",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13113140204"
+    },
+    {
+      "lat": 33.450885,
+      "lon": -84.523625,
+      "name": "QTS",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13113140204"
+    },
+    {
+      "lat": 34.103384,
+      "lon": -84.21497,
+      "name": "UPS Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13117130603"
+    },
+    {
+      "lat": 33.77769,
+      "lon": -84.421154,
+      "name": "QTS Atlanta Data Center 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121000700"
+    },
+    {
+      "lat": 33.777601,
+      "lon": -84.419446,
+      "name": "QTS Atlanta Data Center 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121000700"
+    },
+    {
+      "lat": 33.771568,
+      "lon": -84.366859,
+      "name": "Google Fiber",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121001302"
+    },
+    {
+      "lat": 33.765139,
+      "lon": -84.383739,
+      "name": "CenturyLink",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121001802"
+    },
+    {
+      "lat": 33.657009,
+      "lon": -84.41522,
+      "name": "Digital Realty Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121010801"
+    },
+    {
+      "lat": 34.036257,
+      "lon": -84.319512,
+      "name": "Cox Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011421"
+    },
+    {
+      "lat": 34.060998,
+      "lon": -84.274027,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011618"
+    },
+    {
+      "lat": 34.057092,
+      "lon": -84.273003,
+      "name": "Ascent - Atlanta Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011618"
+    },
+    {
+      "lat": 34.082058,
+      "lon": -84.267292,
+      "name": "Hewlett-Packard",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011640"
+    },
+    {
+      "lat": 34.086987,
+      "lon": -84.251824,
+      "name": "Flexential Atlanta - Alpharetta Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.096708,
+      "lon": -84.237479,
+      "name": "Mapletree Industrial",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.093706,
+      "lon": -84.250878,
+      "name": "Secure Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.094813,
+      "lon": -84.235724,
+      "name": "Strategic Datasphere",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.075792,
+      "lon": -84.264267,
+      "name": "T5 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 33.755519,
+      "lon": -84.391481,
+      "name": "Atlanta ATL13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011901"
+    },
+    {
+      "lat": 34.036155,
+      "lon": -84.059347,
+      "name": "QTS Suwanee",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13135050224"
+    },
+    {
+      "lat": 34.035396,
+      "lon": -84.061106,
+      "name": "QTS Suwanee Data Center 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13135050224"
+    },
+    {
+      "lat": 34.037062,
+      "lon": -84.057696,
+      "name": "QTS Suwanee Data Center 2",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13135050224"
+    },
+    {
+      "lat": 33.95474,
+      "lon": -84.198525,
+      "name": "Flexential Atlanta - Norcross",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13135050324"
+    },
+    {
+      "lat": 32.498205,
+      "lon": -84.883624,
+      "name": "DLI ONE",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13215010605"
+    },
+    {
+      "lat": 33.601386,
+      "lon": -83.705426,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.600074,
+      "lon": -83.696847,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.598072,
+      "lon": -83.695021,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.5985,
+      "lon": -83.8075,
+      "name": "Meta Newton Data Center (Stanton Springs)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "curated",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.600468,
+      "lon": -83.700358,
+      "name": "Meta Stanton Springs Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    }
+  ],
+  "state_fips": "13"
+}

@@ -1,0 +1,179 @@
+{
+  "density": {
+    "35001000401": 61.2,
+    "35001001800": 86.6,
+    "35001002100": 86.6,
+    "35001002700": 79.1,
+    "35001004001": 50.0,
+    "35001980000": 70.7,
+    "35013001203": 50.0,
+    "35049001002": 50.0,
+    "35061970404": 100.0,
+    "35061980300": 100.0
+  },
+  "facilities": [
+    {
+      "lat": 35.103293,
+      "lon": -106.589349,
+      "name": "Southwest Cyberport",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001000401"
+    },
+    {
+      "lat": 35.086739,
+      "lon": -106.615348,
+      "name": "UNM Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001001800"
+    },
+    {
+      "lat": 35.084449,
+      "lon": -106.648985,
+      "name": "123 Central",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001002100"
+    },
+    {
+      "lat": 35.088629,
+      "lon": -106.652646,
+      "name": "505 Marquette",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001002100"
+    },
+    {
+      "lat": 35.092501,
+      "lon": -106.653671,
+      "name": "Oso Grande",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001002700"
+    },
+    {
+      "lat": 34.995452,
+      "lon": -106.618033,
+      "name": "Molina Healthcare",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001004001"
+    },
+    {
+      "lat": 35.048347,
+      "lon": -106.542155,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001980000"
+    },
+    {
+      "lat": 35.049945,
+      "lon": -106.542801,
+      "name": "HPC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001980000"
+    },
+    {
+      "lat": 32.309666,
+      "lon": -106.729193,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35013001203"
+    },
+    {
+      "lat": 31.87003,
+      "lon": -106.68658,
+      "name": "Project Jupiter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35013001701"
+    },
+    {
+      "lat": 35.672458,
+      "lon": -105.956592,
+      "name": "John F. Simms Building",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35049001002"
+    },
+    {
+      "lat": 34.81421,
+      "lon": -106.76131,
+      "name": "Meta Los Lunas",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061970404"
+    },
+    {
+      "lat": 34.830242,
+      "lon": -106.783812,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061980300"
+    },
+    {
+      "lat": 34.830279,
+      "lon": -106.780128,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061980300"
+    },
+    {
+      "lat": 34.83028,
+      "lon": -106.776461,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061980300"
+    },
+    {
+      "lat": 34.82588,
+      "lon": -106.778893,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061980300"
+    },
+    {
+      "lat": 34.825863,
+      "lon": -106.782473,
+      "name": "Meta",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061980300"
+    },
+    {
+      "lat": 34.829831,
+      "lon": -106.77852,
+      "name": "Meta Los Lunas Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35061980300"
+    }
+  ],
+  "state_fips": "35"
+}

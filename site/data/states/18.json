@@ -1,0 +1,103 @@
+{
+  "density": {
+    "18005010800": 50.0,
+    "18059410802": 50.0,
+    "18105000802": 50.0,
+    "18127050203": 50.0,
+    "18141010800": 86.6,
+    "18157005500": 70.7
+  },
+  "facilities": [
+    {
+      "lat": 39.185856,
+      "lon": -85.887072,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18005010800"
+    },
+    {
+      "lat": 39.717197,
+      "lon": -85.941411,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18059410802"
+    },
+    {
+      "lat": 41.707417,
+      "lon": -87.520233,
+      "name": "Digital Crossroad",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18089020300"
+    },
+    {
+      "lat": 39.174423,
+      "lon": -86.500688,
+      "name": "IU Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18105000802"
+    },
+    {
+      "lat": 41.61072,
+      "lon": -87.05227,
+      "name": "Provident Realty DC",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18127050203"
+    },
+    {
+      "lat": 41.686,
+      "lon": -86.475,
+      "name": "AWS Project Rainier",
+      "operator": "",
+      "status": "operational",
+      "status_source": "curated",
+      "tract": "18141010800"
+    },
+    {
+      "lat": 41.69023,
+      "lon": -86.468689,
+      "name": "Amazon AWS Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18141010800"
+    },
+    {
+      "lat": 41.667764,
+      "lon": -86.473056,
+      "name": "Amazon AWS Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18141010800"
+    },
+    {
+      "lat": 40.421854,
+      "lon": -86.916545,
+      "name": "Agricultural and Biological Engineering",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18157005500"
+    },
+    {
+      "lat": 40.42179,
+      "lon": -86.914155,
+      "name": "Learning GIS!",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18157005500"
+    }
+  ],
+  "state_fips": "18"
+}
