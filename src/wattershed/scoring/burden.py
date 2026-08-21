@@ -112,8 +112,10 @@ def score_burden(geoid: str, lat: float | None = None, lon: float | None = None)
             pillar="burden",
             score=None,
             band="insufficient data",
-            data_gaps=[f"Tract {geoid} not present in the national reference table and no "
-                       "populated tracts within 5 km."],
+            data_gaps=[(
+                f"Tract {geoid} not present in the national reference table and no "
+                "populated tracts within 5 km."
+            )],
         )
         return ps, {}
 

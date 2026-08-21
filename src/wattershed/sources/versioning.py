@@ -487,11 +487,11 @@ def controller() -> DataVersionController:
 
 
 __all__ = [
-    "IndexBlock",
-    "DataVersionController",
-    "BLOCKS",
-    "PILLAR_LABELS",
-    "controller",
     "ACTIVE",
+    "BLOCKS",
     "DECLARED_NOT_INGESTED",
+    "PILLAR_LABELS",
+    "DataVersionController",
+    "IndexBlock",
+    "controller",
 ]

@@ -86,4 +86,4 @@ def fetch_capacity(length: int = 5000, timeout: int = 90) -> list[dict]:
     return recs
 
 
-__all__ = ["BASE_URL", "EIAKeyMissing", "available", "parse_rows", "fetch_capacity"]
+__all__ = ["BASE_URL", "EIAKeyMissing", "available", "fetch_capacity", "parse_rows"]

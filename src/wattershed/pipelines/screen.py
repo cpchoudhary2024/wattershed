@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from .. import config, demand as demand_mod, geocode, provenance
+from .. import __version__, config, geocode, provenance
+from .. import demand as demand_mod
 from ..models import BoundaryProximity, CoolingTech, Screening, SiteInput
 from ..scoring import burden as burden_mod
 from ..scoring import grid as grid_mod
@@ -11,20 +12,29 @@ from ..scoring import water as water_mod
 from ..sources import aqueduct, egrid, frs, nerc, usdm, water_use
 from ..sources.base import SourceUnavailable
 from ..spatial import boundary as boundary_mod
-from .. import __version__
 
 STANDING_LIMITATIONS = [
-    "Tract-level indicators describe the area around a point, not the parcel itself; a site on a "
-    "tract boundary inherits its containing tract's profile.",
-    "eGRID rates are annual average (location-based) intensities, not marginal emissions; actual "
-    "incremental emissions depend on dispatch and contracted supply.",
-    "County public-supply denominators are from the 2015 USGS compilation — the latest complete "
-    "county water-use census; fast-growing counties will have shifted.",
-    "Five pollution indicators are frozen at EPA EJScreen 2.32 vintage (2024 release) because EPA "
-    "withdrew the tool in Feb 2025; they no longer update.",
+    (
+        "Tract-level indicators describe the area around a point, not the parcel itself; a site on a "
+        "tract boundary inherits its containing tract's profile."
+    ),
+    (
+        "eGRID rates are annual average (location-based) intensities, not marginal emissions; actual "
+        "incremental emissions depend on dispatch and contracted supply."
+    ),
+    (
+        "County public-supply denominators are from the 2015 USGS compilation — the latest complete "
+        "county water-use census; fast-growing counties will have shifted."
+    ),
+    (
+        "Five pollution indicators are frozen at EPA EJScreen 2.32 vintage (2024 release) because EPA "
+        "withdrew the tool in Feb 2025; they no longer update."
+    ),
     "All demand figures are modeled from published engineering factors, not measured facility data.",
-    "The neighborhood summary assigns tracts by population-weighted centroid distance, an "
-    "approximation of true buffer intersection.",
+    (
+        "The neighborhood summary assigns tracts by population-weighted centroid distance, an "
+        "approximation of true buffer intersection."
+    ),
 ]
 
 

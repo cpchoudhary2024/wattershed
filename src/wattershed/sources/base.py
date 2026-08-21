@@ -41,8 +41,7 @@ def cached_download(
         with _session.get(url, stream=True, timeout=timeout) as r:
             r.raise_for_status()
             with open(tmp, "wb") as f:
-                for chunk in r.iter_content(chunk_size=1 << 20):
-                    f.write(chunk)
+                f.writelines(r.iter_content(chunk_size=1 << 20))
         tmp.replace(dest)
     except requests.RequestException as e:
         tmp.unlink(missing_ok=True)

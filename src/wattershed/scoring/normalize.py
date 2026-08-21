@@ -21,7 +21,8 @@ entry point here collapses NaN and ±inf to None instead.
 from __future__ import annotations
 
 import math
-from typing import Any, Iterable, Mapping
+from collections.abc import Iterable, Mapping
+from typing import Any
 
 SCORE_MIN = 0.0
 SCORE_MAX = 100.0
@@ -213,20 +214,20 @@ def validate_coordinates(lat: Any, lon: Any) -> tuple[bool, str]:
 
 
 __all__ = [
-    "SCORE_MIN",
-    "SCORE_MAX",
+    "BAND_INSUFFICIENT",
     "BAND_THRESHOLDS",
     "PERCENTILE_BAND_THRESHOLDS",
-    "BAND_INSUFFICIENT",
-    "is_number",
-    "clamp",
-    "to_score",
-    "band",
-    "percentile_band",
-    "blend",
-    "mean_or_none",
-    "percentile_of",
-    "validate_coordinates",
-    "us_region",
+    "SCORE_MAX",
+    "SCORE_MIN",
     "US_REGION_BOXES",
+    "band",
+    "blend",
+    "clamp",
+    "is_number",
+    "mean_or_none",
+    "percentile_band",
+    "percentile_of",
+    "to_score",
+    "us_region",
+    "validate_coordinates",
 ]

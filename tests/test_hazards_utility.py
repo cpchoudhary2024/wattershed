@@ -8,7 +8,6 @@ import pytest
 
 from wattershed.scoring import hazards, utility
 
-
 # --- flood -------------------------------------------------------------------
 
 def test_sfha_intersection_is_flagged_high():

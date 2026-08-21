@@ -130,8 +130,8 @@ def compute(tracts, facilities: list[dict], radius_km: float = CLUSTER_RADIUS_KM
 __all__ = [
     "CLUSTER_RADIUS_KM",
     "SATURATION_COUNT",
-    "haversine_km",
-    "neighbourhood_counts",
-    "modifier_from_counts",
     "compute",
+    "haversine_km",
+    "modifier_from_counts",
+    "neighbourhood_counts",
 ]

@@ -123,7 +123,7 @@ def neighborhood(lat: float, lon: float, radius_km: float | None = None) -> dict
 
     return {
         "radius_km": radius_km,
-        "tracts": int(len(sub)),
+        "tracts": len(sub),
         "population": int(w.sum()),
         "cbi_percentile": wmean("p_cbi"),
         "pct_low_income": wmean("pct_low_income"),
@@ -166,7 +166,7 @@ def neighborhood_row(lat: float, lon: float, radius_km: float | None = None) -> 
         m = ~np.isnan(v)
         out[c] = float(np.average(v[m], weights=w[m])) if m.any() else np.nan
     out["population"] = float(w.sum())
-    meta = {"radius_km": radius_km, "tracts": int(len(sub)), "population": int(w.sum())}
+    meta = {"radius_km": radius_km, "tracts": len(sub), "population": int(w.sum())}
     return pd.Series(out), meta
 
 

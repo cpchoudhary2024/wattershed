@@ -16,15 +16,20 @@ from __future__ import annotations
 
 import json
 import zipfile
-from datetime import date
+from datetime import UTC, datetime
+
+
+def _utc_today():
+    """Today in UTC, so a build stamps the same date wherever it runs."""
+    return datetime.now(UTC).date()
 
 import numpy as np
 import pandas as pd
 
 from .. import config, provenance
+from ..scoring.reference import PERCENTILED_COLS, POLLUTION_COLS, VULNERABILITY_COLS
 from ..sources import acs, aqueduct, ejscreen_legacy, frs, places
 from ..sources.base import cached_download
-from ..scoring.reference import PERCENTILED_COLS, POLLUTION_COLS, VULNERABILITY_COLS
 
 _GAZ_URL = (
     "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/"
@@ -164,8 +169,8 @@ def build(skip_aqueduct: bool = False) -> None:
     manifest = {
         "built_at": provenance.utc_now_iso(),
         "started_at": started,
-        "build_date": date.today().isoformat(),
-        "rows": int(len(df)),
+        "build_date": _utc_today().isoformat(),
+        "rows": len(df),
         "tracts_with_population": int(rank_base.sum()),
         "columns": sorted(df.columns.tolist()),
         "coverage": {

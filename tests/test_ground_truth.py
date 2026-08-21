@@ -127,7 +127,7 @@ def test_burden_pillar_matches_raw_tract_table():
 
     assert abs(r["burden"]["score"] - hand_score) < 0.6, "burden score drifted from raw tract data"
     # reported basis must equal the true populated-tract basis
-    assert r["neighborhood"]["tracts"] == int(len(sub))
+    assert r["neighborhood"]["tracts"] == len(sub)
     assert r["neighborhood"]["population"] == int(w.sum())
     # a thin basis must be disclosed, not silently presented as neighborhood-wide
     if len(sub) < 3:

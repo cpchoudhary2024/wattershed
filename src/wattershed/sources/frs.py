@@ -89,7 +89,7 @@ def tri_near(lat: float, lon: float, radius_km: float = config.PROXIMITY_RADIUS_
     sub["dist_km"] = haversine_km(lat, lon, sub.lat.values, sub.lon.values)
     sub = sub[sub.dist_km <= radius_km].sort_values("dist_km")
     return {
-        "count": int(len(sub)),
+        "count": len(sub),
         "radius_km": radius_km,
         "nearest": [
             {"name": r["name"], "city": r["city"], "state": r["state"], "dist_km": round(float(r["dist_km"]), 2)}

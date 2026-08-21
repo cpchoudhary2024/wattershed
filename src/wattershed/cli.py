@@ -11,8 +11,8 @@
 
 from __future__ import annotations
 
+from datetime import UTC
 from pathlib import Path
-from typing import Optional
 
 import typer
 from rich.console import Console
@@ -92,15 +92,15 @@ def _print_screening(s: Screening) -> None:
 
 @app.command()
 def screen(
-    lat: Optional[float] = typer.Option(None),
-    lon: Optional[float] = typer.Option(None),
-    address: Optional[str] = typer.Option(None, help="One-line address (Census geocoder)"),
-    site: Optional[str] = typer.Option(None, help="Slug from the curated registry (see `sites`)"),
+    lat: float | None = typer.Option(None),
+    lon: float | None = typer.Option(None),
+    address: str | None = typer.Option(None, help="One-line address (Census geocoder)"),
+    site: str | None = typer.Option(None, help="Slug from the curated registry (see `sites`)"),
     name: str = typer.Option("Unnamed site"),
-    mw: Optional[float] = typer.Option(None, help="Announced IT capacity, MW"),
+    mw: float | None = typer.Option(None, help="Announced IT capacity, MW"),
     cooling: str = typer.Option("unknown", help="evaporative | hybrid | air | unknown"),
-    json_out: Optional[Path] = typer.Option(None, "--json", help="Write full result JSON here"),
-    report: Optional[Path] = typer.Option(None, help="Write HTML report here"),
+    json_out: Path | None = typer.Option(None, "--json", help="Write full result JSON here"),
+    report: Path | None = typer.Option(None, help="Write HTML report here"),
 ):
     """Screen one location (coordinates, address, or curated site)."""
     from .pipelines.screen import screen_point, screen_site
@@ -168,7 +168,7 @@ def screen_all(out_dir: Path = typer.Option(Path("out"), help="Directory for per
             (out_dir / f"{slug}.json").write_text(res.to_json())
             console.print(f"{res.tier.value} (water {res.water.score}, grid {res.grid.score}, "
                           f"burden {res.burden.score})")
-        except Exception as e:  # keep batch going; a broken site is a finding, not a crash
+        except Exception as e:  # keep batch going; a broken site is a finding, not a crash  # noqa: BLE001 — one bad row must not abort a batch run
             console.print(f"[red]failed: {e}[/red]")
 
 
@@ -184,7 +184,8 @@ def batch(
     from .report.render import render_report
 
     out_dir.mkdir(parents=True, exist_ok=True)
-    rows = list(csv_mod.DictReader(open(input_csv)))
+    with open(input_csv) as fh:
+        rows = list(csv_mod.DictReader(fh))
     summary = []
     for i, r in enumerate(rows):
         name = r.get("name") or f"row-{i+1}"
@@ -206,7 +207,7 @@ def batch(
                 }
             )
             console.print(f"{name}: {res.tier.value}")
-        except Exception as e:
+        except Exception as e:  # noqa: BLE001 — one bad row must not abort a batch run
             summary.append({"name": name, "lat": r.get("lat"), "lon": r.get("lon"),
                             "county": "", "tier": f"ERROR: {e}", "water": None, "grid": None, "burden": None})
             console.print(f"[red]{name}: {e}[/red]")
@@ -250,11 +251,14 @@ def build_dashboard(
 def doctor():
     """Data-freshness health check: what's current, what's aging, what to do."""
     import json
-    from datetime import date, datetime
+    from datetime import datetime
+
+    def _utc_today():
+        return datetime.now(UTC).date()
 
     from . import provenance
 
-    today = date.today()
+    today = _utc_today()
 
     def age_days(iso: str | None) -> int | None:
         if not iso:
@@ -331,7 +335,7 @@ def provenance_cmd():
 
 @app.command("build-catalog")
 def build_catalog_cmd(
-    out: Optional[Path] = typer.Option(None, help="Write elsewhere than <repo>/data_catalog.json"),
+    out: Path | None = typer.Option(None, help="Write elsewhere than <repo>/data_catalog.json"),
     check: bool = typer.Option(False, "--check", help="Verify the committed catalog is current; do not write"),
 ):
     """Regenerate data_catalog.json from the ingestion registry."""
@@ -357,7 +361,7 @@ def build_catalog_cmd(
     t = Table(show_header=True, header_style="bold")
     for col in ("pillar", "blocks", "registries"):
         t.add_column(col)
-    for key, p in cat["pillars"].items():
+    for p in cat["pillars"].values():
         t.add_row(p["label"], str(len(p["blocks"])), "\n".join(p["registries"]))
     console.print(t)
     if cat["not_ingested"]:

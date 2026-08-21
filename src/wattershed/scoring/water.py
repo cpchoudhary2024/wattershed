@@ -17,9 +17,9 @@ overall tier (see tiers.py).
 
 from __future__ import annotations
 
+from .. import config
 from ..models import Confidence, Indicator, PillarScore
 from ..provenance import retrieved_at
-from .. import config
 from .normalize import band, blend, clamp, is_number
 
 BWS_BASE_SCORE = {-1: 85.0, 0: 5.0, 1: 25.0, 2: 50.0, 3: 75.0, 4: 95.0}

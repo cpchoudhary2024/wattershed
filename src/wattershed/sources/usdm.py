@@ -11,7 +11,13 @@ from __future__ import annotations
 
 import io
 import re
-from datetime import date, timedelta
+from datetime import UTC, datetime, timedelta
+
+
+def _utc_today():
+    """Today in UTC. date.today() would read the local clock and could shift
+    the requested USDM window by a day depending on where this runs."""
+    return datetime.now(UTC).date()
 
 import geopandas as gpd
 import pandas as pd
@@ -64,7 +70,7 @@ def county_drought_history(county_fips: str, years: int = 5) -> dict:
     Returns mean DSCI (0–500) and the share of weeks with ≥10% of the county
     in D2+ (severe or worse). The 10% floor ignores boundary slivers.
     """
-    end = date.today()
+    end = _utc_today()
     start = end - timedelta(days=round(years * 365.25))
     txt = fetch_text(
         _COUNTY_API,
@@ -86,6 +92,6 @@ def county_drought_history(county_fips: str, years: int = 5) -> dict:
     return {
         "mean_dsci": float(dsci.mean()),
         "pct_weeks_d2plus": float(100.0 * d2plus_share.mean()),
-        "weeks": int(len(df)),
+        "weeks": len(df),
         "window": f"{start.isoformat()} → {end.isoformat()}",
     }

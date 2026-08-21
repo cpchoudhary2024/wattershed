@@ -38,7 +38,7 @@ MIX_COLS = {
 def _subregions_gdf() -> gpd.GeoDataFrame:
     zp = cached_download(_GIS_URL, "egrid2023_subregions.zip", "egrid_subregions_gis")
     d = extract_zip(zp, "egrid2023_subregions")
-    shp = sorted(d.rglob("*.shp"))[0]
+    shp = min(d.rglob("*.shp"))
     gdf = gpd.read_file(shp)
     if gdf.crs and gdf.crs.to_epsg() != 4326:
         gdf = gdf.to_crs(4326)

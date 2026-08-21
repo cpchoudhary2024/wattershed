@@ -21,7 +21,6 @@ from wattershed.scoring.project import (
     water_demand_multiplier,
 )
 
-
 # --- resolution --------------------------------------------------------------
 
 @pytest.mark.parametrize("key", SELECTABLE)

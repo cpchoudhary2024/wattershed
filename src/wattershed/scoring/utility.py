@@ -135,6 +135,13 @@ def context(subrgn: str, facility_count=None, net_gen_mwh=None) -> dict:
     return out
 
 
-__all__ = ["SUBREGION_MAP", "ASSUMED_CAMPUS_MW", "CONCENTRATION_NOTABLE",
-           "CONCENTRATION_HIGH", "subregion_to_rto", "operator_for_subregion",
-           "load_concentration", "context"]
+__all__ = [
+    "ASSUMED_CAMPUS_MW",
+    "CONCENTRATION_HIGH",
+    "CONCENTRATION_NOTABLE",
+    "SUBREGION_MAP",
+    "context",
+    "load_concentration",
+    "operator_for_subregion",
+    "subregion_to_rto",
+]

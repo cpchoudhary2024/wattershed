@@ -19,7 +19,6 @@ Method notes (mirrors the site pipeline; differences are honest coarsenings):
 
 from __future__ import annotations
 
-
 import numpy as np
 import pandas as pd
 
@@ -143,13 +142,13 @@ def build_atlas() -> pd.DataFrame:
     return out
 
 
-def county_shapes() -> "object":
+def county_shapes() -> object:
     """County polygons (cartographic 20m) keyed by FIPS, for the dashboard."""
     import geopandas as gpd
 
     zp = cached_download(_COUNTY_URL, "cb_2024_us_county_20m.zip", "census_gazetteer_2024")
     d = extract_zip(zp, "cb_counties")
-    shp = sorted(d.rglob("*.shp"))[0]
+    shp = min(d.rglob("*.shp"))
     gdf = gpd.read_file(shp)
     gdf = gdf[~gdf["STATEFP"].isin(["72", "60", "66", "69", "78", "02", "15"])]
     gdf["geometry"] = gdf.geometry.simplify(0.01, preserve_topology=True)

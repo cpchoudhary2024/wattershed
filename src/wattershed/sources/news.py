@@ -17,7 +17,7 @@ import hashlib
 import logging
 import re
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
 
 from .base import SourceUnavailable, fetch_text
@@ -68,7 +68,7 @@ def _strip_html(s: str) -> str:
 
 def _iso(pubdate: str) -> str:
     try:
-        return parsedate_to_datetime(pubdate).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        return parsedate_to_datetime(pubdate).astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     except (TypeError, ValueError):
         return ""
 
@@ -175,9 +175,18 @@ def merge(existing: list[dict], incoming: list[dict], max_items: int = MAX_ITEMS
 
 
 def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-__all__ = ["QUERIES", "MAX_ITEMS", "FRICTION_TERMS", "parse_feed", "friction_terms_in",
-           "annotate_friction", "friction_summary", "fetch_announcements", "merge",
-           "utc_now_iso"]
+__all__ = [
+    "FRICTION_TERMS",
+    "MAX_ITEMS",
+    "QUERIES",
+    "annotate_friction",
+    "fetch_announcements",
+    "friction_summary",
+    "friction_terms_in",
+    "merge",
+    "parse_feed",
+    "utc_now_iso",
+]

@@ -16,10 +16,8 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-
-
 
 # --- Canonical citation constants -------------------------------------------
 # Some citations are repeated across the scorer, the CLI freshness table, the
@@ -269,7 +267,7 @@ def get_source(source_id: str) -> Source:
 
 
 def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 @dataclass
@@ -326,17 +324,17 @@ def retrieved_at(path: Path) -> str | None:
 
 __all__ = [
     "NERC_LTRA_EDITION",
+    "NERC_LTRA_HORIZON",
     "NERC_LTRA_PUBLISHED",
     "NERC_LTRA_PUBLISHED_ISO",
-    "NERC_LTRA_HORIZON",
     "NERC_LTRA_URL",
     "NERC_LTRA_VINTAGE",
-    "Source",
     "SOURCES",
     "Ledger",
+    "Source",
     "get_source",
-    "stamp_file",
     "read_stamp",
     "retrieved_at",
+    "stamp_file",
     "utc_now_iso",
 ]

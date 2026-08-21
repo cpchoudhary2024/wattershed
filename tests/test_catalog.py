@@ -42,7 +42,7 @@ def test_each_scoring_pillar_has_active_blocks():
 
 
 def test_block_ids_are_pillar_prefixed():
-    for bid, b in BLOCKS.items():
+    for bid in BLOCKS:
         assert bid.split(".", 1)[0] in {"water", "grid", "burden", "geo", "infra"}, bid
 
 

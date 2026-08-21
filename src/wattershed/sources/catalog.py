@@ -175,10 +175,10 @@ def load_catalog(path: Path | None = None) -> dict:
 
 
 __all__ = [
-    "build_catalog",
-    "write_catalog",
-    "load_catalog",
-    "declarative_view",
     "CATALOG_PATH",
     "CATALOG_VERSION",
+    "build_catalog",
+    "declarative_view",
+    "load_catalog",
+    "write_catalog",
 ]

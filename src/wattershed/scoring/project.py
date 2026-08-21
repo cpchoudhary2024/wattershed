@@ -218,7 +218,16 @@ def comparison_table(grid_lb_co2e_per_mwh=None, it_mw=None) -> list[dict]:
     return rows
 
 
-__all__ = ["CoolingProfile", "COOLING_PROFILES", "SELECTABLE", "BASELINE_KEY",
-           "profile_for", "cue_kg_per_kwh", "green_grid_metrics",
-           "water_demand_multiplier", "grid_load_multiplier",
-           "project_overlay", "comparison_table"]
+__all__ = [
+    "BASELINE_KEY",
+    "COOLING_PROFILES",
+    "SELECTABLE",
+    "CoolingProfile",
+    "comparison_table",
+    "cue_kg_per_kwh",
+    "green_grid_metrics",
+    "grid_load_multiplier",
+    "profile_for",
+    "project_overlay",
+    "water_demand_multiplier",
+]

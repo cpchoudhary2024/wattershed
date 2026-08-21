@@ -57,7 +57,7 @@ def test_grid_escalator():
 
 
 def test_missing_pillar_noted():
-    t, reasons = assign_tier(_p("water", 10), _p("grid", 10), PillarScore(pillar="burden", score=None, band="insufficient data"))
+    _tier, reasons = assign_tier(_p("water", 10), _p("grid", 10), PillarScore(pillar="burden", score=None, band="insufficient data"))
     assert any("Data gaps" in r for r in reasons)
 
 

@@ -154,7 +154,7 @@ def test_reconcile_geocodes_only_new_facilities(monkeypatch):
 
     monkeypatch.setattr(data_sync, "assign_tract", fake)
     existing = [dict(_fac(1), tract_geoid="47157000100", county_fips="47157")]
-    registry, added = data_sync.reconcile_facilities(existing, [_fac(1), _fac(2)])
+    _registry, added = data_sync.reconcile_facilities(existing, [_fac(1), _fac(2)])
     assert added == 1
     assert len(calls) == 1, "an already-resolved facility must not be re-geocoded"
 

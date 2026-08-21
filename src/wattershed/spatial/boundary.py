@@ -32,7 +32,8 @@ from __future__ import annotations
 
 import logging
 import math
-from typing import Any, Iterable, Mapping
+from collections.abc import Iterable, Mapping
+from typing import Any
 
 from ..scoring.normalize import is_number, validate_coordinates
 
@@ -135,7 +136,7 @@ def nearest_adjacent_tract_m(
             continue
         try:
             poly = shapely_transform(to_local.transform, shape(geom))
-        except Exception as e:  # malformed geometry must not abort a screening
+        except Exception as e:  # malformed geometry must not abort a screening  # noqa: BLE001 — a malformed geometry must not abort a screening
             log.debug("boundary: skipping %s — %s", geoid, e)
             continue
         if poly.is_empty:
@@ -233,11 +234,11 @@ def boundary_proximity(
 
 
 __all__ = [
-    "DEFAULT_BUFFER_M",
     "BOUNDARY_WARNING",
-    "query_envelope",
-    "nearest_adjacent_tract_m",
+    "DEFAULT_BUFFER_M",
     "assess",
-    "fetch_adjacent_tracts",
     "boundary_proximity",
+    "fetch_adjacent_tracts",
+    "nearest_adjacent_tract_m",
+    "query_envelope",
 ]

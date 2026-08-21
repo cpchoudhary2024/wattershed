@@ -94,7 +94,7 @@ def build_state_paths() -> str:
 
     zp = cached_download(_STATES_URL, "cb_2024_us_state_20m.zip", "census_gazetteer_2024")
     d = extract_zip(zp, "cb_states")
-    shp = sorted(d.rglob("*.shp"))[0]
+    shp = min(d.rglob("*.shp"))
     gdf = gpd.read_file(shp)
     paths = []
     for _, row in gdf.iterrows():
@@ -257,5 +257,5 @@ def build(results_dir: Path, out_file: Path) -> None:
     try:
         sz = write_tracts_json(out_file.parent)
         print(f"[dashboard] tracts.json: {sz/1e6:.1f} MB")
-    except Exception as e:  # reference table optional at build time
+    except Exception as e:  # reference table optional at build time  # noqa: BLE001 — an optional asset must not fail the build
         print(f"[dashboard] tracts.json skipped: {e}")

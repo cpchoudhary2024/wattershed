@@ -463,7 +463,17 @@ def infra_density_compute(tracts, registry):
     return compute(tracts, registry)
 
 
-__all__ = ["sync", "SyncReport", "SourceResult", "reconcile_facilities",
-           "partition_by_state", "assign_tract", "curated_statuses",
-           "apply_curated_status", "build_map_layer",
-           "FACILITY_REGISTRY", "NEWS_PATH", "MAP_LAYER_PATH"]
+__all__ = [
+    "FACILITY_REGISTRY",
+    "MAP_LAYER_PATH",
+    "NEWS_PATH",
+    "SourceResult",
+    "SyncReport",
+    "apply_curated_status",
+    "assign_tract",
+    "build_map_layer",
+    "curated_statuses",
+    "partition_by_state",
+    "reconcile_facilities",
+    "sync",
+]
