@@ -1,18 +1,18 @@
 {
   "density": {
-    "08001008555": 50.0,
+    "08001008555": 61.2,
     "08005006815": 100.0,
     "08005006861": 100.0,
     "08005006864": 100.0,
-    "08005007110": 70.7,
-    "08005080400": 50.0,
-    "08014031403": 50.0,
-    "08031001707": 79.1,
-    "08031002602": 70.7,
+    "08005007110": 86.6,
+    "08005080400": 70.7,
+    "08014031403": 61.2,
+    "08031001707": 100.0,
+    "08031002602": 93.5,
     "08035014014": 100.0,
     "08041002300": 50.0,
-    "08041004501": 50.0,
-    "08041004603": 50.0
+    "08041004501": 61.2,
+    "08041004603": 61.2
   },
   "facilities": [
     {
@@ -70,6 +70,15 @@
       "tract": "08005006864"
     },
     {
+      "lat": 39.593873,
+      "lon": -104.84316,
+      "name": "Flexential - Denver - Centennial Data Center",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005006864"
+    },
+    {
       "lat": 39.588324,
       "lon": -104.832418,
       "name": "Xfinity/Comcast Data Center",
@@ -115,6 +124,15 @@
       "tract": "08005080400"
     },
     {
+      "lat": 39.661049,
+      "lon": -104.848832,
+      "name": "Flexential - Denver - Aurora",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005080400"
+    },
+    {
       "lat": 39.989158,
       "lon": -105.020726,
       "name": "JPMorgan Chase",
@@ -128,6 +146,15 @@
       "lon": -104.994159,
       "name": "Flexential Denver - Downtown",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08031001707"
+    },
+    {
+      "lat": 39.74597,
+      "lon": -104.994159,
+      "name": "Flexential Denver - Downtown",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "08031001707"

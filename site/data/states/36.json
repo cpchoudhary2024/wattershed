@@ -1,25 +1,34 @@
 {
   "density": {
-    "36001001100": 50.0,
-    "36001013505": 50.0,
-    "36001013703": 61.2,
-    "36029009009": 50.0,
-    "36029009200": 50.0,
-    "36047001802": 50.0,
+    "36001001100": 70.7,
+    "36001013505": 61.2,
+    "36001013703": 86.6,
+    "36029009009": 61.2,
+    "36029009200": 70.7,
+    "36047001802": 70.7,
     "36061003300": 100.0,
-    "36063021700": 86.6,
+    "36063021700": 100.0,
     "36063022000": 100.0,
-    "36063022714": 50.0,
-    "36067016100": 50.0,
-    "36085029105": 70.7,
-    "36087012800": 93.5,
-    "36087013001": 79.1,
-    "36089490800": 50.0,
-    "36103159407": 50.0,
-    "36119000702": 50.0,
-    "36123150102": 50.0
+    "36063022714": 61.2,
+    "36067016100": 61.2,
+    "36085029105": 86.6,
+    "36087012800": 100.0,
+    "36087013001": 100.0,
+    "36089490800": 70.7,
+    "36103159407": 61.2,
+    "36119000702": 61.2,
+    "36123150102": 61.2
   },
   "facilities": [
+    {
+      "lat": 42.649257,
+      "lon": -73.752818,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36001001100"
+    },
     {
       "lat": 42.649353,
       "lon": -73.752745,
@@ -48,6 +57,15 @@
       "tract": "36001013703"
     },
     {
+      "lat": 42.735631,
+      "lon": -73.818665,
+      "name": "Lumen Albany 4",
+      "operator": "Lumen Technologies",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36001013703"
+    },
+    {
       "lat": 43.044944,
       "lon": -78.749203,
       "name": "",
@@ -55,6 +73,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "36029009009"
+    },
+    {
+      "lat": 42.990201,
+      "lon": -78.812384,
+      "name": "Frontier Science",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36029009200"
     },
     {
       "lat": 42.990201,
@@ -79,6 +106,15 @@
       "lon": -74.004816,
       "name": "Dataverge",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36047001802"
+    },
+    {
+      "lat": 40.657696,
+      "lon": -74.004816,
+      "name": "Dataverge",
+      "operator": "Dataverge",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "36047001802"
@@ -111,10 +147,28 @@
       "tract": "36061003300"
     },
     {
+      "lat": 40.717677,
+      "lon": -74.008441,
+      "name": "Digital Realty New York JFK12",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36061003300"
+    },
+    {
       "lat": 40.719928,
       "lon": -74.004458,
       "name": "Digital Realty New York JFK13",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36061003300"
+    },
+    {
+      "lat": 40.719928,
+      "lon": -74.004458,
+      "name": "Digital Realty New York JFK13",
+      "operator": "Digital Realty",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "36061003300"
@@ -241,6 +295,15 @@
       "lon": -74.980582,
       "name": "Old Main",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36089490800"
+    },
+    {
+      "lat": 44.668107,
+      "lon": -74.980582,
+      "name": "Old Main",
+      "operator": "Clarkson University",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "36089490800"

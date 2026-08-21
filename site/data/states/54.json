@@ -1,7 +1,7 @@
 {
   "density": {
-    "54039012800": 50.0,
-    "54065970800": 50.0
+    "54039012800": 70.7,
+    "54065970800": 70.7
   },
   "facilities": [
     {
@@ -12,6 +12,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "54039012800"
+    },
+    {
+      "lat": 38.353177,
+      "lon": -81.696182,
+      "name": "Alpha Federal",
+      "operator": "Alpha Innovations",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "54039012800"
+    },
+    {
+      "lat": 39.630985,
+      "lon": -78.22532,
+      "name": "Morgan Wireless",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "54065970800"
     },
     {
       "lat": 39.630985,

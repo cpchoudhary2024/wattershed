@@ -1,6 +1,6 @@
 {
   "density": {
-    "11001010100": 50.0
+    "11001010100": 70.7
   },
   "facilities": [
     {
@@ -8,6 +8,15 @@
       "lon": -77.029149,
       "name": "CoreSite DC1",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "11001010100"
+    },
+    {
+      "lat": 38.902888,
+      "lon": -77.029149,
+      "name": "CoreSite DC1",
+      "operator": "CoreSite",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "11001010100"

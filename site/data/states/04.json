@@ -1,42 +1,42 @@
 {
   "density": {
-    "04003000301": 50.0,
-    "04013061052": 93.5,
-    "04013061054": 70.7,
-    "04013061058": 86.6,
-    "04013061300": 93.5,
-    "04013110502": 70.7,
-    "04013111203": 93.5,
-    "04013113601": 86.6,
+    "04003000301": 61.2,
+    "04013061052": 100.0,
+    "04013061054": 86.6,
+    "04013061058": 100.0,
+    "04013061300": 100.0,
+    "04013110502": 86.6,
+    "04013111203": 100.0,
+    "04013113601": 100.0,
     "04013115200": 100.0,
-    "04013115900": 79.1,
-    "04013117200": 86.6,
-    "04013216816": 86.6,
-    "04013216845": 79.1,
-    "04013216860": 79.1,
-    "04013319705": 79.1,
-    "04013319709": 93.5,
+    "04013115900": 100.0,
+    "04013117200": 100.0,
+    "04013216816": 100.0,
+    "04013216845": 100.0,
+    "04013216860": 100.0,
+    "04013319705": 100.0,
+    "04013319709": 100.0,
     "04013319710": 100.0,
-    "04013319909": 50.0,
-    "04013420206": 50.0,
-    "04013421303": 50.0,
-    "04013422304": 79.1,
-    "04013422307": 61.2,
-    "04013422514": 79.1,
-    "04013422636": 70.7,
+    "04013319909": 61.2,
+    "04013420206": 61.2,
+    "04013421303": 61.2,
+    "04013422304": 100.0,
+    "04013422307": 79.1,
+    "04013422514": 100.0,
+    "04013422636": 100.0,
     "04013422643": 100.0,
     "04013422647": 100.0,
     "04013422654": 100.0,
     "04013422655": 100.0,
-    "04013522802": 70.7,
-    "04013523102": 70.7,
-    "04013614700": 70.7,
-    "04013616500": 79.1,
-    "04013811400": 70.7,
+    "04013522802": 86.6,
+    "04013523102": 100.0,
+    "04013614700": 93.5,
+    "04013616500": 100.0,
+    "04013811400": 100.0,
     "04013811800": 100.0,
     "04013812200": 100.0,
     "04019000100": 50.0,
-    "04019004074": 61.2
+    "04019004074": 70.7
   },
   "facilities": [
     {
@@ -202,9 +202,36 @@
       "tract": "04013216816"
     },
     {
+      "lat": 33.611662,
+      "lon": -111.913983,
+      "name": "DataPro USA Web Development",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216816"
+    },
+    {
       "lat": 33.627248,
       "lon": -111.902048,
       "name": "Profit Finder Pro Software",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216816"
+    },
+    {
+      "lat": 33.627248,
+      "lon": -111.902048,
+      "name": "Profit Finder Pro Software",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216816"
+    },
+    {
+      "lat": 33.627367,
+      "lon": -111.901703,
+      "name": "VaultLogix",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -218,6 +245,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013216845"
+    },
+    {
+      "lat": 33.644666,
+      "lon": -111.896098,
+      "name": "Iron Mountain Data Centers AZS-1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216845"
+    },
+    {
+      "lat": 33.634484,
+      "lon": -111.884346,
+      "name": "K-Motion Interactive",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013216860"
     },
     {
       "lat": 33.634484,
@@ -247,6 +292,15 @@
       "tract": "04013319709"
     },
     {
+      "lat": 33.405131,
+      "lon": -111.977335,
+      "name": "Alembic Computer Services, Inc.",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319709"
+    },
+    {
       "lat": 33.395586,
       "lon": -111.970076,
       "name": "EdgeConneX Data Center",
@@ -254,6 +308,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013319709"
+    },
+    {
+      "lat": 33.413186,
+      "lon": -111.971154,
+      "name": "J-Curve Technologies",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013319710"
     },
     {
       "lat": 33.413186,
@@ -319,6 +382,24 @@
       "tract": "04013422514"
     },
     {
+      "lat": 33.380415,
+      "lon": -111.752668,
+      "name": "OptimumHQ",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422514"
+    },
+    {
+      "lat": 33.380601,
+      "lon": -111.752889,
+      "name": "The Chatfield Group",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422514"
+    },
+    {
       "lat": 33.380601,
       "lon": -111.752889,
       "name": "The Chatfield Group",
@@ -335,6 +416,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013422636"
+    },
+    {
+      "lat": 33.379986,
+      "lon": -111.728405,
+      "name": "Alliance Technology",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422636"
+    },
+    {
+      "lat": 33.356679,
+      "lon": -111.635236,
+      "name": "Comarch",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422643"
     },
     {
       "lat": 33.356679,
@@ -454,6 +553,15 @@
       "tract": "04013523102"
     },
     {
+      "lat": 33.302965,
+      "lon": -111.840539,
+      "name": "Emailage",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013523102"
+    },
+    {
       "lat": 33.684677,
       "lon": -112.09834,
       "name": "Flexential Phoenix - Deer Valley",
@@ -472,6 +580,15 @@
       "tract": "04013616500"
     },
     {
+      "lat": 33.664746,
+      "lon": -112.111714,
+      "name": "Accelera Data Systems",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013616500"
+    },
+    {
       "lat": 33.659055,
       "lon": -112.111159,
       "name": "Aligned Energy Data Center",
@@ -479,6 +596,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013616500"
+    },
+    {
+      "lat": 33.319916,
+      "lon": -111.809686,
+      "name": "All About Serving Process Server",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013811400"
     },
     {
       "lat": 33.319916,

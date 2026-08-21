@@ -38,6 +38,15 @@
       "tract": "09003520302"
     },
     {
+      "lat": 41.707078,
+      "lon": -72.589864,
+      "name": "Ergonomic Group",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09003520302"
+    },
+    {
       "lat": 41.478815,
       "lon": -72.801014,
       "name": "",

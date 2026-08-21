@@ -1,30 +1,30 @@
 {
   "density": {
-    "17019001400": 50.0,
+    "17019001400": 61.2,
     "17031330101": 100.0,
     "17031770300": 100.0,
     "17031770400": 100.0,
     "17031770500": 100.0,
-    "17031811302": 79.1,
-    "17031811702": 79.1,
-    "17031811800": 86.6,
+    "17031811302": 100.0,
+    "17031811702": 100.0,
+    "17031811800": 100.0,
     "17031839000": 100.0,
     "17031839100": 100.0,
     "17031840200": 100.0,
     "17031841900": 100.0,
     "17031843200": 100.0,
-    "17037001500": 86.6,
+    "17037001500": 100.0,
     "17043840000": 100.0,
     "17043840101": 100.0,
     "17043840201": 100.0,
-    "17043841312": 50.0,
-    "17043844702": 50.0,
-    "17043845803": 50.0,
-    "17043846102": 50.0,
+    "17043841312": 61.2,
+    "17043844702": 61.2,
+    "17043845803": 61.2,
+    "17043846102": 61.2,
     "17043846409": 100.0,
-    "17043846507": 86.6,
-    "17097864513": 50.0,
-    "17119403002": 50.0
+    "17043846507": 100.0,
+    "17097864513": 61.2,
+    "17119403002": 61.2
   },
   "facilities": [
     {
@@ -46,6 +46,15 @@
       "tract": "17031330101"
     },
     {
+      "lat": 41.853383,
+      "lon": -87.618607,
+      "name": "Centersquare Chicago Data Center - ORD1",
+      "operator": "Centersquare",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031330101"
+    },
+    {
       "lat": 41.853351,
       "lon": -87.618307,
       "name": "Digital Realty ORD10",
@@ -55,10 +64,28 @@
       "tract": "17031330101"
     },
     {
+      "lat": 41.853351,
+      "lon": -87.618307,
+      "name": "Digital Realty ORD10",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031330101"
+    },
+    {
       "lat": 41.853558,
       "lon": -87.618048,
       "name": "Equinix Chicago Data Center - CH1",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031330101"
+    },
+    {
+      "lat": 41.853558,
+      "lon": -87.618048,
+      "name": "Equinix Chicago Data Center - CH1",
+      "operator": "Equinix",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17031330101"
@@ -235,9 +262,36 @@
       "tract": "17031839000"
     },
     {
+      "lat": 41.872881,
+      "lon": -87.63344,
+      "name": "Netrality",
+      "operator": "Netrality",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839000"
+    },
+    {
       "lat": 41.87594,
       "lon": -87.631466,
       "name": "CoreSite Chicago Data Center (CH1)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839100"
+    },
+    {
+      "lat": 41.87594,
+      "lon": -87.631466,
+      "name": "CoreSite Chicago Data Center (CH1)",
+      "operator": "CoreSite",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031839100"
+    },
+    {
+      "lat": 41.880527,
+      "lon": -87.635938,
+      "name": "West Monroe",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",

@@ -1,8 +1,8 @@
 {
   "density": {
-    "25009254402": 50.0,
-    "25017312100": 50.0,
-    "25017351500": 50.0
+    "25009254402": 61.2,
+    "25017312100": 61.2,
+    "25017351500": 70.7
   },
   "facilities": [
     {
@@ -22,6 +22,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "25017312100"
+    },
+    {
+      "lat": 42.376706,
+      "lon": -71.079758,
+      "name": "CoreSite BO1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "25017351500"
     },
     {
       "lat": 42.376706,

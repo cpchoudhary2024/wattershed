@@ -1,13 +1,13 @@
 {
   "density": {
-    "29019001004": 50.0,
+    "29019001004": 61.2,
     "29037061002": 50.0,
-    "29095015702": 79.1,
-    "29095015800": 70.7,
+    "29095015702": 100.0,
+    "29095015800": 93.5,
     "29165030201": 100.0,
-    "29165980000": 86.6,
-    "29510119101": 50.0,
-    "29510125600": 70.7
+    "29165980000": 100.0,
+    "29510119101": 61.2,
+    "29510125600": 93.5
   },
   "facilities": [
     {
@@ -59,6 +59,24 @@
       "lat": 39.101182,
       "lon": -94.578821,
       "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29095015702"
+    },
+    {
+      "lat": 39.101182,
+      "lon": -94.578821,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29095015702"
+    },
+    {
+      "lat": 39.100907,
+      "lon": -94.581145,
+      "name": "Netrality Data Centers",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -135,6 +153,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "29510119101"
+    },
+    {
+      "lat": 38.629262,
+      "lon": -90.197175,
+      "name": "Netrality Data Centers",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29510125600"
     },
     {
       "lat": 38.629262,

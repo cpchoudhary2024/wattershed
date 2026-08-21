@@ -1,29 +1,29 @@
 {
   "density": {
-    "41005024402": 50.0,
+    "41005024402": 61.2,
     "41013950302": 100.0,
-    "41017001101": 50.0,
-    "41017001402": 50.0,
-    "41029000201": 50.0,
-    "41039003900": 50.0,
-    "41047000200": 61.2,
-    "41047001000": 61.2,
+    "41017001101": 61.2,
+    "41017001402": 61.2,
+    "41029000201": 61.2,
+    "41039003900": 70.7,
+    "41047000200": 79.1,
+    "41047001000": 79.1,
     "41049970101": 100.0,
-    "41051005001": 79.1,
-    "41051010601": 93.5,
+    "41051005001": 100.0,
+    "41051010601": 100.0,
     "41059950800": 100.0,
     "41059950900": 100.0,
     "41059951100": 100.0,
     "41059951202": 100.0,
-    "41065970400": 70.7,
-    "41065970500": 70.7,
-    "41067030401": 50.0,
+    "41065970400": 100.0,
+    "41065970500": 100.0,
+    "41067030401": 86.6,
     "41067031617": 100.0,
     "41067031626": 100.0,
     "41067032603": 100.0,
     "41067032608": 100.0,
     "41067032612": 100.0,
-    "41067032903": 50.0
+    "41067032903": 61.2
   },
   "facilities": [
     {
@@ -184,6 +184,15 @@
       "lon": -123.092978,
       "name": "Date Center West - Eugene",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41039003900"
+    },
+    {
+      "lat": 44.050607,
+      "lon": -123.092978,
+      "name": "Date Center West - Eugene",
+      "operator": "Data Center West, Inc.",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41039003900"
@@ -549,10 +558,28 @@
       "tract": "41051005001"
     },
     {
+      "lat": 45.53169,
+      "lon": -122.683765,
+      "name": "H5 DC - Portland",
+      "operator": "H5 Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41051005001"
+    },
+    {
       "lat": 45.521257,
       "lon": -122.681754,
       "name": "Digital Fortress - Portland 1",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41051010601"
+    },
+    {
+      "lat": 45.521257,
+      "lon": -122.681754,
+      "name": "Digital Fortress - Portland 1",
+      "operator": "Digital Fortress, Inc",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41051010601"
@@ -571,6 +598,15 @@
       "lon": -122.680562,
       "name": "The Pittock Internet Exchange",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41051010601"
+    },
+    {
+      "lat": 45.521425,
+      "lon": -122.680562,
+      "name": "The Pittock Internet Exchange",
+      "operator": "Alco Properties",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41051010601"
@@ -859,6 +895,24 @@
       "lon": -122.776087,
       "name": "Digital Fortress - Portland 2",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067030401"
+    },
+    {
+      "lat": 45.476214,
+      "lon": -122.776087,
+      "name": "Digital Fortress - Portland 2",
+      "operator": "Digital Fortress, Inc",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067030401"
+    },
+    {
+      "lat": 45.475634,
+      "lon": -122.77641,
+      "name": "Digital Fortress - Portland 3",
+      "operator": "Digital Fortress, Inc",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41067030401"

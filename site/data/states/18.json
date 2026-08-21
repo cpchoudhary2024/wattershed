@@ -1,11 +1,11 @@
 {
   "density": {
-    "18005010800": 50.0,
-    "18059410802": 50.0,
-    "18105000802": 50.0,
+    "18005010800": 61.2,
+    "18059410802": 61.2,
+    "18105000802": 61.2,
     "18127050203": 50.0,
-    "18141010800": 86.6,
-    "18157005500": 70.7
+    "18141010800": 100.0,
+    "18157005500": 100.0
   },
   "facilities": [
     {
@@ -84,6 +84,24 @@
       "lat": 40.421854,
       "lon": -86.916545,
       "name": "Agricultural and Biological Engineering",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18157005500"
+    },
+    {
+      "lat": 40.421854,
+      "lon": -86.916545,
+      "name": "Agricultural and Biological Engineering",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18157005500"
+    },
+    {
+      "lat": 40.42179,
+      "lon": -86.914155,
+      "name": "Learning GIS!",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",

@@ -1,9 +1,18 @@
 {
   "density": {
-    "22033002802": 50.0,
+    "22033002802": 70.7,
     "22083970300": 50.0
   },
   "facilities": [
+    {
+      "lat": 30.407446,
+      "lon": -91.172545,
+      "name": "Center for Computation & Technology (CCT)",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "22033002802"
+    },
     {
       "lat": 30.407446,
       "lon": -91.172545,

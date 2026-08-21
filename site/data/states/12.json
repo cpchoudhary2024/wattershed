@@ -1,21 +1,30 @@
 {
   "density": {
-    "12001000400": 50.0,
-    "12011050208": 50.0,
-    "12011060113": 50.0,
-    "12031015926": 50.0,
-    "12031017200": 50.0,
-    "12057011017": 50.0,
-    "12057011611": 50.0,
-    "12057013315": 50.0,
-    "12086002402": 61.2,
-    "12086003710": 61.2,
-    "12086009102": 50.0,
-    "12086980200": 50.0,
-    "12095015202": 50.0,
-    "12095017401": 50.0
+    "12001000400": 79.1,
+    "12011050208": 61.2,
+    "12011060113": 61.2,
+    "12031015926": 70.7,
+    "12031017200": 61.2,
+    "12057011017": 61.2,
+    "12057011611": 70.7,
+    "12057013315": 61.2,
+    "12086002402": 79.1,
+    "12086003710": 79.1,
+    "12086009102": 70.7,
+    "12086980200": 70.7,
+    "12095015202": 61.2,
+    "12095017401": 61.2
   },
   "facilities": [
+    {
+      "lat": 29.672819,
+      "lon": -82.299762,
+      "name": "HiPerGator",
+      "operator": "University of Florida",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12001000400"
+    },
     {
       "lat": 29.672591,
       "lon": -82.299929,
@@ -53,6 +62,15 @@
       "tract": "12031015926"
     },
     {
+      "lat": 30.245748,
+      "lon": -81.581723,
+      "name": "Flexential Jacksonville",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12031015926"
+    },
+    {
       "lat": 30.33143,
       "lon": -81.662426,
       "name": "Cologix Jacksonville JAX1",
@@ -75,6 +93,15 @@
       "lon": -82.539978,
       "name": "Flexential Tampa - West",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12057011611"
+    },
+    {
+      "lat": 28.037299,
+      "lon": -82.539978,
+      "name": "Flexential Tampa - West",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "12057011611"
@@ -114,6 +141,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "12086009102"
+    },
+    {
+      "lat": 25.791545,
+      "lon": -80.317748,
+      "name": "NocRoom Miami IT Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12086009102"
+    },
+    {
+      "lat": 25.646562,
+      "lon": -80.423435,
+      "name": "NocRoom Miami IT Services",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12086980200"
     },
     {
       "lat": 25.646562,

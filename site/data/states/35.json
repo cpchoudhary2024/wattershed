@@ -1,13 +1,13 @@
 {
   "density": {
-    "35001000401": 61.2,
-    "35001001800": 86.6,
-    "35001002100": 86.6,
-    "35001002700": 79.1,
-    "35001004001": 50.0,
+    "35001000401": 93.5,
+    "35001001800": 100.0,
+    "35001002100": 100.0,
+    "35001002700": 100.0,
+    "35001004001": 61.2,
     "35001980000": 70.7,
-    "35013001203": 50.0,
-    "35049001002": 50.0,
+    "35013001203": 61.2,
+    "35049001002": 61.2,
     "35061970404": 100.0,
     "35061980300": 100.0
   },
@@ -22,6 +22,24 @@
       "tract": "35001000401"
     },
     {
+      "lat": 35.103293,
+      "lon": -106.589349,
+      "name": "Southwest Cyberport",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001000401"
+    },
+    {
+      "lat": 35.089683,
+      "lon": -106.619067,
+      "name": "",
+      "operator": "UNMH",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001001800"
+    },
+    {
       "lat": 35.086739,
       "lon": -106.615348,
       "name": "UNM Data Center",
@@ -31,9 +49,36 @@
       "tract": "35001001800"
     },
     {
+      "lat": 35.086739,
+      "lon": -106.615348,
+      "name": "UNM Data Center",
+      "operator": "UNM",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001001800"
+    },
+    {
       "lat": 35.084449,
       "lon": -106.648985,
       "name": "123 Central",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001002100"
+    },
+    {
+      "lat": 35.084449,
+      "lon": -106.648985,
+      "name": "123 Central",
+      "operator": "bigbyte.cc",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001002100"
+    },
+    {
+      "lat": 35.088629,
+      "lon": -106.652646,
+      "name": "505 Marquette",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -53,6 +98,15 @@
       "lon": -106.653671,
       "name": "Oso Grande",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "35001002700"
+    },
+    {
+      "lat": 35.092501,
+      "lon": -106.653671,
+      "name": "Oso Grande",
+      "operator": "Oso Grande",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "35001002700"

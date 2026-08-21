@@ -1,19 +1,19 @@
 {
   "density": {
-    "55015020308": 50.0,
-    "55025000800": 61.2,
-    "55025001605": 61.2,
+    "55015020308": 61.2,
+    "55025000800": 79.1,
+    "55025001605": 86.6,
     "55027961000": 50.0,
-    "55033970802": 50.0,
-    "55077960500": 50.0,
-    "55079013600": 61.2,
-    "55079110100": 61.2,
-    "55079187200": 50.0,
+    "55033970802": 61.2,
+    "55077960500": 61.2,
+    "55079013600": 86.6,
+    "55079110100": 86.6,
+    "55079187200": 61.2,
     "55089630100": 50.0,
-    "55101001703": 50.0,
+    "55101001703": 61.2,
     "55101001706": 50.0,
     "55127000400": 50.0,
-    "55133203307": 50.0
+    "55133203307": 61.2
   },
   "facilities": [
     {
@@ -48,6 +48,15 @@
       "lon": -89.392279,
       "name": "Lumen Madison 1 Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55025001605"
+    },
+    {
+      "lat": 43.067716,
+      "lon": -89.392279,
+      "name": "Lumen Madison 1 Data Center",
+      "operator": "Lumen Technologies",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "55025001605"
@@ -89,8 +98,26 @@
       "tract": "55079013600"
     },
     {
+      "lat": 43.043941,
+      "lon": -87.953979,
+      "name": "Data Holdings Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55079013600"
+    },
+    {
       "lat": 43.009378,
       "lon": -87.961062,
+      "name": "TierPoint Milwaukee",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55079110100"
+    },
+    {
+      "lat": 43.009794,
+      "lon": -87.961093,
       "name": "TierPoint Milwaukee",
       "operator": "",
       "status": "operational",

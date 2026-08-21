@@ -1,7 +1,7 @@
 {
   "density": {
-    "30017961600": 50.0,
-    "30111001704": 50.0
+    "30017961600": 61.2,
+    "30111001704": 70.7
   },
   "facilities": [
     {
@@ -21,6 +21,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "30039961702"
+    },
+    {
+      "lat": 45.743079,
+      "lon": -108.603014,
+      "name": "Parsec Data Management",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "30111001704"
     },
     {
       "lat": 45.743079,

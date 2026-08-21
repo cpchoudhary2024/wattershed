@@ -1,22 +1,22 @@
 {
   "density": {
-    "13067030104": 50.0,
-    "13067030405": 50.0,
+    "13067030104": 61.2,
+    "13067030405": 61.2,
     "13097080105": 100.0,
-    "13113140204": 70.7,
-    "13117130603": 86.6,
-    "13121000700": 86.6,
-    "13121001302": 86.6,
-    "13121001802": 86.6,
-    "13121010801": 50.0,
-    "13121011421": 50.0,
+    "13113140204": 86.6,
+    "13117130603": 100.0,
+    "13121000700": 100.0,
+    "13121001302": 100.0,
+    "13121001802": 100.0,
+    "13121010801": 61.2,
+    "13121011421": 61.2,
     "13121011618": 100.0,
     "13121011640": 100.0,
     "13121011652": 100.0,
-    "13121011901": 86.6,
-    "13135050224": 86.6,
-    "13135050324": 50.0,
-    "13215010605": 50.0,
+    "13121011901": 100.0,
+    "13135050224": 100.0,
+    "13135050324": 61.2,
+    "13215010605": 61.2,
     "13217100202": 100.0
   },
   "facilities": [
@@ -156,6 +156,15 @@
       "tract": "13121001302"
     },
     {
+      "lat": 33.771568,
+      "lon": -84.366859,
+      "name": "Google Fiber",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121001302"
+    },
+    {
       "lat": 33.765139,
       "lon": -84.383739,
       "name": "CenturyLink",
@@ -210,10 +219,28 @@
       "tract": "13121011640"
     },
     {
+      "lat": 34.082058,
+      "lon": -84.267292,
+      "name": "Hewlett-Packard",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011640"
+    },
+    {
       "lat": 34.086987,
       "lon": -84.251824,
       "name": "Flexential Atlanta - Alpharetta Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.086986,
+      "lon": -84.251818,
+      "name": "Flexential Atlanta - Alpharetta Data Center",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13121011652"
@@ -231,6 +258,24 @@
       "lat": 34.093706,
       "lon": -84.250878,
       "name": "Secure Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.093706,
+      "lon": -84.250878,
+      "name": "Secure Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011652"
+    },
+    {
+      "lat": 34.094813,
+      "lon": -84.235724,
+      "name": "Strategic Datasphere",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -259,6 +304,24 @@
       "lon": -84.391481,
       "name": "Atlanta ATL13",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011901"
+    },
+    {
+      "lat": 33.755519,
+      "lon": -84.391481,
+      "name": "Atlanta ATL13",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011901"
+    },
+    {
+      "lat": 33.755986,
+      "lon": -84.391171,
+      "name": "CoreSite AT1",
+      "operator": "CoreSite",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13121011901"

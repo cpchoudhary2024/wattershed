@@ -1,20 +1,20 @@
 {
   "density": {
     "51041100403": 100.0,
-    "51047930204": 61.2,
-    "51059460501": 93.5,
+    "51047930204": 70.7,
+    "51059460501": 100.0,
     "51059460503": 100.0,
     "51059471201": 100.0,
     "51059480902": 100.0,
     "51059481202": 100.0,
-    "51059481900": 86.6,
+    "51059481900": 100.0,
     "51059482505": 100.0,
     "51059490104": 100.0,
-    "51061930305": 70.7,
-    "51061930306": 79.1,
-    "51061930401": 50.0,
-    "51069050700": 50.0,
-    "51087200904": 50.0,
+    "51061930305": 86.6,
+    "51061930306": 93.5,
+    "51061930401": 61.2,
+    "51069050700": 61.2,
+    "51087200904": 61.2,
     "51087201404": 100.0,
     "51087980100": 50.0,
     "51107610604": 100.0,
@@ -34,7 +34,7 @@
     "51107611812": 100.0,
     "51107611901": 100.0,
     "51107980100": 100.0,
-    "51117930600": 70.7,
+    "51117930600": 79.1,
     "51153901303": 100.0,
     "51153901304": 100.0,
     "51153901409": 100.0,
@@ -45,8 +45,8 @@
     "51153901504": 100.0,
     "51153901507": 100.0,
     "51153901508": 100.0,
-    "51660000402": 50.0,
-    "51680000500": 50.0,
+    "51660000402": 61.2,
+    "51680000500": 70.7,
     "51683910402": 100.0,
     "51760030502": 50.0,
     "51840000201": 50.0
@@ -116,6 +116,15 @@
       "tract": "51059460501"
     },
     {
+      "lat": 38.913724,
+      "lon": -77.225882,
+      "name": "8100 Boone Boulevard",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059460501"
+    },
+    {
       "lat": 38.908367,
       "lon": -77.219744,
       "name": "Element Critical VA1",
@@ -156,6 +165,15 @@
       "lon": -77.211619,
       "name": "Lumen McLean",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059471201"
+    },
+    {
+      "lat": 38.920854,
+      "lon": -77.211571,
+      "name": "Lumen McLean",
+      "operator": "Lumen Technologies",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51059471201"
@@ -449,6 +467,15 @@
       "tract": "51087201404"
     },
     {
+      "lat": 37.489234,
+      "lon": -77.247476,
+      "name": "RIC1 DC1",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
       "lat": 37.488616,
       "lon": -77.24621,
       "name": "RIC1 DC2",
@@ -458,10 +485,28 @@
       "tract": "51087201404"
     },
     {
+      "lat": 37.488616,
+      "lon": -77.24621,
+      "name": "RIC1 DC2",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
       "lat": 37.487858,
       "lon": -77.244826,
       "name": "RIC1 DC3",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.487858,
+      "lon": -77.244826,
+      "name": "RIC1 DC3",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51087201404"
@@ -773,6 +818,15 @@
       "tract": "51107611006"
     },
     {
+      "lat": 39.019496,
+      "lon": -77.457953,
+      "name": "Cologix ASH2",
+      "operator": "Cologix",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
       "lat": 39.01988,
       "lon": -77.459803,
       "name": "Digital Realty ACC3",
@@ -966,6 +1020,15 @@
       "lon": -77.432973,
       "name": "Amazon IAD10",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
+      "lat": 39.021675,
+      "lon": -77.432973,
+      "name": "Amazon IAD10",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611018"
@@ -1205,10 +1268,37 @@
       "tract": "51107611019"
     },
     {
+      "lat": 39.016014,
+      "lon": -77.471954,
+      "name": "NTT Ashburn VA7 Data Center",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.018788,
+      "lon": -77.475672,
+      "name": "NTT Ashburn VA8 Data Center",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
       "lat": 39.020189,
       "lon": -77.475509,
       "name": "NTT Ashburn VA8 Data Centre",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611019"
+    },
+    {
+      "lat": 39.013795,
+      "lon": -77.476938,
+      "name": "Sabey Data Centers Ashburn - Building A",
+      "operator": "Sabey Data Centers",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611019"
@@ -1484,6 +1574,51 @@
       "tract": "51107611020"
     },
     {
+      "lat": 39.005445,
+      "lon": -77.478515,
+      "name": "CloudHQ LC1",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.00392,
+      "lon": -77.472678,
+      "name": "CloudHQ LC10",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.006588,
+      "lon": -77.477699,
+      "name": "CloudHQ LC11",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.004995,
+      "lon": -77.476723,
+      "name": "CloudHQ LC13",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.006121,
+      "lon": -77.475951,
+      "name": "CloudHQ LC14",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
       "lat": 39.011755,
       "lon": -77.462459,
       "name": "CloudHQ LC2",
@@ -1497,6 +1632,33 @@
       "lon": -77.460425,
       "name": "CloudHQ LC3",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.009805,
+      "lon": -77.476734,
+      "name": "CloudHQ LC5",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.00206,
+      "lon": -77.468333,
+      "name": "CloudHQ LC8",
+      "operator": "CloudHQ",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.003503,
+      "lon": -77.470436,
+      "name": "CloudHQ LC9",
+      "operator": "CloudHQ",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611020"
@@ -1745,6 +1907,15 @@
       "tract": "51107611020"
     },
     {
+      "lat": 38.998508,
+      "lon": -77.440637,
+      "name": "Vantage VA16",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
       "lat": 39.043496,
       "lon": -77.54084,
       "name": "42254 THUNDERBALL DR",
@@ -1830,6 +2001,15 @@
       "lon": -77.4147,
       "name": "Amazon Web Services IAD69",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611501"
+    },
+    {
+      "lat": 39.025485,
+      "lon": -77.4147,
+      "name": "Amazon Web Services IAD69",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611501"
@@ -2663,6 +2843,15 @@
       "tract": "51153901418"
     },
     {
+      "lat": 38.790495,
+      "lon": -77.54111,
+      "name": "Amazon IAD11",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
       "lat": 38.789885,
       "lon": -77.548229,
       "name": "Amazon IAD14",
@@ -2676,6 +2865,15 @@
       "lon": -77.54001,
       "name": "Amazon IAD24",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.790346,
+      "lon": -77.54001,
+      "name": "Amazon IAD24",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901418"
@@ -2703,6 +2901,15 @@
       "lon": -77.538266,
       "name": "Amazon IAD7",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901418"
+    },
+    {
+      "lat": 38.791199,
+      "lon": -77.538266,
+      "name": "Amazon IAD7",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901418"
@@ -2766,6 +2973,15 @@
       "lon": -77.594905,
       "name": "VA 4",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901421"
+    },
+    {
+      "lat": 38.778061,
+      "lon": -77.594905,
+      "name": "VA 4",
+      "operator": "Digital Realty",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901421"
@@ -2843,6 +3059,15 @@
       "tract": "51153901507"
     },
     {
+      "lat": 38.799973,
+      "lon": -77.609964,
+      "name": "NTT VA11 Data Center",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901507"
+    },
+    {
       "lat": 38.79274,
       "lon": -77.6292,
       "name": "PW Digital Gateway",
@@ -2913,6 +3138,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51660000402"
+    },
+    {
+      "lat": 37.415688,
+      "lon": -79.142706,
+      "name": "Lumos Networks",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51680000500"
     },
     {
       "lat": 37.415688,

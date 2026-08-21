@@ -1,12 +1,12 @@
 {
   "density": {
-    "40013796400": 50.0,
+    "40013796400": 61.2,
     "40097040100": 50.0,
-    "40109106912": 50.0,
+    "40109106912": 70.7,
     "40143002500": 100.0,
-    "40143005808": 50.0,
-    "40143009008": 61.2,
-    "40143009019": 61.2
+    "40143005808": 61.2,
+    "40143009008": 86.6,
+    "40143009019": 79.1
   },
   "facilities": [
     {
@@ -46,9 +46,45 @@
       "tract": "40109106912"
     },
     {
+      "lat": 35.467205,
+      "lon": -97.649745,
+      "name": "Rack59 Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40109106912"
+    },
+    {
+      "lat": 36.153287,
+      "lon": -95.989191,
+      "name": "OCOSA",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
       "lat": 36.15859,
       "lon": -95.988629,
       "name": "TierPoint",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
+      "lat": 36.153294,
+      "lon": -95.989193,
+      "name": "TulsaConnect",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
+      "lat": 36.148452,
+      "lon": -95.99082,
+      "name": "TulsaConnect",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -82,6 +118,15 @@
       "tract": "40143002500"
     },
     {
+      "lat": 36.148501,
+      "lon": -95.990514,
+      "name": "Windstream",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143002500"
+    },
+    {
       "lat": 36.26255,
       "lon": -95.910041,
       "name": "Cherokee Data Center",
@@ -89,6 +134,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "40143005808"
+    },
+    {
+      "lat": 36.099474,
+      "lon": -95.838283,
+      "name": "TulsaConnect DC3",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40143009008"
     },
     {
       "lat": 36.099474,

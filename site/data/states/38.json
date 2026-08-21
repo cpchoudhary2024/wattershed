@@ -22,6 +22,15 @@
       "tract": "38017040800"
     },
     {
+      "lat": 46.974172,
+      "lon": -96.87394,
+      "name": "Applied Digital",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38017040800"
+    },
+    {
       "lat": 46.013722,
       "lon": -98.572551,
       "name": "Applied Digital / Ellendale Data Center",

@@ -1,16 +1,16 @@
 {
   "density": {
     "24003730404": 50.0,
-    "24003751200": 50.0,
-    "24005404101": 50.0,
-    "24021751003": 50.0,
-    "24027606907": 50.0,
-    "24031701425": 61.2,
-    "24033807408": 50.0,
-    "24510040100": 86.6,
-    "24510210100": 79.1,
-    "24510240100": 86.6,
-    "24510260404": 70.7
+    "24003751200": 61.2,
+    "24005404101": 70.7,
+    "24021751003": 61.2,
+    "24027606907": 61.2,
+    "24031701425": 79.1,
+    "24033807408": 61.2,
+    "24510040100": 100.0,
+    "24510210100": 100.0,
+    "24510240100": 100.0,
+    "24510260404": 93.5
   },
   "facilities": [
     {
@@ -36,6 +36,15 @@
       "lon": -76.81155,
       "name": "Expedient Owings Mills",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24005404101"
+    },
+    {
+      "lat": 39.427318,
+      "lon": -76.81155,
+      "name": "Expedient Owings Mills",
+      "operator": "Expedient",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "24005404101"
@@ -86,10 +95,37 @@
       "tract": "24510040100"
     },
     {
+      "lat": 39.291758,
+      "lon": -76.620374,
+      "name": "AiNET One Market Center",
+      "operator": "AiNET",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510040100"
+    },
+    {
       "lat": 39.287702,
       "lon": -76.606489,
       "name": "Crown Castle Baltimore",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510040100"
+    },
+    {
+      "lat": 39.287702,
+      "lon": -76.606489,
+      "name": "Crown Castle Baltimore",
+      "operator": "Crown Castle Fiber",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510040100"
+    },
+    {
+      "lat": 39.291759,
+      "lon": -76.620402,
+      "name": "Lumen Baltimore",
+      "operator": "Lumen Technologies",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "24510040100"
@@ -108,6 +144,15 @@
       "lon": -76.591671,
       "name": "Expedient Tidepoint",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "24510240100"
+    },
+    {
+      "lat": 39.274655,
+      "lon": -76.591671,
+      "name": "Expedient Tidepoint",
+      "operator": "Expedient",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "24510240100"

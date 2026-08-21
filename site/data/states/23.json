@@ -1,7 +1,7 @@
 {
   "density": {
-    "23005000300": 50.0,
-    "23005011100": 50.0
+    "23005000300": 70.7,
+    "23005011100": 61.2
   },
   "facilities": [
     {
@@ -9,6 +9,15 @@
       "lon": -70.261379,
       "name": "FirstLight Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "23005000300"
+    },
+    {
+      "lat": 43.657839,
+      "lon": -70.261379,
+      "name": "FirstLight Data Center",
+      "operator": "FirstLight",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "23005000300"
