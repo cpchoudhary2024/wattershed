@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Validation pipeline: does Wattershed's screening actually track where real
 data-center siting fights happen?
 

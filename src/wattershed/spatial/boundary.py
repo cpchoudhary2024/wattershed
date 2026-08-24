@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Census-tract boundary proximity for a geocoded point.
 
 Why this exists: every tract-level number Wattershed reports — the whole

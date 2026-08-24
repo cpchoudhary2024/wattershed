@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """OpenStreetMap / Overpass adapter — data-centre facility discovery.
 
 This is the source that actually produced the repository's 1,569-site census

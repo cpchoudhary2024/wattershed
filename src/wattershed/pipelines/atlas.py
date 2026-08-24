@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """National Siting Pressure Atlas: every U.S. county scored on the three
 pillars, computed entirely from the committed reference artifacts.
 

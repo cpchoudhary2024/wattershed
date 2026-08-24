@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Water-stress pillar (0–100).
 
 Three sub-signals with distinct time horizons, blended with documented
@@ -35,6 +36,36 @@ def score_water(
     history: dict,
     demand_context: dict | None,
 ) -> PillarScore:
+    """Score the water-stress pillar for one screening point.
+
+    Blends three sub-signals on documented weights (structural 50%, chronic 30%,
+    current 20%); see METHODOLOGY.md §6 for the sensitivity analysis. Site demand
+    is deliberately excluded from the score because it depends on user-supplied MW,
+    though it can escalate the overall tier (see ``tiers.py``).
+
+    Args:
+        bws (dict | None): WRI Aqueduct 4.0 sub-basin record. Expects
+            ``bws_cat`` (int, -1..4), ``bws_raw`` (float, withdrawals ÷ renewable
+            supply, dimensionless) and ``bws_label`` (str). None when the point
+            falls outside Aqueduct coverage.
+        current (dict): This week's US Drought Monitor record; ``d_cat`` is the
+            D0-D4 category (int 0-4) or None for no drought.
+        history (dict): Five-year county USDM climatology; ``dsci_mean`` is the
+            mean Drought Severity and Coverage Index (dimensionless, 0-500).
+        demand_context (dict | None): Modeled site draw vs. county public supply.
+            Reported for context only; does NOT enter the score.
+
+    Returns:
+        PillarScore: Score on 0-100 where HIGHER means MORE water-stressed, with
+        per-indicator provenance, the component breakdown, plain-language drivers,
+        and an explicit list of data gaps.
+
+    Assumptions:
+        Aqueduct's 1979-2019 baseline is treated as the long-run structural signal
+        and is not adjusted for recent hydrology. 'Arid & low water use' (category
+        -1) is scored 85, not 5: absolute availability is minimal even where
+        current use is low, and a new large withdrawal changes that arithmetic.
+    """
     indicators: list[Indicator] = []
     components: dict[str, float] = {}
     drivers: list[str] = []

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """National tract reference table: the committed artifact that makes
 screening keyless, offline-capable, and reproducible.
 

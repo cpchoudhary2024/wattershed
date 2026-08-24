@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """EIA v2 adapter — operating generator capacity, by balancing authority.
 
 KEY-GATED BY DESIGN. Every other source in Wattershed is keyless, and

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Builds `data_catalog.json` — the machine-readable schema map.
 
 One artifact, generated from `DataVersionController` + `provenance.SOURCES`,

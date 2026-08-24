@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """EPA eGRID2023 (rev.2): subregion emission rates, resource mix, net generation.
 
 eGRID is the standard U.S. grid-accounting dataset used in GHG protocol

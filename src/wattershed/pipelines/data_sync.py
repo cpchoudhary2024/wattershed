@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Bi-weekly data sync: refresh the facility registry, density layer and news.
 
 Design constraints this file is built around:

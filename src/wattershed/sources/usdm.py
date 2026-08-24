@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """U.S. Drought Monitor.
 
 Two signals with different epistemics, kept separate on purpose:

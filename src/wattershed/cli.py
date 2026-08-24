@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Wattershed CLI.
 
   wattershed screen --lat 35.06 --lon -90.07 --mw 300 --cooling evaporative

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Screening orchestrator: one point in, one fully-provenanced Screening out."""
 
 from __future__ import annotations

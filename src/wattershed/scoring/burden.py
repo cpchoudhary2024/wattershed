@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Cumulative community-burden pillar (0–100).
 
 CalEnviroScreen-style multiplicative structure, rebuilt at tract level from

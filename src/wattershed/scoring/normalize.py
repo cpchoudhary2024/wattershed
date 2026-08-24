@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Pure normalization primitives shared by all three pillars.
 
 Every pillar independently reimplemented `band()` and the weighted blend, so

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """WRI Aqueduct 4.0 — baseline water stress (bws), annual, HydroBASINS level-6.
 
 Baseline water stress = total demand / available renewable supply (1979–2019

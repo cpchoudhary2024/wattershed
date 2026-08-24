@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Provenance ledger: every number Wattershed reports carries its source.
 
 Design rule: a screening output is only as defensible as its weakest citation,

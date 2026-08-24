@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Resource-demand model: announced IT capacity → energy, water, CO2e.
 
 Everything here is a MODELED ESTIMATE from published engineering factors —
@@ -75,6 +76,36 @@ def build_demand_model(
     county_public_supply_mgd: float | None,
     grid_mix: dict[str, float] | None,
 ) -> DemandModel:
+    """Model annual energy, water and carbon demand for a data center.
+
+    Evaluates every cooling technology in ``COOLING_FACTORS`` so alternatives can
+    be compared side by side at the same IT load.
+
+    Args:
+        it_mw (float): IT (server) load, megawatts. Excludes cooling and
+            distribution overhead, which PUE supplies.
+        cooling (CoolingTech): The technology selected as the headline scenario.
+        co2e_lb_per_mwh (float | None): eGRID subregion annual output emission
+            rate, lb CO2e/MWh. None suppresses the carbon estimate.
+        subregion_net_gen_mwh (float | None): eGRID subregion annual net
+            generation, MWh/yr, used for the load-share context.
+        county_public_supply_mgd (float | None): County public-supply withdrawals,
+            million gallons per day (USGS). None suppresses the percent-of-supply
+            comparison.
+        grid_mix (dict[str, float] | None): Fuel shares (0-1) for the indirect
+            (thermoelectric) water estimate via Macknick et al. factors.
+
+    Returns:
+        DemandModel: Per-cooling-technology scenarios carrying facility energy
+        (MWh/yr), direct water (Mgal/yr and MGD), percent of county public supply,
+        and CO2e (tonnes/yr).
+
+    Assumptions:
+        Utilization is held at ``UTILIZATION`` for all 8,760 h/yr. WUE is applied
+        per IT kWh (not facility kWh), matching the Uptime Institute definition.
+        Direct water is on-site cooling only; generation (indirect) water is
+        reported separately. Carbon uses annual-average, location-based accounting.
+    """
     it_energy = it_mw * 1000 * HOURS_PER_YEAR * UTILIZATION / 1000  # MWh/yr
     scenarios: list[DemandScenario] = []
     for tech, (pue, wue) in COOLING_FACTORS.items():

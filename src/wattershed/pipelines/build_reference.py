@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """National reference build: assemble the committed tract-indicator table.
 
 Steps (each independently cached; safe to re-run):

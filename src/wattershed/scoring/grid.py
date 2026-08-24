@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Grid strain & carbon pillar (0–100).
 
   carbon (60%) — eGRID subregion CO2e output-rate percentile across all
@@ -19,6 +20,31 @@ WEIGHTS = {"carbon": 0.6, "strain": 0.4}
 
 
 def score_grid(egrid_stats: dict | None, nerc_risk: dict | None, load_share_pct: float | None) -> PillarScore:
+    """Score the grid strain and carbon pillar for one screening point.
+
+    Blends grid carbon intensity (60%) with resource-adequacy risk (40%).
+
+    Args:
+        egrid_stats (dict | None): EPA eGRID2023 subregion record. Expects
+            ``co2e_lb_per_mwh`` (float, lb CO2e/MWh annual output rate),
+            ``rate_percentile`` (float, 0-100 across US subregions),
+            ``fossil_share_pct`` and ``carbon_free_share_pct`` (float, %).
+            None or malformed degrades to a data gap rather than raising.
+        nerc_risk (dict | None): NERC 2025 LTRA resource-adequacy category for the
+            mapped assessment area, scored high=90 / elevated=55 / normal=10.
+        load_share_pct (float | None): Modeled facility load as a percent of
+            subregion net generation. Reported and able to escalate the tier, but
+            NOT part of the score (it depends on user-supplied MW).
+
+    Returns:
+        PillarScore: Score on 0-100 where HIGHER means more carbon-intensive and
+        more adequacy-constrained, with indicator-level provenance.
+
+    Assumptions:
+        eGRID rates are ANNUAL AVERAGE, location-based emission factors, not
+        marginal or hourly-matched. A facility's true marginal emissions can differ
+        substantially; see LIMITATIONS.md.
+    """
     indicators: list[Indicator] = []
     components: dict[str, float] = {}
     drivers: list[str] = []

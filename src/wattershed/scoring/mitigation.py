@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Mitigation engine: rule-based, driver-aware recommendations.
 
 Each rule fires off specific screening findings and cites a real, named

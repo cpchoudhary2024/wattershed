@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Spatial fatal-flaw screening: flood, wetland, and seismic conflicts.
 
 These are SITE-CONSTRAINT flags, not pillar scores, and they are kept out of

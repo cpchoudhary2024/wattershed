@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """CDC PLACES (2024 release) — tract-level modeled health outcomes.
 
 Measures used: CASTHMA (current adult asthma), GHLTH (fair/poor self-rated

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Infrastructure Density Modifier — a DESCRIPTIVE layer, not a score input.
 
 Read this before wiring it anywhere.

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Utility / balancing-authority context for large-load concentration.
 
 WHAT THIS DELIBERATELY IS NOT

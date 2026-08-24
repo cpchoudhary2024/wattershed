@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Shared download/caching layer.
 
 Every raw file lands in data/cache with a .meta.json stamp (source id, URL,

@@ -30,3 +30,70 @@ site/artifact.html
 # Local verification artifacts (staging copy of site/, preview renders)
 out/_pages/
 out/*-preview.html
+
+# ─── Data-engineering hygiene (added by audit) ───
+# Secrets — never commit credentials
+.env
+.env.*
+!.env.example
+
+# Raw / bulk data: keep on disk, keep out of git (regenerate or fetch on demand)
+data/raw/*
+data/cache/
+*.nc
+*.nc4
+*.hdf5
+*.parquet
+*.zip
+*.7z
+
+# Build artifacts & dependency trees
+node_modules/
+dist/
+build/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Stray logs & run debris
+*.log
+logs/
+*.pid
+
+# Office lock/temp files (e.g. ~$report.docx)
+~$*
+*.tmp
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Bulk geospatial working data (rebuilt by the sync/reference pipelines)
+data/interim/
+
+# Keep the curated/published artifacts and pipeline source that live under data/
+# (these are intentionally version-controlled deliverables, not bulk inputs).
+!data/processed/tract_indicators.parquet
+!data/study/
+!data/study/**
+!data/curated/
+!data/curated/**
+
+# ─── Keep the standard scaffold under version control ───
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/
+!outputs/plots/
+!outputs/plots/.gitkeep
+!notebooks/

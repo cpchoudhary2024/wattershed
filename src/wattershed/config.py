@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Paths, environment, and shared constants.
 
 Data layout (relative to the repo root, overridable via WATTERSHED_DATA_DIR):

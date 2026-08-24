@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """ACS 2019–2023 5-year tract indicators from the Census *table-based summary
 file* — bulk pipe-delimited files, fully keyless and reproducible.
 

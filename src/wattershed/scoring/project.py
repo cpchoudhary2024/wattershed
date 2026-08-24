@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Project overlay: mechanical configuration → PUE / WUE / CUE and adjusted demand.
 
 WHY THIS IS AN OVERLAY AND NOT A PILLAR EDIT

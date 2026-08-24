@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Centralized version + resolution controller for every ingested index block.
 
 `provenance.SOURCES` answers *who published this and under what licence*.

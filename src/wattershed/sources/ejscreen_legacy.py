@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """EJScreen 2.32 pollution-burden fields (community-restored replica).
 
 EPA withdrew EJScreen from public access in February 2025. Five pollution

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """U.S. Census Bureau geocoder (free, keyless).
 
 - coordinates → tract GEOID / county / state  (point screening context)

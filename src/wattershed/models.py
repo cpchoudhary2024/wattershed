@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Typed result models. These define the JSON contract of a screening run."""
 
 from __future__ import annotations

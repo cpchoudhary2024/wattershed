@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """USGS county water use, 2015 (latest complete county-level compilation).
 
 Used ONLY as denominator context ("modeled site demand vs. county public-

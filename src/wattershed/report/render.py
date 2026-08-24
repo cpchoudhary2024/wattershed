@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Per-site HTML report renderer — a print-ready screening memo.
 
 Design: light, print-first document (consulting deliverable). All CSS inline;

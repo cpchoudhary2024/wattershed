@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Wattershed — open environmental screening for U.S. data center siting.
 
 Three screening pillars from public data, with full provenance:

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """NERC 2025 LTRA resource-adequacy risk categories.
 
 Edition, publication date and horizon are declared once in

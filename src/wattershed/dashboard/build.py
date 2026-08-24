@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Static dashboard builder.
 
 Emits ONE self-contained HTML file: state outlines are projected to SVG paths

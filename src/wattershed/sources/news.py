@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Google News RSS adapter — announcement tracking, NOT a data source.
 
 Hard boundary: nothing this module returns may ever reach a pillar score.

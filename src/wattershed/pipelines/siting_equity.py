@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Siting-equity study: do U.S. data centers locate disproportionately in
 water-stressed, grid-strained, or high community-burden places?
 

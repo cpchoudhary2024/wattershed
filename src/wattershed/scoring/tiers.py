@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Chandra Prakash Choudhary. All rights reserved.
 """Overall screening tier: rule-based, not a weighted composite.
 
 Wattershed deliberately does NOT average the three pillars into one number.
