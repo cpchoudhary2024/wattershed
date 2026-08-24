@@ -1,0 +1,5 @@
+# Generated artifacts — excluded from GitHub Linguist language statistics.
+# These are rendered outputs of the Python pipeline, not authored source.
+out/**                linguist-generated=true
+site/**               linguist-generated=true
+docs/**               linguist-documentation=true
