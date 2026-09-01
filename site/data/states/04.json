@@ -1,11 +1,11 @@
 {
   "density": {
-    "04003000301": 61.2,
+    "04003000301": 70.7,
     "04013061052": 100.0,
     "04013061054": 86.6,
     "04013061058": 100.0,
     "04013061300": 100.0,
-    "04013110502": 86.6,
+    "04013110502": 93.5,
     "04013111203": 100.0,
     "04013113601": 100.0,
     "04013115200": 100.0,
@@ -49,6 +49,15 @@
       "tract": "04003000301"
     },
     {
+      "lat": 31.972675,
+      "lon": -110.304752,
+      "name": "",
+      "operator": "DirecTV",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04003000301"
+    },
+    {
       "lat": 33.439377,
       "lon": -112.377048,
       "name": "",
@@ -85,6 +94,15 @@
       "tract": "04013061058"
     },
     {
+      "lat": 33.409031,
+      "lon": -112.364827,
+      "name": "PHX-11",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061058"
+    },
+    {
       "lat": 33.419491,
       "lon": -112.359988,
       "name": "Stream Data Centers PHX-1",
@@ -101,6 +119,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013061300"
+    },
+    {
+      "lat": 33.493351,
+      "lon": -112.07055,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013110502"
     },
     {
       "lat": 33.493351,
@@ -152,6 +179,15 @@
       "lon": -111.99756,
       "name": "QTS",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013113601"
+    },
+    {
+      "lat": 33.460881,
+      "lon": -111.997156,
+      "name": "QTS",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013113601"
@@ -521,6 +557,15 @@
       "lon": -111.647529,
       "name": "EdgeConneX PHX02 Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422655"
+    },
+    {
+      "lat": 33.352009,
+      "lon": -111.647529,
+      "name": "EdgeConneX PHX02 Data Center",
+      "operator": "EdgeConneX",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013422655"

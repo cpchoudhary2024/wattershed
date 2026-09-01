@@ -20,6 +20,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "05145070402"
+    },
+    {
+      "lat": 35.249216,
+      "lon": -91.740906,
+      "name": "Searcy Information Technologies",
+      "operator": "City of Searcy",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "05145070402"
     }
   ],
   "state_fips": "05"

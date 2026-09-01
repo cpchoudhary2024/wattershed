@@ -3,7 +3,7 @@
     "19049050812": 100.0,
     "19093090300": 50.0,
     "19103000306": 61.2,
-    "19153005101": 61.2,
+    "19153005101": 70.7,
     "19153010601": 100.0,
     "19153010703": 100.0,
     "19153010708": 50.0,
@@ -90,6 +90,24 @@
       "tract": "19049050812"
     },
     {
+      "lat": 41.539814,
+      "lon": -93.826314,
+      "name": "Microsoft",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19049050812"
+    },
+    {
+      "lat": 41.53967,
+      "lon": -93.828665,
+      "name": "Microsoft",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19049050812"
+    },
+    {
       "lat": 41.616852,
       "lon": -93.924397,
       "name": "Apple",
@@ -115,6 +133,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "19103000306"
+    },
+    {
+      "lat": 41.587993,
+      "lon": -93.631014,
+      "name": "Aureon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19153005101"
     },
     {
       "lat": 41.587993,
@@ -522,6 +549,132 @@
       "tract": "19155031900"
     },
     {
+      "lat": 41.177346,
+      "lon": -95.804857,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.177239,
+      "lon": -95.806318,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.177483,
+      "lon": -95.803186,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.177489,
+      "lon": -95.800922,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.175523,
+      "lon": -95.806778,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.175525,
+      "lon": -95.805639,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.175526,
+      "lon": -95.804509,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.175528,
+      "lon": -95.803375,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.175531,
+      "lon": -95.802239,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.17553,
+      "lon": -95.801106,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.175537,
+      "lon": -95.799964,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.17264,
+      "lon": -95.80403,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.172646,
+      "lon": -95.802528,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
+      "lat": 41.172556,
+      "lon": -95.801127,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031900"
+    },
+    {
       "lat": 41.21956,
       "lon": -95.86058,
       "name": "Google Council Bluffs",
@@ -580,6 +733,15 @@
       "lon": -93.78702,
       "name": "Microsoft",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19181020300"
+    },
+    {
+      "lat": 41.49683,
+      "lon": -93.786996,
+      "name": "Microsoft",
+      "operator": "Microsoft",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "19181020300"

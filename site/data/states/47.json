@@ -108,6 +108,15 @@
       "tract": "47125102010"
     },
     {
+      "lat": 36.624839,
+      "lon": -87.26351,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
       "lat": 36.628255,
       "lon": -87.260102,
       "name": "Google Montgomery Data Center",
@@ -121,6 +130,15 @@
       "lon": -87.259022,
       "name": "SPC3A",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47125102010"
+    },
+    {
+      "lat": 36.624311,
+      "lon": -87.259022,
+      "name": "SPC3A",
+      "operator": "Google",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "47125102010"

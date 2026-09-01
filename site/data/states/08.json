@@ -11,7 +11,7 @@
     "08031002602": 93.5,
     "08035014014": 100.0,
     "08041002300": 50.0,
-    "08041004501": 61.2,
+    "08041004501": 70.7,
     "08041004603": 61.2
   },
   "facilities": [
@@ -203,6 +203,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "08041002300"
+    },
+    {
+      "lat": 38.78616,
+      "lon": -104.788583,
+      "name": "T5@Colorado Springs",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08041004501"
     },
     {
       "lat": 38.78616,

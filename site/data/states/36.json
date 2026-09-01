@@ -183,6 +183,15 @@
       "tract": "36063021700"
     },
     {
+      "lat": 43.082179,
+      "lon": -79.030778,
+      "name": "",
+      "operator": "US Bitcoin",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063021700"
+    },
+    {
       "lat": 43.083492,
       "lon": -79.00294,
       "name": "Blockfusion Niagra Falls",
@@ -280,6 +289,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "36087012800"
+    },
+    {
+      "lat": 41.052332,
+      "lon": -73.971774,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087013001"
     },
     {
       "lat": 41.052332,

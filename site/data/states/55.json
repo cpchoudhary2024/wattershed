@@ -4,7 +4,7 @@
     "55025000800": 79.1,
     "55025001605": 86.6,
     "55027961000": 50.0,
-    "55033970802": 61.2,
+    "55033970802": 70.7,
     "55077960500": 61.2,
     "55079013600": 86.6,
     "55079110100": 86.6,
@@ -13,7 +13,7 @@
     "55101001703": 61.2,
     "55101001706": 50.0,
     "55127000400": 50.0,
-    "55133203307": 61.2
+    "55133203307": 70.7
   },
   "facilities": [
     {
@@ -75,6 +75,15 @@
       "lon": -91.919999,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55033970802"
+    },
+    {
+      "lat": 44.877165,
+      "lon": -91.919999,
+      "name": "",
+      "operator": "West Wisconsin Telcom",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "55033970802"
@@ -174,6 +183,15 @@
       "lon": -88.216698,
       "name": "Pewaukee Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55133203307"
+    },
+    {
+      "lat": 43.051373,
+      "lon": -88.216698,
+      "name": "Pewaukee Data Center",
+      "operator": "WE Energies",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "55133203307"

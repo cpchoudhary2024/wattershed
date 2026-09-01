@@ -24,6 +24,15 @@
       "tract": "45015020707"
     },
     {
+      "lat": 33.061987,
+      "lon": -80.038293,
+      "name": "",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
       "lat": 33.064272,
       "lon": -80.041453,
       "name": "Google",
@@ -91,6 +100,69 @@
       "lon": -80.046058,
       "name": "Google",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.062184,
+      "lon": -80.039651,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.062098,
+      "lon": -80.041128,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064311,
+      "lon": -80.03845,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.066356,
+      "lon": -80.038524,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064165,
+      "lon": -80.043604,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.062039,
+      "lon": -80.044983,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45015020707"
+    },
+    {
+      "lat": 33.064442,
+      "lon": -80.046058,
+      "name": "Google",
+      "operator": "Google",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "45015020707"

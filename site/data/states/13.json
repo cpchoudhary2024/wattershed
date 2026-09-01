@@ -75,6 +75,15 @@
       "tract": "13097080105"
     },
     {
+      "lat": 33.731057,
+      "lon": -84.616081,
+      "name": "Flexential Atlanta - Douglasville 1",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
       "lat": 33.730703,
       "lon": -84.61124,
       "name": "Flexential Atlanta - Douglasville 2",
@@ -147,6 +156,15 @@
       "tract": "13121000700"
     },
     {
+      "lat": 33.777601,
+      "lon": -84.419446,
+      "name": "QTS Atlanta Data Center 2",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121000700"
+    },
+    {
       "lat": 33.771568,
       "lon": -84.366859,
       "name": "Google Fiber",
@@ -190,6 +208,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13121011421"
+    },
+    {
+      "lat": 34.060998,
+      "lon": -84.274027,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13121011618"
     },
     {
       "lat": 34.060998,
@@ -399,6 +426,33 @@
       "tract": "13217100202"
     },
     {
+      "lat": 33.601386,
+      "lon": -83.705426,
+      "name": "",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.600074,
+      "lon": -83.696847,
+      "name": "",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.598072,
+      "lon": -83.695021,
+      "name": "",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
       "lat": 33.5985,
       "lon": -83.8075,
       "name": "Meta Newton Data Center (Stanton Springs)",
@@ -412,6 +466,15 @@
       "lon": -83.700358,
       "name": "Meta Stanton Springs Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13217100202"
+    },
+    {
+      "lat": 33.600468,
+      "lon": -83.700358,
+      "name": "Meta Stanton Springs Data Center",
+      "operator": "Meta",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13217100202"

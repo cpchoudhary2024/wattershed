@@ -111,10 +111,28 @@
       "tract": "53017950300"
     },
     {
+      "lat": 47.407585,
+      "lon": -120.191579,
+      "name": "Intergate Columbia D",
+      "operator": "Sabey Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
       "lat": 47.416868,
       "lon": -120.207688,
       "name": "Microsoft EAT02",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.416868,
+      "lon": -120.207688,
+      "name": "Microsoft EAT02",
+      "operator": "Microsoft",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "53017950300"
@@ -129,12 +147,30 @@
       "tract": "53017950300"
     },
     {
+      "lat": 47.418324,
+      "lon": -120.20771,
+      "name": "Microsoft EAT03",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
       "lat": 47.419638,
       "lon": -120.213813,
       "name": "Microsoft EAT04",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
+      "tract": "53017950300"
+    },
+    {
+      "lat": 47.419638,
+      "lon": -120.213813,
+      "name": "Microsoft EAT04",
+      "operator": "Microsoft",
+      "status": "construction",
+      "status_source": "osm-lifecycle",
       "tract": "53017950300"
     },
     {

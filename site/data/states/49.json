@@ -1,8 +1,9 @@
 {
   "density": {
     "49003960601": 50.0,
-    "49035102600": 79.1,
-    "49035111906": 61.2,
+    "49035102600": 86.6,
+    "49035111906": 70.7,
+    "49035112829": 93.5,
     "49035114500": 61.2,
     "49035115211": 86.6,
     "49035980100": 61.2,
@@ -32,6 +33,15 @@
       "tract": "49035102600"
     },
     {
+      "lat": 40.766796,
+      "lon": -111.920295,
+      "name": "Flexential Salt Lake City - Fair Park",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035102600"
+    },
+    {
       "lat": 40.685569,
       "lon": -111.885051,
       "name": "Flexential Salt Lake City - Millcreek",
@@ -39,6 +49,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "49035111906"
+    },
+    {
+      "lat": 40.685569,
+      "lon": -111.885051,
+      "name": "Flexential Salt Lake City - Millcreek",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035111906"
+    },
+    {
+      "lat": 40.511452,
+      "lon": -111.888255,
+      "name": "FiberState Datacenter",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49035112829"
     },
     {
       "lat": 40.756307,
@@ -126,6 +154,33 @@
       "lon": -112.019456,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.268588,
+      "lon": -112.015101,
+      "name": "Meta",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.265564,
+      "lon": -112.01513,
+      "name": "Meta",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "49049010115"
+    },
+    {
+      "lat": 40.272331,
+      "lon": -112.015058,
+      "name": "Meta",
+      "operator": "Meta",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "49049010115"

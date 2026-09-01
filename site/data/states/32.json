@@ -5,7 +5,7 @@
     "32003001608": 100.0,
     "32003001610": 100.0,
     "32003001615": 100.0,
-    "32003002847": 93.5,
+    "32003002847": 100.0,
     "32003002979": 100.0,
     "32003002981": 100.0,
     "32003003626": 79.1,
@@ -14,6 +14,15 @@
     "32003005503": 50.0
   },
   "facilities": [
+    {
+      "lat": 36.182998,
+      "lon": -115.06267,
+      "name": "CenturyLink",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003000513"
+    },
     {
       "lat": 36.182998,
       "lon": -115.06267,
@@ -60,6 +69,15 @@
       "tract": "32003001615"
     },
     {
+      "lat": 36.143646,
+      "lon": -115.076779,
+      "name": "Switch Las Vegas 4",
+      "operator": "Switch",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003001615"
+    },
+    {
       "lat": 36.142764,
       "lon": -115.076696,
       "name": "Switch Las Vegas 5",
@@ -69,10 +87,28 @@
       "tract": "32003001615"
     },
     {
+      "lat": 36.142764,
+      "lon": -115.076696,
+      "name": "Switch Las Vegas 5",
+      "operator": "Switch",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003001615"
+    },
+    {
       "lat": 36.059754,
       "lon": -115.147172,
       "name": "DataBank Las Vegas LAS1",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002847"
+    },
+    {
+      "lat": 36.059754,
+      "lon": -115.147172,
+      "name": "DataBank Las Vegas LAS1",
+      "operator": "DataBank",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "32003002847"
@@ -99,6 +135,15 @@
       "lat": 36.064021,
       "lon": -115.221109,
       "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.059134,
+      "lon": -115.213688,
+      "name": "Switch Edge 1",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -280,6 +325,24 @@
       "lon": -119.479592,
       "name": "Switch Tahoe Reno - The Citadel Campus",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.514068,
+      "lon": -119.475515,
+      "name": "Tahoe Reno 1",
+      "operator": "Switch",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.513871,
+      "lon": -119.484853,
+      "name": "Tahoe Reno 2",
+      "operator": "Switch",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "32029970200"

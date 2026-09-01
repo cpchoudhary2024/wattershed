@@ -17,7 +17,7 @@
     "39049007961": 100.0,
     "39049007964": 100.0,
     "39049009590": 86.6,
-    "39061000700": 70.7,
+    "39061000700": 79.1,
     "39061023001": 86.6,
     "39089755601": 100.0,
     "39099811302": 61.2,
@@ -185,6 +185,33 @@
       "lon": -83.199264,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049006240"
+    },
+    {
+      "lat": 40.101767,
+      "lon": -83.199583,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049006240"
+    },
+    {
+      "lat": 40.100768,
+      "lon": -83.199475,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049006240"
+    },
+    {
+      "lat": 40.099786,
+      "lon": -83.199264,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39049006240"
@@ -613,6 +640,15 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.093616,
+      "lon": -82.751455,
+      "name": "Amazon Web Services  CMH53",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.094046,
       "lon": -82.747491,
       "name": "Amazon Web Services  CMH59",
@@ -622,10 +658,28 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.094046,
+      "lon": -82.747491,
+      "name": "Amazon Web Services  CMH59",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.096534,
       "lon": -82.752051,
       "name": "Amazon Web Services CMH56",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.096534,
+      "lon": -82.752051,
+      "name": "Amazon Web Services CMH56",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39089755601"

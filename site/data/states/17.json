@@ -19,12 +19,12 @@
     "17043840201": 100.0,
     "17043841312": 61.2,
     "17043844702": 61.2,
-    "17043845803": 61.2,
+    "17043845803": 70.7,
     "17043846102": 61.2,
     "17043846409": 100.0,
     "17043846507": 100.0,
     "17097864513": 61.2,
-    "17119403002": 61.2
+    "17119403002": 70.7
   },
   "facilities": [
     {
@@ -406,6 +406,15 @@
       "tract": "17043840201"
     },
     {
+      "lat": 41.987962,
+      "lon": -88.007222,
+      "name": "NTT Chicago CH1",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840201"
+    },
+    {
       "lat": 41.989015,
       "lon": -88.007213,
       "name": "NTT Chicago CH2",
@@ -455,6 +464,15 @@
       "lon": -87.975956,
       "name": "Datacenter (386)",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043845803"
+    },
+    {
+      "lat": 41.707134,
+      "lon": -87.975956,
+      "name": "Datacenter (386)",
+      "operator": "UChicago Argonne LLC",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17043845803"
@@ -521,6 +539,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17097864513"
+    },
+    {
+      "lat": 38.81056,
+      "lon": -89.948703,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17119403002"
     },
     {
       "lat": 38.81056,

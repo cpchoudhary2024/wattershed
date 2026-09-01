@@ -1,6 +1,6 @@
 {
   "density": {
-    "28033070421": 79.1
+    "28033070421": 86.6
   },
   "facilities": [
     {
@@ -8,6 +8,15 @@
       "lon": -90.03417,
       "name": "xAI Macrohardrr",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "28033070421"
+    },
+    {
+      "lat": 34.993488,
+      "lon": -90.03417,
+      "name": "xAI Macrohardrr",
+      "operator": "xAI",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "28033070421"

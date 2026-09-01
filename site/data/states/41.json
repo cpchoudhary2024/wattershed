@@ -99,6 +99,24 @@
       "tract": "41013950200"
     },
     {
+      "lat": 44.301672,
+      "lon": -120.894587,
+      "name": "Meta",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41013950200"
+    },
+    {
+      "lat": 44.299218,
+      "lon": -120.894582,
+      "name": "Meta",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41013950200"
+    },
+    {
       "lat": 44.289415,
       "lon": -120.875077,
       "name": "Apple",
@@ -319,6 +337,15 @@
       "lon": -119.636272,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970101"
+    },
+    {
+      "lat": 45.83655,
+      "lon": -119.689874,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41049970101"
@@ -549,6 +576,33 @@
       "tract": "41049970102"
     },
     {
+      "lat": 45.846668,
+      "lon": -119.607039,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.846754,
+      "lon": -119.609062,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.847608,
+      "lon": -119.602775,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
       "lat": 45.53169,
       "lon": -122.683765,
       "name": "H5 DC - Portland",
@@ -711,6 +765,15 @@
       "tract": "41059950800"
     },
     {
+      "lat": 45.915723,
+      "lon": -119.26997,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950800"
+    },
+    {
       "lat": 45.901451,
       "lon": -119.320522,
       "name": "Amazon Web Services",
@@ -769,6 +832,42 @@
       "lon": -119.339693,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
+      "lat": 45.901451,
+      "lon": -119.320522,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
+      "lat": 45.902766,
+      "lon": -119.320492,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
+      "lat": 45.903854,
+      "lon": -119.320477,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
+      "lat": 45.9051,
+      "lon": -119.320145,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41059950900"
@@ -999,6 +1098,15 @@
       "tract": "41067032603"
     },
     {
+      "lat": 45.554059,
+      "lon": -122.949251,
+      "name": "Aligned DC - PDX-01",
+      "operator": "Aligned Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032603"
+    },
+    {
       "lat": 45.55948,
       "lon": -122.938201,
       "name": "Flexential Portland - Hillsboro 3",
@@ -1026,10 +1134,28 @@
       "tract": "41067032603"
     },
     {
+      "lat": 45.555391,
+      "lon": -122.941087,
+      "name": "Flexential Portland - Hillsboro 4 Expansion",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032603"
+    },
+    {
       "lat": 45.556341,
       "lon": -122.939407,
       "name": "Flexential Portland - Hillsboro 5",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032603"
+    },
+    {
+      "lat": 45.556341,
+      "lon": -122.939407,
+      "name": "Flexential Portland - Hillsboro 5",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41067032603"
@@ -1170,6 +1296,15 @@
       "tract": "41067032612"
     },
     {
+      "lat": 45.556423,
+      "lon": -122.912208,
+      "name": "EdgeConneX - Portland",
+      "operator": "EdgeConneX",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032612"
+    },
+    {
       "lat": 45.558302,
       "lon": -122.917165,
       "name": "Flexential Portland - Hillsboro 2",
@@ -1192,6 +1327,15 @@
       "lon": -122.919898,
       "name": "Digital Realty PDX11 Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032700"
+    },
+    {
+      "lat": 45.56851,
+      "lon": -122.919898,
+      "name": "Digital Realty PDX11 Data Center",
+      "operator": "Digital Realty",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41067032700"

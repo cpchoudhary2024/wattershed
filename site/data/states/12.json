@@ -2,10 +2,10 @@
   "density": {
     "12001000400": 79.1,
     "12011050208": 61.2,
-    "12011060113": 61.2,
+    "12011060113": 70.7,
     "12031015926": 70.7,
     "12031017200": 61.2,
-    "12057011017": 61.2,
+    "12057011017": 70.7,
     "12057011611": 70.7,
     "12057013315": 61.2,
     "12086002402": 79.1,
@@ -53,6 +53,15 @@
       "tract": "12011060113"
     },
     {
+      "lat": 26.184994,
+      "lon": -80.286877,
+      "name": "T-Mobile Everglades MSO Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12011060113"
+    },
+    {
       "lat": 30.245748,
       "lon": -81.581723,
       "name": "Flexential Jacksonville",
@@ -84,6 +93,15 @@
       "lon": -82.368362,
       "name": "Flexential Tampa - North",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12057011017"
+    },
+    {
+      "lat": 28.07387,
+      "lon": -82.368362,
+      "name": "Flexential Tampa - North",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "12057011017"
@@ -186,6 +204,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "12095017401"
+    },
+    {
+      "lat": 28.294069,
+      "lon": -81.834865,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "12105012306"
     },
     {
       "lat": 28.294069,

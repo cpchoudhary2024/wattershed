@@ -69,6 +69,15 @@
       "tract": "20091980001"
     },
     {
+      "lat": 38.926806,
+      "lon": -94.768373,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091980001"
+    },
+    {
       "lat": 38.925164,
       "lon": -94.770316,
       "name": "Data Center Lenexa",

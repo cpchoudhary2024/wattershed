@@ -7,7 +7,7 @@
     "42079216100": 100.0,
     "42079217500": 50.0,
     "42091205906": 70.7,
-    "42091206006": 86.6,
+    "42091206006": 93.5,
     "42091206104": 61.2,
     "42101037600": 61.2
   },
@@ -134,6 +134,15 @@
       "lon": -75.420878,
       "name": "TierPoint Valley Forge",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42091206006"
+    },
+    {
+      "lat": 40.121881,
+      "lon": -75.420878,
+      "name": "TierPoint Valley Forge",
+      "operator": "TierPoint",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "42091206006"

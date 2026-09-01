@@ -2,7 +2,7 @@
   "density": {
     "48005000800": 50.0,
     "48027020800": 61.2,
-    "48029110100": 93.5,
+    "48029110100": 100.0,
     "48029110600": 86.6,
     "48029141700": 61.2,
     "48029171912": 100.0,
@@ -83,6 +83,15 @@
       "lon": -98.486906,
       "name": "H5 Data Centers San Antonio",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029110100"
+    },
+    {
+      "lat": 29.429371,
+      "lon": -98.486906,
+      "name": "H5 Data Centers San Antonio",
+      "operator": "H5 Data Centers",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48029110100"
@@ -214,6 +223,15 @@
       "tract": "48029171923"
     },
     {
+      "lat": 29.449157,
+      "lon": -98.653126,
+      "name": "QTS San Antonio II",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171923"
+    },
+    {
       "lat": 29.450677,
       "lon": -98.638704,
       "name": "Amazon",
@@ -259,6 +277,15 @@
       "tract": "48029171928"
     },
     {
+      "lat": 29.47076,
+      "lon": -98.670723,
+      "name": "CyrusOne San Antonio IV",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171928"
+    },
+    {
       "lat": 29.472003,
       "lon": -98.67172,
       "name": "Stream San Antonio II",
@@ -279,6 +306,15 @@
     {
       "lat": 29.418466,
       "lon": -98.788796,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.419002,
+      "lon": -98.787481,
       "name": "",
       "operator": "",
       "status": "operational",
@@ -308,6 +344,24 @@
       "lon": -98.804515,
       "name": "Microsoft",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.415797,
+      "lon": -98.803316,
+      "name": "Microsoft",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.415796,
+      "lon": -98.804515,
+      "name": "Microsoft",
+      "operator": "Microsoft",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48029172002"
@@ -1010,6 +1064,15 @@
       "lon": -98.806374,
       "name": "Microsoft TRP3 (SAT46)",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48325000103"
+    },
+    {
+      "lat": 29.412977,
+      "lon": -98.806374,
+      "name": "Microsoft TRP3 (SAT46)",
+      "operator": "Microsoft",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48325000103"

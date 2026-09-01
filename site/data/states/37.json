@@ -2,7 +2,7 @@
   "density": {
     "37027030100": 79.1,
     "37027030300": 79.1,
-    "37035011702": 79.1,
+    "37035011702": 86.6,
     "37045950601": 61.2,
     "37063001501": 70.7,
     "37063002037": 100.0,
@@ -48,6 +48,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "37035011602"
+    },
+    {
+      "lat": 35.588108,
+      "lon": -81.262575,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37035011702"
     },
     {
       "lat": 35.588765,
@@ -198,6 +207,15 @@
       "lon": -81.822109,
       "name": "Meta",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37161961104"
+    },
+    {
+      "lat": 35.315669,
+      "lon": -81.822109,
+      "name": "Meta",
+      "operator": "Meta",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "37161961104"

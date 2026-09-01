@@ -13,7 +13,7 @@
     "06037310501": 61.2,
     "06037910501": 61.2,
     "06037980013": 100.0,
-    "06059075516": 61.2,
+    "06059075516": 70.7,
     "06065040902": 70.7,
     "06067007019": 100.0,
     "06067009010": 61.2,
@@ -603,6 +603,15 @@
       "tract": "06085505010"
     },
     {
+      "lat": 37.389929,
+      "lon": -121.965991,
+      "name": "Amazon",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
       "lat": 37.397572,
       "lon": -121.980963,
       "name": "Csquare SFO2",
@@ -711,6 +720,15 @@
       "tract": "06085505202"
     },
     {
+      "lat": 37.361154,
+      "lon": -121.94234,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
       "lat": 37.373308,
       "lon": -121.972778,
       "name": "",
@@ -787,6 +805,15 @@
       "lon": -121.973057,
       "name": "CoreSite SV7",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.376079,
+      "lon": -121.973057,
+      "name": "CoreSite SV7",
+      "operator": "CoreSite",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "06085505202"

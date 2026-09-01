@@ -34,7 +34,7 @@
     "51107611812": 100.0,
     "51107611901": 100.0,
     "51107980100": 100.0,
-    "51117930600": 79.1,
+    "51117930600": 100.0,
     "51153901303": 100.0,
     "51153901304": 100.0,
     "51153901409": 100.0,
@@ -57,6 +57,15 @@
       "lon": -77.333657,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51041100403"
+    },
+    {
+      "lat": 37.356296,
+      "lon": -77.333657,
+      "name": "",
+      "operator": "PowerHouse",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51041100403"
@@ -201,6 +210,15 @@
       "lon": -77.363999,
       "name": "CoreSite Reston Campus VA2",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51059481202"
+    },
+    {
+      "lat": 38.951455,
+      "lon": -77.363999,
+      "name": "CoreSite Reston Campus VA2",
+      "operator": "CoreSite",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51059481202"
@@ -458,6 +476,24 @@
       "tract": "51087201404"
     },
     {
+      "lat": 37.481953,
+      "lon": -77.233711,
+      "name": "Meta Henrico Data Center",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
+      "lat": 37.477856,
+      "lon": -77.226482,
+      "name": "Meta Henrico Data Center",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51087201404"
+    },
+    {
       "lat": 37.489234,
       "lon": -77.247476,
       "name": "RIC1 DC1",
@@ -647,6 +683,24 @@
       "tract": "51107610604"
     },
     {
+      "lat": 39.069649,
+      "lon": -77.560771,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
+      "lat": 39.069656,
+      "lon": -77.559433,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107610604"
+    },
+    {
       "lat": 39.074787,
       "lon": -77.564129,
       "name": "Microsoft",
@@ -746,6 +800,24 @@
       "tract": "51107611006"
     },
     {
+      "lat": 39.016745,
+      "lon": -77.452006,
+      "name": "Amazon IAD-169",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.015885,
+      "lon": -77.45314,
+      "name": "Amazon IAD-179",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
       "lat": 39.018509,
       "lon": -77.438836,
       "name": "Amazon IAD118",
@@ -777,6 +849,15 @@
       "lon": -77.437776,
       "name": "Amazon IAD601",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611006"
+    },
+    {
+      "lat": 39.01526,
+      "lon": -77.437776,
+      "name": "Amazon IAD601",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611006"
@@ -1187,6 +1268,15 @@
       "tract": "51107611018"
     },
     {
+      "lat": 39.024257,
+      "lon": -77.452327,
+      "name": "Equinix Ashburn DC16",
+      "operator": "Equinix",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611018"
+    },
+    {
       "lat": 39.015422,
       "lon": -77.47827,
       "name": "",
@@ -1367,6 +1457,15 @@
       "tract": "51107611020"
     },
     {
+      "lat": 39.013048,
+      "lon": -77.473094,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
       "lat": 39.005052,
       "lon": -77.485612,
       "name": "AWS Building E",
@@ -1380,6 +1479,15 @@
       "lon": -77.470556,
       "name": "Aligned Ashburn",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.010417,
+      "lon": -77.475159,
+      "name": "Aligned IAD-02",
+      "operator": "Aligned",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611020"
@@ -1547,6 +1655,24 @@
       "tract": "51107611020"
     },
     {
+      "lat": 38.99585,
+      "lon": -77.471294,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.996604,
+      "lon": -77.47326,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
       "lat": 39.002752,
       "lon": -77.485449,
       "name": "Amazon Web Services Building C",
@@ -1682,6 +1808,24 @@
       "tract": "51107611020"
     },
     {
+      "lat": 39.004843,
+      "lon": -77.485127,
+      "name": "Digital Loudoun Plaza",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.001629,
+      "lon": -77.482362,
+      "name": "Digital Loudoun Plaza",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
       "lat": 39.012656,
       "lon": -77.465604,
       "name": "Digital Realty ACC10",
@@ -1722,6 +1866,15 @@
       "lon": -77.449464,
       "name": "Digital Realty IAD42",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 39.005689,
+      "lon": -77.449464,
+      "name": "Digital Realty IAD42 (Building R)",
+      "operator": "Digital Realty",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611020"
@@ -1853,6 +2006,15 @@
       "tract": "51107611020"
     },
     {
+      "lat": 38.99593,
+      "lon": -77.456244,
+      "name": "QTS Ashburn Lockridge",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
       "lat": 38.994222,
       "lon": -77.448201,
       "name": "QTS Ashburn-Moran",
@@ -1866,6 +2028,15 @@
       "lon": -77.475471,
       "name": "QTS Ashburn-Shellhorn DC1",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611020"
+    },
+    {
+      "lat": 38.998078,
+      "lon": -77.475471,
+      "name": "QTS Ashburn-Shellhorn DC1",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611020"
@@ -2096,6 +2267,15 @@
       "tract": "51107611702"
     },
     {
+      "lat": 38.984837,
+      "lon": -77.425911,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
       "lat": 38.981446,
       "lon": -77.426036,
       "name": "AWS",
@@ -2208,6 +2388,24 @@
       "lon": -77.417515,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.979563,
+      "lon": -77.417491,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611702"
+    },
+    {
+      "lat": 38.979147,
+      "lon": -77.419905,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107611702"
@@ -2456,6 +2654,24 @@
       "tract": "51107611812"
     },
     {
+      "lat": 38.948258,
+      "lon": -77.555911,
+      "name": "Microsoft IAD11",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611812"
+    },
+    {
+      "lat": 38.957253,
+      "lon": -77.497841,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51107611901"
+    },
+    {
       "lat": 38.957917,
       "lon": -77.498058,
       "name": "Amazon IAD120",
@@ -2499,6 +2715,159 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51107980100"
+    },
+    {
+      "lat": 36.679905,
+      "lon": -78.373985,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.679279,
+      "lon": -78.374165,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.677864,
+      "lon": -78.374691,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.677471,
+      "lon": -78.377007,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.678007,
+      "lon": -78.376849,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.678538,
+      "lon": -78.376687,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.679179,
+      "lon": -78.376494,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.679714,
+      "lon": -78.376329,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.682922,
+      "lon": -78.376868,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.683001,
+      "lon": -78.375751,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.686061,
+      "lon": -78.377219,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.686145,
+      "lon": -78.376105,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.689498,
+      "lon": -78.377593,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.689576,
+      "lon": -78.376485,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.692492,
+      "lon": -78.376772,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.692458,
+      "lon": -78.377968,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
+    },
+    {
+      "lat": 36.694934,
+      "lon": -78.376358,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51117930600"
     },
     {
       "lat": 36.66731,
@@ -2600,6 +2969,15 @@
       "tract": "51153901409"
     },
     {
+      "lat": 38.745991,
+      "lon": -77.537549,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
       "lat": 38.74837,
       "lon": -77.5207,
       "name": "AWS IAD104",
@@ -2609,10 +2987,28 @@
       "tract": "51153901409"
     },
     {
+      "lat": 38.74837,
+      "lon": -77.5207,
+      "name": "AWS IAD104",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
       "lat": 38.7476,
       "lon": -77.51948,
       "name": "AWS IAD105",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.7476,
+      "lon": -77.51948,
+      "name": "AWS IAD105",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901409"
@@ -2717,6 +3113,24 @@
       "tract": "51153901409"
     },
     {
+      "lat": 38.743052,
+      "lon": -77.533375,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.744287,
+      "lon": -77.533332,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
       "lat": 38.74731,
       "lon": -77.531826,
       "name": "COPT Data Center",
@@ -2735,10 +3149,28 @@
       "tract": "51153901409"
     },
     {
+      "lat": 38.744055,
+      "lon": -77.529196,
+      "name": "COPT Data Center Bldg 2",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
       "lat": 38.743886,
       "lon": -77.530625,
       "name": "COPT Innovation Park Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.743886,
+      "lon": -77.530625,
+      "name": "COPT Innovation Park Data Center",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901409"
@@ -2816,6 +3248,15 @@
       "tract": "51153901409"
     },
     {
+      "lat": 38.752543,
+      "lon": -77.513108,
+      "name": "QTS Manassas DC1",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
       "lat": 38.753166,
       "lon": -77.510882,
       "name": "QTS Manassas DC2",
@@ -2829,6 +3270,15 @@
       "lon": -77.517388,
       "name": "QTS Manassas DC5",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901409"
+    },
+    {
+      "lat": 38.754768,
+      "lon": -77.517388,
+      "name": "QTS Manassas DC5",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901409"
@@ -2919,6 +3369,15 @@
       "lon": -77.557116,
       "name": "Amazon IAD601",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "51153901420"
+    },
+    {
+      "lat": 38.778859,
+      "lon": -77.557116,
+      "name": "Amazon IAD601",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "51153901420"
