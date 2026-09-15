@@ -9,7 +9,7 @@
     "32003002979": 100.0,
     "32003002981": 100.0,
     "32003003626": 79.1,
-    "32003003642": 79.1,
+    "32003003642": 86.6,
     "32003005112": 86.6,
     "32003005503": 50.0
   },
@@ -141,6 +141,15 @@
       "tract": "32003002979"
     },
     {
+      "lat": 36.064021,
+      "lon": -115.221109,
+      "name": "",
+      "operator": "Switch",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
       "lat": 36.059134,
       "lon": -115.213688,
       "name": "Switch Edge 1",
@@ -244,6 +253,15 @@
       "lon": -115.147047,
       "name": "Verizon North Las Vegas",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003003642"
+    },
+    {
+      "lat": 36.221894,
+      "lon": -115.147047,
+      "name": "Verizon North Las Vegas",
+      "operator": "Verizon",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "32003003642"
@@ -404,6 +422,42 @@
     {
       "lat": 39.565106,
       "lon": -119.54769,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.569711,
+      "lon": -119.537859,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.570053,
+      "lon": -119.537092,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.570592,
+      "lon": -119.536034,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32031003501"
+    },
+    {
+      "lat": 39.570986,
+      "lon": -119.535317,
       "name": "",
       "operator": "",
       "status": "operational",

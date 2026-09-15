@@ -1,5 +1,6 @@
 {
   "density": {
+    "37021002204": 50.0,
     "37027030100": 79.1,
     "37027030300": 79.1,
     "37035011702": 86.6,
@@ -22,6 +23,15 @@
     "37183054304": 61.2
   },
   "facilities": [
+    {
+      "lat": 35.488317,
+      "lon": -82.557536,
+      "name": "DartPoints Asheville",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37021002204"
+    },
     {
       "lat": 35.914,
       "lon": -81.539,

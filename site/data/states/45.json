@@ -2,7 +2,9 @@
   "density": {
     "45015020504": 50.0,
     "45015020707": 100.0,
-    "45051051000": 61.2
+    "45045002901": 50.0,
+    "45051051000": 61.2,
+    "45079002800": 50.0
   },
   "facilities": [
     {
@@ -177,6 +179,15 @@
       "tract": "45015020707"
     },
     {
+      "lat": 34.807528,
+      "lon": -82.343492,
+      "name": "DartPoints Greenville",
+      "operator": "DartPoints",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45045002901"
+    },
+    {
       "lat": 33.674607,
       "lon": -78.943885,
       "name": "DC BLOX Myrtle Beach Cable Landing Station",
@@ -184,6 +195,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "45051051000"
+    },
+    {
+      "lat": 33.987312,
+      "lon": -81.030811,
+      "name": "DartPoints Columbia",
+      "operator": "DartPoints",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45079002800"
     }
   ],
   "state_fips": "45"

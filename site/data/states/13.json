@@ -93,6 +93,15 @@
       "tract": "13097080105"
     },
     {
+      "lat": 33.730703,
+      "lon": -84.61124,
+      "name": "Flexential Atlanta - Douglasville 2",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
       "lat": 33.750447,
       "lon": -84.585682,
       "name": "Google Datacenter - Douglas County",
@@ -127,6 +136,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13113140204"
+    },
+    {
+      "lat": 34.103384,
+      "lon": -84.21497,
+      "name": "UPS Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13117130603"
     },
     {
       "lat": 34.103384,
@@ -291,8 +309,8 @@
       "tract": "13121011652"
     },
     {
-      "lat": 34.093706,
-      "lon": -84.250878,
+      "lat": 34.09371,
+      "lon": -84.250875,
       "name": "Secure Data Center",
       "operator": "",
       "status": "operational",
@@ -358,6 +376,15 @@
       "lon": -84.059347,
       "name": "QTS Suwanee",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13135050224"
+    },
+    {
+      "lat": 34.036155,
+      "lon": -84.059347,
+      "name": "QTS Suwanee",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13135050224"

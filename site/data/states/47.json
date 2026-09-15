@@ -216,6 +216,15 @@
       "tract": "47165020602"
     },
     {
+      "lat": 36.408496,
+      "lon": -86.37162,
+      "name": "Gallatin Data Center",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
       "lat": 36.411893,
       "lon": -86.369653,
       "name": "Meta Gallatin Data Center",
@@ -274,6 +283,15 @@
       "lon": -86.833406,
       "name": "Flexential Nashville - Cool Springs",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47187050307"
+    },
+    {
+      "lat": 35.951045,
+      "lon": -86.833406,
+      "name": "Flexential Nashville - Cool Springs",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "47187050307"

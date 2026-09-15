@@ -20839,7 +20839,7 @@
     "tract_geoid": "49049000601"
   },
   {
-    "county_fips": "",
+    "county_fips": "45079",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 33.987312,
     "lon": -81.030811,
@@ -20849,7 +20849,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "45079002800"
   },
   {
     "county_fips": "36061",
@@ -21519,7 +21519,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.005445,
     "lon": -77.478515,
-    "name": "CloudHQ LC1",
+    "name": "CloudHQ LC12",
     "operator": "CloudHQ",
     "osm_id": "node/14045039392",
     "source": "osm",
@@ -21658,7 +21658,7 @@
     "tract_geoid": "48005000800"
   },
   {
-    "county_fips": "",
+    "county_fips": "22033",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 30.453994,
     "lon": -91.115481,
@@ -21668,10 +21668,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "22033001104"
   },
   {
-    "county_fips": "",
+    "county_fips": "22033",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 30.453825,
     "lon": -91.116053,
@@ -21681,10 +21681,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "22033001104"
   },
   {
-    "county_fips": "",
+    "county_fips": "22017",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 32.511017,
     "lon": -93.749808,
@@ -21694,10 +21694,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "22017025300"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 40.0933,
     "lon": -83.133975,
@@ -21707,10 +21707,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049006238"
   },
   {
-    "county_fips": "",
+    "county_fips": "39061",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 39.098101,
     "lon": -84.51785,
@@ -21720,16 +21720,55 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39061026500"
   },
   {
-    "county_fips": "",
+    "county_fips": "37021",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 35.488317,
     "lon": -82.557536,
     "name": "DartPoints Asheville",
     "operator": "",
     "osm_id": "node/14124835505",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": "37021002204"
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 38.994315,
+    "lon": -77.444001,
+    "name": "EdgeCore Ashburn AS02",
+    "operator": "",
+    "osm_id": "node/14152612201",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 39.025458,
+    "lon": -77.454281,
+    "name": "Equinix Ashburn DC18",
+    "operator": "Equinix",
+    "osm_id": "node/14156477686",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 49.735399,
+    "lon": -112.800421,
+    "name": "Whipcord LDC01",
+    "operator": "Whipcord Edge",
+    "osm_id": "node/14174853849",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -22191,7 +22230,7 @@
     "tract_geoid": "06085504322"
   },
   {
-    "county_fips": "",
+    "county_fips": "45045",
     "first_seen": "2026-09-01T03:35:31Z",
     "lat": 34.807528,
     "lon": -82.343492,
@@ -22201,7 +22240,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "45045002901"
   },
   {
     "county_fips": "06079",
@@ -24002,7 +24041,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.979563,
     "lon": -77.417491,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD143",
     "operator": "Amazon Web Services",
     "osm_id": "way/1106454555",
     "source": "osm",
@@ -24117,8 +24156,8 @@
   {
     "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.024257,
-    "lon": -77.452327,
+    "lat": 39.024235,
+    "lon": -77.452287,
     "name": "Equinix Ashburn DC16",
     "operator": "Equinix",
     "osm_id": "way/1123249721",
@@ -24548,7 +24587,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.979147,
     "lon": -77.419905,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD142",
     "operator": "Amazon Web Services",
     "osm_id": "way/1161094246",
     "source": "osm",
@@ -24609,7 +24648,7 @@
     "tract_geoid": "53017950300"
   },
   {
-    "county_fips": "",
+    "county_fips": "19049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.53499,
     "lon": -93.863444,
@@ -24619,10 +24658,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19049050812"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.941812,
     "lon": -77.527451,
@@ -24632,10 +24671,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611812"
   },
   {
-    "county_fips": "",
+    "county_fips": "48113",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.894761,
     "lon": -96.981938,
@@ -24645,23 +24684,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48113014159"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 38.981544,
-    "lon": -77.419361,
+    "lat": 38.981547,
+    "lon": -77.419369,
     "name": "Amazon IAD603",
     "operator": "Amazon Web Services",
     "osm_id": "way/1177893426",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611702"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.125403,
     "lon": -104.907552,
@@ -24671,10 +24710,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.126438,
     "lon": -104.899516,
@@ -24684,10 +24723,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.125411,
     "lon": -104.901978,
@@ -24697,10 +24736,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.122266,
     "lon": -104.908142,
@@ -24710,10 +24749,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.122246,
     "lon": -104.909517,
@@ -24723,10 +24762,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "42091",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.152237,
     "lon": -75.477618,
@@ -24736,10 +24775,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "42091206104"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.917256,
     "lon": -77.495674,
@@ -24749,10 +24788,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611804"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.760361,
     "lon": -77.519302,
@@ -24762,10 +24801,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.761105,
     "lon": -77.518221,
@@ -24775,10 +24814,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "29047",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.322631,
     "lon": -94.598087,
@@ -24788,10 +24827,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "29047021900"
   },
   {
-    "county_fips": "",
+    "county_fips": "29095",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.094468,
     "lon": -94.579442,
@@ -24801,10 +24840,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "29095015800"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99871,
     "lon": -77.474326,
@@ -24814,10 +24853,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.995307,
     "lon": -77.455264,
@@ -24827,10 +24866,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.995181,
     "lon": -77.456819,
@@ -24840,10 +24879,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.98956,
     "lon": -77.434802,
@@ -24853,10 +24892,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.017043,
     "lon": -77.473338,
@@ -24866,10 +24905,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611019"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.020189,
     "lon": -77.475509,
@@ -24879,10 +24918,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611019"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.017904,
     "lon": -77.481819,
@@ -24892,10 +24931,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611019"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.019599,
     "lon": -77.450457,
@@ -24905,10 +24944,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611006"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.017926,
     "lon": -77.459516,
@@ -24918,10 +24957,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611006"
   },
   {
-    "county_fips": "",
+    "county_fips": "34025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.208462,
     "lon": -74.119242,
@@ -24931,10 +24970,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "34025808600"
   },
   {
-    "county_fips": "",
+    "county_fips": "34025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.129561,
     "lon": -74.042773,
@@ -24944,10 +24983,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "34025809301"
   },
   {
-    "county_fips": "",
+    "county_fips": "34025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.239226,
     "lon": -74.319538,
@@ -24957,10 +24996,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "34025810503"
   },
   {
-    "county_fips": "",
+    "county_fips": "35061",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 34.825868,
     "lon": -106.778898,
@@ -24970,10 +25009,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "35061980300"
   },
   {
-    "county_fips": "",
+    "county_fips": "53025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 47.244813,
     "lon": -119.818095,
@@ -24983,10 +25022,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "53025010500"
   },
   {
-    "county_fips": "",
+    "county_fips": "53025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 47.24429,
     "lon": -119.814806,
@@ -24996,10 +25035,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "53025010500"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.141335,
     "lon": -104.71676,
@@ -25009,10 +25048,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021002002"
   },
   {
-    "county_fips": "",
+    "county_fips": "19153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.666814,
     "lon": -93.455943,
@@ -25022,10 +25061,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19153010703"
   },
   {
-    "county_fips": "",
+    "county_fips": "13135",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 34.036155,
     "lon": -84.059347,
@@ -25035,10 +25074,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "13135050224"
   },
   {
-    "county_fips": "",
+    "county_fips": "32031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.569711,
     "lon": -119.537859,
@@ -25048,10 +25087,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32031003501"
   },
   {
-    "county_fips": "",
+    "county_fips": "32031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.570053,
     "lon": -119.537092,
@@ -25061,10 +25100,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32031003501"
   },
   {
-    "county_fips": "",
+    "county_fips": "32031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.570592,
     "lon": -119.536034,
@@ -25074,10 +25113,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32031003501"
   },
   {
-    "county_fips": "",
+    "county_fips": "32031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.570986,
     "lon": -119.535317,
@@ -25087,10 +25126,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32031003501"
   },
   {
-    "county_fips": "",
+    "county_fips": "39099",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.041059,
     "lon": -80.633078,
@@ -25100,10 +25139,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39099811302"
   },
   {
-    "county_fips": "",
+    "county_fips": "47187",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 35.951045,
     "lon": -86.833406,
@@ -25113,10 +25152,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47187050307"
   },
   {
-    "county_fips": "",
+    "county_fips": "55021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.638333,
     "lon": -89.721403,
@@ -25126,10 +25165,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "55021970300"
   },
   {
-    "county_fips": "",
+    "county_fips": "47165",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.408496,
     "lon": -86.37162,
@@ -25139,10 +25178,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47165020602"
   },
   {
-    "county_fips": "",
+    "county_fips": "17031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.914003,
     "lon": -87.917516,
@@ -25152,10 +25191,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17031811800"
   },
   {
-    "county_fips": "",
+    "county_fips": "17031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.912963,
     "lon": -87.91759,
@@ -25165,10 +25204,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17031811800"
   },
   {
-    "county_fips": "",
+    "county_fips": "17031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 42.023143,
     "lon": -87.972186,
@@ -25178,10 +25217,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17031770400"
   },
   {
-    "county_fips": "",
+    "county_fips": "17031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 42.023042,
     "lon": -87.975557,
@@ -25191,10 +25230,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17031770400"
   },
   {
-    "county_fips": "",
+    "county_fips": "48453",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 30.215605,
     "lon": -97.618939,
@@ -25204,10 +25243,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48453002216"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.746979,
     "lon": -77.518524,
@@ -25217,10 +25256,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.059618,
     "lon": -82.764465,
@@ -25230,10 +25269,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.949149,
     "lon": -77.523594,
@@ -25243,10 +25282,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611812"
   },
   {
     "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 41.212107,
+    "lon": -95.877895,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1226436454",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "19155",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.212197,
     "lon": -95.878,
@@ -25256,10 +25308,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19155031400"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.836192,
     "lon": -119.694055,
@@ -25269,10 +25321,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970101"
   },
   {
-    "county_fips": "",
+    "county_fips": "09001",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.240731,
     "lon": -73.147267,
@@ -25282,10 +25334,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "09001090500"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.803379,
     "lon": -77.510546,
@@ -25295,10 +25347,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901503"
   },
   {
-    "county_fips": "",
+    "county_fips": "48439",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.651201,
     "lon": -97.319673,
@@ -25308,10 +25360,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48439106002"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.242615,
     "lon": -121.784022,
@@ -25321,10 +25373,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085512032"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.736985,
     "lon": -77.504088,
@@ -25334,10 +25386,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901303"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.715017,
     "lon": -77.49512,
@@ -25347,49 +25399,49 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901304"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.266328,
-    "lon": -111.883304,
+    "lat": 33.266349,
+    "lon": -111.883301,
     "name": "CyrusOne PHX8",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/1227682824",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013812200"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.271916,
-    "lon": -111.881627,
+    "lat": 33.271917,
+    "lon": -111.881614,
     "name": "CyrusOne PHX3",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/1227684019",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013812200"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.271809,
-    "lon": -111.883263,
+    "lat": 33.271812,
+    "lon": -111.883248,
     "name": "CyrusOne PHX4",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/1227684020",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013812200"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.003213,
     "lon": -77.440175,
@@ -25399,10 +25451,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "19153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.667663,
     "lon": -93.455484,
@@ -25412,10 +25464,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19153010703"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.082029,
     "lon": -79.003417,
@@ -25425,10 +25477,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.082178,
     "lon": -79.003509,
@@ -25438,10 +25490,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.082808,
     "lon": -79.003281,
@@ -25451,10 +25503,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.08313,
     "lon": -79.003111,
@@ -25464,10 +25516,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.083205,
     "lon": -79.003342,
@@ -25477,10 +25529,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.083165,
     "lon": -79.003903,
@@ -25490,10 +25542,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
-    "county_fips": "",
+    "county_fips": "36063",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 43.083284,
     "lon": -79.003905,
@@ -25503,7 +25555,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36063022000"
   },
   {
     "county_fips": "",
@@ -25519,7 +25571,7 @@
     "tract_geoid": ""
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.180499,
     "lon": -96.084906,
@@ -25529,10 +25581,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010629"
   },
   {
-    "county_fips": "",
+    "county_fips": "35013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.309666,
     "lon": -106.729193,
@@ -25542,10 +25594,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "35013001203"
   },
   {
-    "county_fips": "",
+    "county_fips": "32003",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.221894,
     "lon": -115.147047,
@@ -25555,10 +25607,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32003003642"
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.134919,
     "lon": -96.144082,
@@ -25568,10 +25620,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010629"
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.134393,
     "lon": -96.155904,
@@ -25581,10 +25633,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010629"
   },
   {
-    "county_fips": "",
+    "county_fips": "39035",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.361071,
     "lon": -81.632781,
@@ -25594,10 +25646,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39035156102"
   },
   {
-    "county_fips": "",
+    "county_fips": "36087",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.036194,
     "lon": -73.987626,
@@ -25607,10 +25659,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36087012800"
   },
   {
-    "county_fips": "",
+    "county_fips": "36087",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.034493,
     "lon": -73.975786,
@@ -25620,10 +25672,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36087012800"
   },
   {
-    "county_fips": "",
+    "county_fips": "17043",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.772103,
     "lon": -88.217082,
@@ -25633,10 +25685,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17043846507"
   },
   {
-    "county_fips": "",
+    "county_fips": "41067",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.554152,
     "lon": -122.939406,
@@ -25646,10 +25698,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41067032603"
   },
   {
-    "county_fips": "",
+    "county_fips": "41067",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.554194,
     "lon": -122.940926,
@@ -25659,10 +25711,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41067032603"
   },
   {
-    "county_fips": "",
+    "county_fips": "41067",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.552898,
     "lon": -122.93798,
@@ -25672,10 +25724,10 @@
     "source": "osm",
     "status": "construction",
     "status_source": "osm-lifecycle",
-    "tract_geoid": ""
+    "tract_geoid": "41067032603"
   },
   {
-    "county_fips": "",
+    "county_fips": "34029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.609874,
     "lon": -74.32614,
@@ -25685,10 +25737,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "34029737000"
   },
   {
-    "county_fips": "",
+    "county_fips": "51059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.904344,
     "lon": -77.452469,
@@ -25698,10 +25750,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51059490104"
   },
   {
-    "county_fips": "",
+    "county_fips": "51059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.904837,
     "lon": -77.45475,
@@ -25711,10 +25763,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51059490104"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.915903,
     "lon": -77.490551,
@@ -25724,10 +25776,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611804"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.914991,
     "lon": -77.490974,
@@ -25737,10 +25789,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611804"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.092986,
     "lon": -82.747628,
@@ -25750,10 +25802,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.093434,
     "lon": -82.732167,
@@ -25763,10 +25815,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.092168,
     "lon": -82.727548,
@@ -25776,10 +25828,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.092961,
     "lon": -82.726511,
@@ -25789,10 +25841,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.116261,
     "lon": -83.201389,
@@ -25802,10 +25854,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.117391,
     "lon": -83.202074,
@@ -25815,10 +25867,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.119031,
     "lon": -83.200244,
@@ -25828,10 +25880,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.049354,
     "lon": -83.175465,
@@ -25841,23 +25893,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007961"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.048138,
     "lon": -83.175294,
-    "name": "",
+    "name": "Amazon Web Services",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196809",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007961"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.047898,
     "lon": -83.177549,
@@ -25867,10 +25919,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007961"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.057906,
     "lon": -82.765328,
@@ -25880,10 +25932,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.059353,
     "lon": -82.771745,
@@ -25893,10 +25945,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007211"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.060376,
     "lon": -82.750995,
@@ -25906,10 +25958,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.852077,
     "lon": -82.994836,
@@ -25919,10 +25971,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049009590"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.776145,
     "lon": -77.582514,
@@ -25932,10 +25984,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901421"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.858747,
     "lon": -119.605083,
@@ -25945,10 +25997,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.860076,
     "lon": -119.605123,
@@ -25958,10 +26010,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.860968,
     "lon": -119.60514,
@@ -25971,10 +26023,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.84147,
     "lon": -119.651786,
@@ -25984,10 +26036,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.920609,
     "lon": -119.23182,
@@ -25997,10 +26049,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950800"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.920589,
     "lon": -119.230002,
@@ -26010,10 +26062,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950800"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.797775,
     "lon": -119.361968,
@@ -26023,10 +26075,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951100"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.799157,
     "lon": -119.366661,
@@ -26036,10 +26088,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951100"
   },
   {
-    "county_fips": "",
+    "county_fips": "39045",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.724042,
     "lon": -82.691112,
@@ -26049,10 +26101,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39045032501"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.746153,
     "lon": -77.517223,
@@ -26062,10 +26114,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.921305,
     "lon": -77.485801,
@@ -26075,10 +26127,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611804"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.995088,
     "lon": -77.471078,
@@ -26088,10 +26140,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.123574,
     "lon": -96.132888,
@@ -26101,10 +26153,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010702"
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.11435,
     "lon": -96.142805,
@@ -26114,10 +26166,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010701"
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.112249,
     "lon": -96.141625,
@@ -26127,10 +26179,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010701"
   },
   {
-    "county_fips": "",
+    "county_fips": "19153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.675784,
     "lon": -93.509831,
@@ -26140,10 +26192,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19153010601"
   },
   {
-    "county_fips": "",
+    "county_fips": "19153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.675801,
     "lon": -93.506037,
@@ -26153,10 +26205,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19153010601"
   },
   {
-    "county_fips": "",
+    "county_fips": "21107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.362998,
     "lon": -87.547151,
@@ -26166,10 +26218,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "21107970302"
   },
   {
-    "county_fips": "",
+    "county_fips": "13097",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.730703,
     "lon": -84.61124,
@@ -26179,10 +26231,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "13097080105"
   },
   {
-    "county_fips": "",
+    "county_fips": "32003",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.064021,
     "lon": -115.221109,
@@ -26192,10 +26244,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32003002979"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.182601,
     "lon": -104.068498,
@@ -26205,10 +26257,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021002001"
   },
   {
-    "county_fips": "",
+    "county_fips": "51683",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.740385,
     "lon": -77.503977,
@@ -26218,10 +26270,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51683910402"
   },
   {
-    "county_fips": "",
+    "county_fips": "17043",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.989015,
     "lon": -88.007213,
@@ -26231,10 +26283,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17043840201"
   },
   {
-    "county_fips": "",
+    "county_fips": "08005",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.734062,
     "lon": -104.707937,
@@ -26244,10 +26296,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "08005007110"
   },
   {
-    "county_fips": "",
+    "county_fips": "41013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 44.285756,
     "lon": -120.869922,
@@ -26257,10 +26309,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41013950301"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.986532,
     "lon": -77.435177,
@@ -26270,10 +26322,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.988635,
     "lon": -77.440778,
@@ -26283,23 +26335,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 38.992193,
-    "lon": -77.433922,
+    "lat": 38.992187,
+    "lon": -77.433938,
     "name": "Digital Realty IAD55",
     "operator": "Digital Realty",
     "osm_id": "way/1276518687",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "39153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.057384,
     "lon": -81.521928,
@@ -26309,10 +26361,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39153506800"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.947374,
     "lon": -77.520238,
@@ -26322,23 +26374,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611812"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 38.983585,
-    "lon": -77.417515,
-    "name": "Amazon Web Services",
+    "lat": 38.983528,
+    "lon": -77.417508,
+    "name": "Amazon IAD608",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340213",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611702"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.802884,
     "lon": -77.622122,
@@ -26348,10 +26400,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901507"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.745134,
     "lon": -77.533101,
@@ -26361,10 +26413,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.814593,
     "lon": -77.654319,
@@ -26374,10 +26426,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901509"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.816971,
     "lon": -77.652153,
@@ -26387,10 +26439,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901509"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.134181,
     "lon": -83.215841,
@@ -26400,10 +26452,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.920588,
     "lon": -119.228851,
@@ -26413,10 +26465,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950800"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.920582,
     "lon": -119.227011,
@@ -26426,10 +26478,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950800"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.919529,
     "lon": -119.226139,
@@ -26439,10 +26491,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950800"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.882525,
     "lon": -119.341657,
@@ -26452,10 +26504,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950900"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.862248,
     "lon": -119.605128,
@@ -26465,10 +26517,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.858044,
     "lon": -119.604851,
@@ -26478,10 +26530,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.840685,
     "lon": -119.65131,
@@ -26491,10 +26543,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.81993,
     "lon": -119.632086,
@@ -26504,10 +26556,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970101"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.848452,
     "lon": -82.996393,
@@ -26517,10 +26569,10 @@
     "source": "osm",
     "status": "construction",
     "status_source": "osm-lifecycle",
-    "tract_geoid": ""
+    "tract_geoid": "39049009590"
   },
   {
-    "county_fips": "",
+    "county_fips": "13117",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 34.103384,
     "lon": -84.21497,
@@ -26530,10 +26582,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "13117130603"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.775547,
     "lon": -77.54515,
@@ -26543,10 +26595,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.446303,
     "lon": -112.373887,
@@ -26556,10 +26608,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013061300"
   },
   {
-    "county_fips": "",
+    "county_fips": "17031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.99425,
     "lon": -87.961955,
@@ -26569,10 +26621,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17031770300"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.774437,
     "lon": -77.585618,
@@ -26582,10 +26634,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901421"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.801862,
     "lon": -77.621212,
@@ -26595,10 +26647,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901507"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.80125,
     "lon": -77.620476,
@@ -26608,10 +26660,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901507"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.774415,
     "lon": -77.54223,
@@ -26621,7 +26673,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
     "county_fips": "",
@@ -27770,8 +27822,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.002347,
-    "lon": -77.471888,
+    "lat": 39.002309,
+    "lon": -77.471893,
     "name": "CloudHQ LC4",
     "operator": "CloudHQ",
     "osm_id": "way/1381994242",
@@ -28592,7 +28644,7 @@
     "lat": 41.795377,
     "lon": -88.246965,
     "name": "",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/1426146790",
     "source": "osm",
     "status": "operational",
@@ -28966,8 +29018,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.011212,
-    "lon": -77.460425,
+    "lat": 39.011201,
+    "lon": -77.460395,
     "name": "CloudHQ LC3",
     "operator": "CloudHQ",
     "osm_id": "way/1443187163",
@@ -29876,10 +29928,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.140647,
-    "lon": -96.659526,
+    "lat": 33.140654,
+    "lon": -96.65955,
     "name": "",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/1484435248",
     "source": "osm",
     "status": "operational",
@@ -32268,8 +32320,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.025006,
-    "lon": -77.453613,
+    "lat": 39.024891,
+    "lon": -77.453419,
     "name": "Equinix Ashburn DC17",
     "operator": "Equinix",
     "osm_id": "way/1543931283",
@@ -32501,12 +32553,194 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 39.427513,
+    "lon": -75.016862,
+    "name": "DataOne Vineland",
+    "operator": "Nebius",
+    "osm_id": "way/1553894888",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 41.251748,
+    "lon": -95.925964,
+    "name": "Omaha Switch",
+    "operator": "Cogent Communications",
+    "osm_id": "way/1554826321",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 39.021789,
+    "lon": -77.414703,
+    "name": "EdgeCore Ashburn AS01",
+    "operator": "",
+    "osm_id": "way/1555352690",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 39.022964,
+    "lon": -77.416713,
+    "name": "Amazon Web Services IAD128",
+    "operator": "Amazon Web Services",
+    "osm_id": "way/1555352691",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 32.899117,
+    "lon": -97.38895,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1556702082",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 41.796604,
+    "lon": -88.242985,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1556760955",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 39.015826,
+    "lon": -77.471988,
+    "name": "NTT Ashburn VA7 Data Center",
+    "operator": "NTT",
+    "osm_id": "way/1556781864",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 40.907232,
+    "lon": -74.242222,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1556797631",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 41.599038,
+    "lon": -73.882195,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1556814304",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 35.933889,
+    "lon": -78.88095,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1556818364",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.659055,
     "lon": -112.111159,
     "name": "Aligned Energy Data Center",
     "operator": "",
     "osm_id": "way/155739337",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 39.387105,
+    "lon": -84.221399,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/1557769364",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 41.977362,
+    "lon": -87.963015,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/1557957010",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 42.034448,
+    "lon": -87.983163,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/1558344919",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 36.065882,
+    "lon": -115.218789,
+    "name": "",
+    "operator": "Switch",
+    "osm_id": "way/1558897570",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -32853,8 +33087,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 41.796608,
-    "lon": -88.243823,
+    "lat": 41.796856,
+    "lon": -88.244495,
     "name": "CyrusOne Chicago Aurora CME",
     "operator": "CyrusOne",
     "osm_id": "way/199252950",
@@ -34025,7 +34259,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.984866,
     "lon": -77.42567,
-    "name": "",
+    "name": "CyrusOne NVA4",
     "operator": "CyrusOne",
     "osm_id": "way/273896096",
     "source": "osm",
@@ -34660,8 +34894,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.270878,
-    "lon": -111.881995,
+    "lat": 33.270876,
+    "lon": -111.881948,
     "name": "CyrusOne PHX1",
     "operator": "CyrusOne",
     "osm_id": "way/300959970",
@@ -34701,7 +34935,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.002752,
     "lon": -77.485449,
-    "name": "Amazon Web Services Building C",
+    "name": "Amazon IAD6",
     "operator": "Amazon Web Services",
     "osm_id": "way/300969615",
     "source": "osm",
@@ -35752,10 +35986,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 30.205921,
-    "lon": -97.697951,
+    "lat": 30.205927,
+    "lon": -97.697925,
     "name": "CyrusOne Austin Data Center II",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/379204766",
     "source": "osm",
     "status": "operational",
@@ -36090,8 +36324,8 @@
   {
     "county_fips": "13121",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 34.093706,
-    "lon": -84.250878,
+    "lat": 34.09371,
+    "lon": -84.250875,
     "name": "Secure Data Center",
     "operator": "",
     "osm_id": "way/39083830",
@@ -36557,6 +36791,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 43.644642,
+    "lon": -79.384175,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/43804185",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.540609,
     "lon": -93.824843,
@@ -36753,10 +37000,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 30.207006,
-    "lon": -97.701132,
+    "lat": 30.207008,
+    "lon": -97.701012,
     "name": "CyrusOne Austin Data Center III",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/455171103",
     "source": "osm",
     "status": "operational",
@@ -37301,7 +37548,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.005052,
     "lon": -77.485612,
-    "name": "AWS Building E",
+    "name": "Amazon IAD13",
     "operator": "Amazon Web Services",
     "osm_id": "way/460175672",
     "source": "osm",
@@ -37325,11 +37572,24 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 40.537962,
-    "lon": -74.545722,
+    "lat": 40.537966,
+    "lon": -74.545727,
     "name": "CyrusOne Somerset",
     "operator": "CyrusOne",
     "osm_id": "way/460182320",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 40.539867,
+    "lon": -74.542166,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/460182330",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -37728,10 +37988,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.13791,
-    "lon": -96.657329,
+    "lat": 33.137923,
+    "lon": -96.6574,
     "name": "Tierpoint Dallas-Allen",
-    "operator": "",
+    "operator": "TierPoint",
     "osm_id": "way/483307714",
     "source": "osm",
     "status": "operational",
@@ -39002,10 +39262,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.137823,
-    "lon": -96.655941,
+    "lat": 33.137831,
+    "lon": -96.655945,
     "name": "",
-    "operator": "",
+    "operator": "ScaleMatrix",
     "osm_id": "way/590213770",
     "source": "osm",
     "status": "operational",
@@ -39015,8 +39275,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.138521,
-    "lon": -96.659952,
+    "lat": 33.138581,
+    "lon": -96.660021,
     "name": "CyrusOne Allen",
     "operator": "CyrusOne",
     "osm_id": "way/590213771",
@@ -39449,6 +39709,19 @@
     "name": "Genome Data Center",
     "operator": "Washington University in St. Louis",
     "osm_id": "way/617511179",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 35.93563,
+    "lon": -78.880687,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/617525579",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -39917,6 +40190,19 @@
     "name": "Centeris",
     "operator": "",
     "osm_id": "way/680666647",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 38.981313,
+    "lon": -84.618722,
+    "name": "",
+    "operator": "CyrusOne",
+    "osm_id": "way/68281408",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -41225,8 +41511,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 40.544255,
-    "lon": -75.654369,
+    "lat": 40.544252,
+    "lon": -75.654377,
     "name": "Allentown-TekPark",
     "operator": "",
     "osm_id": "way/777196805",
@@ -41277,8 +41563,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.26763,
-    "lon": -111.882512,
+    "lat": 33.267635,
+    "lon": -111.882493,
     "name": "CyrusOne PHX6",
     "operator": "CyrusOne",
     "osm_id": "way/781370600",
@@ -41472,8 +41758,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.011755,
-    "lon": -77.462459,
+    "lat": 39.011754,
+    "lon": -77.462462,
     "name": "CloudHQ LC2",
     "operator": "CloudHQ",
     "osm_id": "way/794147655",
@@ -42499,8 +42785,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 41.999124,
-    "lon": -87.957765,
+    "lat": 41.999125,
+    "lon": -87.957743,
     "name": "Stream Chicago II",
     "operator": "Stream",
     "osm_id": "way/863162820",
@@ -43305,10 +43591,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.38897,
-    "lon": -84.221853,
+    "lat": 39.388967,
+    "lon": -84.221806,
     "name": "CyrusOne Cincinnati-Lebanon",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/95349317",
     "source": "osm",
     "status": "operational",
@@ -43421,6 +43707,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-09-15T03:25:33Z",
+    "lat": 40.90562,
+    "lon": -74.230184,
+    "name": "",
+    "operator": "JPMorgan Chase",
+    "osm_id": "way/966520234",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 42.33246,
     "lon": -122.880426,
@@ -43526,10 +43825,10 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.266374,
-    "lon": -111.881894,
+    "lat": 33.266381,
+    "lon": -111.88187,
     "name": "CyrusOne PHX7",
-    "operator": "",
+    "operator": "CyrusOne",
     "osm_id": "way/977653854",
     "source": "osm",
     "status": "operational",
@@ -43552,8 +43851,8 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 33.26975,
-    "lon": -111.881584,
+    "lat": 33.269727,
+    "lon": -111.881544,
     "name": "CyrusOne PHX5",
     "operator": "CyrusOne",
     "osm_id": "way/977653859",

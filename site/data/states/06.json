@@ -1260,6 +1260,15 @@
       "tract": "06085512032"
     },
     {
+      "lat": 37.242615,
+      "lon": -121.784022,
+      "name": "Equinix SV11",
+      "operator": "Equinix",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085512032"
+    },
+    {
       "lat": 37.242072,
       "lon": -121.781785,
       "name": "Equinix SV5",

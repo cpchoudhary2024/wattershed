@@ -153,6 +153,15 @@
       "tract": "41013950301"
     },
     {
+      "lat": 44.285756,
+      "lon": -120.869922,
+      "name": "Apple",
+      "operator": "Apple Inc.",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41013950301"
+    },
+    {
       "lat": 44.30349,
       "lon": -120.84639,
       "name": "Meta Prineville",
@@ -344,6 +353,24 @@
     {
       "lat": 45.83655,
       "lon": -119.689874,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970101"
+    },
+    {
+      "lat": 45.836192,
+      "lon": -119.694055,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970101"
+    },
+    {
+      "lat": 45.81993,
+      "lon": -119.632086,
       "name": "Amazon Web Services",
       "operator": "Amazon Web Services",
       "status": "operational",
@@ -603,6 +630,69 @@
       "tract": "41049970102"
     },
     {
+      "lat": 45.858747,
+      "lon": -119.605083,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.860076,
+      "lon": -119.605123,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.860968,
+      "lon": -119.60514,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.84147,
+      "lon": -119.651786,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.862248,
+      "lon": -119.605128,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.858044,
+      "lon": -119.604851,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.840685,
+      "lon": -119.65131,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
       "lat": 45.53169,
       "lon": -122.683765,
       "name": "H5 DC - Portland",
@@ -774,6 +864,51 @@
       "tract": "41059950800"
     },
     {
+      "lat": 45.920609,
+      "lon": -119.23182,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950800"
+    },
+    {
+      "lat": 45.920589,
+      "lon": -119.230002,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950800"
+    },
+    {
+      "lat": 45.920588,
+      "lon": -119.228851,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950800"
+    },
+    {
+      "lat": 45.920582,
+      "lon": -119.227011,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950800"
+    },
+    {
+      "lat": 45.919529,
+      "lon": -119.226139,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950800"
+    },
+    {
       "lat": 45.901451,
       "lon": -119.320522,
       "name": "Amazon Web Services",
@@ -873,6 +1008,15 @@
       "tract": "41059950900"
     },
     {
+      "lat": 45.882525,
+      "lon": -119.341657,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
       "lat": 45.797809,
       "lon": -119.366616,
       "name": "Amazon Web Services",
@@ -922,6 +1066,24 @@
       "lon": -119.358925,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951100"
+    },
+    {
+      "lat": 45.797775,
+      "lon": -119.361968,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951100"
+    },
+    {
+      "lat": 45.799157,
+      "lon": -119.366661,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41059951100"
@@ -1239,6 +1401,33 @@
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
+      "tract": "41067032603"
+    },
+    {
+      "lat": 45.554152,
+      "lon": -122.939406,
+      "name": "Stack Infrastructure - POR03",
+      "operator": "Stack Infrastructure",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032603"
+    },
+    {
+      "lat": 45.554194,
+      "lon": -122.940926,
+      "name": "Stack Infrastructure - POR03",
+      "operator": "Stack Infrastructure",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41067032603"
+    },
+    {
+      "lat": 45.552898,
+      "lon": -122.93798,
+      "name": "Stack Infrastructure - POR03",
+      "operator": "Stack Infrastructure",
+      "status": "construction",
+      "status_source": "osm-lifecycle",
       "tract": "41067032603"
     },
     {

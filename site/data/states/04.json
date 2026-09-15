@@ -121,6 +121,15 @@
       "tract": "04013061300"
     },
     {
+      "lat": 33.446303,
+      "lon": -112.373887,
+      "name": "Vantage Data Centers",
+      "operator": "Vantage Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013061300"
+    },
+    {
       "lat": 33.493351,
       "lon": -112.07055,
       "name": "",
@@ -688,6 +697,15 @@
       "tract": "04013812200"
     },
     {
+      "lat": 33.271917,
+      "lon": -111.881614,
+      "name": "CyrusOne PHX3",
+      "operator": "CyrusOne",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
       "lat": 33.268778,
       "lon": -111.882522,
       "name": "CyrusOne PHX4",
@@ -701,6 +719,15 @@
       "lon": -111.883263,
       "name": "CyrusOne PHX4",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.271812,
+      "lon": -111.883248,
+      "name": "CyrusOne PHX4",
+      "operator": "CyrusOne",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013812200"
@@ -737,6 +764,15 @@
       "lon": -111.883304,
       "name": "CyrusOne PHX8",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013812200"
+    },
+    {
+      "lat": 33.266349,
+      "lon": -111.883301,
+      "name": "CyrusOne PHX8",
+      "operator": "CyrusOne",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013812200"

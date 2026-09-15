@@ -6,8 +6,9 @@
     "39035107802": 79.1,
     "39035108301": 79.1,
     "39035124201": 86.6,
-    "39035156102": 61.2,
+    "39035156102": 70.7,
     "39041012100": 61.2,
+    "39049006238": 100.0,
     "39049006240": 100.0,
     "39049007048": 86.6,
     "39049007211": 100.0,
@@ -16,15 +17,16 @@
     "39049007931": 100.0,
     "39049007961": 100.0,
     "39049007964": 100.0,
-    "39049009590": 86.6,
+    "39049009590": 100.0,
     "39061000700": 79.1,
     "39061023001": 86.6,
+    "39061026500": 70.7,
     "39089755601": 100.0,
-    "39099811302": 61.2,
-    "39153506800": 61.2,
+    "39099811302": 70.7,
+    "39153506800": 70.7,
     "39159050601": 100.0,
     "39165032008": 70.7,
-    "39165032100": 61.2
+    "39165032100": 70.7
   },
   "facilities": [
     {
@@ -109,6 +111,15 @@
       "tract": "39035156102"
     },
     {
+      "lat": 41.361071,
+      "lon": -81.632781,
+      "name": "Involta Independence",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39035156102"
+    },
+    {
       "lat": 40.224534,
       "lon": -83.045792,
       "name": "",
@@ -143,6 +154,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39045032501"
+    },
+    {
+      "lat": 39.724042,
+      "lon": -82.691112,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39045032501"
+    },
+    {
+      "lat": 40.0933,
+      "lon": -83.133975,
+      "name": "DartPoints Dublin",
+      "operator": "DartPoints",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049006238"
     },
     {
       "lat": 40.102573,
@@ -239,6 +268,15 @@
       "lon": -82.771745,
       "name": "Google NBY-4",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007211"
+    },
+    {
+      "lat": 40.059353,
+      "lon": -82.771745,
+      "name": "Google NBY-4",
+      "operator": "Google",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39049007211"
@@ -442,6 +480,33 @@
       "tract": "39049007961"
     },
     {
+      "lat": 40.049354,
+      "lon": -83.175465,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007961"
+    },
+    {
+      "lat": 40.048138,
+      "lon": -83.175294,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007961"
+    },
+    {
+      "lat": 40.047898,
+      "lon": -83.177549,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007961"
+    },
+    {
       "lat": 40.052673,
       "lon": -83.127424,
       "name": "",
@@ -460,12 +525,30 @@
       "tract": "39049009590"
     },
     {
+      "lat": 39.852077,
+      "lon": -82.994836,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049009590"
+    },
+    {
       "lat": 39.848452,
       "lon": -82.996393,
       "name": "Google Lockbourne, OH",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
+      "tract": "39049009590"
+    },
+    {
+      "lat": 39.848452,
+      "lon": -82.996393,
+      "name": "Google Lockbourne, OH",
+      "operator": "Google",
+      "status": "construction",
+      "status_source": "osm-lifecycle",
       "tract": "39049009590"
     },
     {
@@ -503,6 +586,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39061023001"
+    },
+    {
+      "lat": 39.098101,
+      "lon": -84.51785,
+      "name": "DartPoints Cincinnati",
+      "operator": "DartPoints",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39061026500"
     },
     {
       "lat": 40.068418,
@@ -622,6 +714,33 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.093434,
+      "lon": -82.732167,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.092168,
+      "lon": -82.727548,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.092961,
+      "lon": -82.726511,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.09463,
       "lon": -82.751339,
       "name": "Amazon Web Services  CMH50",
@@ -694,6 +813,15 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.092986,
+      "lon": -82.747628,
+      "name": "Amazon Web Services CMH62",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.093745,
       "lon": -82.751832,
       "name": "Amazon Web Services Datacenter Complex",
@@ -721,10 +849,28 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.059618,
+      "lon": -82.764465,
+      "name": "Google NBY-2",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.057906,
       "lon": -82.765328,
       "name": "Google NBY-3",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.057906,
+      "lon": -82.765328,
+      "name": "Google NBY-3",
+      "operator": "Google",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39089755601"
@@ -752,6 +898,15 @@
       "lon": -82.741168,
       "name": "Meta",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.060376,
+      "lon": -82.750995,
+      "name": "NAO 5/NAO 6",
+      "operator": "Meta",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39089755601"
@@ -829,6 +984,24 @@
       "tract": "39099811302"
     },
     {
+      "lat": 41.041059,
+      "lon": -80.633078,
+      "name": "Carrier Services Group",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39099811302"
+    },
+    {
+      "lat": 41.057384,
+      "lon": -81.521928,
+      "name": "Involta-Akron",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39153506800"
+    },
+    {
       "lat": 41.057384,
       "lon": -81.521928,
       "name": "Involta-Akron",
@@ -842,6 +1015,15 @@
       "lon": -83.202074,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.117391,
+      "lon": -83.202074,
+      "name": "",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39159050601"
@@ -905,6 +1087,33 @@
       "lon": -83.202522,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.116261,
+      "lon": -83.201389,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.119031,
+      "lon": -83.200244,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.134181,
+      "lon": -83.215841,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39159050601"

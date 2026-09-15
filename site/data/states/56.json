@@ -112,6 +112,51 @@
       "tract": "56021001902"
     },
     {
+      "lat": 41.125403,
+      "lon": -104.907552,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.126438,
+      "lon": -104.899516,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125411,
+      "lon": -104.901978,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.122266,
+      "lon": -104.908142,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.122246,
+      "lon": -104.909517,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
       "lat": 41.124403,
       "lon": -104.897015,
       "name": "CYS41 Datacenter",
@@ -164,6 +209,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "56021002001"
+    },
+    {
+      "lat": 41.182601,
+      "lon": -104.068498,
+      "name": "Windbreak Cable",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021002001"
+    },
+    {
+      "lat": 41.141335,
+      "lon": -104.71676,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021002002"
     }
   ],
   "state_fips": "56"

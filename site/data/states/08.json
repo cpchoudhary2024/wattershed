@@ -4,7 +4,7 @@
     "08005006815": 100.0,
     "08005006861": 100.0,
     "08005006864": 100.0,
-    "08005007110": 86.6,
+    "08005007110": 93.5,
     "08005080400": 70.7,
     "08014031403": 61.2,
     "08031001707": 100.0,
@@ -110,6 +110,15 @@
       "lon": -104.707937,
       "name": "QTS",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "08005007110"
+    },
+    {
+      "lat": 39.734062,
+      "lon": -104.707937,
+      "name": "QTS",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "08005007110"

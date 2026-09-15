@@ -29,6 +29,15 @@
       "tract": "09001090500"
     },
     {
+      "lat": 41.240731,
+      "lon": -73.147267,
+      "name": "Digital Realty New York HVN10",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "09001090500"
+    },
+    {
       "lat": 41.707078,
       "lon": -72.589864,
       "name": "Ergonomic Group",

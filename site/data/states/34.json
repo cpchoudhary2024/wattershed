@@ -13,7 +13,11 @@
     "34023001805": 61.2,
     "34023003500": 61.2,
     "34023009300": 70.7,
+    "34025808600": 70.7,
     "34025808702": 61.2,
+    "34025809301": 61.2,
+    "34025810503": 50.0,
+    "34029737000": 61.2,
     "34031124402": 100.0,
     "34035050704": 93.5,
     "34035050902": 86.6,
@@ -331,6 +335,15 @@
       "tract": "34023009300"
     },
     {
+      "lat": 40.208462,
+      "lon": -74.119242,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34025808600"
+    },
+    {
       "lat": 40.157044,
       "lon": -74.101582,
       "name": "Apollo Cable Landing Station",
@@ -338,6 +351,33 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "34025808702"
+    },
+    {
+      "lat": 40.129561,
+      "lon": -74.042773,
+      "name": "Manasquan Cable Landing Station (TAT-14)",
+      "operator": "Sprint",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34025809301"
+    },
+    {
+      "lat": 40.239226,
+      "lon": -74.319538,
+      "name": "Verizon Freehold Data Center",
+      "operator": "Verizon",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34025810503"
+    },
+    {
+      "lat": 39.609874,
+      "lon": -74.32614,
+      "name": "GlobeNet Tuckerton Cable Landing Station",
+      "operator": "GlobeNet",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34029737000"
     },
     {
       "lat": 40.83345,

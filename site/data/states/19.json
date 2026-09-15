@@ -12,7 +12,7 @@
     "19153011028": 100.0,
     "19155030900": 86.6,
     "19155031300": 100.0,
-    "19155031400": 93.5,
+    "19155031400": 100.0,
     "19155031900": 100.0,
     "19163013702": 61.2
   },
@@ -101,6 +101,15 @@
     {
       "lat": 41.53967,
       "lon": -93.828665,
+      "name": "Microsoft",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19049050812"
+    },
+    {
+      "lat": 41.53499,
+      "lon": -93.863444,
       "name": "Microsoft",
       "operator": "Microsoft",
       "status": "operational",
@@ -216,9 +225,45 @@
       "tract": "19153010601"
     },
     {
+      "lat": 41.675784,
+      "lon": -93.509831,
+      "name": "Meta",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19153010601"
+    },
+    {
+      "lat": 41.675801,
+      "lon": -93.506037,
+      "name": "Meta",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19153010601"
+    },
+    {
       "lat": 41.667663,
       "lon": -93.455484,
       "name": "Lightedge Des Moines 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19153010703"
+    },
+    {
+      "lat": 41.667663,
+      "lon": -93.455484,
+      "name": "Lightedge Des Moines 1",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19153010703"
+    },
+    {
+      "lat": 41.666814,
+      "lon": -93.455943,
+      "name": "Lightedge Des Moines 2",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -400,6 +445,15 @@
       "lon": -95.878,
       "name": "CyrusOne OCB1 Council Bluffs",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "19155031400"
+    },
+    {
+      "lat": 41.212197,
+      "lon": -95.878,
+      "name": "CyrusOne OCB1 Council Bluffs",
+      "operator": "CyrusOne",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "19155031400"

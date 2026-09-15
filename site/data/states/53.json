@@ -237,6 +237,24 @@
       "tract": "53025010500"
     },
     {
+      "lat": 47.244813,
+      "lon": -119.818095,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
+      "lat": 47.24429,
+      "lon": -119.814806,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
       "lat": 47.251587,
       "lon": -119.818805,
       "name": "H5 Data Center",

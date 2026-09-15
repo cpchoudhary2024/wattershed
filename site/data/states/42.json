@@ -8,7 +8,7 @@
     "42079217500": 50.0,
     "42091205906": 70.7,
     "42091206006": 93.5,
-    "42091206104": 61.2,
+    "42091206104": 70.7,
     "42101037600": 61.2
   },
   "facilities": [
@@ -152,6 +152,15 @@
       "lon": -75.477618,
       "name": "Flexential Philadelphia - Collegeville",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42091206104"
+    },
+    {
+      "lat": 40.152237,
+      "lon": -75.477618,
+      "name": "Flexential Philadelphia - Collegeville",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "42091206104"

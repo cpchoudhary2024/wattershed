@@ -228,6 +228,69 @@
       "tract": "36063022000"
     },
     {
+      "lat": 43.082029,
+      "lon": -79.003417,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.082178,
+      "lon": -79.003509,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.082808,
+      "lon": -79.003281,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.08313,
+      "lon": -79.003111,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.083205,
+      "lon": -79.003342,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.083165,
+      "lon": -79.003903,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
+      "lat": 43.083284,
+      "lon": -79.003905,
+      "name": "Blockfusion Niagra Falls",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36063022000"
+    },
+    {
       "lat": 43.074831,
       "lon": -78.944809,
       "name": "",
@@ -273,6 +336,15 @@
       "tract": "36087012800"
     },
     {
+      "lat": 41.036194,
+      "lon": -73.987626,
+      "name": "Bloomberg Data Center",
+      "operator": "Bloomberg",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087012800"
+    },
+    {
       "lat": 41.039951,
       "lon": -73.989572,
       "name": "Databank LGA3",
@@ -286,6 +358,15 @@
       "lon": -73.975786,
       "name": "fifteenfortyseven CSR ORNY1",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087012800"
+    },
+    {
+      "lat": 41.034493,
+      "lon": -73.975786,
+      "name": "fifteenfortyseven CSR ORNY1",
+      "operator": "fifteenfortyseven Critical Systems Realty",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "36087012800"

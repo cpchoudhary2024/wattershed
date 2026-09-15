@@ -1,7 +1,7 @@
 {
   "density": {
     "21071920301": 61.2,
-    "21107970302": 61.2,
+    "21107970302": 70.7,
     "21111006300": 61.2,
     "21111010406": 61.2
   },
@@ -14,6 +14,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "21071920301"
+    },
+    {
+      "lat": 37.362998,
+      "lon": -87.547151,
+      "name": "Dynamics Mining",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "21107970302"
     },
     {
       "lat": 37.362998,

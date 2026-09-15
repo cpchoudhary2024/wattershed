@@ -35,6 +35,15 @@
       "tract": "55021970300"
     },
     {
+      "lat": 43.638333,
+      "lon": -89.721403,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "55021970300"
+    },
+    {
       "lat": 43.067297,
       "lon": -89.436704,
       "name": "",

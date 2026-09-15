@@ -100,6 +100,15 @@
       "tract": "17031770300"
     },
     {
+      "lat": 41.99425,
+      "lon": -87.961955,
+      "name": "Digital Realty CH1",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770300"
+    },
+    {
       "lat": 41.994353,
       "lon": -87.964942,
       "name": "Digital Realty CH3",
@@ -145,10 +154,28 @@
       "tract": "17031770400"
     },
     {
+      "lat": 42.023143,
+      "lon": -87.972186,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770400"
+    },
+    {
       "lat": 42.023042,
       "lon": -87.975557,
       "name": "T5 Chicago II",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770400"
+    },
+    {
+      "lat": 42.023042,
+      "lon": -87.975557,
+      "name": "T5 Chicago II",
+      "operator": "T5 Data Centers",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17031770400"
@@ -235,10 +262,28 @@
       "tract": "17031811800"
     },
     {
+      "lat": 41.914003,
+      "lon": -87.917516,
+      "name": "Aligned Data Center - Chicago ORD-01",
+      "operator": "Aligned",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031811800"
+    },
+    {
       "lat": 41.912963,
       "lon": -87.91759,
       "name": "Aligned Data Center - Chicago ORD-02",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031811800"
+    },
+    {
+      "lat": 41.912963,
+      "lon": -87.91759,
+      "name": "Aligned Data Center - Chicago ORD-02",
+      "operator": "Aligned",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17031811800"
@@ -424,6 +469,15 @@
       "tract": "17043840201"
     },
     {
+      "lat": 41.989015,
+      "lon": -88.007213,
+      "name": "NTT Chicago CH2",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043840201"
+    },
+    {
       "lat": 41.986941,
       "lon": -88.007985,
       "name": "NTT Chicago CH3",
@@ -521,6 +575,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17043846409"
+    },
+    {
+      "lat": 41.772103,
+      "lon": -88.217082,
+      "name": "Lincoln Rackhouse",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846507"
     },
     {
       "lat": 41.772103,
