@@ -1,16 +1,16 @@
 {
-  "synced_at": "2026-09-15T03:25:50Z",
+  "synced_at": "2026-10-01T04:11:16Z",
   "sources": [
     {
       "source_id": "osm_datacenters",
       "ok": true,
-      "count": 1828,
+      "count": 1856,
       "note": ""
     },
     {
       "source_id": "google_news_rss",
       "ok": true,
-      "count": 245,
+      "count": 246,
       "note": ""
     },
     {
@@ -20,9 +20,9 @@
       "note": "skipped \u2014 EIA_API_KEY not set (optional source)"
     }
   ],
-  "facilities_total": 3403,
-  "facilities_new": 23,
-  "tracts_with_density": 10154,
+  "facilities_total": 3450,
+  "facilities_new": 47,
+  "tracts_with_density": 10216,
   "news_total": 400,
   "files_written": [
     "data/news/news_announcements.json",
@@ -32,20 +32,22 @@
     "site/data/states/04.json",
     "site/data/states/06.json",
     "site/data/states/08.json",
-    "site/data/states/09.json",
     "site/data/states/13.json",
     "site/data/states/17.json",
+    "site/data/states/18.json",
     "site/data/states/19.json",
-    "site/data/states/21.json",
-    "site/data/states/22.json",
+    "site/data/states/20.json",
+    "site/data/states/27.json",
     "site/data/states/29.json",
+    "site/data/states/30.json",
     "site/data/states/31.json",
     "site/data/states/32.json",
     "site/data/states/34.json",
-    "site/data/states/35.json",
     "site/data/states/36.json",
     "site/data/states/37.json",
+    "site/data/states/38.json",
     "site/data/states/39.json",
+    "site/data/states/40.json",
     "site/data/states/41.json",
     "site/data/states/42.json",
     "site/data/states/45.json",
@@ -53,7 +55,6 @@
     "site/data/states/48.json",
     "site/data/states/51.json",
     "site/data/states/53.json",
-    "site/data/states/55.json",
     "site/data/states/56.json"
   ],
   "structurally_excluded": [
@@ -70,9 +71,9 @@
   ],
   "community_friction": {
     "items_total": 400,
-    "items_with_friction": 25,
+    "items_with_friction": 16,
     "by_term": {
-      "moratorium": 24,
+      "moratorium": 15,
       "injunction": 1
     },
     "basis": "Counts of unverified press headlines matching friction terms. Descriptive only: coverage volume tracks media-market size, not community harm, and this modifies no score."

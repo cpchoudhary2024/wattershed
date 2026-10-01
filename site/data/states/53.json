@@ -354,6 +354,15 @@
       "tract": "53025010500"
     },
     {
+      "lat": 47.252481,
+      "lon": -119.813639,
+      "name": "Vantage WA13",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010500"
+    },
+    {
       "lat": 47.246761,
       "lon": -119.826616,
       "name": "Yahoo Data Center",
@@ -401,6 +410,15 @@
     {
       "lat": 47.240171,
       "lon": -119.863265,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "53025010600"
+    },
+    {
+      "lat": 47.243645,
+      "lon": -119.869051,
       "name": "",
       "operator": "",
       "status": "operational",

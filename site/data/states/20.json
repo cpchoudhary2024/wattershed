@@ -33,6 +33,15 @@
       "tract": "20091052804"
     },
     {
+      "lat": 38.9392,
+      "lon": -94.860185,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "20091052804"
+    },
+    {
       "lat": 38.940134,
       "lon": -94.867682,
       "name": "State Farm Data Center",

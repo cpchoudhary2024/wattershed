@@ -9,7 +9,7 @@
     "47125102010": 100.0,
     "47145980100": 70.7,
     "47157004200": 50.0,
-    "47157022700": 79.1,
+    "47157022700": 86.6,
     "47187050304": 61.2,
     "47187050306": 93.5,
     "47187050307": 100.0,
@@ -189,10 +189,28 @@
       "tract": "47157022700"
     },
     {
+      "lat": 34.997983,
+      "lon": -90.034867,
+      "name": "xAI Macrohard Colossus 2",
+      "operator": "xAI",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47157022700"
+    },
+    {
       "lat": 35.05995,
       "lon": -90.156382,
       "name": "xAI Colossus",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47157980300"
+    },
+    {
+      "lat": 35.05995,
+      "lon": -90.156382,
+      "name": "xAI Colossus",
+      "operator": "xAI",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "47157980300"
@@ -247,6 +265,33 @@
       "lon": -86.366628,
       "name": "Meta Gallatin Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.411893,
+      "lon": -86.369653,
+      "name": "Meta Gallatin Data Center",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.411378,
+      "lon": -86.366004,
+      "name": "Meta Gallatin Data Center",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "47165020602"
+    },
+    {
+      "lat": 36.406064,
+      "lon": -86.366628,
+      "name": "Meta Gallatin Data Center",
+      "operator": "Meta",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "47165020602"

@@ -9,7 +9,7 @@
     "37063002037": 100.0,
     "37119003805": 100.0,
     "37119003809": 100.0,
-    "37119005533": 61.2,
+    "37119005533": 70.7,
     "37119005915": 93.5,
     "37119005928": 100.0,
     "37161960800": 100.0,
@@ -154,6 +154,15 @@
       "lon": -80.765759,
       "name": "Flexential Charlotte - North",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "37119005533"
+    },
+    {
+      "lat": 35.329773,
+      "lon": -80.765759,
+      "name": "Flexential Charlotte - North",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "37119005533"

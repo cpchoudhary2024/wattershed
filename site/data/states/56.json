@@ -13,6 +13,15 @@
       "tract": "56005000101"
     },
     {
+      "lat": 44.189237,
+      "lon": -105.61048,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56005000101"
+    },
+    {
       "lat": 41.13998,
       "lon": -104.82025,
       "name": "Microsoft Cheyenne",
@@ -166,10 +175,28 @@
       "tract": "56021001902"
     },
     {
+      "lat": 41.124403,
+      "lon": -104.897015,
+      "name": "CYS41 Datacenter",
+      "operator": "Microsoft",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
       "lat": 41.125382,
       "lon": -104.908889,
       "name": "CYS42 Datacenter",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021001902"
+    },
+    {
+      "lat": 41.125382,
+      "lon": -104.908889,
+      "name": "CYS42 Datacenter",
+      "operator": "Microsoft",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "56021001902"
@@ -200,6 +227,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "56021001902"
+    },
+    {
+      "lat": 41.064287,
+      "lon": -104.785644,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "56021002001"
     },
     {
       "lat": 41.182601,

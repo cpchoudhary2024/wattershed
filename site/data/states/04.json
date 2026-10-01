@@ -166,6 +166,15 @@
       "tract": "04013111203"
     },
     {
+      "lat": 33.454726,
+      "lon": -111.976218,
+      "name": "Iron Mountain AZP-1",
+      "operator": "Iron Mountain",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013111203"
+    },
+    {
       "lat": 33.452157,
       "lon": -111.977294,
       "name": "Iron Mountain AZP-2",
@@ -195,6 +204,15 @@
     {
       "lat": 33.460881,
       "lon": -111.997156,
+      "name": "QTS",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013113601"
+    },
+    {
+      "lat": 33.46468,
+      "lon": -111.99756,
       "name": "QTS",
       "operator": "Quality Technology Services",
       "status": "operational",
@@ -233,6 +251,15 @@
       "lon": -112.041326,
       "name": "Iron Mountain Records Storage",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013117200"
+    },
+    {
+      "lat": 33.42038,
+      "lon": -112.041326,
+      "name": "Iron Mountain Records Storage",
+      "operator": "Iron Mountain",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "04013117200"
@@ -546,6 +573,15 @@
     {
       "lat": 33.353215,
       "lon": -111.678033,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "04013422654"
+    },
+    {
+      "lat": 33.353191,
+      "lon": -111.678073,
       "name": "",
       "operator": "",
       "status": "operational",

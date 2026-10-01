@@ -85,6 +85,33 @@
       "tract": "31055007317"
     },
     {
+      "lat": 41.339139,
+      "lon": -96.084657,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
+      "lat": 41.341935,
+      "lon": -96.087701,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
+      "lat": 41.345501,
+      "lon": -96.093655,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31055007317"
+    },
+    {
       "lat": 41.317986,
       "lon": -96.050348,
       "name": "Union Pacific Jack Koraleski Technology, Research & Development Center",
@@ -186,6 +213,15 @@
     {
       "lat": 41.134393,
       "lon": -96.155904,
+      "name": "Google",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "31153010629"
+    },
+    {
+      "lat": 41.137908,
+      "lon": -96.151432,
       "name": "Google",
       "operator": "Google",
       "status": "operational",

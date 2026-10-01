@@ -21736,7 +21736,7 @@
     "tract_geoid": "37021002204"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-09-15T03:25:33Z",
     "lat": 38.994315,
     "lon": -77.444001,
@@ -21746,10 +21746,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-09-15T03:25:33Z",
     "lat": 39.025458,
     "lon": -77.454281,
@@ -21759,7 +21759,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611018"
   },
   {
     "county_fips": "",
@@ -21769,6 +21769,19 @@
     "name": "Whipcord LDC01",
     "operator": "Whipcord Edge",
     "osm_id": "node/14174853849",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.561313,
+    "lon": -104.827573,
+    "name": "EdgeConneX - DEN01",
+    "operator": "EdgeConneX",
+    "osm_id": "node/14212611951",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -22481,7 +22494,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.743052,
     "lon": -77.533375,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1000784035",
     "source": "osm",
@@ -22494,7 +22507,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.998078,
     "lon": -77.475471,
-    "name": "QTS Ashburn-Shellhorn DC1",
+    "name": "QTS Ashburn 3 DC1",
     "operator": "Quality Technology Services",
     "osm_id": "way/1003348567",
     "source": "osm",
@@ -22780,7 +22793,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99585,
     "lon": -77.471294,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-162",
     "operator": "Amazon Web Services",
     "osm_id": "way/1020877488",
     "source": "osm",
@@ -22793,7 +22806,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.996604,
     "lon": -77.47326,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-161",
     "operator": "Amazon Web Services",
     "osm_id": "way/1020877489",
     "source": "osm",
@@ -22897,7 +22910,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.005689,
     "lon": -77.449464,
-    "name": "Digital Realty IAD42 (Building R)",
+    "name": "Digital Realty IAD42",
     "operator": "Digital Realty",
     "osm_id": "way/1025002889",
     "source": "osm",
@@ -23001,7 +23014,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.01526,
     "lon": -77.437776,
-    "name": "Amazon IAD601",
+    "name": "Amazon IAD-601",
     "operator": "Amazon Web Services",
     "osm_id": "way/1037871048",
     "source": "osm",
@@ -23105,7 +23118,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.744287,
     "lon": -77.533332,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1059030596",
     "source": "osm",
@@ -23118,8 +23131,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.745991,
     "lon": -77.537549,
-    "name": "",
-    "operator": "",
+    "name": "STACK",
+    "operator": "Stack Infrastructure",
     "osm_id": "way/1059036248",
     "source": "osm",
     "status": "operational",
@@ -23131,7 +23144,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.743886,
     "lon": -77.530625,
-    "name": "COPT Innovation Park Data Center",
+    "name": "Amazon IAD-132",
     "operator": "Amazon Web Services",
     "osm_id": "way/1059037050",
     "source": "osm",
@@ -23144,7 +23157,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.744055,
     "lon": -77.529196,
-    "name": "COPT Data Center Bldg 2",
+    "name": "Amazon IAD-133",
     "operator": "Amazon Web Services",
     "osm_id": "way/1059037051",
     "source": "osm",
@@ -23937,8 +23950,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.013048,
     "lon": -77.473094,
-    "name": "",
-    "operator": "",
+    "name": "IAD",
+    "operator": "Aligned",
     "osm_id": "way/1088241982",
     "source": "osm",
     "status": "operational",
@@ -24002,13 +24015,26 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.731057,
     "lon": -84.616081,
-    "name": "Flexential Atlanta - Douglasville 1",
+    "name": "Douglasville 1",
     "operator": "Flexential",
     "osm_id": "way/1097502168",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
     "tract_geoid": "13097080105"
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.725958,
+    "lon": -84.619575,
+    "name": "Aligned Data Centers",
+    "operator": "Aligned Data Centers",
+    "osm_id": "way/1097502169",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
   },
   {
     "county_fips": "47125",
@@ -24041,7 +24067,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.979563,
     "lon": -77.417491,
-    "name": "Amazon IAD143",
+    "name": "Amazon IAD-143",
     "operator": "Amazon Web Services",
     "osm_id": "way/1106454555",
     "source": "osm",
@@ -24158,7 +24184,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.024235,
     "lon": -77.452287,
-    "name": "Equinix Ashburn DC16",
+    "name": "Equinix DC16",
     "operator": "Equinix",
     "osm_id": "way/1123249721",
     "source": "osm",
@@ -24262,7 +24288,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.069649,
     "lon": -77.560771,
-    "name": "",
+    "name": "Microsoft Leesburg Building 3",
     "operator": "",
     "osm_id": "way/1128589933",
     "source": "osm",
@@ -24275,7 +24301,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.069656,
     "lon": -77.559433,
-    "name": "",
+    "name": "Microsoft Leesburg Building 4",
     "operator": "",
     "osm_id": "way/1128589934",
     "source": "osm",
@@ -24340,7 +24366,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.951455,
     "lon": -77.363999,
-    "name": "CoreSite Reston Campus VA2",
+    "name": "CoreSite VA2",
     "operator": "CoreSite",
     "osm_id": "way/1134104431",
     "source": "osm",
@@ -24353,7 +24379,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.7476,
     "lon": -77.51948,
-    "name": "AWS IAD105",
+    "name": "Amazon IAD-105",
     "operator": "Amazon Web Services",
     "osm_id": "way/1134911640",
     "source": "osm",
@@ -24366,7 +24392,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.74837,
     "lon": -77.5207,
-    "name": "AWS IAD104",
+    "name": "Amazon IAD-104",
     "operator": "Amazon Web Services",
     "osm_id": "way/1134911641",
     "source": "osm",
@@ -24399,6 +24425,32 @@
     "status": "operational",
     "status_source": "osm-default",
     "tract_geoid": "24027606907"
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.76226,
+    "lon": -84.593446,
+    "name": "The Keep",
+    "operator": "Switch",
+    "osm_id": "way/1149499531",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.760378,
+    "lon": -84.591303,
+    "name": "The Keep",
+    "operator": "Switch",
+    "osm_id": "way/1149499532",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
   },
   {
     "county_fips": "41013",
@@ -24587,7 +24639,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.979147,
     "lon": -77.419905,
-    "name": "Amazon IAD142",
+    "name": "Amazon IAD-142",
     "operator": "Amazon Web Services",
     "osm_id": "way/1161094246",
     "source": "osm",
@@ -24665,7 +24717,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.941812,
     "lon": -77.527451,
-    "name": "Google: Arcola 2",
+    "name": "Google Arcola Building 2",
     "operator": "Google",
     "osm_id": "way/1173770902",
     "source": "osm",
@@ -24691,7 +24743,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.981547,
     "lon": -77.419369,
-    "name": "Amazon IAD603",
+    "name": "Amazon IAD-603",
     "operator": "Amazon Web Services",
     "osm_id": "way/1177893426",
     "source": "osm",
@@ -24782,7 +24834,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.917256,
     "lon": -77.495674,
-    "name": "Amazon IAD86",
+    "name": "Amazon IAD-86",
     "operator": "Amazon Web Services",
     "osm_id": "way/1181391920",
     "source": "osm",
@@ -24795,7 +24847,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.760361,
     "lon": -77.519302,
-    "name": "Amazon IAD130",
+    "name": "Amazon IAD-130",
     "operator": "Amazon Web Services",
     "osm_id": "way/1181391921",
     "source": "osm",
@@ -24808,7 +24860,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.761105,
     "lon": -77.518221,
-    "name": "Amazon IAD131",
+    "name": "Amazon IAD-131",
     "operator": "Amazon Web Services",
     "osm_id": "way/1181391922",
     "source": "osm",
@@ -24847,7 +24899,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99871,
     "lon": -77.474326,
-    "name": "QTS Ashburn-Shellhorn DC2",
+    "name": "QTS Ashburn 3 DC2",
     "operator": "Quality Technology Services",
     "osm_id": "way/1188680247",
     "source": "osm",
@@ -24860,7 +24912,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.995307,
     "lon": -77.455264,
-    "name": "QTS Ashburn Lockridge",
+    "name": "QTS Ashburn 2 DC1",
     "operator": "Quality Technology Services",
     "osm_id": "way/1188680253",
     "source": "osm",
@@ -24873,7 +24925,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.995181,
     "lon": -77.456819,
-    "name": "QTS Ashburn Lockridge",
+    "name": "QTS Ashburn 2 DC2",
     "operator": "Quality Technology Services",
     "osm_id": "way/1188680254",
     "source": "osm",
@@ -24886,7 +24938,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.98956,
     "lon": -77.434802,
-    "name": "Amazon IAD192",
+    "name": "Amazon IAD-192",
     "operator": "Amazon Web Services",
     "osm_id": "way/1188680255",
     "source": "osm",
@@ -24899,7 +24951,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.017043,
     "lon": -77.473338,
-    "name": "NTT Ashburn VA6 Data Center",
+    "name": "NTT VA6",
     "operator": "NTT",
     "osm_id": "way/1188691867",
     "source": "osm",
@@ -24912,7 +24964,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.020189,
     "lon": -77.475509,
-    "name": "NTT Ashburn VA9 Data Center",
+    "name": "NTT VA9",
     "operator": "NTT",
     "osm_id": "way/1188691868",
     "source": "osm",
@@ -24925,7 +24977,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.017904,
     "lon": -77.481819,
-    "name": "DataBank Ashburn IAD3",
+    "name": "DataBank IAD3",
     "operator": "DataBank",
     "osm_id": "way/1188691869",
     "source": "osm",
@@ -25211,8 +25263,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 42.023143,
     "lon": -87.972186,
-    "name": "",
-    "operator": "",
+    "name": "Microsoft CHI11",
+    "operator": "Microsoft",
     "osm_id": "way/1219083552",
     "source": "osm",
     "status": "operational",
@@ -25235,7 +25287,7 @@
   {
     "county_fips": "48453",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 30.215605,
+    "lat": 30.215619,
     "lon": -97.618939,
     "name": "Cortex supercomputer",
     "operator": "",
@@ -25250,7 +25302,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.746979,
     "lon": -77.518524,
-    "name": "AWS IAD106",
+    "name": "Amazon IAD-106",
     "operator": "Amazon Web Services",
     "osm_id": "way/1221862807",
     "source": "osm",
@@ -25276,7 +25328,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.949149,
     "lon": -77.523594,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1222134968",
     "source": "osm",
@@ -25285,7 +25337,7 @@
     "tract_geoid": "51107611812"
   },
   {
-    "county_fips": "",
+    "county_fips": "19155",
     "first_seen": "2026-09-15T03:25:33Z",
     "lat": 41.212107,
     "lon": -95.877895,
@@ -25295,7 +25347,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19155031400"
   },
   {
     "county_fips": "19155",
@@ -25380,7 +25432,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.736985,
     "lon": -77.504088,
-    "name": "Amazon IAD103",
+    "name": "Amazon IAD-103",
     "operator": "Amazon Web Services",
     "osm_id": "way/1227612684",
     "source": "osm",
@@ -25744,7 +25796,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.904344,
     "lon": -77.452469,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-134",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196797",
     "source": "osm",
@@ -25757,7 +25809,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.904837,
     "lon": -77.45475,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-135",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196798",
     "source": "osm",
@@ -25770,7 +25822,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.915903,
     "lon": -77.490551,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-155",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196799",
     "source": "osm",
@@ -25783,7 +25835,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.914991,
     "lon": -77.490974,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196800",
     "source": "osm",
@@ -25978,7 +26030,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.776145,
     "lon": -77.582514,
-    "name": "Google",
+    "name": "Google Mango Farm Building 1",
     "operator": "Google",
     "osm_id": "way/1252196815",
     "source": "osm",
@@ -26108,7 +26160,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.746153,
     "lon": -77.517223,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196825",
     "source": "osm",
@@ -26121,7 +26173,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.921305,
     "lon": -77.485801,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-156",
     "operator": "Amazon Web Services",
     "osm_id": "way/1252196826",
     "source": "osm",
@@ -26132,9 +26184,9 @@
   {
     "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 38.995088,
-    "lon": -77.471078,
-    "name": "Amazon Web Services",
+    "lat": 38.995057,
+    "lon": -77.471074,
+    "name": "Amazon IAD-606",
     "operator": "Amazon Web Services",
     "osm_id": "way/1253282099",
     "source": "osm",
@@ -26225,7 +26277,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.730703,
     "lon": -84.61124,
-    "name": "Flexential Atlanta - Douglasville 2",
+    "name": "Douglasville 2",
     "operator": "Flexential",
     "osm_id": "way/1258702591",
     "source": "osm",
@@ -26264,8 +26316,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.740385,
     "lon": -77.503977,
-    "name": "",
-    "operator": "",
+    "name": "Digital Realty IAD53",
+    "operator": "Digital Realty",
     "osm_id": "way/1269259655",
     "source": "osm",
     "status": "operational",
@@ -26316,7 +26368,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.986532,
     "lon": -77.435177,
-    "name": "Amazon IAD214",
+    "name": "Amazon IAD-214",
     "operator": "Amazon Web Services",
     "osm_id": "way/1276518679",
     "source": "osm",
@@ -26329,7 +26381,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.988635,
     "lon": -77.440778,
-    "name": "Aligned IAD03",
+    "name": "Aligned IAD-03",
     "operator": "Aligned",
     "osm_id": "way/1276518684",
     "source": "osm",
@@ -26368,7 +26420,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.947374,
     "lon": -77.520238,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340212",
     "source": "osm",
@@ -26381,7 +26433,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.983528,
     "lon": -77.417508,
-    "name": "Amazon IAD608",
+    "name": "Amazon IAD-608",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340213",
     "source": "osm",
@@ -26394,7 +26446,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.802884,
     "lon": -77.622122,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-195",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340214",
     "source": "osm",
@@ -26407,7 +26459,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.745134,
     "lon": -77.533101,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340215",
     "source": "osm",
@@ -26420,7 +26472,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.814593,
     "lon": -77.654319,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340216",
     "source": "osm",
@@ -26433,7 +26485,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.816971,
     "lon": -77.652153,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-94",
     "operator": "Amazon Web Services",
     "osm_id": "way/1280340217",
     "source": "osm",
@@ -26628,7 +26680,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.774437,
     "lon": -77.585618,
-    "name": "Google",
+    "name": "Google Mango Farm",
     "operator": "Google",
     "osm_id": "way/1287260553",
     "source": "osm",
@@ -26641,7 +26693,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.801862,
     "lon": -77.621212,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-196",
     "operator": "Amazon Web Services",
     "osm_id": "way/1287260554",
     "source": "osm",
@@ -26654,7 +26706,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.80125,
     "lon": -77.620476,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-197",
     "operator": "Amazon Web Services",
     "osm_id": "way/1287260555",
     "source": "osm",
@@ -26676,7 +26728,7 @@
     "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.773028,
     "lon": -77.541185,
@@ -26686,36 +26738,36 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.753166,
     "lon": -77.510882,
-    "name": "QTS Manassas DC2",
+    "name": "QTS Manassas DC3",
     "operator": "Quality Technology Services",
     "osm_id": "way/1287260558",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.758931,
     "lon": -77.516694,
-    "name": "",
+    "name": "STACK NVA05A",
     "operator": "",
     "osm_id": "way/1287260559",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "19155",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.173626,
     "lon": -95.792188,
@@ -26725,10 +26777,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19155031900"
   },
   {
-    "county_fips": "",
+    "county_fips": "19155",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.173628,
     "lon": -95.788661,
@@ -26738,10 +26790,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19155031900"
   },
   {
-    "county_fips": "",
+    "county_fips": "39035",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.443057,
     "lon": -81.803445,
@@ -26751,10 +26803,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39035124201"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.04252,
     "lon": -77.53829,
@@ -26764,10 +26816,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611028"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.041653,
     "lon": -77.539212,
@@ -26777,10 +26829,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611028"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.043496,
     "lon": -77.54084,
@@ -26790,10 +26842,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611028"
   },
   {
-    "county_fips": "",
+    "county_fips": "47165",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.411893,
     "lon": -86.369653,
@@ -26803,10 +26855,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47165020602"
   },
   {
-    "county_fips": "",
+    "county_fips": "06099",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.665145,
     "lon": -121.040033,
@@ -26816,10 +26868,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06099000602"
   },
   {
-    "county_fips": "",
+    "county_fips": "48029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 29.686403,
     "lon": -98.462648,
@@ -26829,7 +26881,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48029191814"
   },
   {
     "county_fips": "",
@@ -26845,7 +26897,7 @@
     "tract_geoid": ""
   },
   {
-    "county_fips": "",
+    "county_fips": "48113",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.983624,
     "lon": -96.654263,
@@ -26855,10 +26907,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48113019042"
   },
   {
-    "county_fips": "",
+    "county_fips": "48221",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.341341,
     "lon": -97.731692,
@@ -26868,36 +26920,36 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48221160212"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.948035,
     "lon": -77.558984,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-127",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1301654223",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611810"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.950082,
     "lon": -77.558868,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-126",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1301654224",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611810"
   },
   {
-    "county_fips": "",
+    "county_fips": "18141",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.667764,
     "lon": -86.473056,
@@ -26907,10 +26959,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "18141010800"
   },
   {
-    "county_fips": "",
+    "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.768143,
     "lon": -77.538648,
@@ -26920,10 +26972,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51153901409"
   },
   {
-    "county_fips": "",
+    "county_fips": "27137",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.827468,
     "lon": -92.130482,
@@ -26933,10 +26985,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "27137000400"
   },
   {
-    "county_fips": "",
+    "county_fips": "51117",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.675694,
     "lon": -78.37391,
@@ -26946,10 +26998,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51117930600"
   },
   {
-    "county_fips": "",
+    "county_fips": "37119",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 35.329773,
     "lon": -80.765759,
@@ -26959,36 +27011,36 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "37119005533"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.015197,
     "lon": -77.459534,
-    "name": "Equinix Ashburn DC6",
+    "name": "Equinix DC6",
     "operator": "Equinix",
     "osm_id": "way/1309123033",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611006"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.01644,
     "lon": -77.461954,
-    "name": "Equinix Ashburn DC4",
+    "name": "Equinix DC4",
     "operator": "Equinix",
     "osm_id": "way/1309123034",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611006"
   },
   {
-    "county_fips": "",
+    "county_fips": "48029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 29.580152,
     "lon": -98.541304,
@@ -26998,10 +27050,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48029191405"
   },
   {
-    "county_fips": "",
+    "county_fips": "17037",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.888546,
     "lon": -88.721834,
@@ -27011,10 +27063,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17037001500"
   },
   {
-    "county_fips": "",
+    "county_fips": "17037",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.889299,
     "lon": -88.73103,
@@ -27024,10 +27076,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17037001500"
   },
   {
-    "county_fips": "",
+    "county_fips": "17037",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.890305,
     "lon": -88.726628,
@@ -27037,10 +27089,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17037001500"
   },
   {
-    "county_fips": "",
+    "county_fips": "47165",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.411378,
     "lon": -86.366004,
@@ -27050,10 +27102,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47165020602"
   },
   {
-    "county_fips": "",
+    "county_fips": "47165",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.406064,
     "lon": -86.366628,
@@ -27063,10 +27115,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47165020602"
   },
   {
-    "county_fips": "",
+    "county_fips": "31153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.137908,
     "lon": -96.151432,
@@ -27076,10 +27128,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31153010629"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.370643,
     "lon": -121.974482,
@@ -27089,10 +27141,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085505202"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.364001,
     "lon": -121.94689,
@@ -27102,10 +27154,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085505202"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.370919,
     "lon": -121.947217,
@@ -27115,10 +27167,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085505202"
   },
   {
-    "county_fips": "",
+    "county_fips": "32003",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.057992,
     "lon": -115.210328,
@@ -27128,10 +27180,10 @@
     "source": "osm",
     "status": "construction",
     "status_source": "osm-lifecycle",
-    "tract_geoid": ""
+    "tract_geoid": "32003002979"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.46468,
     "lon": -111.99756,
@@ -27141,10 +27193,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013113601"
   },
   {
-    "county_fips": "",
+    "county_fips": "17031",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 42.023077,
     "lon": -87.961467,
@@ -27154,10 +27206,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17031770400"
   },
   {
-    "county_fips": "",
+    "county_fips": "48113",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.980934,
     "lon": -96.659465,
@@ -27167,10 +27219,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48113019042"
   },
   {
-    "county_fips": "",
+    "county_fips": "48113",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.980928,
     "lon": -96.657944,
@@ -27180,23 +27232,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48113019042"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.960854,
     "lon": -77.491398,
-    "name": "Digital Realty Northern Virginia IAD44",
+    "name": "Digital Realty IAD44",
     "operator": "Digital Realty",
     "osm_id": "way/1317733642",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107980100"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.021997,
     "lon": -77.4532,
@@ -27206,10 +27258,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611006"
   },
   {
-    "county_fips": "",
+    "county_fips": "19181",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.495806,
     "lon": -93.787055,
@@ -27219,10 +27271,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19181020300"
   },
   {
-    "county_fips": "",
+    "county_fips": "19181",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.49475,
     "lon": -93.78702,
@@ -27232,10 +27284,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19181020300"
   },
   {
-    "county_fips": "",
+    "county_fips": "19049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.616852,
     "lon": -93.924397,
@@ -27245,10 +27297,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19049050902"
   },
   {
-    "county_fips": "",
+    "county_fips": "27123",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 44.972195,
     "lon": -93.147473,
@@ -27258,10 +27310,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "27123030202"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.42038,
     "lon": -112.041326,
@@ -27271,10 +27323,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013117200"
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.949257,
+    "lon": -77.549801,
+    "name": "Yondr Allegro South",
+    "operator": "Yondr",
+    "osm_id": "way/1319637945",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "39041",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.224534,
     "lon": -83.045792,
@@ -27284,10 +27349,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39041012100"
   },
   {
-    "county_fips": "",
+    "county_fips": "45051",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.674607,
     "lon": -78.943885,
@@ -27297,10 +27362,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "45051051000"
   },
   {
-    "county_fips": "",
+    "county_fips": "32029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.51152,
     "lon": -119.483306,
@@ -27310,10 +27375,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32029970200"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.445895,
     "lon": -122.160786,
@@ -27323,23 +27388,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085511302"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.066015,
     "lon": -77.558569,
-    "name": "",
+    "name": "Microsoft Leesburg Building 5",
     "operator": "",
     "osm_id": "way/1333205263",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107610604"
   },
   {
-    "county_fips": "",
+    "county_fips": "42079",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.082625,
     "lon": -76.151419,
@@ -27349,10 +27414,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "42079216100"
   },
   {
-    "county_fips": "",
+    "county_fips": "42079",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.083339,
     "lon": -76.151446,
@@ -27362,10 +27427,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "42079216100"
   },
   {
-    "county_fips": "",
+    "county_fips": "42079",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.083991,
     "lon": -76.143375,
@@ -27375,10 +27440,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "42079216100"
   },
   {
-    "county_fips": "",
+    "county_fips": "27053",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.143693,
     "lon": -93.387119,
@@ -27388,10 +27453,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "27053026812"
   },
   {
-    "county_fips": "",
+    "county_fips": "53025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 47.252481,
     "lon": -119.813639,
@@ -27401,10 +27466,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "53025010500"
   },
   {
-    "county_fips": "",
+    "county_fips": "53025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 47.243645,
     "lon": -119.869051,
@@ -27414,10 +27479,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "53025010600"
   },
   {
-    "county_fips": "",
+    "county_fips": "51059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.922767,
     "lon": -77.427872,
@@ -27427,10 +27492,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51059482505"
   },
   {
-    "county_fips": "",
+    "county_fips": "51059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.921124,
     "lon": -77.426543,
@@ -27440,10 +27505,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51059482505"
   },
   {
-    "county_fips": "",
+    "county_fips": "51059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.922711,
     "lon": -77.426304,
@@ -27453,10 +27518,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51059482505"
   },
   {
-    "county_fips": "",
+    "county_fips": "48029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 29.418221,
     "lon": -98.787837,
@@ -27466,10 +27531,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48029172002"
   },
   {
-    "county_fips": "",
+    "county_fips": "48029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 29.450677,
     "lon": -98.638704,
@@ -27479,10 +27544,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48029171926"
   },
   {
-    "county_fips": "",
+    "county_fips": "48029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 29.418466,
     "lon": -98.788796,
@@ -27492,10 +27557,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48029172002"
   },
   {
-    "county_fips": "",
+    "county_fips": "48029",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 29.41614,
     "lon": -98.789245,
@@ -27505,10 +27570,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48029172002"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.375765,
     "lon": -121.95627,
@@ -27518,49 +27583,49 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085505202"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.000448,
     "lon": -77.460796,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-286",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1344901567",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.999132,
     "lon": -77.460787,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-285",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1344901568",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.001826,
     "lon": -77.452703,
-    "name": "Digital Realty IAD43 (Building S)",
+    "name": "Digital Realty IAD43",
     "operator": "Digital Realty",
     "osm_id": "way/1344901569",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.997949,
     "lon": -77.430231,
@@ -27570,10 +27635,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39017",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.385272,
     "lon": -84.566284,
@@ -27583,10 +27648,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39017000300"
   },
   {
-    "county_fips": "",
+    "county_fips": "06085",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.407303,
     "lon": -121.96598,
@@ -27596,10 +27661,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "06085505010"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.454726,
     "lon": -111.976218,
@@ -27609,10 +27674,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013111203"
   },
   {
-    "county_fips": "",
+    "county_fips": "41043",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 44.775224,
     "lon": -122.615931,
@@ -27622,10 +27687,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41043030202"
   },
   {
-    "county_fips": "",
+    "county_fips": "19153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.515864,
     "lon": -93.720312,
@@ -27635,10 +27700,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19153011028"
   },
   {
-    "county_fips": "",
+    "county_fips": "19153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.516864,
     "lon": -93.719767,
@@ -27648,10 +27713,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19153011028"
   },
   {
-    "county_fips": "",
+    "county_fips": "29025",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.744048,
     "lon": -93.997376,
@@ -27661,10 +27726,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "29025950202"
   },
   {
-    "county_fips": "",
+    "county_fips": "04013",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.353191,
     "lon": -111.678073,
@@ -27674,10 +27739,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "04013422654"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.879527,
     "lon": -119.341626,
@@ -27687,10 +27752,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950900"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.88253,
     "lon": -119.339695,
@@ -27700,10 +27765,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059950900"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.059238,
     "lon": -82.762677,
@@ -27713,10 +27778,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "19049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.533916,
     "lon": -93.863439,
@@ -27726,10 +27791,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19049050812"
   },
   {
-    "county_fips": "",
+    "county_fips": "19049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.532837,
     "lon": -93.863462,
@@ -27739,10 +27804,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19049050812"
   },
   {
-    "county_fips": "",
+    "county_fips": "19049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.531814,
     "lon": -93.863443,
@@ -27752,10 +27817,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "19049050812"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.064287,
     "lon": -104.785644,
@@ -27765,10 +27830,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021002001"
   },
   {
-    "county_fips": "",
+    "county_fips": "32003",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.168644,
     "lon": -115.143145,
@@ -27778,10 +27843,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32003000700"
   },
   {
-    "county_fips": "",
+    "county_fips": "51061",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.737208,
     "lon": -77.82628,
@@ -27791,10 +27856,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51061930306"
   },
   {
-    "county_fips": "",
+    "county_fips": "51061",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.738214,
     "lon": -77.825868,
@@ -27804,10 +27869,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51061930306"
   },
   {
-    "county_fips": "",
+    "county_fips": "47157",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 35.05995,
     "lon": -90.156382,
@@ -27817,10 +27882,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47157980300"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.002309,
     "lon": -77.471893,
@@ -27830,10 +27895,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611020"
   },
   {
-    "county_fips": "",
+    "county_fips": "39035",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.442622,
     "lon": -81.8023,
@@ -27843,10 +27908,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39035124201"
   },
   {
-    "county_fips": "",
+    "county_fips": "17019",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.095259,
     "lon": -88.242031,
@@ -27856,10 +27921,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17019001400"
   },
   {
-    "county_fips": "",
+    "county_fips": "36087",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.039951,
     "lon": -73.989572,
@@ -27869,10 +27934,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "36087012800"
   },
   {
-    "county_fips": "",
+    "county_fips": "34017",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.784904,
     "lon": -74.065357,
@@ -27882,10 +27947,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "34017019900"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.102426,
     "lon": -82.750141,
@@ -27895,10 +27960,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.101955,
     "lon": -82.751912,
@@ -27908,10 +27973,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.094226,
     "lon": -82.732111,
@@ -27921,10 +27986,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.094397,
     "lon": -82.729279,
@@ -27934,10 +27999,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.095495,
     "lon": -82.732005,
@@ -27947,10 +28012,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.056511,
     "lon": -82.772007,
@@ -27960,10 +28025,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007211"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.053959,
     "lon": -82.767595,
@@ -27973,10 +28038,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007211"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.061493,
     "lon": -82.740552,
@@ -27986,10 +28051,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.06523,
     "lon": -82.741168,
@@ -27999,10 +28064,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.135789,
     "lon": -83.212641,
@@ -28012,10 +28077,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.120064,
     "lon": -83.199319,
@@ -28025,10 +28090,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.119299,
     "lon": -83.203226,
@@ -28038,10 +28103,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39159",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.118118,
     "lon": -83.202522,
@@ -28051,10 +28116,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39159050601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.05018,
     "lon": -83.175516,
@@ -28064,10 +28129,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007961"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.051522,
     "lon": -83.175715,
@@ -28077,10 +28142,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007961"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.016419,
     "lon": -83.125852,
@@ -28090,10 +28155,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007931"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.021013,
     "lon": -83.12602,
@@ -28103,10 +28168,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007931"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.851731,
     "lon": -119.619661,
@@ -28116,10 +28181,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.853095,
     "lon": -119.61968,
@@ -28129,10 +28194,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970102"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.818711,
     "lon": -119.632008,
@@ -28142,10 +28207,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970101"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.818702,
     "lon": -119.636263,
@@ -28155,10 +28220,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970101"
   },
   {
-    "county_fips": "",
+    "county_fips": "41049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.819949,
     "lon": -119.636272,
@@ -28168,10 +28233,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41049970101"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.809634,
     "lon": -119.268611,
@@ -28181,10 +28246,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951202"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.808277,
     "lon": -119.268616,
@@ -28194,10 +28259,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951202"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.799015,
     "lon": -119.361727,
@@ -28207,10 +28272,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951100"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.799683,
     "lon": -119.358424,
@@ -28220,10 +28285,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951100"
   },
   {
-    "county_fips": "",
+    "county_fips": "41059",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.797752,
     "lon": -119.358925,
@@ -28233,10 +28298,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "41059951100"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.124403,
     "lon": -104.897015,
@@ -28246,10 +28311,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "56021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.125382,
     "lon": -104.908889,
@@ -28259,10 +28324,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56021001902"
   },
   {
-    "county_fips": "",
+    "county_fips": "39023",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.912797,
     "lon": -83.723664,
@@ -28272,10 +28337,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39023002200"
   },
   {
-    "county_fips": "",
+    "county_fips": "47157",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 34.997983,
     "lon": -90.034867,
@@ -28285,10 +28350,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "47157022700"
   },
   {
-    "county_fips": "",
+    "county_fips": "40101",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 35.568135,
     "lon": -95.512417,
@@ -28298,10 +28363,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "40101001100"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.043613,
     "lon": -77.537262,
@@ -28311,23 +28376,23 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611028"
   },
   {
-    "county_fips": "",
+    "county_fips": "51107",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.044254,
     "lon": -77.537958,
-    "name": "TikTok Data Center",
-    "operator": "True North Data Solutions",
+    "name": "Compass IAD IE",
+    "operator": "Compass Datacenters",
     "osm_id": "way/1387391201",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "51107611028"
   },
   {
-    "county_fips": "",
+    "county_fips": "27003",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 45.132157,
     "lon": -93.095616,
@@ -28337,10 +28402,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "27003050236"
   },
   {
-    "county_fips": "",
+    "county_fips": "20091",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.9392,
     "lon": -94.860185,
@@ -28350,10 +28415,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "20091052804"
   },
   {
-    "county_fips": "",
+    "county_fips": "39049",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.052673,
     "lon": -83.127424,
@@ -28363,10 +28428,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39049007964"
   },
   {
-    "county_fips": "",
+    "county_fips": "56005",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 44.189237,
     "lon": -105.61048,
@@ -28376,10 +28441,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "56005000101"
   },
   {
-    "county_fips": "",
+    "county_fips": "30017",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.406885,
     "lon": -105.820697,
@@ -28389,7 +28454,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "30017961600"
   },
   {
     "county_fips": "",
@@ -28405,7 +28470,7 @@
     "tract_geoid": ""
   },
   {
-    "county_fips": "",
+    "county_fips": "32003",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.065208,
     "lon": -115.222045,
@@ -28415,10 +28480,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "32003002979"
   },
   {
-    "county_fips": "",
+    "county_fips": "31055",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.339139,
     "lon": -96.084657,
@@ -28428,10 +28493,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31055007317"
   },
   {
-    "county_fips": "",
+    "county_fips": "31055",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.341935,
     "lon": -96.087701,
@@ -28441,10 +28506,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31055007317"
   },
   {
-    "county_fips": "",
+    "county_fips": "31055",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.345501,
     "lon": -96.093655,
@@ -28454,10 +28519,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "31055007317"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.012321,
     "lon": -98.573098,
@@ -28467,10 +28532,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.012399,
     "lon": -98.573742,
@@ -28480,10 +28545,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.013502,
     "lon": -98.571671,
@@ -28493,10 +28558,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.013489,
     "lon": -98.571106,
@@ -28506,10 +28571,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.013508,
     "lon": -98.572299,
@@ -28519,10 +28584,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.013523,
     "lon": -98.5729,
@@ -28532,10 +28597,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.013531,
     "lon": -98.574046,
@@ -28545,10 +28610,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.013516,
     "lon": -98.57349,
@@ -28558,10 +28623,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.012395,
     "lon": -98.572618,
@@ -28571,10 +28636,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "38021",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 46.012641,
     "lon": -98.574463,
@@ -28584,10 +28649,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "38021973300"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.055736,
     "lon": -82.756501,
@@ -28597,10 +28662,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.053078,
     "lon": -82.756634,
@@ -28610,10 +28675,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.063613,
     "lon": -82.758227,
@@ -28623,10 +28688,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "39089",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.065001,
     "lon": -82.758131,
@@ -28636,10 +28701,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "39089755601"
   },
   {
-    "county_fips": "",
+    "county_fips": "17043",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 41.795377,
     "lon": -88.246965,
@@ -28649,10 +28714,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "17043846409"
   },
   {
-    "county_fips": "",
+    "county_fips": "48139",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.539004,
     "lon": -96.793207,
@@ -28662,10 +28727,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48139060206"
   },
   {
-    "county_fips": "",
+    "county_fips": "48139",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.545504,
     "lon": -96.802207,
@@ -28675,10 +28740,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48139060206"
   },
   {
-    "county_fips": "",
+    "county_fips": "48139",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.544192,
     "lon": -96.802189,
@@ -28688,10 +28753,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48139060206"
   },
   {
-    "county_fips": "",
+    "county_fips": "48139",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.542899,
     "lon": -96.802194,
@@ -28701,10 +28766,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48139060206"
   },
   {
-    "county_fips": "",
+    "county_fips": "48139",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.541589,
     "lon": -96.802207,
@@ -28714,10 +28779,10 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48139060206"
   },
   {
-    "county_fips": "",
+    "county_fips": "48139",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.540276,
     "lon": -96.80222,
@@ -28727,7 +28792,7 @@
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
-    "tract_geoid": ""
+    "tract_geoid": "48139060206"
   },
   {
     "county_fips": "",
@@ -29059,8 +29124,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.055977,
     "lon": -77.547334,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-668",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1443922527",
     "source": "osm",
     "status": "operational",
@@ -29072,8 +29137,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.057797,
     "lon": -77.546734,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-667",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1443922528",
     "source": "osm",
     "status": "operational",
@@ -29085,8 +29150,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.082189,
     "lon": -77.565121,
-    "name": "",
-    "operator": "",
+    "name": "STACK NVA06",
+    "operator": "Stack Infrastructure",
     "osm_id": "way/1443922535",
     "source": "osm",
     "status": "operational",
@@ -29397,8 +29462,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.055263,
     "lon": -77.544785,
-    "name": "",
-    "operator": "",
+    "name": "Amazon IAD-669",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1460776170",
     "source": "osm",
     "status": "operational",
@@ -29410,8 +29475,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.054097,
     "lon": -77.545995,
-    "name": "",
-    "operator": "",
+    "name": "AWS",
+    "operator": "Amazon Web Services",
     "osm_id": "way/1460776171",
     "source": "osm",
     "status": "operational",
@@ -29423,7 +29488,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.051037,
     "lon": -77.534801,
-    "name": "",
+    "name": "Google Leesburg Building 3",
     "operator": "",
     "osm_id": "way/1460776174",
     "source": "osm",
@@ -29501,7 +29566,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.779305,
     "lon": -77.586335,
-    "name": "Google",
+    "name": "Google Mango Farm Building 3",
     "operator": "Google",
     "osm_id": "way/1464257783",
     "source": "osm",
@@ -29514,7 +29579,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.752545,
     "lon": -77.51246,
-    "name": "QTS Manassas DC1",
+    "name": "QTS Manassas DC2",
     "operator": "Quality Technology Services",
     "osm_id": "way/1464257784",
     "source": "osm",
@@ -29917,7 +29982,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.989461,
     "lon": -77.449742,
-    "name": "Amazon IAD230",
+    "name": "Amazon IAD-230",
     "operator": "Amazon Web Services",
     "osm_id": "way/1482076330",
     "source": "osm",
@@ -30619,8 +30684,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.775174,
     "lon": -77.539965,
-    "name": "",
-    "operator": "",
+    "name": "Iron Mountain VA-7",
+    "operator": "Iron Mountain",
     "osm_id": "way/1510517637",
     "source": "osm",
     "status": "operational",
@@ -30632,7 +30697,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.789376,
     "lon": -77.581973,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1510517638",
     "source": "osm",
@@ -30656,9 +30721,9 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 38.746667,
-    "lon": -77.497342,
-    "name": "Amazon Web Services",
+    "lat": 38.746634,
+    "lon": -77.497255,
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1510517640",
     "source": "osm",
@@ -30671,7 +30736,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.747641,
     "lon": -77.494786,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1510517641",
     "source": "osm",
@@ -30684,7 +30749,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.749547,
     "lon": -77.49301,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/1510517642",
     "source": "osm",
@@ -30762,7 +30827,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.00627,
     "lon": -77.468305,
-    "name": "Digital Realty Northern Virginia IAD40",
+    "name": "Digital Realty IAD40",
     "operator": "Digital Realty",
     "osm_id": "way/1518717349",
     "source": "osm",
@@ -30838,7 +30903,7 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 38.937292,
+    "lat": 38.937482,
     "lon": -77.425806,
     "name": "",
     "operator": "",
@@ -30853,7 +30918,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.013391,
     "lon": -77.453772,
-    "name": "Equinix Ashburn DC22",
+    "name": "Equinix DC22",
     "operator": "Equinix",
     "osm_id": "way/1522636324",
     "source": "osm",
@@ -30876,12 +30941,38 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.729945,
+    "lon": -84.623339,
+    "name": "Douglasville",
+    "operator": "Microsoft",
+    "osm_id": "way/1524793542",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 32.97443,
     "lon": -96.650158,
     "name": "Digital Realty",
     "operator": "Digital Realty",
     "osm_id": "way/1525436762",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 32.493334,
+    "lon": -117.037913,
+    "name": "Centro de datos MTP Tijuana",
+    "operator": "MTP",
+    "osm_id": "way/1526536647",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -31503,8 +31594,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.005242,
     "lon": -77.446428,
-    "name": "",
-    "operator": "",
+    "name": "PowerHouse Pacific Building 1",
+    "operator": "PowerHouse Data Centers",
     "osm_id": "way/1534356804",
     "source": "osm",
     "status": "construction",
@@ -31516,7 +31607,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.003486,
     "lon": -77.448579,
-    "name": "",
+    "name": "PowerHouse Pacific Building 2",
     "operator": "",
     "osm_id": "way/1534356805",
     "source": "osm",
@@ -31594,7 +31685,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.741982,
     "lon": -77.186173,
-    "name": "Amazon Web Services",
+    "name": "Amazon DCA-64",
     "operator": "Amazon Web Services",
     "osm_id": "way/1536981894",
     "source": "osm",
@@ -32283,7 +32374,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.962625,
     "lon": -77.490011,
-    "name": "Digital Realty Northern Virginia IAD44",
+    "name": "Digital Realty IAD45",
     "operator": "Digital Realty",
     "osm_id": "way/1543296494",
     "source": "osm",
@@ -32322,7 +32413,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.024891,
     "lon": -77.453419,
-    "name": "Equinix Ashburn DC17",
+    "name": "Equinix DC17",
     "operator": "Equinix",
     "osm_id": "way/1543931283",
     "source": "osm",
@@ -32335,8 +32426,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.957386,
     "lon": -77.53574,
-    "name": "",
-    "operator": "",
+    "name": "BlackChamber Tech Park at Brambleton",
+    "operator": "BlackChamber Group",
     "osm_id": "way/1544103415",
     "source": "osm",
     "status": "operational",
@@ -32348,8 +32439,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.956635,
     "lon": -77.533192,
-    "name": "",
-    "operator": "",
+    "name": "Tech Park at Brambleton",
+    "operator": "BlackChamber Group",
     "osm_id": "way/1544103416",
     "source": "osm",
     "status": "operational",
@@ -32361,8 +32452,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.958846,
     "lon": -77.502615,
-    "name": "",
-    "operator": "",
+    "name": "CyrusOne NVA9",
+    "operator": "CyrusOne",
     "osm_id": "way/1544104138",
     "source": "osm",
     "status": "operational",
@@ -32387,8 +32478,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.995073,
     "lon": -77.445984,
-    "name": "",
-    "operator": "",
+    "name": "EdgeCore AS02",
+    "operator": "EdgeCore",
     "osm_id": "way/1544360247",
     "source": "osm",
     "status": "operational",
@@ -32400,8 +32491,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.999336,
     "lon": -77.441838,
-    "name": "Vantage VA15",
-    "operator": "",
+    "name": "Vantage VA16",
+    "operator": "Vantage Data Centers",
     "osm_id": "way/1544360248",
     "source": "osm",
     "status": "operational",
@@ -32413,7 +32504,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99816,
     "lon": -77.448997,
-    "name": "QTS Ashburn 2",
+    "name": "QTS Ashburn 1 DC2",
     "operator": "Quality Technology Services",
     "osm_id": "way/1544360249",
     "source": "osm",
@@ -32426,7 +32517,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.003593,
     "lon": -77.446773,
-    "name": "",
+    "name": "PowerHouse Pacific Building 3",
     "operator": "",
     "osm_id": "way/1544360250",
     "source": "osm",
@@ -32582,8 +32673,8 @@
     "first_seen": "2026-09-15T03:25:33Z",
     "lat": 39.021789,
     "lon": -77.414703,
-    "name": "EdgeCore Ashburn AS01",
-    "operator": "",
+    "name": "EdgeCore AS01",
+    "operator": "EdgeCore",
     "osm_id": "way/1555352690",
     "source": "osm",
     "status": "operational",
@@ -32595,7 +32686,7 @@
     "first_seen": "2026-09-15T03:25:33Z",
     "lat": 39.022964,
     "lon": -77.416713,
-    "name": "Amazon Web Services IAD128",
+    "name": "Amazon IAD-128",
     "operator": "Amazon Web Services",
     "osm_id": "way/1555352691",
     "source": "osm",
@@ -32634,7 +32725,7 @@
     "first_seen": "2026-09-15T03:25:33Z",
     "lat": 39.015826,
     "lon": -77.471988,
-    "name": "NTT Ashburn VA7 Data Center",
+    "name": "NTT VA7",
     "operator": "NTT",
     "osm_id": "way/1556781864",
     "source": "osm",
@@ -32741,6 +32832,383 @@
     "name": "",
     "operator": "Switch",
     "osm_id": "way/1558897570",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.733654,
+    "lon": -104.712334,
+    "name": "QTS",
+    "operator": "Quality Technology Services",
+    "osm_id": "way/1560424378",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.077507,
+    "lon": -77.505206,
+    "name": "Vantage VA3",
+    "operator": "Vantage Data Centers",
+    "osm_id": "way/1560626428",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.98113,
+    "lon": -77.494244,
+    "name": "Amazon IAD-180",
+    "operator": "Amazon Web Services",
+    "osm_id": "way/1560627883",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.94979,
+    "lon": -77.554302,
+    "name": "Microsoft IAD11",
+    "operator": "Microsoft",
+    "osm_id": "way/1560641652",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.951065,
+    "lon": -77.55555,
+    "name": "Microsoft IAD11",
+    "operator": "Microsoft",
+    "osm_id": "way/1560641653",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.013794,
+    "lon": -77.476926,
+    "name": "Sabey Ashburn Building A",
+    "operator": "Sabey Data Centers",
+    "osm_id": "way/1560817803",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.009878,
+    "lon": -77.477021,
+    "name": "CloudHQ LC5",
+    "operator": "CloudHQ",
+    "osm_id": "way/1560822516",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.006645,
+    "lon": -77.477641,
+    "name": "CloudHQ LC11",
+    "operator": "CloudHQ",
+    "osm_id": "way/1560822517",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.006065,
+    "lon": -77.475384,
+    "name": "CloudHQ LC14",
+    "operator": "CloudHQ",
+    "osm_id": "way/1560822518",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.005409,
+    "lon": -77.478437,
+    "name": "CloudHQ LC12",
+    "operator": "CloudHQ",
+    "osm_id": "way/1560822519",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.001996,
+    "lon": -77.468439,
+    "name": "CloudHQ LC8",
+    "operator": "CloudHQ",
+    "osm_id": "way/1560822523",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.019644,
+    "lon": -77.45811,
+    "name": "Cologix ASH2",
+    "operator": "Cologix",
+    "osm_id": "way/1560827027",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.018747,
+    "lon": -77.475556,
+    "name": "NTT VA8",
+    "operator": "NTT",
+    "osm_id": "way/1560827941",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.734479,
+    "lon": -77.152896,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/1561752472",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.735198,
+    "lon": -77.152885,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/1561752473",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.800094,
+    "lon": -77.6102,
+    "name": "NTT VA10",
+    "operator": "NTT",
+    "osm_id": "way/1561771299",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.737051,
+    "lon": -77.508149,
+    "name": "Digital Realty IAD51",
+    "operator": "Digital Realty",
+    "osm_id": "way/1561771300",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.763249,
+    "lon": -77.539273,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/1561790221",
+    "source": "osm",
+    "status": "construction",
+    "status_source": "osm-lifecycle",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.730935,
+    "lon": -84.62294,
+    "name": "Douglasville",
+    "operator": "Microsoft",
+    "osm_id": "way/1561981217",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.76329,
+    "lon": -84.604661,
+    "name": "Atlanta III",
+    "operator": "T5 Data Centers",
+    "osm_id": "way/1561981230",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.762745,
+    "lon": -84.602457,
+    "name": "Stack Infrastructure",
+    "operator": "Stack Infrastructure",
+    "osm_id": "way/1561981231",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.762673,
+    "lon": -84.600682,
+    "name": "Stack Infrastructure",
+    "operator": "Stack Infrastructure",
+    "osm_id": "way/1561981232",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.760563,
+    "lon": -84.607582,
+    "name": "Atlanta III",
+    "operator": "T5 Data Centers",
+    "osm_id": "way/1561981233",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.760549,
+    "lon": -84.605943,
+    "name": "Atlanta III",
+    "operator": "T5 Data Centers",
+    "osm_id": "way/1561981234",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.75889,
+    "lon": -84.606826,
+    "name": "Atlanta III",
+    "operator": "T5 Data Centers",
+    "osm_id": "way/1561981235",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.757188,
+    "lon": -84.589096,
+    "name": "The Keep",
+    "operator": "Switch",
+    "osm_id": "way/1561981236",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.718202,
+    "lon": -84.584781,
+    "name": "Microsoft",
+    "operator": "Microsoft",
+    "osm_id": "way/1562013259",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.639262,
+    "lon": -84.517024,
+    "name": "Microsoft",
+    "operator": "Microsoft",
+    "osm_id": "way/1562013293",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 41.810957,
+    "lon": -88.195228,
+    "name": "NetSource Communications, Inc",
+    "operator": "NetSource",
+    "osm_id": "way/1562274525",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -32943,6 +33411,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.560869,
+    "lon": -104.830724,
+    "name": "CSquare - DEN2",
+    "operator": "",
+    "osm_id": "way/192528287",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.778585,
     "lon": -74.072324,
@@ -33105,6 +33586,19 @@
     "name": "Xfinity/Comcast Data Center",
     "operator": "",
     "osm_id": "way/200989527",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.594155,
+    "lon": -104.843152,
+    "name": "Flexential - DEN5",
+    "operator": "Flexential",
+    "osm_id": "way/200992988",
     "source": "osm",
     "status": "operational",
     "status_source": "osm-default",
@@ -33700,7 +34194,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.74731,
     "lon": -77.531826,
-    "name": "COPT Data Center",
+    "name": "COPT DC-6",
     "operator": "",
     "osm_id": "way/224100721",
     "source": "osm",
@@ -33817,7 +34311,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.016389,
     "lon": -77.459069,
-    "name": "Equinix Ashburn DC2",
+    "name": "Equinix DC2",
     "operator": "Equinix",
     "osm_id": "way/234722029",
     "source": "osm",
@@ -33830,7 +34324,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.013678,
     "lon": -77.451719,
-    "name": "H5 Data Centers Ashburn",
+    "name": "H5 Ashburn",
     "operator": "H5 Data Centers",
     "osm_id": "way/234722720",
     "source": "osm",
@@ -33856,7 +34350,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.920021,
     "lon": -77.211619,
-    "name": "Lumen McLean",
+    "name": "Lumen McLean 1",
     "operator": "Lumen Technologies",
     "osm_id": "way/239147373",
     "source": "osm",
@@ -33869,7 +34363,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.919905,
     "lon": -77.213585,
-    "name": "DataBank McLean IAD2",
+    "name": "DataBank IAD2",
     "operator": "DataBank",
     "osm_id": "way/239147724",
     "source": "osm",
@@ -33973,7 +34467,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.910116,
     "lon": -77.472592,
-    "name": "Digital Realty",
+    "name": "Digital Realty IAD30",
     "operator": "Digital Realty",
     "osm_id": "way/251716328",
     "source": "osm",
@@ -34116,7 +34610,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.897905,
     "lon": -77.455103,
-    "name": "Amazon IAD22",
+    "name": "Amazon IAD-22",
     "operator": "Amazon Web Services",
     "osm_id": "way/258343748",
     "source": "osm",
@@ -34142,7 +34636,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.909237,
     "lon": -77.472266,
-    "name": "",
+    "name": "H5 IAD31",
     "operator": "",
     "osm_id": "way/258519934",
     "source": "osm",
@@ -34155,7 +34649,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.909796,
     "lon": -77.473454,
-    "name": "",
+    "name": "H5 IAD32",
     "operator": "",
     "osm_id": "way/258519959",
     "source": "osm",
@@ -34597,8 +35091,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.590131,
     "lon": -104.846963,
-    "name": "",
-    "operator": "",
+    "name": "DataBank - DEN5",
+    "operator": "DataBank",
     "osm_id": "way/292506449",
     "source": "osm",
     "status": "operational",
@@ -34610,8 +35104,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.59134,
     "lon": -104.847065,
-    "name": "zColo by Zayo",
-    "operator": "",
+    "name": "DataBank - DEN2",
+    "operator": "DataBank",
     "osm_id": "way/292506452",
     "source": "osm",
     "status": "operational",
@@ -34659,6 +35153,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.884519,
+    "lon": -105.080149,
+    "name": "DataBank - DEN4",
+    "operator": "DataBank",
+    "osm_id": "way/295152006",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 40.635695,
     "lon": -75.457573,
@@ -34688,7 +35195,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.015558,
     "lon": -77.460328,
-    "name": "Equinix Ashburn DC1",
+    "name": "Equinix DC1",
     "operator": "Equinix",
     "osm_id": "way/298127059",
     "source": "osm",
@@ -34701,7 +35208,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.015965,
     "lon": -77.461223,
-    "name": "Equinix Ashburn DC5",
+    "name": "Equinix DC5",
     "operator": "Equinix",
     "osm_id": "way/298127361",
     "source": "osm",
@@ -34714,7 +35221,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.014891,
     "lon": -77.458799,
-    "name": "Equinix Ashburn DC11",
+    "name": "Equinix DC11",
     "operator": "Equinix",
     "osm_id": "way/298127420",
     "source": "osm",
@@ -34727,7 +35234,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.022358,
     "lon": -77.461092,
-    "name": "Equinix Ashburn DC3",
+    "name": "Equinix DC3",
     "operator": "Equinix",
     "osm_id": "way/298242260",
     "source": "osm",
@@ -34779,7 +35286,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.993794,
     "lon": -77.450509,
-    "name": "Amazon IAD76",
+    "name": "Amazon IAD-76",
     "operator": "Amazon Web Services",
     "osm_id": "way/299927846",
     "source": "osm",
@@ -34792,7 +35299,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.988724,
     "lon": -77.447671,
-    "name": "Amazon IAD12",
+    "name": "Amazon IAD-12",
     "operator": "Amazon Web Services",
     "osm_id": "way/299929061",
     "source": "osm",
@@ -34831,7 +35338,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.022182,
     "lon": -77.457609,
-    "name": "Level 3 Ashburn",
+    "name": "Lumen Ashburn",
     "operator": "Lumen Technologies",
     "osm_id": "way/300162689",
     "source": "osm",
@@ -34857,7 +35364,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.022744,
     "lon": -77.454891,
-    "name": "NTT Ashburn VA1 Data Center",
+    "name": "NTT VA1",
     "operator": "NTT",
     "osm_id": "way/300163083",
     "source": "osm",
@@ -34922,7 +35429,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.003336,
     "lon": -77.487094,
-    "name": "Digital Realty Northern Virginia IAD14",
+    "name": "Digital Realty IAD14",
     "operator": "Digital Realty",
     "osm_id": "way/300969614",
     "source": "osm",
@@ -34935,7 +35442,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.002752,
     "lon": -77.485449,
-    "name": "Amazon IAD6",
+    "name": "Amazon IAD-6",
     "operator": "Amazon Web Services",
     "osm_id": "way/300969615",
     "source": "osm",
@@ -34948,7 +35455,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.002023,
     "lon": -77.483347,
-    "name": "Digital Realty Northern Virginia IAD12",
+    "name": "Digital Realty IAD12",
     "operator": "Digital Realty",
     "osm_id": "way/300969616",
     "source": "osm",
@@ -34959,9 +35466,9 @@
   {
     "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
-    "lat": 39.002741,
-    "lon": -77.481957,
-    "name": "Digital Realty Building A",
+    "lat": 39.002748,
+    "lon": -77.481952,
+    "name": "Digital Realty Devin Shafron Building A",
     "operator": "Digital Realty",
     "osm_id": "way/300969617",
     "source": "osm",
@@ -34974,7 +35481,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.004319,
     "lon": -77.484415,
-    "name": "Digital Realty Northern Virginia IAD24",
+    "name": "Digital Realty IAD24",
     "operator": "Digital Realty",
     "osm_id": "way/300969619",
     "source": "osm",
@@ -34987,7 +35494,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.015488,
     "lon": -77.482156,
-    "name": "Databank Ashburn IAD1",
+    "name": "DataBank IAD1",
     "operator": "DataBank",
     "osm_id": "way/300970759",
     "source": "osm",
@@ -35000,7 +35507,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.015487,
     "lon": -77.483348,
-    "name": "DataBank Ashburn IAD4",
+    "name": "DataBank IAD4",
     "operator": "DataBank",
     "osm_id": "way/300970761",
     "source": "osm",
@@ -36040,8 +36547,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 37.378037,
     "lon": -121.954128,
-    "name": "Layer42 Santa Clara",
-    "operator": "Layer42",
+    "name": "Santa Clara Data Center (SJC3)",
+    "operator": "Evocative",
     "osm_id": "way/37947315",
     "source": "osm",
     "status": "operational",
@@ -36053,8 +36560,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.048766,
     "lon": -77.445397,
-    "name": "VISA Data Center",
-    "operator": "",
+    "name": "Visa Operations Center East",
+    "operator": "Visa",
     "osm_id": "way/380282154",
     "source": "osm",
     "status": "operational",
@@ -36729,7 +37236,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.025902,
     "lon": -77.41447,
-    "name": "CyrusOne NVA1, NVA2 & NVA3",
+    "name": "CyrusOne NVA1/NVA2/NVA3",
     "operator": "CyrusOne",
     "osm_id": "way/435324552",
     "source": "osm",
@@ -37011,11 +37518,37 @@
     "tract_geoid": ""
   },
   {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.804845,
+    "lon": -77.512406,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/45583037",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 38.803434,
+    "lon": -77.510582,
+    "name": "Equinix DC14",
+    "operator": "",
+    "osm_id": "way/45583050",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
     "county_fips": "51153",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.790495,
     "lon": -77.54111,
-    "name": "Amazon IAD11",
+    "name": "Amazon IAD-11",
     "operator": "Amazon Web Services",
     "osm_id": "way/45776978",
     "source": "osm",
@@ -37028,7 +37561,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.790346,
     "lon": -77.54001,
-    "name": "Amazon IAD24",
+    "name": "Amazon IAD-24",
     "operator": "Amazon Web Services",
     "osm_id": "way/45776979",
     "source": "osm",
@@ -37041,7 +37574,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.791199,
     "lon": -77.538266,
-    "name": "Amazon IAD7",
+    "name": "Amazon IAD-7",
     "operator": "Amazon Web Services",
     "osm_id": "way/45776988",
     "source": "osm",
@@ -37080,7 +37613,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.021005,
     "lon": -77.451489,
-    "name": "Equinix Ashburn DC10",
+    "name": "Equinix DC10",
     "operator": "Equinix",
     "osm_id": "way/460050155",
     "source": "osm",
@@ -37145,7 +37678,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.991412,
     "lon": -77.436511,
-    "name": "Amazon IAD51",
+    "name": "Amazon IAD-51",
     "operator": "Amazon Web Services",
     "osm_id": "way/460056019",
     "source": "osm",
@@ -37158,7 +37691,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99057,
     "lon": -77.437059,
-    "name": "Amazon IAD56",
+    "name": "Amazon IAD-56",
     "operator": "Amazon Web Services",
     "osm_id": "way/460056020",
     "source": "osm",
@@ -37171,7 +37704,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.990686,
     "lon": -77.44884,
-    "name": "Amazon IAD16",
+    "name": "Amazon IAD-16",
     "operator": "Amazon Web Services",
     "osm_id": "way/460056023",
     "source": "osm",
@@ -37184,7 +37717,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.991708,
     "lon": -77.448564,
-    "name": "Amazon IAD15",
+    "name": "Amazon IAD-15",
     "operator": "Amazon Web Services",
     "osm_id": "way/460056024",
     "source": "osm",
@@ -37197,7 +37730,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.789885,
     "lon": -77.548229,
-    "name": "Amazon IAD14",
+    "name": "Amazon IAD-14",
     "operator": "Amazon Web Services",
     "osm_id": "way/460059465",
     "source": "osm",
@@ -37210,7 +37743,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.792187,
     "lon": -77.548467,
-    "name": "Amazon IAD59",
+    "name": "Amazon IAD-59",
     "operator": "Amazon Web Services",
     "osm_id": "way/460060340",
     "source": "osm",
@@ -37223,7 +37756,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.791119,
     "lon": -77.548386,
-    "name": "Amazon IAD52",
+    "name": "Amazon IAD-52",
     "operator": "Amazon Web Services",
     "osm_id": "way/460060341",
     "source": "osm",
@@ -37522,7 +38055,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.994222,
     "lon": -77.448201,
-    "name": "QTS Ashburn-Moran",
+    "name": "QTS Ashburn Moran",
     "operator": "Quality Technology Services",
     "osm_id": "way/460175664",
     "source": "osm",
@@ -37548,7 +38081,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.005052,
     "lon": -77.485612,
-    "name": "Amazon IAD13",
+    "name": "Amazon IAD-13",
     "operator": "Amazon Web Services",
     "osm_id": "way/460175672",
     "source": "osm",
@@ -37665,7 +38198,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.026368,
     "lon": -77.44952,
-    "name": "Amazon IAD78",
+    "name": "Amazon IAD-78",
     "operator": "Amazon Web Services",
     "osm_id": "way/463571875",
     "source": "osm",
@@ -37678,7 +38211,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.026357,
     "lon": -77.45087,
-    "name": "Amazon IAD79",
+    "name": "Amazon IAD-79",
     "operator": "Amazon Web Services",
     "osm_id": "way/463571876",
     "source": "osm",
@@ -37795,7 +38328,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.991808,
     "lon": -77.441172,
-    "name": "Amazon IAD87",
+    "name": "Amazon IAD-87",
     "operator": "Amazon Web Services",
     "osm_id": "way/465062052",
     "source": "osm",
@@ -37808,7 +38341,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.990968,
     "lon": -77.441868,
-    "name": "Amazon IAD88",
+    "name": "Amazon IAD-88",
     "operator": "Amazon Web Services",
     "osm_id": "way/465062053",
     "source": "osm",
@@ -37834,7 +38367,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.778061,
     "lon": -77.594905,
-    "name": "VA 4",
+    "name": "Digital Realty VA4",
     "operator": "Digital Realty",
     "osm_id": "way/46831933",
     "source": "osm",
@@ -37951,7 +38484,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.021675,
     "lon": -77.432973,
-    "name": "Amazon IAD10",
+    "name": "Amazon IAD-10",
     "operator": "Amazon Web Services",
     "osm_id": "way/48242814",
     "source": "osm",
@@ -37964,7 +38497,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.021569,
     "lon": -77.434794,
-    "name": "Amazon IAD32",
+    "name": "Amazon IAD-32",
     "operator": "Amazon Web Services",
     "osm_id": "way/48242816",
     "source": "osm",
@@ -38016,7 +38549,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.77798,
     "lon": -77.559099,
-    "name": "Amazon IAD73",
+    "name": "Amazon IAD-73",
     "operator": "Amazon Web Services",
     "osm_id": "way/490997243",
     "source": "osm",
@@ -38029,7 +38562,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.777437,
     "lon": -77.557891,
-    "name": "Amazon IAD74",
+    "name": "Amazon IAD-74",
     "operator": "Amazon Web Services",
     "osm_id": "way/490997244",
     "source": "osm",
@@ -38757,7 +39290,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.916885,
     "lon": -77.493251,
-    "name": "Amazon IAD63",
+    "name": "Amazon IAD-63",
     "operator": "Amazon Web Services",
     "osm_id": "way/544596573",
     "source": "osm",
@@ -38783,7 +39316,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.949322,
     "lon": -77.519875,
-    "name": "Amazon IAD62",
+    "name": "Amazon IAD-62",
     "operator": "Amazon Web Services",
     "osm_id": "way/545396372",
     "source": "osm",
@@ -38978,7 +39511,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.027906,
     "lon": -77.4575,
-    "name": "Amazon IAD71",
+    "name": "Amazon IAD-71",
     "operator": "Amazon Web Services",
     "osm_id": "way/556599693",
     "source": "osm",
@@ -38991,7 +39524,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.029561,
     "lon": -77.459655,
-    "name": "Amazon IAD50",
+    "name": "Amazon IAD-50",
     "operator": "Amazon Web Services",
     "osm_id": "way/556599694",
     "source": "osm",
@@ -39004,7 +39537,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.028774,
     "lon": -77.458246,
-    "name": "Amazon IAD60",
+    "name": "Amazon IAD-60",
     "operator": "Amazon Web Services",
     "osm_id": "way/556599695",
     "source": "osm",
@@ -39342,7 +39875,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.004693,
     "lon": -77.44174,
-    "name": "STACK NVA01A - Northern Virginia",
+    "name": "STACK NVA01A",
     "operator": "Stack Infrastructure",
     "osm_id": "way/59294476",
     "source": "osm",
@@ -39355,7 +39888,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.027109,
     "lon": -77.452829,
-    "name": "Amazon IAD80",
+    "name": "Amazon IAD-80",
     "operator": "Amazon Web Services",
     "osm_id": "way/596690174",
     "source": "osm",
@@ -39368,7 +39901,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.023015,
     "lon": -77.449787,
-    "name": "Equinix Ashburn DC12",
+    "name": "Equinix DC12",
     "operator": "Equinix",
     "osm_id": "way/596690175",
     "source": "osm",
@@ -39498,7 +40031,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.001549,
     "lon": -77.479375,
-    "name": "Digital Realty Northern Virginia IAD36",
+    "name": "Digital Realty IAD36",
     "operator": "Digital Realty",
     "osm_id": "way/597970806",
     "source": "osm",
@@ -39511,7 +40044,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.000533,
     "lon": -77.480577,
-    "name": "Digital Realty Northern Virginia IAD35",
+    "name": "Digital Realty IAD35",
     "operator": "Digital Realty",
     "osm_id": "way/597970809",
     "source": "osm",
@@ -39524,7 +40057,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.000032,
     "lon": -77.478015,
-    "name": "Digital Realty Northern Virginia IAD37",
+    "name": "Digital Realty IAD37",
     "operator": "Digital Realty",
     "osm_id": "way/597970811",
     "source": "osm",
@@ -39537,7 +40070,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.001084,
     "lon": -77.477201,
-    "name": "Digital Realty Northern Virginia IAD38",
+    "name": "Digital Realty IAD38",
     "operator": "Digital Realty",
     "osm_id": "way/597970813",
     "source": "osm",
@@ -39641,7 +40174,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.025013,
     "lon": -77.45764,
-    "name": "NTT Ashburn VA2 Data Center",
+    "name": "NTT VA2",
     "operator": "NTT",
     "osm_id": "way/610977485",
     "source": "osm",
@@ -39914,7 +40447,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.017225,
     "lon": -77.470372,
-    "name": "NTT Ashburn VA3 Data Center",
+    "name": "NTT VA3",
     "operator": "NTT",
     "osm_id": "way/649365751",
     "source": "osm",
@@ -40057,7 +40590,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.779381,
     "lon": -77.541725,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-75",
     "operator": "Amazon Web Services",
     "osm_id": "way/667573133",
     "source": "osm",
@@ -40226,7 +40759,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.948687,
     "lon": -77.520952,
-    "name": "Amazon IAD68",
+    "name": "Amazon IAD-68",
     "operator": "Amazon Web Services",
     "osm_id": "way/693381106",
     "source": "osm",
@@ -40239,7 +40772,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.948388,
     "lon": -77.52183,
-    "name": "Amazon IAD81",
+    "name": "Amazon IAD-81",
     "operator": "Amazon Web Services",
     "osm_id": "way/693381107",
     "source": "osm",
@@ -40252,7 +40785,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.943205,
     "lon": -77.52433,
-    "name": "Google",
+    "name": "Google Arcola Building 1",
     "operator": "Google",
     "osm_id": "way/693385812",
     "source": "osm",
@@ -40265,7 +40798,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.957917,
     "lon": -77.498058,
-    "name": "Amazon IAD120",
+    "name": "Amazon IAD-120",
     "operator": "Amazon Web Services",
     "osm_id": "way/693390022",
     "source": "osm",
@@ -40278,7 +40811,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.956777,
     "lon": -77.497784,
-    "name": "Amazon IAD121",
+    "name": "Amazon IAD-121",
     "operator": "Amazon Web Services",
     "osm_id": "way/693390023",
     "source": "osm",
@@ -40353,6 +40886,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.012027,
+    "lon": -77.47156,
+    "name": "",
+    "operator": "",
+    "osm_id": "way/696978351",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99954,
     "lon": -77.449856,
@@ -40382,7 +40928,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.9863,
     "lon": -77.441885,
-    "name": "Amazon IAD58",
+    "name": "Amazon IAD-58",
     "operator": "Amazon Web Services",
     "osm_id": "way/697020849",
     "source": "osm",
@@ -40395,7 +40941,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.986993,
     "lon": -77.442633,
-    "name": "Amazon IAD57",
+    "name": "Amazon IAD-57",
     "operator": "Amazon Web Services",
     "osm_id": "way/697020850",
     "source": "osm",
@@ -40408,7 +40954,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.815132,
     "lon": -77.652919,
-    "name": "Amazon IAD64",
+    "name": "Amazon IAD-64",
     "operator": "Amazon Web Services",
     "osm_id": "way/697021948",
     "source": "osm",
@@ -40499,7 +41045,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.999528,
     "lon": -77.450111,
-    "name": "QTS Ashburn 1",
+    "name": "QTS Ashburn 1 DC1",
     "operator": "Quality Technology Services",
     "osm_id": "way/701923200",
     "source": "osm",
@@ -40512,7 +41058,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.006619,
     "lon": -77.466407,
-    "name": "Digital Realty Northern Virginia IAD73",
+    "name": "Digital Realty IAD73",
     "operator": "Digital Realty",
     "osm_id": "way/701923202",
     "source": "osm",
@@ -40525,7 +41071,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.007614,
     "lon": -77.46763,
-    "name": "Digital Realty Northern Virginia IAD39",
+    "name": "Digital Realty IAD39",
     "operator": "Digital Realty",
     "osm_id": "way/701923203",
     "source": "osm",
@@ -40551,7 +41097,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.000647,
     "lon": -77.439808,
-    "name": "Sentinel Ashburn Nexus Data Center",
+    "name": "Sentinel Cloud Plaza",
     "operator": "GI Partners",
     "osm_id": "way/701924664",
     "source": "osm",
@@ -40577,7 +41123,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.988603,
     "lon": -77.411652,
-    "name": "Amazon IAD90",
+    "name": "Amazon IAD-90",
     "operator": "Amazon Web Services",
     "osm_id": "way/701924667",
     "source": "osm",
@@ -40590,7 +41136,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.987847,
     "lon": -77.411119,
-    "name": "Amazon IAD91",
+    "name": "Amazon IAD-91",
     "operator": "Amazon Web Services",
     "osm_id": "way/701924668",
     "source": "osm",
@@ -40603,7 +41149,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.986943,
     "lon": -77.410475,
-    "name": "Amazon IAD92",
+    "name": "Amazon IAD-92",
     "operator": "Amazon Web Services",
     "osm_id": "way/701924669",
     "source": "osm",
@@ -40616,7 +41162,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.981635,
     "lon": -77.427429,
-    "name": "Amazon IAD144",
+    "name": "Amazon IAD-144",
     "operator": "Amazon Web Services",
     "osm_id": "way/701929066",
     "source": "osm",
@@ -40642,7 +41188,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.020225,
     "lon": -77.433886,
-    "name": "Amazon IAD98",
+    "name": "Amazon IAD-98",
     "operator": "Amazon Web Services",
     "osm_id": "way/701930920",
     "source": "osm",
@@ -40655,7 +41201,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.019169,
     "lon": -77.43403,
-    "name": "Amazon IAD99",
+    "name": "Amazon IAD-99",
     "operator": "Amazon Web Services",
     "osm_id": "way/701930921",
     "source": "osm",
@@ -40668,7 +41214,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.035494,
     "lon": -77.450699,
-    "name": "Amazon IAD114",
+    "name": "Amazon IAD-114",
     "operator": "Amazon Web Services",
     "osm_id": "way/701930929",
     "source": "osm",
@@ -40681,7 +41227,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.036294,
     "lon": -77.449795,
-    "name": "Amazon IAD115",
+    "name": "Amazon IAD-115",
     "operator": "Amazon Web Services",
     "osm_id": "way/701930930",
     "source": "osm",
@@ -40694,7 +41240,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.917011,
     "lon": -77.494366,
-    "name": "Amazon IAD65",
+    "name": "Amazon IAD-65",
     "operator": "Amazon Web Services",
     "osm_id": "way/701931819",
     "source": "osm",
@@ -40707,7 +41253,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.916073,
     "lon": -77.477249,
-    "name": "Amazon IAD150",
+    "name": "Amazon IAD-150",
     "operator": "Amazon Web Services",
     "osm_id": "way/701931820",
     "source": "osm",
@@ -40785,7 +41331,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.015422,
     "lon": -77.47827,
-    "name": "Sabey Data Centers Ashburn - Building C",
+    "name": "Sabey Ashburn Building C",
     "operator": "Sabey Data Centers",
     "osm_id": "way/708916484",
     "source": "osm",
@@ -40811,7 +41357,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.052633,
     "lon": -77.539573,
-    "name": "Google Data Center",
+    "name": "Google Leesburg Building 1",
     "operator": "Google",
     "osm_id": "way/710070925",
     "source": "osm",
@@ -41162,7 +41708,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.982552,
     "lon": -77.42463,
-    "name": "Amazon IAD145",
+    "name": "Amazon IAD-145",
     "operator": "Amazon Web Services",
     "osm_id": "way/744491691",
     "source": "osm",
@@ -41175,7 +41721,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.023698,
     "lon": -77.419095,
-    "name": "Amazon Web Services IAD117",
+    "name": "Amazon IAD-117",
     "operator": "Amazon Web Services",
     "osm_id": "way/744496741",
     "source": "osm",
@@ -41188,7 +41734,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.024346,
     "lon": -77.420439,
-    "name": "Amazon Web Services IAD116",
+    "name": "Amazon IAD-116",
     "operator": "Amazon Web Services",
     "osm_id": "way/744496750",
     "source": "osm",
@@ -41539,8 +42085,8 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.559068,
     "lon": -104.833534,
-    "name": "",
-    "operator": "",
+    "name": "US Signal - CO01",
+    "operator": "US Signal",
     "osm_id": "way/778989332",
     "source": "osm",
     "status": "operational",
@@ -41617,7 +42163,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.948494,
     "lon": -77.327307,
-    "name": "VA3",
+    "name": "Digital Realty VA3",
     "operator": "Digital Realty",
     "osm_id": "way/79158387",
     "source": "osm",
@@ -41630,7 +42176,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.948812,
     "lon": -77.329414,
-    "name": "IAD1",
+    "name": "Evocative IAD1",
     "operator": "Evocative",
     "osm_id": "way/79159494",
     "source": "osm",
@@ -41643,7 +42189,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.950606,
     "lon": -77.36455,
-    "name": "CoreSite Reston Campus VA1",
+    "name": "CoreSite VA1",
     "operator": "CoreSite",
     "osm_id": "way/79298926",
     "source": "osm",
@@ -41656,7 +42202,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.008806,
     "lon": -77.458236,
-    "name": "Digital Realty IAD41 (Building P)",
+    "name": "Digital Realty IAD41",
     "operator": "Digital Realty",
     "osm_id": "way/793087858",
     "source": "osm",
@@ -41669,7 +42215,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.018509,
     "lon": -77.438836,
-    "name": "Amazon IAD118",
+    "name": "Amazon IAD-118",
     "operator": "Amazon Web Services",
     "osm_id": "way/793087859",
     "source": "osm",
@@ -41682,7 +42228,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.013608,
     "lon": -77.470556,
-    "name": "Aligned Ashburn IAD-01",
+    "name": "Aligned IAD-01",
     "operator": "Aligned",
     "osm_id": "way/793622740",
     "source": "osm",
@@ -41695,7 +42241,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.0225,
     "lon": -77.450256,
-    "name": "Equinix Ashburn DC15",
+    "name": "Equinix DC15",
     "operator": "Equinix",
     "osm_id": "way/793888408",
     "source": "osm",
@@ -41708,7 +42254,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.0145,
     "lon": -77.479987,
-    "name": "Sabey Data Centers Ashburn - Building B",
+    "name": "Sabey Ashburn Building B",
     "operator": "Sabey Data Centers",
     "osm_id": "way/793888427",
     "source": "osm",
@@ -41721,7 +42267,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.018303,
     "lon": -77.472611,
-    "name": "NTT Ashburn VA5 Data Center",
+    "name": "NTT VA5",
     "operator": "NTT",
     "osm_id": "way/793888429",
     "source": "osm",
@@ -41734,7 +42280,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.019868,
     "lon": -77.472592,
-    "name": "NTT Ashburn VA4 Data Center",
+    "name": "NTT VA4",
     "operator": "NTT",
     "osm_id": "way/793888430",
     "source": "osm",
@@ -41773,7 +42319,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.996721,
     "lon": -77.435597,
-    "name": "Amazon IAD146",
+    "name": "Amazon IAD-146",
     "operator": "Amazon Web Services",
     "osm_id": "way/794147657",
     "source": "osm",
@@ -41799,7 +42345,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.011806,
     "lon": -77.45451,
-    "name": "Equinix Ashburn DC21",
+    "name": "Equinix DC21",
     "operator": "Equinix",
     "osm_id": "way/796933516",
     "source": "osm",
@@ -41812,7 +42358,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.948334,
     "lon": -77.37243,
-    "name": "CoreSite Reston VA3",
+    "name": "CoreSite VA3",
     "operator": "CoreSite",
     "osm_id": "way/79818498",
     "source": "osm",
@@ -42020,7 +42566,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.981455,
     "lon": -77.41755,
-    "name": "Amazon IAD140",
+    "name": "Amazon IAD-140",
     "operator": "Amazon Web Services",
     "osm_id": "way/817338831",
     "source": "osm",
@@ -42033,7 +42579,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.982388,
     "lon": -77.416786,
-    "name": "Amazon IAD141",
+    "name": "Amazon IAD-141",
     "operator": "Amazon Web Services",
     "osm_id": "way/817338832",
     "source": "osm",
@@ -42134,6 +42680,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.56431,
+    "lon": -104.866593,
+    "name": "DataBank - DEN1",
+    "operator": "DataBank",
+    "osm_id": "way/82150598",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 35.972562,
     "lon": -86.808042,
@@ -42163,7 +42722,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.816103,
     "lon": -77.652499,
-    "name": "Amazon IAD84",
+    "name": "Amazon IAD-84",
     "operator": "Amazon Web Services",
     "osm_id": "way/828135845",
     "source": "osm",
@@ -42537,6 +43096,32 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.749727,
+    "lon": -84.58482,
+    "name": "Google",
+    "operator": "Google",
+    "osm_id": "way/844352473",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.752084,
+    "lon": -84.586813,
+    "name": "Google",
+    "operator": "Google",
+    "osm_id": "way/844352474",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 36.056271,
     "lon": -115.008575,
@@ -42761,7 +43346,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.016931,
     "lon": -77.439389,
-    "name": "Amazon IAD119",
+    "name": "Amazon IAD-119",
     "operator": "Amazon Web Services",
     "osm_id": "way/852039781",
     "source": "osm",
@@ -42982,7 +43567,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.01608,
     "lon": -77.438382,
-    "name": "Amazon IAD129",
+    "name": "Amazon IAD-129",
     "operator": "Amazon Web Services",
     "osm_id": "way/886028872",
     "source": "osm",
@@ -42995,7 +43580,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.074787,
     "lon": -77.564129,
-    "name": "Microsoft",
+    "name": "Microsoft Leesburg Building 1",
     "operator": "Microsoft",
     "osm_id": "way/886330269",
     "source": "osm",
@@ -43047,7 +43632,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.949518,
     "lon": -77.559445,
-    "name": "Microsoft Data Center",
+    "name": "Microsoft",
     "operator": "Microsoft",
     "osm_id": "way/897226569",
     "source": "osm",
@@ -43073,7 +43658,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.94809,
     "lon": -77.560545,
-    "name": "Amazon IAD125",
+    "name": "Amazon IAD-125",
     "operator": "Amazon Web Services",
     "osm_id": "way/897226574",
     "source": "osm",
@@ -43086,7 +43671,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.949895,
     "lon": -77.560452,
-    "name": "Amazon IAD124",
+    "name": "Amazon IAD-124",
     "operator": "Amazon Web Services",
     "osm_id": "way/897226575",
     "source": "osm",
@@ -43304,6 +43889,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 39.562907,
+    "lon": -104.829103,
+    "name": "EdgeConnex - DEN02",
+    "operator": "EdgeConneX",
+    "osm_id": "way/918943458",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 42.675665,
     "lon": -87.918406,
@@ -43398,7 +43996,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.032305,
     "lon": -77.429702,
-    "name": "Amazon IAD163",
+    "name": "Amazon IAD-163",
     "operator": "Amazon Web Services",
     "osm_id": "way/930849744",
     "source": "osm",
@@ -43606,7 +44204,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.979868,
     "lon": -77.425476,
-    "name": "Amazon IAD175",
+    "name": "Amazon IAD-175",
     "operator": "Amazon Web Services",
     "osm_id": "way/954433119",
     "source": "osm",
@@ -43645,7 +44243,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.99501,
     "lon": -77.43536,
-    "name": "Amazon IAD147",
+    "name": "Amazon IAD-147",
     "operator": "Amazon Web Services",
     "osm_id": "way/958662382",
     "source": "osm",
@@ -43759,6 +44357,19 @@
   },
   {
     "county_fips": "",
+    "first_seen": "2026-10-01T04:11:00Z",
+    "lat": 33.742039,
+    "lon": -84.596561,
+    "name": "Atlanta, GA",
+    "operator": "Data Canopy",
+    "osm_id": "way/975063975",
+    "source": "osm",
+    "status": "operational",
+    "status_source": "osm-default",
+    "tract_geoid": ""
+  },
+  {
+    "county_fips": "",
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.746561,
     "lon": -84.579741,
@@ -43775,7 +44386,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 33.755025,
     "lon": -84.587268,
-    "name": "Switch Data Center",
+    "name": "The Keep",
     "operator": "Switch",
     "osm_id": "way/975064004",
     "source": "osm",
@@ -43918,7 +44529,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.028914,
     "lon": -77.427478,
-    "name": "Amazon IAD174",
+    "name": "Amazon IAD-174",
     "operator": "Amazon Web Services",
     "osm_id": "way/984953813",
     "source": "osm",
@@ -43931,7 +44542,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.030471,
     "lon": -77.428945,
-    "name": "Amazon IAD164",
+    "name": "Amazon IAD-164",
     "operator": "Amazon Web Services",
     "osm_id": "way/984953814",
     "source": "osm",
@@ -43957,7 +44568,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 39.075508,
     "lon": -77.563035,
-    "name": "Microsoft",
+    "name": "Microsoft Leesburg Building 2",
     "operator": "Microsoft",
     "osm_id": "way/986829280",
     "source": "osm",
@@ -43996,7 +44607,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.916572,
     "lon": -77.479733,
-    "name": "Amazon IAD152",
+    "name": "Amazon IAD-152",
     "operator": "Amazon Web Services",
     "osm_id": "way/989735623",
     "source": "osm",
@@ -44009,7 +44620,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.916147,
     "lon": -77.478696,
-    "name": "Amazon IAD151",
+    "name": "Amazon IAD-151",
     "operator": "Amazon Web Services",
     "osm_id": "way/989735624",
     "source": "osm",
@@ -44022,7 +44633,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.947949,
     "lon": -77.523099,
-    "name": "Amazon IAD83",
+    "name": "Amazon IAD-83",
     "operator": "Amazon Web Services",
     "osm_id": "way/990537813",
     "source": "osm",
@@ -44035,7 +44646,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.946539,
     "lon": -77.522188,
-    "name": "Amazon Web Services",
+    "name": "AWS",
     "operator": "Amazon Web Services",
     "osm_id": "way/990537821",
     "source": "osm",
@@ -44048,7 +44659,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.955871,
     "lon": -77.497186,
-    "name": "Amazon IAD122",
+    "name": "Amazon IAD-122",
     "operator": "Amazon Web Services",
     "osm_id": "way/990537857",
     "source": "osm",
@@ -44100,7 +44711,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.780152,
     "lon": -77.539884,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-96",
     "operator": "Amazon Web Services",
     "osm_id": "way/996723587",
     "source": "osm",
@@ -44113,7 +44724,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.778451,
     "lon": -77.539427,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-95",
     "operator": "Amazon Web Services",
     "osm_id": "way/996723588",
     "source": "osm",
@@ -44126,7 +44737,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.779342,
     "lon": -77.542896,
-    "name": "Amazon Web Services",
+    "name": "Amazon IAD-85",
     "operator": "Amazon Web Services",
     "osm_id": "way/996723589",
     "source": "osm",
@@ -44139,7 +44750,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.735973,
     "lon": -77.504896,
-    "name": "Amazon IAD102",
+    "name": "Amazon IAD-102",
     "operator": "Amazon Web Services",
     "osm_id": "way/996899486",
     "source": "osm",
@@ -44152,7 +44763,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.735438,
     "lon": -77.505701,
-    "name": "Amazon IAD101",
+    "name": "Amazon IAD-101",
     "operator": "Amazon Web Services",
     "osm_id": "way/996899487",
     "source": "osm",
@@ -44165,7 +44776,7 @@
     "first_seen": "2026-08-21T22:07:52Z",
     "lat": 38.734598,
     "lon": -77.506642,
-    "name": "Amazon IAD100",
+    "name": "Amazon IAD-100",
     "operator": "Amazon Web Services",
     "osm_id": "way/996899488",
     "source": "osm",

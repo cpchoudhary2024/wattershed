@@ -81,6 +81,15 @@
       "tract": "18141010800"
     },
     {
+      "lat": 41.667764,
+      "lon": -86.473056,
+      "name": "Amazon AWS Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "18141010800"
+    },
+    {
       "lat": 40.421854,
       "lon": -86.916545,
       "name": "Agricultural and Biological Engineering",

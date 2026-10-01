@@ -1,6 +1,6 @@
 {
   "density": {
-    "30017961600": 61.2,
+    "30017961600": 70.7,
     "30111001704": 70.7
   },
   "facilities": [
@@ -9,6 +9,15 @@
       "lon": -105.820697,
       "name": "State of Montana Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "30017961600"
+    },
+    {
+      "lat": 46.406885,
+      "lon": -105.820697,
+      "name": "State of Montana Data Center",
+      "operator": "State of Montana",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "30017961600"

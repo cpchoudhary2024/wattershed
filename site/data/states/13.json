@@ -68,8 +68,17 @@
     {
       "lat": 33.731057,
       "lon": -84.616081,
-      "name": "Flexential Atlanta - Douglasville 1",
-      "operator": "",
+      "name": "Douglasville 1",
+      "operator": "Flexential",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "13097080105"
+    },
+    {
+      "lat": 33.730703,
+      "lon": -84.61124,
+      "name": "Douglasville 2",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13097080105"
@@ -78,15 +87,6 @@
       "lat": 33.731057,
       "lon": -84.616081,
       "name": "Flexential Atlanta - Douglasville 1",
-      "operator": "Flexential",
-      "status": "operational",
-      "status_source": "osm-default",
-      "tract": "13097080105"
-    },
-    {
-      "lat": 33.730703,
-      "lon": -84.61124,
-      "name": "Flexential Atlanta - Douglasville 2",
       "operator": "",
       "status": "operational",
       "status_source": "osm-default",
@@ -96,7 +96,7 @@
       "lat": 33.730703,
       "lon": -84.61124,
       "name": "Flexential Atlanta - Douglasville 2",
-      "operator": "Flexential",
+      "operator": "",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "13097080105"

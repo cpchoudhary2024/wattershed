@@ -31,6 +31,96 @@
       "tract": "38017040800"
     },
     {
+      "lat": 46.012321,
+      "lon": -98.573098,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.012399,
+      "lon": -98.573742,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.013502,
+      "lon": -98.571671,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.013489,
+      "lon": -98.571106,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.013508,
+      "lon": -98.572299,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.013523,
+      "lon": -98.5729,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.013531,
+      "lon": -98.574046,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.013516,
+      "lon": -98.57349,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.012395,
+      "lon": -98.572618,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
+      "lat": 46.012641,
+      "lon": -98.574463,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "38021973300"
+    },
+    {
       "lat": 46.013722,
       "lon": -98.572551,
       "name": "Applied Digital / Ellendale Data Center",

@@ -110,6 +110,15 @@
       "tract": "34017019900"
     },
     {
+      "lat": 40.784904,
+      "lon": -74.065357,
+      "name": "CoreSite NY3",
+      "operator": "CoreSite",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "34017019900"
+    },
+    {
       "lat": 40.784284,
       "lon": -74.065243,
       "name": "CoreSite Secaucus Campus",

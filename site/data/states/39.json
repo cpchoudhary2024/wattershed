@@ -1,13 +1,13 @@
 {
   "density": {
-    "39017000300": 61.2,
+    "39017000300": 70.7,
     "39017011123": 86.6,
-    "39023002200": 61.2,
+    "39023002200": 70.7,
     "39035107802": 79.1,
     "39035108301": 79.1,
-    "39035124201": 86.6,
+    "39035124201": 100.0,
     "39035156102": 70.7,
-    "39041012100": 61.2,
+    "39041012100": 70.7,
     "39049006238": 100.0,
     "39049006240": 100.0,
     "39049007048": 86.6,
@@ -39,6 +39,15 @@
       "tract": "39017000300"
     },
     {
+      "lat": 39.385272,
+      "lon": -84.566284,
+      "name": "CyrusOne Cincinnati-Hamilton CIN4",
+      "operator": "CyrusOne",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39017000300"
+    },
+    {
       "lat": 39.315931,
       "lon": -84.449464,
       "name": "Flexential Cincinnati",
@@ -55,6 +64,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39017011123"
+    },
+    {
+      "lat": 39.912797,
+      "lon": -83.723664,
+      "name": "LexisNexus Springfield",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39023002200"
     },
     {
       "lat": 39.912797,
@@ -102,6 +120,24 @@
       "tract": "39035124201"
     },
     {
+      "lat": 41.443057,
+      "lon": -81.803445,
+      "name": "T5@Cleveland",
+      "operator": "T5 Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39035124201"
+    },
+    {
+      "lat": 41.442622,
+      "lon": -81.8023,
+      "name": "T5@Cleveland",
+      "operator": "T5 Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39035124201"
+    },
+    {
       "lat": 41.361071,
       "lon": -81.632781,
       "name": "Involta Independence",
@@ -118,6 +154,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39035156102"
+    },
+    {
+      "lat": 40.224534,
+      "lon": -83.045792,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39041012100"
     },
     {
       "lat": 40.224534,
@@ -291,10 +336,28 @@
       "tract": "39049007211"
     },
     {
+      "lat": 40.056511,
+      "lon": -82.772007,
+      "name": "Google NBY-5",
+      "operator": "Google",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007211"
+    },
+    {
       "lat": 40.053959,
       "lon": -82.767595,
       "name": "Google NBY-6",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007211"
+    },
+    {
+      "lat": 40.053959,
+      "lon": -82.767595,
+      "name": "Google NBY-6",
+      "operator": "Google",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39049007211"
@@ -435,6 +498,24 @@
       "tract": "39049007931"
     },
     {
+      "lat": 40.016419,
+      "lon": -83.125852,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007931"
+    },
+    {
+      "lat": 40.021013,
+      "lon": -83.12602,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007931"
+    },
+    {
       "lat": 40.048138,
       "lon": -83.175294,
       "name": "",
@@ -507,10 +588,37 @@
       "tract": "39049007961"
     },
     {
+      "lat": 40.05018,
+      "lon": -83.175516,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007961"
+    },
+    {
+      "lat": 40.051522,
+      "lon": -83.175715,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007961"
+    },
+    {
       "lat": 40.052673,
       "lon": -83.127424,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39049007964"
+    },
+    {
+      "lat": 40.052673,
+      "lon": -83.127424,
+      "name": "",
+      "operator": "Oppidan",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39049007964"
@@ -633,6 +741,15 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.059238,
+      "lon": -82.762677,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.099077,
       "lon": -82.751505,
       "name": "Amazon New Albany: Jug and Beach Road",
@@ -734,6 +851,51 @@
     {
       "lat": 40.092961,
       "lon": -82.726511,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.102426,
+      "lon": -82.750141,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.101955,
+      "lon": -82.751912,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.094226,
+      "lon": -82.732111,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.094397,
+      "lon": -82.729279,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.095495,
+      "lon": -82.732005,
       "name": "Amazon Web Services",
       "operator": "Amazon Web Services",
       "status": "operational",
@@ -887,6 +1049,24 @@
     {
       "lat": 40.061493,
       "lon": -82.740552,
+      "name": "LCO 1",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.06523,
+      "lon": -82.741168,
+      "name": "LCO 2",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.061493,
+      "lon": -82.740552,
       "name": "Meta",
       "operator": "",
       "status": "operational",
@@ -921,10 +1101,28 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.055736,
+      "lon": -82.756501,
+      "name": "QTS NAL 2 DC1",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.053078,
       "lon": -82.756634,
       "name": "QTS NAL 2 DC2",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.053078,
+      "lon": -82.756634,
+      "name": "QTS NAL 2 DC2",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39089755601"
@@ -939,10 +1137,28 @@
       "tract": "39089755601"
     },
     {
+      "lat": 40.065001,
+      "lon": -82.758131,
+      "name": "QTS NAL1 DC1",
+      "operator": "Quality Technology Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
       "lat": 40.063613,
       "lon": -82.758227,
       "name": "QTS NAL1 DC2",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39089755601"
+    },
+    {
+      "lat": 40.063613,
+      "lon": -82.758227,
+      "name": "QTS NAL1 DC2",
+      "operator": "Quality Technology Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "39089755601"
@@ -1112,6 +1328,42 @@
     {
       "lat": 40.134181,
       "lon": -83.215841,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.135789,
+      "lon": -83.212641,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.120064,
+      "lon": -83.199319,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.119299,
+      "lon": -83.203226,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "39159050601"
+    },
+    {
+      "lat": 40.118118,
+      "lon": -83.202522,
       "name": "Amazon Web Services",
       "operator": "Amazon Web Services",
       "status": "operational",

@@ -3,7 +3,7 @@
     "45015020504": 50.0,
     "45015020707": 100.0,
     "45045002901": 50.0,
-    "45051051000": 61.2,
+    "45051051000": 70.7,
     "45079002800": 50.0
   },
   "facilities": [
@@ -186,6 +186,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "45045002901"
+    },
+    {
+      "lat": 33.674607,
+      "lon": -78.943885,
+      "name": "DC BLOX Myrtle Beach Cable Landing Station",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "45051051000"
     },
     {
       "lat": 33.674607,

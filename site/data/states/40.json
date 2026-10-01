@@ -37,6 +37,15 @@
       "tract": "40101001100"
     },
     {
+      "lat": 35.568135,
+      "lon": -95.512417,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "40101001100"
+    },
+    {
       "lat": 35.467205,
       "lon": -97.649745,
       "name": "Rack59 Data Center",

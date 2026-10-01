@@ -12,8 +12,8 @@
     "48029171928": 100.0,
     "48029172002": 100.0,
     "48029172009": 100.0,
-    "48029191405": 61.2,
-    "48029191814": 61.2,
+    "48029191405": 70.7,
+    "48029191814": 70.7,
     "48085030517": 61.2,
     "48085031418": 100.0,
     "48085031510": 86.6,
@@ -38,7 +38,7 @@
     "48201542901": 61.2,
     "48201554201": 86.6,
     "48209010100": 50.0,
-    "48221160212": 61.2,
+    "48221160212": 70.7,
     "48325000103": 100.0,
     "48339691201": 93.5,
     "48439106002": 70.7,
@@ -241,6 +241,15 @@
       "tract": "48029171926"
     },
     {
+      "lat": 29.450677,
+      "lon": -98.638704,
+      "name": "Amazon",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029171926"
+    },
+    {
       "lat": 29.447379,
       "lon": -98.640716,
       "name": "Texas Cryptologic Center",
@@ -322,10 +331,28 @@
       "tract": "48029172002"
     },
     {
+      "lat": 29.418466,
+      "lon": -98.788796,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
       "lat": 29.418221,
       "lon": -98.787837,
       "name": "CyrusOne SAT10 & SAT11",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
+      "lat": 29.418221,
+      "lon": -98.787837,
+      "name": "CyrusOne SAT10 & SAT11",
+      "operator": "CyrusOne",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48029172002"
@@ -385,6 +412,15 @@
       "tract": "48029172002"
     },
     {
+      "lat": 29.41614,
+      "lon": -98.789245,
+      "name": "Vantage San Antonio I",
+      "operator": "Vantage Data Centers",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029172002"
+    },
+    {
       "lat": 29.44968,
       "lon": -98.714404,
       "name": "",
@@ -421,10 +457,28 @@
       "tract": "48029191405"
     },
     {
+      "lat": 29.580152,
+      "lon": -98.541304,
+      "name": "",
+      "operator": "HEB",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029191405"
+    },
+    {
       "lat": 29.686403,
       "lon": -98.462648,
       "name": "GVTC",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48029191814"
+    },
+    {
+      "lat": 29.686403,
+      "lon": -98.462648,
+      "name": "GVTC",
+      "operator": "GVTC",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48029191814"
@@ -727,10 +781,37 @@
       "tract": "48113014159"
     },
     {
+      "lat": 32.980934,
+      "lon": -96.659465,
+      "name": "NTT",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019042"
+    },
+    {
+      "lat": 32.980928,
+      "lon": -96.657944,
+      "name": "NTT",
+      "operator": "NTT",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019042"
+    },
+    {
       "lat": 32.983624,
       "lon": -96.654263,
       "name": "Stream Data Centers",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48113019042"
+    },
+    {
+      "lat": 32.983624,
+      "lon": -96.654263,
+      "name": "Stream Data Centers DFWA",
+      "operator": "Stream Data Centers",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48113019042"
@@ -952,10 +1033,64 @@
       "tract": "48139060206"
     },
     {
+      "lat": 32.545504,
+      "lon": -96.802207,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.544192,
+      "lon": -96.802189,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.542899,
+      "lon": -96.802194,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.541589,
+      "lon": -96.802207,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.540276,
+      "lon": -96.80222,
+      "name": "Compass Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
       "lat": 32.539004,
       "lon": -96.793207,
       "name": "Google",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48139060206"
+    },
+    {
+      "lat": 32.539004,
+      "lon": -96.793207,
+      "name": "Google",
+      "operator": "Google",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48139060206"
@@ -1064,6 +1199,15 @@
       "lon": -97.731692,
       "name": "MARA Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "48221160212"
+    },
+    {
+      "lat": 32.341341,
+      "lon": -97.731692,
+      "name": "MARA Data Center",
+      "operator": "Marathon Digital Holdings",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "48221160212"
@@ -1258,7 +1402,7 @@
       "tract": "48453002216"
     },
     {
-      "lat": 30.215605,
+      "lat": 30.215619,
       "lon": -97.618939,
       "name": "Cortex supercomputer",
       "operator": "",

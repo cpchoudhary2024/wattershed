@@ -37,11 +37,11 @@
     "06085505202": 100.0,
     "06085506401": 86.6,
     "06085508708": 100.0,
-    "06085511302": 79.1,
+    "06085511302": 86.6,
     "06085511608": 79.1,
     "06085512032": 100.0,
     "06095252402": 61.2,
-    "06099000602": 61.2
+    "06099000602": 70.7
   },
   "facilities": [
     {
@@ -639,6 +639,15 @@
       "tract": "06085505010"
     },
     {
+      "lat": 37.407303,
+      "lon": -121.96598,
+      "name": "DataBank Santa Clara SFO1",
+      "operator": "DataBank",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505010"
+    },
+    {
       "lat": 37.383719,
       "lon": -121.965404,
       "name": "EdgeCore Silicon Valley",
@@ -722,6 +731,15 @@
     {
       "lat": 37.361154,
       "lon": -121.94234,
+      "name": "",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.370643,
+      "lon": -121.974482,
       "name": "",
       "operator": "",
       "status": "operational",
@@ -891,6 +909,15 @@
       "tract": "06085505202"
     },
     {
+      "lat": 37.375765,
+      "lon": -121.95627,
+      "name": "Csquare SFO4",
+      "operator": "Csquare",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
       "lat": 37.361647,
       "lon": -121.943978,
       "name": "Digital Realty Silicon Valley SC1",
@@ -981,6 +1008,15 @@
       "tract": "06085505202"
     },
     {
+      "lat": 37.370919,
+      "lon": -121.947217,
+      "name": "Digital Realty Silicon Valley SJC37",
+      "operator": "Digital Realty",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
       "lat": 37.37847,
       "lon": -121.954984,
       "name": "Equinix Santa Clara SV2",
@@ -1003,15 +1039,6 @@
       "lon": -121.954128,
       "name": "Layer42 Santa Clara",
       "operator": "",
-      "status": "operational",
-      "status_source": "osm-default",
-      "tract": "06085505202"
-    },
-    {
-      "lat": 37.378037,
-      "lon": -121.954128,
-      "name": "Layer42 Santa Clara",
-      "operator": "Layer42",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "06085505202"
@@ -1125,6 +1152,15 @@
       "tract": "06085505202"
     },
     {
+      "lat": 37.378037,
+      "lon": -121.954128,
+      "name": "Santa Clara Data Center (SJC3)",
+      "operator": "Evocative",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
       "lat": 37.372221,
       "lon": -121.948262,
       "name": "Silicon Valley SJC31",
@@ -1138,6 +1174,15 @@
       "lon": -121.94689,
       "name": "Vantage Santa Clara CA2",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085505202"
+    },
+    {
+      "lat": 37.364001,
+      "lon": -121.94689,
+      "name": "Vantage Santa Clara CA2",
+      "operator": "Vantage Data Centers",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "06085505202"
@@ -1210,6 +1255,15 @@
       "lon": -122.160786,
       "name": "Equinix SV8",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06085511302"
+    },
+    {
+      "lat": 37.445895,
+      "lon": -122.160786,
+      "name": "Equinix SV8",
+      "operator": "Equinix",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "06085511302"
@@ -1291,6 +1345,15 @@
       "lon": -121.040033,
       "name": "Modesto Junior College West Data Center",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "06099000602"
+    },
+    {
+      "lat": 37.665145,
+      "lon": -121.040033,
+      "name": "Modesto Junior College West Data Center",
+      "operator": "Yosemite Community College District",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "06099000602"

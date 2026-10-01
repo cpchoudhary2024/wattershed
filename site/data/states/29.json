@@ -29,6 +29,15 @@
       "tract": "29025950202"
     },
     {
+      "lat": 39.744048,
+      "lon": -93.997376,
+      "name": "CenturyLink",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "29025950202"
+    },
+    {
       "lat": 38.71455,
       "lon": -94.46112,
       "name": "Diode Ventures — Harper Road",

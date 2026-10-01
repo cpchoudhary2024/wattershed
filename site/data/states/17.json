@@ -1,6 +1,6 @@
 {
   "density": {
-    "17019001400": 61.2,
+    "17019001400": 70.7,
     "17031330101": 100.0,
     "17031770300": 100.0,
     "17031770400": 100.0,
@@ -27,6 +27,15 @@
     "17119403002": 70.7
   },
   "facilities": [
+    {
+      "lat": 40.095259,
+      "lon": -88.242031,
+      "name": "NCSA Petascale Computing Facility",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17019001400"
+    },
     {
       "lat": 40.095259,
       "lon": -88.242031,
@@ -154,10 +163,19 @@
       "tract": "17031770400"
     },
     {
-      "lat": 42.023143,
-      "lon": -87.972186,
+      "lat": 42.023077,
+      "lon": -87.961467,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17031770400"
+    },
+    {
+      "lat": 42.023143,
+      "lon": -87.972186,
+      "name": "Microsoft CHI11",
+      "operator": "Microsoft",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17031770400"
@@ -415,6 +433,33 @@
       "tract": "17037001500"
     },
     {
+      "lat": 41.888546,
+      "lon": -88.721834,
+      "name": "",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17037001500"
+    },
+    {
+      "lat": 41.889299,
+      "lon": -88.73103,
+      "name": "",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17037001500"
+    },
+    {
+      "lat": 41.890305,
+      "lon": -88.726628,
+      "name": "",
+      "operator": "Meta",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17037001500"
+    },
+    {
       "lat": 41.992088,
       "lon": -87.958014,
       "name": "Centersquare Elk Grove Village Data Center Campus ORD2",
@@ -545,6 +590,15 @@
       "lon": -88.246965,
       "name": "",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "17043846409"
+    },
+    {
+      "lat": 41.795377,
+      "lon": -88.246965,
+      "name": "",
+      "operator": "CyrusOne",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "17043846409"

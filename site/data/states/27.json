@@ -1,15 +1,15 @@
 {
   "density": {
-    "27003050236": 61.2,
+    "27003050236": 70.7,
     "27019090802": 61.2,
     "27037061003": 86.6,
     "27053025907": 61.2,
-    "27053026812": 61.2,
+    "27053026812": 70.7,
     "27053126102": 93.5,
     "27053126202": 100.0,
     "27109001403": 61.2,
-    "27123030202": 61.2,
-    "27137000400": 61.2
+    "27123030202": 70.7,
+    "27137000400": 70.7
   },
   "facilities": [
     {
@@ -17,6 +17,15 @@
       "lon": -93.095616,
       "name": "Encompass Minneapolis Facility",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27003050236"
+    },
+    {
+      "lat": 45.132157,
+      "lon": -93.095616,
+      "name": "Encompass Minneapolis Facility",
+      "operator": "Encompass",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "27003050236"
@@ -56,6 +65,15 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "27053025907"
+    },
+    {
+      "lat": 45.143693,
+      "lon": -93.387119,
+      "name": "DataBank",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27053026812"
     },
     {
       "lat": 45.143693,
@@ -110,6 +128,24 @@
       "status": "operational",
       "status_source": "osm-default",
       "tract": "27123030202"
+    },
+    {
+      "lat": 44.972195,
+      "lon": -93.147473,
+      "name": "H5 Minneapolis",
+      "operator": "H5",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27123030202"
+    },
+    {
+      "lat": 46.827468,
+      "lon": -92.130482,
+      "name": "Ark Duluth Data Center",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "27137000400"
     },
     {
       "lat": 46.827468,

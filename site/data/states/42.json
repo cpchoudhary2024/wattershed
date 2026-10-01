@@ -85,8 +85,35 @@
       "tract": "42079216100"
     },
     {
+      "lat": 41.083991,
+      "lon": -76.143375,
+      "name": "Amazon AWS PHL",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42079216100"
+    },
+    {
       "lat": 41.082625,
       "lon": -76.151419,
+      "name": "Nautilus Cryptomine",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42079216100"
+    },
+    {
+      "lat": 41.082625,
+      "lon": -76.151419,
+      "name": "Nautilus Cryptomine",
+      "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "42079216100"
+    },
+    {
+      "lat": 41.083339,
+      "lon": -76.151446,
       "name": "Nautilus Cryptomine",
       "operator": "",
       "status": "operational",

@@ -1,7 +1,7 @@
 {
   "density": {
     "32003000513": 100.0,
-    "32003000700": 61.2,
+    "32003000700": 70.7,
     "32003001608": 100.0,
     "32003001610": 100.0,
     "32003001615": 100.0,
@@ -37,6 +37,15 @@
       "lon": -115.143145,
       "name": "Flexential Las Vegas - Downtown",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003000700"
+    },
+    {
+      "lat": 36.168644,
+      "lon": -115.143145,
+      "name": "Flexential Las Vegas - Downtown",
+      "operator": "Flexential",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "32003000700"
@@ -177,10 +186,28 @@
       "tract": "32003002979"
     },
     {
+      "lat": 36.057992,
+      "lon": -115.210328,
+      "name": "Switch Las Vegas 12",
+      "operator": "",
+      "status": "construction",
+      "status_source": "osm-lifecycle",
+      "tract": "32003002979"
+    },
+    {
       "lat": 36.065208,
       "lon": -115.222045,
       "name": "Switch Las Vegas 14",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32003002979"
+    },
+    {
+      "lat": 36.065208,
+      "lon": -115.222045,
+      "name": "Switch Las Vegas 14",
+      "operator": "Switch",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "32003002979"
@@ -360,6 +387,15 @@
       "lat": 39.513871,
       "lon": -119.484853,
       "name": "Tahoe Reno 2",
+      "operator": "Switch",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "32029970200"
+    },
+    {
+      "lat": 39.51152,
+      "lon": -119.483306,
+      "name": "Tahoe Reno 3",
       "operator": "Switch",
       "status": "operational",
       "status_source": "osm-default",

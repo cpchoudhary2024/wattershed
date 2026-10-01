@@ -234,6 +234,15 @@
       "tract": "41043030202"
     },
     {
+      "lat": 44.775224,
+      "lon": -122.615931,
+      "name": "PTC",
+      "operator": "Stayton Cooperative Telephone Company",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41043030202"
+    },
+    {
       "lat": 44.938075,
       "lon": -123.033722,
       "name": "CenturyLink",
@@ -371,6 +380,33 @@
     {
       "lat": 45.81993,
       "lon": -119.632086,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970101"
+    },
+    {
+      "lat": 45.818711,
+      "lon": -119.632008,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970101"
+    },
+    {
+      "lat": 45.818702,
+      "lon": -119.636263,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970101"
+    },
+    {
+      "lat": 45.819949,
+      "lon": -119.636272,
       "name": "Amazon Web Services",
       "operator": "Amazon Web Services",
       "status": "operational",
@@ -686,6 +722,24 @@
     {
       "lat": 45.840685,
       "lon": -119.65131,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.851731,
+      "lon": -119.619661,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41049970102"
+    },
+    {
+      "lat": 45.853095,
+      "lon": -119.61968,
       "name": "Amazon Web Services",
       "operator": "Amazon Web Services",
       "status": "operational",
@@ -1017,6 +1071,24 @@
       "tract": "41059950900"
     },
     {
+      "lat": 45.879527,
+      "lon": -119.341626,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
+      "lat": 45.88253,
+      "lon": -119.339695,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059950900"
+    },
+    {
       "lat": 45.797809,
       "lon": -119.366616,
       "name": "Amazon Web Services",
@@ -1089,6 +1161,33 @@
       "tract": "41059951100"
     },
     {
+      "lat": 45.799015,
+      "lon": -119.361727,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951100"
+    },
+    {
+      "lat": 45.799683,
+      "lon": -119.358424,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951100"
+    },
+    {
+      "lat": 45.797752,
+      "lon": -119.358925,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951100"
+    },
+    {
       "lat": 45.809634,
       "lon": -119.268611,
       "name": "Amazon Web Services",
@@ -1120,6 +1219,24 @@
       "lon": -119.27825,
       "name": "Amazon Web Services",
       "operator": "",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951202"
+    },
+    {
+      "lat": 45.809634,
+      "lon": -119.268611,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "41059951202"
+    },
+    {
+      "lat": 45.808277,
+      "lon": -119.268616,
+      "name": "Amazon Web Services",
+      "operator": "Amazon Web Services",
       "status": "operational",
       "status_source": "osm-default",
       "tract": "41059951202"

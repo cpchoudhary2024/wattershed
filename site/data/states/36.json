@@ -354,6 +354,15 @@
       "tract": "36087012800"
     },
     {
+      "lat": 41.039951,
+      "lon": -73.989572,
+      "name": "Databank LGA3",
+      "operator": "Databank",
+      "status": "operational",
+      "status_source": "osm-default",
+      "tract": "36087012800"
+    },
+    {
       "lat": 41.034493,
       "lon": -73.975786,
       "name": "fifteenfortyseven CSR ORNY1",
